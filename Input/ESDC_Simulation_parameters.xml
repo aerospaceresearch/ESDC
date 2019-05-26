@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Simulation_parameters>
+
+	<Arcjet>
+			<c_e> 
+				<min> 1000</min>
+				<max> 30000</max>
+			</c_e>
+			<F>
+				<min> 0.01 </min>
+				<max> 0.1  </max>	
+			</F>
+	</Arcjet> 
+	<GridIonThruster>
+			<c_e> 
+				<min> 10000</min>
+				<max> 35000</max>
+			</c_e>
+			<F>
+				<min> 0.001 </min>
+				<max> 0.02  </max>	
+			</F>
+	</GridIonThruster>
+	<plots>
+		<system>1</system>
+		<components>1</components>
+	</plots>
+	<margin> 10 </margin>
+	<evolver>
+		<seed_points> 18 </seed_points>
+		<fitness_landscape_resolution> 50 </fitness_landscape_resolution>
+	</evolver> 
+</Simulation_parameters>
+
