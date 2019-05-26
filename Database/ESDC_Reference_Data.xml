@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<reference_data>
+	<propulsion_system>
+		<arcjet>
+			<thruster>
+					<type>arcjet</type>
+					<name>Velarc</name>
+					<thrust>0.04002</thrust>
+					<c_e>4415</c_e>
+					<massflow>9e-06</massflow>
+					<mass>0.3</mass>
+					<efficiency> 0.3178</efficiency>
+					<propellant>NH3</propellant>
+					<structure_mass> 0.94815</structure_mass>
+					<source>IRS arcjet database</source>
+			</thruster>
+			<thruster>
+					<type>arcjet</type>
+					<name>Velarc</name>
+					<thrust>0.0345</thrust>
+					<c_e>5886</c_e>
+					<massflow>6e-06</massflow>
+					<mass>0.3</mass>
+					<efficiency> 0.7532</efficiency>
+					<propellant>He</propellant>
+					<structure_mass>0.493</structure_mass>
+					<source>IRS arcjet database</source>
+			</thruster>
+			<ppu>
+				<type>arcjet</type>
+				<name>ATOS</name>
+				<power>800</power>
+				<mass>1.89</mass>
+				<efficiency>0.92</efficiency>
+				<source> Riehle, M.: ATOS - Arcjet Flugexperiment auf dem Amateurfunksatelliten AMSAT-P3-D, Final report, DARA FKZ TT 50 TT 9404, 1994</source>
+			</ppu>
+			<ppu>
+				<type>arcjet</type>
+				<name>MR-509</name>
+				<power>1800</power>
+				<mass>4.12</mass>
+				<efficiency>0.90</efficiency>
+				<source> Smith, R. D., Roberts, C. R., Aadland, R. S., Lichtin, D. A., Davies, K.: Flight
+	qualification of the 1.8 kW MR-509 Hydrazine Arcjet System, IEPC-97-081, 25th International Electric Propulsion Conference, Cleveland Ohio. United States of America,1997, http://erps.spacegrant.org/uploads/images/images/iepc_articledownloAD1988-
+	2007/1997index/7081.pdf</source>
+			</ppu>
+			<ppu>
+				<type>arcjet</type>
+				<name>MR-510</name>
+				<power>2200</power>
+				<mass>4.00</mass>
+				<efficiency>0.907</efficiency>
+				<source> Smith, R. D., Roberts, C. R., Aadland, R. S., Lichtin, D. A., Davies, K.: Flight
+	qualification of the 1.8 kW MR-509 Hydrazine Arcjet System, IEPC-97-081, 25th International Electric Propulsion Conference, Cleveland Ohio. United States of America,1997, http://erps.spacegrant.org/uploads/images/images/iepc_articledownloAD1988-2007/1997index/7081.pdf</source>
+			</ppu>
+			<ppu>
+				<type>arcjet</type>
+				<name>MR-512</name>
+				<power>1780</power>
+				<mass>4.00</mass>
+				<efficiency>0.91</efficiency>
+				<source> MR-512, Enyclopedia Astronautica, Webpage, http://www.astronautix.com/m/mr-512.html, last accessed 24.10.2016</source>
+			</ppu>
+	
+			<requiredsystems>
+				<system>PPU</system>
+				<system>Structure</system>
+				<system>Propellant</system>
+				<system>Tank</system>
+			</requiredsystems>			
+		</arcjet>
+		<gridionthruster>
+			<thruster>
+					<type>gridionthruster</type>
+					<name>Arclight</name>
+					<thrust>0.015</thrust>
+					<c_e>23544</c_e>
+					<massflow>5.0968399e-07</massflow>
+					<mass>8</mass>
+					<efficiency>0.4905</efficiency>
+					<propellant>Xe</propellant>
+					<structure_mass>2</structure_mass>
+			</thruster>
+			<ppu>
+					<type>gridionthruster</type>
+					<name>Arclight PPU</name>
+					<power>450</power>
+					<efficiency>0.92</efficiency>
+			</ppu>
+			<requiredsystems>
+				<system>PPU</system>
+				<system>Structure</system>
+				<system>Propellant</system>
+				<system>Tank</system>
+			</requiredsystems>
+		</gridionthruster>
+	</propulsion_system>
+</reference_data>
+

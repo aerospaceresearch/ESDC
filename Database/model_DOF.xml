@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+	<propulsion_system>
+		<arcjet>
+			<DOF>c_e</DOF>
+			<DOF>propellant</DOF>
+			<DOF>thrust</DOF>	
+		</arcjet>
+		<gridionthruster>
+			<DOF>c_e</DOF>
+			<DOF>propellant</DOF>
+			<DOF>thrust</DOF>
+		</gridionthruster>
+	</propulsion_system>
+
