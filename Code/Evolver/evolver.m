@@ -1,7 +1,16 @@
 function evolution_data = evolver(input, db_data, config)
+generation_0 = struct();
+
+generation_0 = makeInitialPopulation(input, db_data, config);
 
 
-generation_0 = makeInitialPopulation(input, db_data, config)
+disp(generation_0)
+disp(generation_0(1,1))
+disp(generation_0(1,1).subsystem_masses)
+
+evolution_data = generation_0
+
+
 %set relevant parameters from config
 
 % LOOP until convergence is met
