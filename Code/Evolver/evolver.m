@@ -1,14 +1,20 @@
 function evolution_data = evolver(input, db_data, config)
-generation_0 = struct();
+generation = struct();
 
-generation_0 = makeInitialPopulation(input, db_data, config);
+generation(1).population = make_population(input, db_data, config);
+
+convergence = 0;
+gen_no=2;
+while convergence
+  [generation(gen_no).population, convergence]= evolve_population(input, db_data, config);
+  gen_no=gen_no+1;
+end
 
 
-disp(generation_0)
-disp(generation_0(1,1))
-disp(generation_0(1,1).subsystem_masses)
+%disp(generation)
+%disp(generation(1).population(1,1).mass_fractions)
 
-evolution_data = generation_0
+evolution_data = generation;
 
 
 %set relevant parameters from config

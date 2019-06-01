@@ -1,6 +1,7 @@
 function [] = startup()
 clc;
 close all;
+disp('Evolutionary System Design Converger')
 disp('Start ESDC solver')
 disp(' ')
 disp('Institute of Space Systems')
