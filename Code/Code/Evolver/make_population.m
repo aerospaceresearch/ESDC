@@ -1,0 +1,170 @@
+function [initial_pop] = make_population(input, db_data, config)
+
+n_seeds = config.Simulation_parameters.evolver.seed_points;
+
+n_DOF = num_struct_members_full(db_data.DOF, 'DOF');
+%disp(input)
+initial_pop = struct();
+for i=1:size(input.Satellite_parameters.input_case,2)
+  for j=1:n_seeds
+    %TODO: do try of field existance first
+    if isfield(input.Satellite_parameters.input_case{i},'totalmass')      % todo: put this test and assignment into a function itself?
+    initial_pop(i,j).mass=input.Satellite_parameters.input_case{i}.totalmass;
+    end
+    if isfield(input.Satellite_parameters.input_case{i},'totalimpulse')
+    initial_pop(i,j).totalimpulse=input.Satellite_parameters.input_case{i}.totalimpulse;
+    end
+    if isfield(input.Satellite_parameters.input_case{i},'deltav')
+    initial_pop(i,j).dv=input.Satellite_parameters.input_case{i}.deltav;
+    end
+    if isfield(input.Satellite_parameters.input_case{i},'P_propulsion')
+    initial_pop(i,j).power_propulsion=input.Satellite_parameters.input_case{i}.P_propulsion;
+    end
+    % determine respective random case DOF parameters
+    [initial_pop(i,j).propulsion_system  initial_pop(i,j).propellant  initial_pop(i,j).c_e  initial_pop(i,j).thrust initial_pop(i,j).power_thruster initial_pop(i,j).power_jet initial_pop(i,j).eff_PPU initial_pop(i,j).eff_thruster]  = set_random_case_parameters(db_data, initial_pop(i,j).power_propulsion);
+   
+    initial_pop(i,j).subsystem_masses = mass_budget_propulsion(initial_pop(i,j));
+    initial_pop(i,j).mission_parameters = mission_parameters(initial_pop(i,j));
+    
+    % add mission scenario parameter calculations
+    initial_pop(i,j).mass_fractions= mass_fractions(initial_pop(i,j));
+    initial_pop(i,j).evolution_success=1; % if first - then 1 , else compare old to new , potentially reiterate over full lineage
+    initial_pop(i,j).convergence=0;
+    %disp(initial_pop(i,j))
+  end
+end
+
+end
+
+function [propulsion propellant c_e F p_thr p_jet eff_ppu eff_thruster] = set_random_case_parameters(db_data, power_propulsion)
+  n_DOF = num_struct_members_full(db_data.DOF, 'DOF');
+  n_random_case = randi(n_DOF);
+
+  %determine the type of respective propulsion system
+  propulsion_systems =db_data.DOF.propulsion_system;
+  index_low =0;
+  names=fieldnames(propulsion_systems);
+
+for i=1:numel(names)
+    n_sub = num_struct_members_full(propulsion_systems.(names{i}),'DOF');
+    index_up=index_low+n_sub;
+    % associate the correct DOF random case to the correct propulsion system one level above in XML file.
+    if( index_low<= n_random_case &&  n_random_case <= index_up)
+      propulsion = names{i};
+      case_instance = propulsion_systems.(propulsion).DOF(n_random_case-index_low);
+      %here get case param
+      break
+    end
+    index_low = index_up;
+end
+
+% switch for initalization differences  
+switch case_instance{1,1}
+  case 'propellant'
+    %disp('Considering differing propellants')
+    propellant = get_random_propellant(db_data.reference_data.propulsion_system, propulsion);
+    c_e = get_random_propulsion_DOF_float(db_data.reference_data.propulsion_system, propulsion, propellant, 'c_e');
+    %no random because function of given parameters
+    [F p_thr p_jet eff_ppu eff_thruster] = get_propulsion_system_performance_data_wo_thrust(db_data.reference_data.propulsion_system, propulsion, propellant, c_e, power_propulsion);
+
+  case 'thrust'
+    %disp('Considering thrust variation')
+    %propulsion type already defined
+    [F propellant]= get_random_thrust_and_propellant(db_data.reference_data.propulsion_system, propulsion);
+    % calculate c_e and propulsion system performance data 
+    [c_e p_thr p_jet eff_ppu eff_thruster] = get_propulsion_system_performance_data_wo_c_e(db_data.reference_data.propulsion_system, propulsion, propellant, F, power_propulsion); 
+    % TODO: likely inconsistent results?
+  case 'c_e'
+    %disp('Considering c_e variation') %maybe redundant
+    
+    [c_e propellant]=get_random_c_e_and_propellant(db_data.reference_data.propulsion_system, propulsion);
+    [F p_thr p_jet eff_ppu eff_thruster] = get_propulsion_system_performance_data_wo_thrust(db_data.reference_data.propulsion_system, propulsion, propellant, c_e, power_propulsion);
+
+    % function to look up relevant c_e s from DB, select 1 randomly from available span 
+  otherwise
+    disp('DOF case laws not found. Check spelling') 
+end
+
+end
+
+function [c_e power_thruster power_jet eff_ppu eff_thruster] = get_propulsion_system_performance_data_wo_c_e(data, propulsion, propellant, F, power_propulsion)
+  % returns thrust and 
+  eff_ppu= get_ppu_eff(data.(propulsion).ppu);
+  eff_thruster = get_thruster_eff(data.(propulsion).thruster, propellant);
+  power_thruster = power_propulsion*eff_ppu;
+  power_jet = power_thruster*eff_thruster;
+  c_e = 2*power_jet/F; 
+end
+
+function [c_e propellant] = get_random_c_e_and_propellant(data, propulsion);
+  %initialization case of unknown c_e and propellant
+  n_thrusters = size(data.(propulsion).thruster,2);
+  c_e_list  = [];
+  propellant_list = {};
+  
+  if n_thrusters == 1
+    c_e = data.(propulsion).thruster.c_e;
+    propellant = data.(propulsion).thruster.propellant;
+  else
+    for i=1:n_thrusters
+        c_e_list= [c_e_list , data.(propulsion).thruster{i}.c_e];
+        propellant_list{1,end+1}= data.(propulsion).thruster{i}.propellant;
+    end
+    
+    n_case=randi(n_thrusters);
+    c_e = c_e_list(n_case);
+    propellant = propellant_list{n_case};
+    
+  end
+end 
+
+function [F propellant] = get_random_thrust_and_propellant(data, propulsion)
+  %initialization case of unknown thrust and propellant
+  n_thrusters = size(data.(propulsion).thruster,2);
+  F_list  = [];
+  propellant_list = {};
+  
+  if n_thrusters == 1
+    F = data.(propulsion).thruster.thrust;
+    propellant = data.(propulsion).thruster.propellant;
+  else
+    for i=1:n_thrusters
+        F_list= [F_list , data.(propulsion).thruster{i}.thrust];
+        propellant_list{1,end+1}= data.(propulsion).thruster{i}.propellant;
+    end
+    
+    n_case=randi(n_thrusters);
+    F = F_list(n_case);                     
+    propellant = propellant_list{n_case};
+    
+  end
+end
+
+
+
+function DOF_return = get_random_propulsion_DOF_float(data, propulsion, propellant, DOF)
+    % get a randomized number of a float degree of freedom from the propulsion system , applicable for c_e and F floats currently
+    DOF_list=[];
+    n_thruster_entries = size(data.(propulsion).thruster,2);
+      for i=1:n_thruster_entries
+        if n_thruster_entries==1
+          sub_data = data.(propulsion).thruster;
+        else
+          sub_data = data.(propulsion).thruster{i};
+        end 
+        if strcmp(sub_data.propellant, propellant)
+            DOF_list = [DOF_list; sub_data.(DOF)];
+        end
+      end
+      
+      DOF_return =   rand_range(min(DOF_list),max(DOF_list));
+end
+
+function [thrust power_thruster power_jet eff_ppu eff_thruster] = get_propulsion_system_performance_data_wo_thrust(data, propulsion, propellant, c_e, power_propulsion)
+  % returns thrust and 
+  eff_ppu= get_ppu_eff(data.(propulsion).ppu);
+  eff_thruster = get_thruster_eff(data.(propulsion).thruster, propellant);
+  power_thruster = power_propulsion*eff_ppu;
+  power_jet = power_thruster*eff_thruster;
+  thrust = 2*power_jet/c_e; 
+end
