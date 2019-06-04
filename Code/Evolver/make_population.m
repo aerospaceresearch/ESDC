@@ -18,18 +18,19 @@ for i=1:size(input.Satellite_parameters.input_case,2)
     initial_pop(i,j).dv=input.Satellite_parameters.input_case{i}.deltav;
     end
     if isfield(input.Satellite_parameters.input_case{i},'P_propulsion')
-    initial_pop(i,j).P_prop=input.Satellite_parameters.input_case{i}.P_propulsion;
+    initial_pop(i,j).power_propulsion=input.Satellite_parameters.input_case{i}.P_propulsion;
     end
     % determine respective random case DOF parameters
-    [initial_pop(i,j).propulsion_type  initial_pop(i,j).propellant  initial_pop(i,j).c_e  initial_pop(i,j).thrust initial_pop(i,j).p_thruster initial_pop(i,j).p_jet initial_pop(i,j).eff_PPU initial_pop(i,j).eff_thruster]  = set_random_case_parameters(db_data, initial_pop(i,j).P_prop);
+    [initial_pop(i,j).propulsion_system  initial_pop(i,j).propellant  initial_pop(i,j).c_e  initial_pop(i,j).thrust initial_pop(i,j).power_thruster initial_pop(i,j).power_jet initial_pop(i,j).eff_PPU initial_pop(i,j).eff_thruster]  = set_random_case_parameters(db_data, initial_pop(i,j).power_propulsion);
    
     initial_pop(i,j).subsystem_masses = mass_budget_propulsion(initial_pop(i,j));
     initial_pop(i,j).mission_parameters = mission_parameters(initial_pop(i,j));
     
     % add mission scenario parameter calculations
     initial_pop(i,j).mass_fractions= mass_fractions(initial_pop(i,j));
-    inital_pop(i,j).evolution_success=1; % if first - then 1 , else compare old to new , potentially reiterate over full lineage
-  
+    initial_pop(i,j).evolution_success=1; % if first - then 1 , else compare old to new , potentially reiterate over full lineage
+    initial_pop(i,j).convergence=0;
+    %disp(initial_pop(i,j))
   end
 end
 
@@ -47,6 +48,7 @@ function [propulsion propellant c_e F p_thr p_jet eff_ppu eff_thruster] = set_ra
 for i=1:numel(names)
     n_sub = num_struct_members_full(propulsion_systems.(names{i}),'DOF');
     index_up=index_low+n_sub;
+    % associate the correct DOF random case to the correct propulsion system one level above in XML file.
     if( index_low<= n_random_case &&  n_random_case <= index_up)
       propulsion = names{i};
       case_instance = propulsion_systems.(propulsion).DOF(n_random_case-index_low);
@@ -83,7 +85,6 @@ switch case_instance{1,1}
     disp('DOF case laws not found. Check spelling') 
 end
 
-%dont forget efficiency from P_el to P_jet
 end
 
 function [c_e power_thruster power_jet eff_ppu eff_thruster] = get_propulsion_system_performance_data_wo_c_e(data, propulsion, propellant, F, power_propulsion)
@@ -139,25 +140,7 @@ function [F propellant] = get_random_thrust_and_propellant(data, propulsion)
   end
 end
 
-function propellant = get_random_propellant(data, propulsion)
-  %returns one propellant from the number of relevant propellants available in the db defined by the propulsion type
-  propellant_list={};
-  
-  n_thruster_entries = size(data.(propulsion).thruster,2);
-  for i=1:n_thruster_entries
-    if n_thruster_entries==1
-          propellant_data = data.(propulsion).thruster.propellant;
-    else
-          propellant_data = data.(propulsion).thruster{i}.propellant;
-    end 
-    if ~any(strcmp(propellant_list,propellant_data))
-      propellant_list{1,end+1} = propellant_data;
-    end
-  end
-  n_case= randi(size(propellant_list,2));
 
-  propellant = propellant_list{1,n_case};
-end
 
 function DOF_return = get_random_propulsion_DOF_float(data, propulsion, propellant, DOF)
     % get a randomized number of a float degree of freedom from the propulsion system , applicable for c_e and F floats currently

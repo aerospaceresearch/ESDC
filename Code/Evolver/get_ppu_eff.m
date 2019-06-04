@@ -1,4 +1,5 @@
 function eff_ppu = get_ppu_eff(data)
+ %todo: update this
   n_ppu = size(data,2);
   if n_ppu==1
     eff_ppu= data.efficiency;
