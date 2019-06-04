@@ -21,6 +21,7 @@
 				<max> 0.02  </max>	
 			</F>
 	</GridIonThruster>
+		
 	<plots>
 		<system>1</system>
 		<components>1</components>
@@ -29,6 +30,8 @@
 	<evolver>
 		<seed_points> 18 </seed_points>
 		<fitness_landscape_resolution> 50 </fitness_landscape_resolution>
+		<minimal_step_size>0.00001</minimal_step_size>
+		<max_jump_range>20</max_jump_range>
 	</evolver> 
 </Simulation_parameters>
 
