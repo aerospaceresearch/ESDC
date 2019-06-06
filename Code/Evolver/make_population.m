@@ -29,6 +29,7 @@ for i=1:size(input.Satellite_parameters.input_case,2)
     % add mission scenario parameter calculations
     initial_pop(i,j).mass_fractions= mass_fractions(initial_pop(i,j));
     initial_pop(i,j).evolution_success=1; % if first - then 1 , else compare old to new , potentially reiterate over full lineage
+    initial_pop(i,j).n_success =1;
     initial_pop(i,j).convergence=0;
     %disp(initial_pop(i,j))
   end

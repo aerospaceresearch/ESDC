@@ -19,7 +19,7 @@ function result = test_minimize_parameter(new_data, lineage_data, parameter_list
   
   min_val = min(value_list); % get minimum of current list
 
-    if new_val <= min_val %lower equal is important to walk on equipotential lines in hyperspace
+    if new_val < min_val % TODO here should be a leq instead of eq .... but becomes a problem with convergence when declearing identity with success !
       result = 1;
     else
       result = 0;
