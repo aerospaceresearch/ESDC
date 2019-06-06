@@ -1,6 +1,11 @@
 function [individual_new] = mutate_individual(input, db_data, config, individual_old)
+  
   individual_new= individual_old;
-
+  
+  % stop running in circles when convergence is met
+  if individual_new.convergence ==1
+    return
+  end
   %consider the number of DOF within the current propulsion type case
   n_DOF = num_struct_members_full(db_data.DOF.propulsion_system.(individual_old.propulsion_system), 'DOF');
   
