@@ -3,7 +3,7 @@ clc
 addpath('Code/Analysis')
 addpath('Code/Evolver')
 addpath('Code/Input')
-addpath('Code/Modelling')
+%addpath('Code/Modelling')
 addpath('Code/Output')
 addpath('Code/Scaling')
 addpath('Code/Support')
@@ -18,7 +18,12 @@ update_scaling_model();
 disp('Starting analysis ...');
 disp(' ');
 
-evolution_data = evolver(input, db_data, config)
+t_1=now;
+evolution_data = evolver(input, db_data, config);
+t_2=now;
+
+dt=(t_2-t_1)*60*60*24
+n_gen_to_convergence = size(evolution_data,2)
 
 %disp('EP mass system scaling for reference points');
 %disp(' ');
@@ -37,7 +42,7 @@ evolution_data = evolver(input, db_data, config)
 %data = makestruct(input, data);
 %out.ESCD_output_data = data;
 
-data_output(input, config, evolution_data);f
+data_output(input, config, evolution_data);
 
 
 disp('Writing XML Output ')
