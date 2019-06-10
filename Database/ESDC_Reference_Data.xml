@@ -16,6 +16,42 @@
 			</thruster>
 			<thruster>
 					<type>arcjet</type>
+					<name>ARTUS IM3</name>
+					<thrust>0.1068829</thrust>
+					<c_e>4836</c_e>
+					<massflow>22.1e-06</massflow>
+					<mass>0.732</mass>
+					<efficiency> 0.324839</efficiency>
+					<propellant>NH3</propellant>
+					<structure_mass> 0.94815</structure_mass>
+					<source>IRS arcjet database</source>
+			</thruster>
+			<thruster>
+					<type>arcjet</type>
+					<name>Artur He</name>
+					<thrust>0.270</thrust>
+					<c_e>6136.35</c_e>
+					<massflow>44e-06</massflow>
+					<mass>0.455</mass>
+					<efficiency> 0.702040</efficiency>
+					<propellant>He</propellant>
+					<structure_mass>0.493</structure_mass>
+					<source>IRS arcjet database</source>
+			</thruster>
+			<thruster>
+					<type>arcjet</type>
+					<name>Artur He</name>
+					<thrust>0.180</thrust>
+					<c_e>4090.909302</c_e>
+					<massflow>44e-06</massflow>
+					<mass>0.455</mass>
+					<efficiency> 0.73636</efficiency>
+					<propellant>He</propellant>
+					<structure_mass>0.493</structure_mass>
+					<source>IRS arcjet database</source>
+			</thruster>
+			<thruster>
+					<type>arcjet</type>
 					<name>Velarc</name>
 					<thrust>0.0345</thrust>
 					<c_e>5886</c_e>
@@ -73,13 +109,27 @@
 			<thruster>
 					<type>gridionthruster</type>
 					<name>Arclight</name>
-					<thrust>0.015</thrust>
+					<thrust>0.012</thrust>
 					<c_e>23544</c_e>
-					<massflow>5.0968399e-07</massflow>
+					<massflow>0.00000050968399592253</massflow>
 					<mass>8</mass>
-					<efficiency>0.4905</efficiency>
+					<efficiency>0.35316</efficiency>
 					<propellant>Xe</propellant>
 					<structure_mass>2</structure_mass>
+					<source> Ariane Group - ARCLIGHT
+ELECTRIC PROPULSION SYSTEM DESIGNED FOR SMALL SATELLITES6, http://www.space-propulsion.com/brochures/electric-propulsion/arclight-electric-space-propulsion.pdf</source>
+			</thruster>
+			<thruster>
+					<type>gridionthruster</type>
+					<name>RIT 10 EVO</name>
+					<thrust>0.015</thrust>
+					<c_e>29430</c_e>
+					<massflow>0.00000050968399592253</massflow>
+					<mass>1.8</mass>
+					<efficiency>0.507413793103448275</efficiency>
+					<propellant>Xe</propellant>
+					<structure_mass>5</structure_mass>
+					<source> Ariane Group - http://www.space-propulsion.com/spacecraft-propulsion/propulsion-systems/electric-propulsion/images/rit-thruster-family-performance-data.jpg</source>
 			</thruster>
 			<ppu>
 					<type>gridionthruster</type>
