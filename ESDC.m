@@ -22,24 +22,9 @@ fflush(stdout);
 t_1=now;
 evolution_data = evolver(input, db_data, config);
 t_2=now;
-t_to_convergence = (t_2-t_1)*60*60*24;
 
-disp(sprintf('Total time for evolver convergence: %d s', t_to_convergence ))
+evolution_time(t_1,t_2)
 
-
-
-%disp('EP mass system scaling for reference points');
-%disp(' ');
-%data.reference = scale_EPsystem(input);
-%for i=1:size(input,2)
-%    disp(input(i).description);
-%    disp(data.reference(i));
-%end
-
-% Simple analysis
-%data.analysis.F_const = analysis_F_const(input, data, config);
-%data.analysis.P_const = analysis_P_const(input, data, config);
-%data.evolver_analysis = evolver_analysis(input, data, config);
 
 % XML output
 %data = makestruct(input, data);
@@ -57,3 +42,4 @@ disp('ESDC complete')
 disp(' ')
 disp(' ')
 end
+
