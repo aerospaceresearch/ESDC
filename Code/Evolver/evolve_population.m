@@ -24,9 +24,3 @@ function [generation_new, convergence] = evolve_population(input, db_data, confi
   generation_new = population;
   [convergence n_convergence] = test_full_convergence(population);
 end
-
-
-
-
-
-
