@@ -1,27 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Simulation_parameters>
-
-	<Arcjet>
-			<c_e> 
-				<min> 1000</min>
-				<max> 30000</max>
-			</c_e>
-			<F>
-				<min> 0.01 </min>
-				<max> 0.1  </max>	
-			</F>
-	</Arcjet> 
-	<GridIonThruster>
-			<c_e> 
-				<min> 10000</min>
-				<max> 35000</max>
-			</c_e>
-			<F>
-				<min> 0.001 </min>
-				<max> 0.02  </max>	
-			</F>
-	</GridIonThruster>
-		
 	<plots>
 		<system>1</system>
 		<components>1</components>
@@ -32,6 +10,7 @@
 		<fitness_landscape_resolution> 50 </fitness_landscape_resolution>
 		<minimal_step_size>0.00001</minimal_step_size>
 		<max_jump_range>20</max_jump_range>
+		<n_fails_to_converge>10</n_fails_to_converge>
 	</evolver> 
 </Simulation_parameters>
 
