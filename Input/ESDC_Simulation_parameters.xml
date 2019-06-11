@@ -11,6 +11,7 @@
 		<minimal_step_size>0.00001</minimal_step_size>
 		<max_jump_range>20</max_jump_range>
 		<n_fails_to_converge>10</n_fails_to_converge>
+		<n_verbosity>10</n_verbosity>
 	</evolver> 
 </Simulation_parameters>
 
