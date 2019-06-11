@@ -1,5 +1,4 @@
 function [generation_new, convergence] = evolve_population(input, db_data, config, generation_data)
-  convergence = 0;  % this is just for testing 
   population = struct();
   for i=1:size(input.Satellite_parameters.input_case,2)
     for j=1:config.Simulation_parameters.evolver.seed_points
