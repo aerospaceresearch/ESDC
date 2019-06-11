@@ -1,5 +1,5 @@
-function convergence = test_lineage_convergence_simple(new_data, lineage_data)
-  n_no_success= 10; % todo - add to sim parameter list
+function convergence = test_lineage_convergence_simple(new_data, lineage_data, config)
+  n_no_success= config.Simulation_parameters.evolver.n_fails_to_converge; % todo - add to sim parameter list
 
   if ((numel(lineage_data)<n_no_success))
     %disp('Generation number too low for convergence.')

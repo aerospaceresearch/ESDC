@@ -17,7 +17,7 @@ function [generation_new, convergence] = evolve_population(input, db_data, confi
         population(i,j).n_success = size(generation_data,2)+1;
       end
        %test for convergence here, maybe add number of non convergence gere
-      population(i,j).convergence = test_lineage_convergence_simple(population(i,j), lineage);  % add a parmeter specific epsilon convergence test
+      population(i,j).convergence = test_lineage_convergence_simple(population(i,j), lineage, config);  % add a parmeter specific epsilon convergence test
     end
   end
   generation_new = population;
