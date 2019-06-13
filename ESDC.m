@@ -1,12 +1,14 @@
 function [  ] =ESDC()
-clc
-addpath('Code/Analysis')
-addpath('Code/Evolver')
-addpath('Code/Input')
+t_0 = now;
+addpath('Code/Analysis');
+addpath('Code/Evolver');
+addpath('Code/Input');
 %addpath('Code/Modelling')
-addpath('Code/Output')
-addpath('Code/Scaling')
-addpath('Code/Support')
+addpath('Code/Output');
+addpath('Code/Scaling');
+addpath('Code/Support');
+
+clc;
 
 startup();
 fflush(stdout);
@@ -14,32 +16,43 @@ fflush(stdout);
 update_scaling_model();
 
 [input db_data config] = input_processing();
+t_1=now;
+
 
 disp('Starting Evolution ...');
 disp(' ');
 fflush(stdout);
 
-t_1=now;
+
 evolution_data = evolver(input, db_data, config);
 t_2=now;
 
 evolution_time(t_1,t_2)
 
+%Preprocessing Results
+disp('Starting Output Preprocessing ...');
+disp(' ');
+t_3 = now;
+output_struct.evolution_lineage_history = evolution_data_preprocessing(evolution_data);
+t_4 = now;
 
-% XML output
-%data = makestruct(input, data);
-%out.ESCD_output_data = data;
+disp(sprintf('Output Preprocessing complete after %d s.',(t_4-t_3)*60*60*24));
+fflush(stdout);
 
-data_output(input, config, evolution_data);
-
-
+%XML
 disp('Writing XML Output ')
-struct2xml(out,'Output/ESDC_output')
+fflush(stdout);
+struct2xml(output_struct, 'Output/ESDC_evolution_history')
 
+
+%completing program
 disp('XML Output complete')
 disp(' ')
 disp('ESDC complete')
-disp(' ')
+t_end = now;
+disp(sprintf('Exiting program after total runtime of %d s.',(t_end-t_0)*60*60*24))
 disp(' ')
 end
+
+
 
