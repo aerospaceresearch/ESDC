@@ -22,11 +22,11 @@ function varargout = struct2xml( s, varargin )
 % Please note that the following strings are substituted
 % '_dash_' by '-', '_colon_' by ':' and '_dot_' by '.'
 %
-% Originally written by W. Falkena, ASTI, TUDelft, 27-08-2010
+% Written by W. Falkena, ASTI, TUDelft, 27-08-2010
 % On-screen output functionality added by P. Orth, 01-12-2010
 % Multiple space to single space conversion adapted for speed by T. Lohuis, 11-04-2011
+% Adapted for Octave functionality M. Ehresmann 12.06.2019
 % Val2str subfunction bugfix by H. Gsenger, 19-9-2011
-% Modified by Chao-Yuan Yeh, 2016
     
     if (nargin ~= 2)
         if(nargout ~= 1 || nargin ~= 1)
@@ -65,8 +65,17 @@ function varargout = struct2xml( s, varargin )
     xmlname_sc = strrep(xmlname_sc,'_dot_','.');
 
     %create xml structure
-    docNode = com.mathworks.xml.XMLUtils.createDocument(xmlname_sc);
-
+    
+    %MATLAB Version
+    %docNode = com.mathworks.xml.XMLUtils.createDocument(xmlname_sc);
+    
+    %Octave Version
+    %Create a Xerces DOM document object
+    docNode = javaObject ("org.apache.xerces.dom.DocumentImpl");
+    %Append a root node to the document
+    docNode.appendChild (docNode.createElement (xmlname_sc));
+    
+    
     %process the rootnode
     docRootNode = docNode.getDocumentElement;
 
@@ -83,88 +92,91 @@ end
 
 % ----- Subfunction parseStruct -----
 function [] = parseStruct(s,docNode,curNode,pName)
-    
-    fnames = fieldnames(s);
-    for i = 1:length(fnames)
-        curfield = fnames{i};
-        
-        %substitute special characters
-        curfield_sc = curfield;
-        curfield_sc = strrep(curfield_sc,'_dash_','-');
-        curfield_sc = strrep(curfield_sc,'_colon_',':');
-        curfield_sc = strrep(curfield_sc,'_dot_','.');
-        
-        if (strcmp(curfield,'Attributes'))
-            %Attribute data
-            if (isstruct(s.(curfield)))
-                attr_names = fieldnames(s.Attributes);
-                for a = 1:length(attr_names)
-                    cur_attr = attr_names{a};
-                    
-                    %substitute special characters
-                    cur_attr_sc = cur_attr;
-                    cur_attr_sc = strrep(cur_attr_sc,'_dash_','-');
-                    cur_attr_sc = strrep(cur_attr_sc,'_colon_',':');
-                    cur_attr_sc = strrep(cur_attr_sc,'_dot_','.');
-                    
-                    [cur_str,succes] = val2str(s.Attributes.(cur_attr));
-                    if (succes)
-                        curNode.setAttribute(cur_attr_sc,cur_str);
-                    else
-                        disp(['Warning. The text in ' pName curfield '.' cur_attr ' could not be processed.']);
-                    end
-                end
-            else
-                disp(['Warning. The attributes in ' pName curfield ' could not be processed.']);
-                disp(['The correct syntax is: ' pName curfield '.attribute_name = ''Some text''.']);
-            end
-        elseif (strcmp(curfield,'Text'))
-            %Text data
-            [txt,succes] = val2str(s.Text);
-            if (succes)
-                curNode.appendChild(docNode.createTextNode(txt));
-            else
-                disp(['Warning. The text in ' pName curfield ' could not be processed.']);
-            end
-        else
-            %Sub-element
-            if (isstruct(s.(curfield)))
-                %single element
-                curElement = docNode.createElement(curfield_sc);
-                curNode.appendChild(curElement);
-                parseStruct(s.(curfield),docNode,curElement,[pName curfield '.'])
-            elseif (iscell(s.(curfield)))
-                %multiple elements
-                for c = 1:length(s.(curfield))
-                    curElement = docNode.createElement(curfield_sc);
-                    curNode.appendChild(curElement);
-                    if (isstruct(s.(curfield){c}))
-                        parseStruct(s.(curfield){c},docNode,curElement,[pName curfield '{' num2str(c) '}.'])
-                    else
-                        disp(['Warning. The cell ' pName curfield '{' num2str(c) '} could not be processed, since it contains no structure.']);
-                    end
-                end
-            else
-                %eventhough the fieldname is not text, the field could
-                %contain text. Create a new element and use this text
-                curElement = docNode.createElement(curfield_sc);
-                curNode.appendChild(curElement);
-                [txt,succes] = val2str(s.(curfield));
-                if (succes)
-                    curElement.appendChild(docNode.createTextNode(txt));
-                else
-                    disp(['Warning. The text in ' pName curfield ' could not be processed.']);
-                end
-            end
-        end
-    end
+  
+  % TODO change here to check if s is cell and handle accordingly 
+class(s)
+size(s)
+      fnames = fieldnames(s);
+      for i = 1:length(fnames)
+          curfield = fnames{i};
+          
+          %substitute special characters
+          curfield_sc = curfield;
+          curfield_sc = strrep(curfield_sc,'_dash_','-');
+          curfield_sc = strrep(curfield_sc,'_colon_',':');
+          curfield_sc = strrep(curfield_sc,'_dot_','.');
+          
+          if (strcmp(curfield,'Attributes'))
+              %Attribute data
+              if (isstruct(s.(curfield)))
+                  attr_names = fieldnames(s.Attributes);
+                  for a = 1:length(attr_names)
+                      cur_attr = attr_names{a};
+                      
+                      %substitute special characters
+                      cur_attr_sc = cur_attr;
+                      cur_attr_sc = strrep(cur_attr_sc,'_dash_','-');
+                      cur_attr_sc = strrep(cur_attr_sc,'_colon_',':');
+                      cur_attr_sc = strrep(cur_attr_sc,'_dot_','.');
+                      
+                      [cur_str,succes] = val2str(s.Attributes.(cur_attr));
+                      if (succes)
+                          curNode.setAttribute(cur_attr_sc,cur_str);
+                      else
+                          disp(['Warning. The text in ' pName curfield '.' cur_attr ' could not be processed.']);
+                      end
+                  end
+              else
+                  disp(['Warning. The attributes in ' pName curfield ' could not be processed.']);
+                  disp(['The correct syntax is: ' pName curfield '.attribute_name = ''Some text''.']);
+              end
+          elseif (strcmp(curfield,'Text'))
+              %Text data
+              [txt,succes] = val2str(s.Text);
+              if (succes)
+                  curNode.appendChild(docNode.createTextNode(txt));
+              else
+                  disp(['Warning. The text in ' pName curfield ' could not be processed.']);
+              end
+          else
+              %Sub-element
+              if (isstruct(s.(curfield)))                                                           % problem here, struct array - iss struct or user another formulation to bypass
+                  %single element
+                  curElement = docNode.createElement(curfield_sc);
+                  curNode.appendChild(curElement);
+                  parseStruct(s.(curfield),docNode,curElement,[pName curfield '.'])
+              elseif (iscell(s.(curfield)))
+                  %multiple elements
+                  for c = 1:length(s.(curfield))
+                      curElement = docNode.createElement(curfield_sc);
+                      curNode.appendChild(curElement);
+                      if (isstruct(s.(curfield){c}))                                                  %recursion call here
+                          parseStruct(s.(curfield){c},docNode,curElement,[pName curfield '{' num2str(c) '}.'])
+                      else
+                          disp(['Warning. The cell ' pName curfield '{' num2str(c) '} could not be processed, since it contains no structure.']);
+                      end
+                  end
+              else
+                  %eventhough the fieldname is not text, the field could
+                  %contain text. Create a new element and use this text
+                  curElement = docNode.createElement(curfield_sc);
+                  curNode.appendChild(curElement);
+                  [txt,succes] = val2str(s.(curfield));
+                  if (succes)
+                      curElement.appendChild(docNode.createTextNode(txt));
+                  else
+                      disp(['Warning. The text in ' pName curfield ' could not be processed.']);
+                  end
+              end
+          end
+      end
 end
 
 %----- Subfunction val2str -----
 function [str,succes] = val2str(val)
     
     succes = true;
-    str = '';
+    str = [];
     
     if (isempty(val))
         return; %bugfix from H. Gsenger
@@ -219,4 +231,3 @@ end
 % LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 % OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 % SOFTWARE.
-
