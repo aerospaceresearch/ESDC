@@ -25,8 +25,9 @@ function varargout = struct2xml( s, varargin )
 % Written by W. Falkena, ASTI, TUDelft, 27-08-2010
 % On-screen output functionality added by P. Orth, 01-12-2010
 % Multiple space to single space conversion adapted for speed by T. Lohuis, 11-04-2011
-% Adapted for Octave functionality M. Ehresmann 12.06.2019
+% Adapted for Octave functionality M. Ehresmann 12-06-2019
 % Val2str subfunction bugfix by H. Gsenger, 19-9-2011
+% Val2str subfunction bugfix by M. Ehresmann, 13-6-2019
     
     if (nargin ~= 2)
         if(nargout ~= 1 || nargin ~= 1)
@@ -69,7 +70,7 @@ function varargout = struct2xml( s, varargin )
     %MATLAB Version
     %docNode = com.mathworks.xml.XMLUtils.createDocument(xmlname_sc);
     
-    %Octave Version
+    %Octave Version     # from M. Ehresmann
     %Create a Xerces DOM document object
     docNode = javaObject ("org.apache.xerces.dom.DocumentImpl");
     %Append a root node to the document
@@ -92,10 +93,6 @@ end
 
 % ----- Subfunction parseStruct -----
 function [] = parseStruct(s,docNode,curNode,pName)
-  
-  % TODO change here to check if s is cell and handle accordingly 
-class(s)
-size(s)
       fnames = fieldnames(s);
       for i = 1:length(fnames)
           curfield = fnames{i};
@@ -118,7 +115,6 @@ size(s)
                       cur_attr_sc = strrep(cur_attr_sc,'_dash_','-');
                       cur_attr_sc = strrep(cur_attr_sc,'_colon_',':');
                       cur_attr_sc = strrep(cur_attr_sc,'_dot_','.');
-                      
                       [cur_str,succes] = val2str(s.Attributes.(cur_attr));
                       if (succes)
                           curNode.setAttribute(cur_attr_sc,cur_str);
@@ -140,7 +136,7 @@ size(s)
               end
           else
               %Sub-element
-              if (isstruct(s.(curfield)))                                                           % problem here, struct array - iss struct or user another formulation to bypass
+              if (isstruct(s.(curfield)))
                   %single element
                   curElement = docNode.createElement(curfield_sc);
                   curNode.appendChild(curElement);
@@ -150,7 +146,7 @@ size(s)
                   for c = 1:length(s.(curfield))
                       curElement = docNode.createElement(curfield_sc);
                       curNode.appendChild(curElement);
-                      if (isstruct(s.(curfield){c}))                                                  %recursion call here
+                      if (isstruct(s.(curfield){c}))
                           parseStruct(s.(curfield){c},docNode,curElement,[pName curfield '{' num2str(c) '}.'])
                       else
                           disp(['Warning. The cell ' pName curfield '{' num2str(c) '} could not be processed, since it contains no structure.']);
@@ -159,6 +155,8 @@ size(s)
               else
                   %eventhough the fieldname is not text, the field could
                   %contain text. Create a new element and use this text
+
+                  
                   curElement = docNode.createElement(curfield_sc);
                   curNode.appendChild(curElement);
                   [txt,succes] = val2str(s.(curfield));
@@ -174,22 +172,13 @@ end
 
 %----- Subfunction val2str -----
 function [str,succes] = val2str(val)
-    
     succes = true;
     str = [];
     
     if (isempty(val))
         return; %bugfix from H. Gsenger
-    elseif (ischar(val))
-        %do nothing
-    elseif (isnumeric(val))
-        val = num2str(val);
-    else
-        succes = false;
-    end
-    
-    if (ischar(val))
-        %add line breaks to all lines except the last (for multiline strings)
+    elseif (ischar(val)) #bugfix from M. Ehresmann
+         %add line breaks to all lines except the last (for multiline strings)
         lines = size(val,1);
         val = [val char(sprintf('\n')*[ones(lines-1,1);0])];
         
@@ -207,6 +196,12 @@ function [str,succes] = val2str(val)
         else
             str = valt(:);
         end
+        str=str';              #bugfix from M. Ehresmann
+    elseif (isnumeric(val))
+        str = num2str(val);   #bugfix from M. Ehresmann
+        
+    else
+        succes = false;
     end
 end
 
