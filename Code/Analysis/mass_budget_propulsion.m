@@ -1,4 +1,6 @@
 function [mass_propulsion] = mass_budget_propulsion(data)
+  %generates masses of the implemented system and calculates the mass total
+  
   mass_propulsion = struct();
 
   mass_propulsion.propellant = m_scale_propellant(data.mass, data.dv, data.c_e);
@@ -10,11 +12,10 @@ function [mass_propulsion] = mass_budget_propulsion(data)
   
   % in the end goes to mass scale power system
   mass_propulsion.PV         = m_scale_PV(data.power_propulsion);
-  
+
   mass_total=0;
-  % todo: add total mass
-  for i=1:numel(mass_propulsion)
-      mass_total= mass_total+mass_propulsion.(fieldnames(mass_propulsion){i}); 
+  for i=1:  numel(fieldnames(mass_propulsion))
+      mass_total= mass_total+mass_propulsion.(fieldnames(mass_propulsion){i});
   end
   mass_propulsion.total=mass_total;
 
