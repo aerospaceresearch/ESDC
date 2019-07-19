@@ -31,11 +31,11 @@
 		<animate_and_save>
 			<active>true</active>
 			<fps>2</fps>
-			<animation_order>by_generation</animation_order>
+			<animation_order>by_lineage</animation_order>
 		</animate_and_save>
 		
 		<lineages>
-			<indexes>{"1:end"}</indexes>
+			<indexes>{"1:5"}</indexes>
 			<sorting_dof>{"mass_fractions", "total"}</sorting_dof>
 			<sorting_direction>increasing</sorting_direction>
 		</lineages>
