@@ -29,6 +29,9 @@ t_2=now;
 
 evolution_time(t_1,t_2)
 
+%Create and Save Visualizations
+visualization(evolution_data, input, db_data, config);
+
 %Preprocessing Results
 disp('Starting Output Preprocessing ...');
 disp(' ');
