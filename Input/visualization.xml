@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<plots>
+
+	<plot_case>
+		<active>true</active>
+		<type>3d</type>
+		<input_cases>[1]</input_cases>
+		
+		<save>
+			<filename>
+				<input_case_number>
+					<active>true</active>
+				</input_case_number>
+				
+				<input_case_info>
+					<active>true</active>
+					<fields>{"totalimpulse", "deltav"}</fields>
+				</input_case_info>
+			</filename>
+			
+			<image>
+				<active>true</active>
+				<formats>{"png", "jpg"}</formats>
+			</image>
+			
+			<octave_figure>
+				<active>true</active>
+			</octave_figure>
+		</save>
+		
+		<animate_and_save>
+			<active>true</active>
+			<fps>2</fps>
+			<animation_order>by_lineage</animation_order>
+		</animate_and_save>
+		
+		<lineages>
+			<indexes>{"1:5"}</indexes>
+			<sorting_dof>{"mass_fractions", "total"}</sorting_dof>
+			<sorting_direction>increasing</sorting_direction>
+		</lineages>
+		
+		<appearance>
+			<view>[30, 60]</view>
+			
+			<custom_limits>
+				<active>false</active>
+				<xlim>[-100, 100]</xlim>
+				<ylim>[-100, 100]</ylim>
+				<zlim>[-100, 100]</zlim>
+			</custom_limits>
+			
+			<title>
+				<active>true</active>
+				<name>Propulsion Unit Optimization</name>
+				<fontsize>14</fontsize>
+			</title>
+			
+			<labels>
+				<active>true</active>
+				<fontsize>12</fontsize>
+			</labels>
+			
+			<legend>
+				<active>true</active>
+				<fontsize>9</fontsize>
+			</legend>
+			
+			<custom_display_names>
+				<x>
+					<active>true</active>
+					<name>Effective Exhaust Velocity [m/s]</name>
+				</x>
+				
+				<y>
+					<active>true</active>
+					<name>Thrust [N]</name>
+				</y>
+				
+				<z>
+					<active>true</active>
+					<name>Total Mass Fraction [-]</name>
+				</z>
+				
+				<line_type>
+					<active>true</active>
+					<name>{"Arc Jet", "Grid Ion Thruster"}</name>
+				</line_type>
+				
+				<line_color>
+					<active>true</active>
+					<name>Hypothetical Continuous DoF 1</name>
+				</line_color>
+				
+				<marker_type>
+					<active>true</active>
+					<name>{"He", "Xe", "NH3"}</name>
+				</marker_type>
+				
+				<marker_color>
+					<active>true</active>
+					<name>Hypothetical Continuous DoF 2</name>
+				</marker_color>
+			</custom_display_names>
+			
+		</appearance>
+		
+		<x>
+			<active>true</active>
+			<dof>{"c_e"}</dof>
+			<type>continuous</type>
+		</x>
+		
+		<y>
+			<active>true</active>
+			<dof>{"thrust"}</dof>
+			<type>continuous</type>
+		</y>
+		
+		<z>
+			<active>true</active>
+			<dof>{"mass_fractions", "total"}</dof>
+			<type>continuous</type>
+		</z>
+		
+		<line_type>
+			<active>true</active>
+			<dof>{"propulsion_system"}</dof>
+			<type>discrete</type>
+			<dof_values>{"arcjet", "gridionthruster"}</dof_values>
+			<plot_values>{"-", "--"}</plot_values>
+			<default_plot_value>-</default_plot_value>
+		</line_type>
+		
+		<line_color>
+			<active>true</active>
+			<dof>{"c_e"}</dof>
+			<type>continuous</type>
+			<plot_values>{"jet"}</plot_values>
+			<default_plot_value>[0, 0, 0]</default_plot_value>
+		</line_color>
+		
+		<marker_type>
+			<active>true</active>
+			<dof>{"propellant"}</dof>
+			<type>discrete</type>
+			<dof_values>{"He", "Xe", "NH3"}</dof_values>
+			<plot_values>{"+", "o", "*"}</plot_values>
+			<default_plot_value>o</default_plot_value>
+		</marker_type>
+		
+		<marker_color>
+			<active>true</active>
+			<dof>{"thrust"}</dof>
+			<type>continuous</type>
+			<plot_values>{"jet"}</plot_values>
+			<default_plot_value>[0, 0, 0]</default_plot_value>
+		</marker_color>
+		
+		<seed_points>
+			<active>active</active>
+			<sizedata>172</sizedata>
+		</seed_points>
+		
+		<failed_mutations>
+			<active>false</active>
+			
+			<custom_plot_values>
+				<line_type>
+					<active>true</active>
+					<custom_plot_value>:</custom_plot_value>
+				</line_type>
+				
+				<line_color>
+					<active>true</active>
+					<custom_plot_value>r</custom_plot_value>
+				</line_color>
+				
+				<marker_type>
+					<active>true</active>
+					<custom_plot_value>d</custom_plot_value>
+				</marker_type>
+				
+				<marker_color>
+					<active>true</active>
+					<custom_plot_value>r</custom_plot_value>
+				</marker_color>
+			</custom_plot_values>
+		</failed_mutations>
+	
+	</plot_case>
+	
+	
+	
+	
+	
+	<plot_case>
+		<active>false</active>
+		<type>2d</type>
+		<input_cases>[1]</input_cases>
+		
+		<save>
+			<filename>
+				<input_case_number>
+					<active>true</active>
+				</input_case_number>
+				
+				<input_case_info>
+					<active>true</active>
+					<fields>{"totalimpulse", "deltav"}</fields>
+				</input_case_info>
+			</filename>
+			
+			<image>
+				<active>true</active>
+				<formats>{"png", "jpg"}</formats>
+			</image>
+			
+			<octave_figure>
+				<active>true</active>
+			</octave_figure>
+		</save>
+		
+		<animate_and_save>
+			<active>true</active>
+			<fps>2</fps>
+			<animation_order>by_generation</animation_order>
+		</animate_and_save>
+		
+		<lineages>
+			<indexes>{"1:end"}</indexes>
+			<sorting_dof>{"mass_fractions", "total"}</sorting_dof>
+			<sorting_direction>increasing</sorting_direction>
+		</lineages>
+		
+		<appearance>
+			<custom_limits>
+				<active>false</active>
+				<xlim>[-100, 100]</xlim>
+				<ylim>[-100, 100]</ylim>
+			</custom_limits>
+			
+			<title>
+				<active>true</active>
+				<name>Propulsion Unit Optimization</name>
+				<fontsize>14</fontsize>
+			</title>
+			
+			<labels>
+				<active>true</active>
+				<fontsize>12</fontsize>
+			</labels>
+			
+			<legend>
+				<active>true</active>
+				<fontsize>9</fontsize>
+			</legend>
+			
+			<custom_display_names>
+				<x>
+					<active>true</active>
+					<name>Generation [-]</name>
+				</x>
+				
+				<y>
+					<active>true</active>
+					<name>Total Mass Fraction [-]</name>
+				</y>
+				
+				<line_type>
+					<active>true</active>
+					<name>{"Arc Jet", "Grid Ion Thruster"}</name>
+				</line_type>
+				
+				<line_color>
+					<active>true</active>
+					<name>Effective Exhaust Velocity [m/s]</name>
+				</line_color>
+				
+				<marker_type>
+					<active>true</active>
+					<name>{"He", "Xe", "NH3"}</name>
+				</marker_type>
+				
+				<marker_color>
+					<active>true</active>
+					<name>Thrust [N]</name>
+				</marker_color>
+			</custom_display_names>
+			
+		</appearance>
+
+		<y>
+			<active>true</active>
+			<dof>{"mass_fractions", "total"}</dof>
+			<type>continuous</type>
+		</y>
+		
+		<line_type>
+			<active>true</active>
+			<dof>{"propulsion_system"}</dof>
+			<type>discrete</type>
+			<dof_values>{"arcjet", "gridionthruster"}</dof_values>
+			<plot_values>{"-", "--"}</plot_values>
+			<default_plot_value>-</default_plot_value>
+		</line_type>
+		
+		<line_color>
+			<active>true</active>
+			<dof>{"c_e"}</dof>
+			<type>continuous</type>
+			<plot_values>{"jet"}</plot_values>
+			<default_plot_value>[0, 0, 0]</default_plot_value>
+		</line_color>
+		
+		<marker_type>
+			<active>true</active>
+			<dof>{"propellant"}</dof>
+			<type>discrete</type>
+			<dof_values>{"He", "Xe", "NH3"}</dof_values>
+			<plot_values>{"+", "o", "*"}</plot_values>
+			<default_plot_value>o</default_plot_value>
+		</marker_type>
+		
+		<marker_color>
+			<active>true</active>
+			<dof>{"thrust"}</dof>
+			<type>continuous</type>
+			<plot_values>{"jet"}</plot_values>
+			<default_plot_value>[0, 0, 0]</default_plot_value>
+		</marker_color>
+		
+		<seed_points>
+			<active>active</active>
+			<sizedata>108</sizedata>
+		</seed_points>
+		
+		<failed_mutations>
+			<active>false</active>
+			
+			<custom_plot_values>
+				<line_type>
+					<active>true</active>
+					<custom_plot_value>:</custom_plot_value>
+				</line_type>
+				
+				<line_color>
+					<active>true</active>
+					<custom_plot_value>r</custom_plot_value>
+				</line_color>
+				
+				<marker_type>
+					<active>false</active>
+					<custom_plot_value>d</custom_plot_value>
+				</marker_type>
+				
+				<marker_color>
+					<active>true</active>
+					<custom_plot_value>r</custom_plot_value>
+				</marker_color>
+			</custom_plot_values>
+		</failed_mutations>
+	
+	</plot_case>
+
+</plots>
