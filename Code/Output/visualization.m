@@ -633,14 +633,6 @@ function input_cases = get_input_cases(plot_case)
   input_cases = plot_case.input_cases;
 end
 
-function num_dofs = get_number_of_dofs_2d(plot_case, n_y_axis)
-  if n_y_axis == 1
-    num_dofs = numel(plot_case.y1.dofs.dof);
-  elseif n_y_axis == 2
-    num_dofs = numel(plot_case.y2.dofs.dof);
-  end
-end
-
 function dof_string = get_dof_string(dof)
   dof_string = strjoin(dof, ".");
 end
