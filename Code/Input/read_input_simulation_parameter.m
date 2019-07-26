@@ -4,5 +4,6 @@ function [simulation_parameters] = read_input_simulation_parameter()
  simulation_parameters = typeset_struct(simulation_parameters);
  disp('Success');
  disp(' ');
+ fflush(stdout);
 end
 

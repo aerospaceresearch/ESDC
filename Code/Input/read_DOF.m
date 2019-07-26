@@ -5,4 +5,5 @@ DOF_parameters = xml2struct('Database/model_DOF.xml');
 DOF = typeset_struct(DOF_parameters);
 disp('Success');
 disp(' ');
+fflush(stdout);
 end
