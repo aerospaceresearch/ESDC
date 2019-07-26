@@ -2,13 +2,11 @@
 <Satellite_parameters>
 	<input_case>
 		<totalmass>155</totalmass>
-		<totalimpulse>112670</totalimpulse>
 		<deltav>685.97</deltav>
 		<P_propulsion>202.9</P_propulsion>
 	</input_case>
 	<input_case>
 		<totalmass>155</totalmass>
-		<totalimpulse>89820</totalimpulse>
 		<deltav>526.25</deltav>
 		<P_propulsion>202.9</P_propulsion>	
 	</input_case>

@@ -14,7 +14,7 @@
 				
 				<input_case_info>
 					<active>true</active>
-					<fields>{"totalimpulse", "deltav"}</fields>
+					<fields>{"deltav"}</fields>
 				</input_case_info>
 			</filename>
 			

@@ -4,4 +4,5 @@ database = xml2struct('Database/ESDC_Reference_Data.xml');
 database= typeset_struct(database);
 disp('Success');
 disp(' ');
+fflush(stdout);
 end 
