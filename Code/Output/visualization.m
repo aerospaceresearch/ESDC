@@ -44,12 +44,13 @@ function [] = visualize_input_case(evolution_data, input, plot_case, n_plot_case
   clf (fig)
   hold on
   
+  plot_case = set_visualization_lineages(evolution_data, plot_case, n_input_case);
   plot_case = add_min_max_values_for_continuous_dofs(plot_case, evolution_data, n_input_case);
   set_visualization_appearance(plot_case)
   
   if strcmp(get_plot_case_type(plot_case), "3d")
       
-    lineages = get_visualization_lineages(evolution_data, plot_case, n_input_case);
+    lineages = get_visualization_lineages(plot_case);
       
     for n_lineage = lineages
         
@@ -72,7 +73,7 @@ function [] = visualize_input_case(evolution_data, input, plot_case, n_plot_case
     
   elseif strcmp(get_plot_case_type(plot_case), "2d")
     
-    lineages = get_visualization_lineages(evolution_data, plot_case, n_input_case);
+    lineages = get_visualization_lineages(plot_case);
     for n_lineage = lineages
       lineage = get_lineage(evolution_data, n_input_case, n_lineage);
       num_gens = numel(lineage);
@@ -509,9 +510,11 @@ function name = get_label_name(plot_case, plot_dof)
   end
 end
 
+function lineages = get_visualization_lineages(plot_case)
+  lineages = plot_case.visualization_lineages;
+ end 
     
-    
-function lineages = get_visualization_lineages(evolution_data, plot_case, n_input_case)
+function plot_case = set_visualization_lineages(evolution_data, plot_case, n_input_case)
   dof = get_sorting_dof(plot_case);  
   dof_values = get_all_dof_values(evolution_data, n_input_case, dof);
   
@@ -527,7 +530,8 @@ function lineages = get_visualization_lineages(evolution_data, plot_case, n_inpu
   sorted_indexes_values = sortrows([lineages_indexes', lineages_values'], sorting_column);
   
   sorted_indexes = sorted_indexes_values(:,1)';
-  lineages = eval(sprintf("sorted_indexes(%s)", get_lineages_indexes(plot_case))); 
+  lineages = eval(sprintf("sorted_indexes(%s)", get_lineages_indexes(plot_case)));
+  plot_case.visualization_lineages = lineages; 
 end
 
 function sorting_dof = get_sorting_dof(plot_case)
@@ -555,7 +559,7 @@ function plot_case = add_min_max_values_for_continuous_dofs(plot_case, evolution
       if is_plot_dof_continuous(plot_case, potentially_continuous_plot_dof)
         continuous_plot_dof = potentially_continuous_plot_dof;
         dof = plot_case.(continuous_plot_dof).dof;
-        [min_value, max_value] = get_min_max_dof_value(evolution_data, n_input_case, dof);
+        [min_value, max_value] = get_visualization_min_max_dof_value(plot_case, evolution_data, n_input_case, dof);
         plot_case.(potentially_continuous_plot_dof).min_value = min_value;
         plot_case.(potentially_continuous_plot_dof).max_value = max_value;
       end
@@ -587,10 +591,26 @@ function bool = is_plot_dof_active(plot_case, plot_dof)
   bool = plot_case.(plot_dof).active;
 end
 
-function [min_value, max_value] = get_min_max_dof_value(evolution_data, n_input_case, dof)
-  dof_values = get_all_dof_values(evolution_data, n_input_case, dof);
-  min_value = min(min(dof_values));
-  max_value = max(max(dof_values));
+function [min_value, max_value] = get_visualization_min_max_dof_value(plot_case, evolution_data, n_input_case, dof)
+  lineages = get_visualization_lineages(plot_case);
+  lineage_idx = 0;
+  for n_lineage = lineages
+    lineage = get_lineage(evolution_data, n_input_case, n_lineage);
+    lineage_idx = lineage_idx + 1;
+    num_gens = numel(lineage);
+    gen_idx = 0;
+    dof_values = [];
+    for n_gen = 1:num_gens
+      if is_mutation_successful(lineage, n_gen) || are_failed_mutations_active(plot_case)
+        gen_idx = gen_idx + 1;
+        dof_values(gen_idx) = get_dof_value(lineage, n_gen, dof);
+      end
+    end
+    min_values(lineage_idx) = min(dof_values);
+    max_values(lineage_idx) = max(dof_values);
+  end
+  min_value = min(min_values);
+  max_value = max(max_values);
 end
 
 function dof_values = get_all_dof_values(evolution_data, n_input_case, dof)
