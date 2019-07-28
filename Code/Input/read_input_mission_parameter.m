@@ -5,4 +5,5 @@ mission_parameters = xml2struct('Input/ESDC_Input.xml');
 mission_parameters = typeset_struct(mission_parameters);
 disp('Success');
 disp(' ');
+fflush(stdout);
 end

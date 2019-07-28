@@ -10,7 +10,6 @@ function [mission_parameters database  simulation_parameters]= input_processing(
     % Simulation Parameters
     [simulation_parameters] = read_input_simulation_parameter();
     
-    
     disp(' ')
     disp('Input Reading complete')
     disp(' ')
