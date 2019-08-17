@@ -30,12 +30,13 @@
 		
 		<animate_and_save>
 			<active>true</active>
+			<compression>true</compression>
 			<fps>2</fps>
 			<animation_order>by_lineage</animation_order>
 		</animate_and_save>
 		
 		<lineages>
-			<indexes>{"1:5"}</indexes>
+			<indexes>{"4"}</indexes>
 			<sorting_dof>{"mass_fractions", "total"}</sorting_dof>
 			<sorting_direction>increasing</sorting_direction>
 		</lineages>
@@ -157,6 +158,14 @@
 			<default_plot_value>[0, 0, 0]</default_plot_value>
 		</marker_color>
 		
+		<subsystems_bars>
+			<active>true</active>
+			<container_field>mass_fractions</container_field>
+			<line_type>-</line_type>
+			<line_colors_colormap>{"lines"}</line_colors_colormap>
+			<line_width>30</line_width>
+		</subsystems_bars>
+		
 		<seed_points>
 			<active>active</active>
 			<sizedata>172</sizedata>
@@ -223,12 +232,13 @@
 		
 		<animate_and_save>
 			<active>true</active>
+			<compression>true</compression>
 			<fps>2</fps>
-			<animation_order>by_generation</animation_order>
+			<animation_order>by_lineage</animation_order>
 		</animate_and_save>
 		
 		<lineages>
-			<indexes>{"1:end"}</indexes>
+			<indexes>{"1"}</indexes>
 			<sorting_dof>{"mass_fractions", "total"}</sorting_dof>
 			<sorting_direction>increasing</sorting_direction>
 		</lineages>
@@ -329,6 +339,14 @@
 			<plot_values>{"jet"}</plot_values>
 			<default_plot_value>[0, 0, 0]</default_plot_value>
 		</marker_color>
+		
+		<subsystems_bars>
+			<active>true</active>
+			<container_field>mass_fractions</container_field>
+			<line_type>-</line_type>
+			<line_colors_colormap>{"lines"}</line_colors_colormap>
+			<line_width>3</line_width>
+		</subsystems_bars>
 		
 		<seed_points>
 			<active>active</active>
