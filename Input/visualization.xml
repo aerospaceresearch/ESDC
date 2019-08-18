@@ -124,6 +124,8 @@
 			<type>continuous</type>
 		</z>
 		
+		<plot_line_active>false</plot_line_active>
+		
 		<line_type>
 			<active>true</active>
 			<dof>{"propulsion_system"}</dof>
@@ -163,7 +165,7 @@
 			<container_field>mass_fractions</container_field>
 			<line_type>-</line_type>
 			<line_colors_colormap>{"lines"}</line_colors_colormap>
-			<line_width>30</line_width>
+			<line_width>3</line_width>
 		</subsystems_bars>
 		
 		<seed_points>
@@ -305,6 +307,8 @@
 			<dof>{"mass_fractions", "total"}</dof>
 			<type>continuous</type>
 		</y>
+		
+		<plot_line_active>true</plot_line_active>
 		
 		<line_type>
 			<active>true</active>

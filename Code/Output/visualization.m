@@ -864,10 +864,12 @@ function graphics_handles_seed_point = plot_seed_point_2d(plot_case, lineage, n_
 end
 
 function graphics_handles_n_gen = plot_generation_3d(plot_case, lineage, n_gen)  
-  [x_plt3, y_plt3, z_plt3, line_type, line_color] = get_plot3_data(plot_case, lineage, n_gen);
   graphics_handles_n_gen = {};
-  graphic_handle = plot3(x_plt3, y_plt3, z_plt3, "linestyle", line_type, "color", line_color);
-  graphics_handles_n_gen = [graphics_handles_n_gen, graphic_handle];
+  if is_plot_line_active(plot_case)
+    [x_plt3, y_plt3, z_plt3, line_type, line_color] = get_plot3_data(plot_case, lineage, n_gen);
+    graphic_handle = plot3(x_plt3, y_plt3, z_plt3, "linestyle", line_type, "color", line_color);
+    graphics_handles_n_gen = [graphics_handles_n_gen, graphic_handle];
+  end
   if is_scatter_active(plot_case)
     [x_sctr3, y_sctr3, z_sctr3, marker_type, marker_color] = get_scatter3_data(plot_case, lineage, n_gen);
     graphic_handle = scatter3(x_sctr3, y_sctr3, z_sctr3, "marker", marker_type, "markeredgecolor", marker_color);
@@ -880,10 +882,12 @@ function graphics_handles_n_gen = plot_generation_3d(plot_case, lineage, n_gen)
 end
 
 function graphics_handles_n_gen = plot_generation_2d(plot_case, lineage, n_gen)
-  [x_plt, y_plt, line_type, line_color] = get_plot_data(plot_case, lineage, n_gen);
   graphics_handles_n_gen = {};
-  graphic_handle = plot(x_plt, y_plt, "linestyle", line_type, "color", line_color);
-  graphics_handles_n_gen = [graphics_handles_n_gen, graphic_handle];
+  if is_plot_line_active(plot_case)
+    [x_plt, y_plt, line_type, line_color] = get_plot_data(plot_case, lineage, n_gen);
+    graphic_handle = plot(x_plt, y_plt, "linestyle", line_type, "color", line_color);
+    graphics_handles_n_gen = [graphics_handles_n_gen, graphic_handle];
+  end
   if is_scatter_active(plot_case)
     [x_sctr, y_sctr, marker_type, marker_color] = get_scatter_data(plot_case, lineage, n_gen);
     graphic_handle = scatter(x_sctr, y_sctr, "marker", marker_type, "markeredgecolor", marker_color);
@@ -893,6 +897,10 @@ function graphics_handles_n_gen = plot_generation_2d(plot_case, lineage, n_gen)
     graphics_handles = plot_bar_2d(plot_case, lineage, n_gen);
     graphics_handles_n_gen = [graphics_handles_n_gen, graphics_handles];
   end
+end
+
+function bool = is_plot_line_active(plot_case)
+  bool = plot_case.plot_line_active;
 end
 
 function bool = are_subsystems_bars_active(plot_case)
