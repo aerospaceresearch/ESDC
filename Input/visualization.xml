@@ -124,7 +124,7 @@
 			<type>continuous</type>
 		</z>
 		
-		<plot_line_active>false</plot_line_active>
+		<plot_line_active>true</plot_line_active>
 		
 		<line_type>
 			<active>true</active>

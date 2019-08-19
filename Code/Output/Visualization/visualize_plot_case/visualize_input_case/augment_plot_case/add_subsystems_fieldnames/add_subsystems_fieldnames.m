@@ -1,4 +1,4 @@
-function plot_case = set_subsystems_fieldnames(plot_case, evolution_data, n_input_case)
+function plot_case = add_subsystems_fieldnames(plot_case, evolution_data, n_input_case)
   container_field = get_container_field(plot_case);
   n_gen = 1;
   n_lineage = 1;

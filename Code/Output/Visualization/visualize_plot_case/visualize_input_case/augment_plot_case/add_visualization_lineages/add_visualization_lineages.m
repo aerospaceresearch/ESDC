@@ -1,4 +1,4 @@
-function plot_case = set_visualization_lineages(evolution_data, plot_case, n_input_case)
+function plot_case = add_visualization_lineages(evolution_data, plot_case, n_input_case)
   dof = get_sorting_dof(plot_case);  
   dof_values = get_all_dof_values(evolution_data, n_input_case, dof);
   
