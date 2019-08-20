@@ -7,6 +7,7 @@ addpath('Code/Input');
 addpath('Code/Output');
 addpath('Code/Scaling');
 addpath('Code/Support');
+add_paths_for_visualization();
 
 clc;
 
