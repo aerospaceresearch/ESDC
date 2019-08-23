@@ -1,6 +1,5 @@
-
 function [m_Thruster_out] = m_scale_thruster(P_thruster, type)
-
+t_1=now;
 m_0_set = [];
 slope_set = [];
 
@@ -51,4 +50,6 @@ for i=1:size(P_thruster,2)
     end
 end
     m_Thruster_out = m_0_set + slope_set.*P_thruster;
+    
+    
 end
