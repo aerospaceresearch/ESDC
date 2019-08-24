@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<plots>
+
+	<plot_case> Contains subfields that specify the settings for one visualization. The XML file can contain any number of plot cases.
+		<active> Must be set to true or false, indicating whether the plot case will be executed by the visualization system. </active>
+		<type> Must be set to 2d or 3d, indicating the type of visualization that will be produced. </type>
+		<input_cases> Must be set to a vector (ex. [1], [2], [1, 3, 4]) containing the input case(s) for which the plot case be executed. </input_cases>
+		
+		<save> Contains subfields that specify options for saving the visualizations as images and/or octave figures.
+			<filename> Contains subfields that specify options for the filename of the saved images/octave figures.
+				<input_case_number> Contains subfields that specify options to include input case number in the filename.
+					<active> Must be set to true or false, indicating whether the input case number will be included in the filename. </active>
+				</input_case_number>
+				
+				<input_case_info> Contains subfields that specify options to include input case info/mission requirements in the filename.
+					<active> Must be set to true or false, indicating whether input case info/mission requirements will be included in the filename. </active>
+					<fields> Must be set to a string cell array (ex. {“deltav”}, {“deltav”, “totalmass”}) containing input case info/mission requirements fields that will be included in the filename. </fields>
+				</input_case_info>
+			</filename>
+			
+			<image> Contains subfields that specify options for saving the visualizations as images.
+				<active> Must be set to true or false, indicating whether the visualizations will be saved as images. </active>
+				<formats> Must be set to a cell array (ex. {“png”}, {“png”, “jpg”}) containing the file format(s) in which the visualizations will be saved. The valid file formats are: ps, eps, jpg, png, emf, pdf. </formats>
+			</image>
+			
+			<octave_figure> Contains subfields that specify options for saving the visualizations as octave figures.
+				<active> Must be set to true or false, indicating whether the visualizations will be saved as octave figures. </active>
+			</octave_figure>
+		</save>
+		
+		<animate_and_save> Contains subfields that specify options for generating and saving animations of the visualizations.
+			<active> Must be set to true of false, indicating whether the visualizations will be animated and saved as gif animations. </active>
+			<compression> Must be set to true or false, indicating whether the gif files will be compressed. </compression>
+			<fps> Must be set to a number (ex. 5, 24) corresponding to the animations’ frames per second. </fps>
+			<animation_order> Must be set to by_lineage or by_generation, indicating the way in which the visualizations will be animated. Check the second blog post for a comparison between these two. </animation_order>
+		</animate_and_save>
+		
+		<lineages> Contains that specify options for selecting which lineages will participate in the visualization.
+			<indexes> Must be set to a string cell array (ex. {“1”}, {“1:3”}, {“1:end”}, {“2:7”}) that specifies a valid indexing, indicated which of the sorted lineages will participate in the visualization. </indexes>
+			<sorting_dof> Must be set to a string cell array {ex. {“thrust”}, {“mass_fractions”, “total”}) that specifies the field of the evolution data structure, according to which the lineages will be sorted. If the desired field is nested inside of another field (ex. mass_fractions.total), first the outer field and then the nested field should be provided (ex. {“mass_fractions”, “total”}). </sorting_dof>
+			<sorting_direction> Must be set to increasing or decreasing, indicating the direction of shorting (small to large value or large to small value). </sorting_direction>
+		</lineages>
+		
+		<appearance> Contains subfields that specify options for the appearance and annotation of the visualizations.
+			<view> Must be set to a vector (ex. [30, 60]) corresponding to [azimuth, elevation] of the viewpoint for 3d visualizations. </view>
+			
+			<custom_limits> Contains subfields that specify options for applying custom axis limits to the visualizations.
+				<active> Must be set to true or false, indicating whether the custom axis limits will be applied. </active>
+				<xlim> Must be set to a vector (ex. [-100, 90]) corresponding to the lower and upper limits of x-axis. </xlim>
+				<ylim> Must be set to a vector (ex. [-100, 90]) corresponding to the lower and upper limits of y-axis. </ylim>
+				<zlim> Must be set to a vector (ex. [-100, 90]) corresponding to the lower and upper limits of z-axis. </zlim>
+			</custom_limits>
+			
+			<title> Contains subfields specifying options for adding a title to the visualizations.
+				<active> Must be set to true or false, indicating whether a title will be added on the visualizations. </active>
+				<name> Must be set to a text (ex. Propulsion Unit Optimization) corresponding to the title that will be added to the visualizations. </name>
+				<fontsize> Must be set to a number (ex. 14) corresponding to the font size of the title. </fontsize>
+			</title>
+			
+			<labels> Contains subfields specifying options for adding labels to the visualization's axes.
+				<active> Must be set to true or false, indicating whether there will be labels added to the axes. </active>
+				<fontsize> Must be set to a number (ex. 12) corresponding to the font size of the labels. </fontsize>
+			</labels>
+			
+			<legend> Contains subfields specifying options for adding a legend to the visualizations.
+				<active> Must be set to true or false, indicating whether a legend will be applied to the visualizations. </active>
+				<fontsize> Must be set to a number (ex. 9) corresponding to the font size of the legend. </fontsize>
+			</legend>
+			
+			<custom_display_names> Contains subfields specifying options for defining custom names for the used system’s degrees-of-freedom that will be displayed on the legend and the labels.
+				<x> Contains subfields specifying options for defining a custom name for the system’s degree-of-freedom that has been assigned to x-axis.
+					<active> Must be set to true or false, indicating whether a custom name will be used. </active>
+					<name> Must be set to a text (ex. Effective Exhaust Velocity / m/s) corresponding to the custom name that will be used. </name>
+				</x>
+				
+				<y> Contains subfields specifying options for defining a custom name for the system’s degree-of-freedom that has been assigned to y-axis.
+					<active> Must be set to true or false, indicating whether a custom name will be used. </active>
+					<name> Must be set to a text (ex. Effective Exhaust Velocity / m/s) corresponding to the custom name that will be used. </name>
+				</y>
+				
+				<z> Contains subfields specifying options for defining a custom name for the system’s degree-of-freedom that has been assigned to z-axis.
+					<active> Must be set to true or false, indicating whether a custom name will be used. </active>
+					<name> Must be set to a text (ex. Effective Exhaust Velocity / m/s) corresponding to the custom name that will be used. </name>
+				</z>
+				
+				<line_type> Contains subfields specifying options for defining a custom name for the system’s degree-of-freedom that has been assigned to line style.
+					<active> Must be set to true or false, indicating whether a custom name will be used. </active>
+					<name>Must be set to a string cell (ex. {“Arc Jet”, “Grid Ion Thruster”}) corresponding to the custom names that will be used. The number of the strings must be equal to the number of the possible values of the corresponding system’s degree-of-freedom that has been assigned to line style. The order of the strings must correspond to the order of <dof_values> and <plot_values> of the corresponding system’s degree-of-freedom that has been assigned to line style. </name>
+				</line_type>
+				
+				<line_color> Contains subfields specifying options for defining a custom name for the system’s degree-of-freedom that has been assigned to line color.
+					<active> Must be set to true or false, indicating whether a custom name will be used. </active>
+					<name> Must be set to a text (ex. Effective Exhaust Velocity / m/s) corresponding to the custom name that will be used. </name>
+				</line_color>
+				
+				<marker_type> Contains subfields specifying options for defining a custom name for the system’s degree-of-freedom that has been assigned to marker.
+					<active> Must be set to true or false, indicating whether a custom name will be used. </active>
+					<name>Must be set to a string cell (ex. {“Arc Jet”, “Grid Ion Thruster”}) corresponding to the custom names that will be used. The number of the strings must be equal to the number of the possible values of the corresponding system’s degree-of-freedom that has been assigned to line style. The order of the strings must correspond to the order of <dof_values> and <plot_values> of the corresponding system’s degree-of-freedom that has been assigned to marker. </name>
+				</marker_type>
+				
+				<marker_color> Contains subfields specifying options for defining a custom name for the system’s degree-of-freedom that has been assigned to marker color.
+					<active> Must be set to true or false, indicating whether a custom name will be used. </active>
+					<name> Must be set to a text (ex. Effective Exhaust Velocity / m/s) corresponding to the custom name that will be used. </name>
+				</marker_color>
+			</custom_display_names>
+			
+		</appearance>
+		
+		<x> Contains subfields specifying options for assigning a system’s degree-of-freedom to x-axis.
+			<active> Must be always set to true for the 3d visualizations, indicating that the x-axis will be activated for the visualizations. </active>
+			<dof> Must be set to a string cell array {ex. {“thrust”}, {“mass_fractions”, “total”}) that specifies the field of the evolution data structure (the system’s degree-of-freedom) that will be assigned to x-axis. If the desired field is nested inside of another field (ex. mass_fractions.total), first the outer field and then the nested field should be provided (ex. {“mass_fractions”, “total”}). </dof>
+			<type> Must be always set to continuous, indicating that the degree-of-freedom that has been assigned to x-axis is continuous. </type>
+		</x>
+		
+		<y> Contains subfields specifying options for assigning a system’s degree-of-freedom to y-axis.
+			<active> Must be always set to true for the 3d visualizations, indicating that the y-axis will be activated for the visualizations. </active>
+			<dof> Must be set to a string cell array {ex. {“thrust”}, {“mass_fractions”, “total”}) that specifies the field of the evolution data structure (the system’s degree-of-freedom) that will be assigned to y-axis. If the desired field is nested inside of another field (ex. mass_fractions.total), first the outer field and then the nested field should be provided (ex. {“mass_fractions”, “total”}). </dof>
+			<type> Must be always set to continuous, indicating that the degree-of-freedom that has been assigned to y-axis is continuous. </type>
+		</y>
+		
+		<z> Contains subfields specifying options for assigning a system’s degree-of-freedom to z-axis.
+			<active> Must be always set to true for the 3d visualizations, indicating that the z-axis will be activated for the visualization. </active>
+			<dof> Must be set to a string cell array {ex. {“thrust”}, {“mass_fractions”, “total”}) that specifies the field of the evolution data structure (the system’s degree-of-freedom) that will be assigned to z-axis. If the desired field is nested inside of another field (ex. mass_fractions.total), first the outer field and then the nested field should be provided (ex. {“mass_fractions”, “total”}). </dof>
+			<type> Must be always set to continuous, indicating that the degree-of-freedom that has been assigned to z-axis is continuous. </type>
+		</z>
+		
+		<plot_line_active> Must be set to true or false, indicating whether a connecting line between the consecutive generations of each lineage will be visualized. </plot_line_active>
+		
+		<line_type> Contains subfields specifying options for assigning a system’s degree-of-freedom to line style.
+			<active> Must be set to true or false, indicating whether the line style will be activated for the visualizations. </active>
+			<dof> Must be set to a string cell array {ex. {“thrust”}, {“mass_fractions”, “total”}) that specifies the field of the evolution data structure (the system’s degree-of-freedom) that will be assigned to line style. If the desired field is nested inside of another field (ex. mass_fractions.total), first the outer field and then the nested field should be provided (ex. {“mass_fractions”, “total”}). </dof>
+			<type> Must be always set to discrete, indicating that the degree-of-freedom that has been assigned to line style is discrete. </type>
+			<dof_values> Must be set to a string cell (ex. {“arcjet”, “gridionthruster”}) that corresponds to the possible values of the system’s discrete degree-of-freedom that has been assigned to line style. </dof_values>
+			<plot_values> Must be set to a string cell (ex. {“-“, “--"}) corresponding to the line styles that will be used in the visualization. The number of cell’s elements must be equal to the possible values of the system's discrete degree-of-freedom that has been assigned to line style. </plot_values>
+			<default_plot_value> Must be set to a character/string (ex. -, --) that will be used as the default line style when a line needs to be visualized but line style has not been assigned to a degree-of-freedom. </default_plot_value>
+		</line_type>
+		
+		<line_color> Contains subfields specifying options for assigning a system’s degree-of-freedom to line color.
+			<active> Must be set to true or false, indicating whether the line color will be activated for the visualizations. </active>
+			<dof> Must be set to a string cell array {ex. {“thrust”}, {“mass_fractions”, “total”}) that specifies the field of the evolution data structure (the system’s degree-of-freedom) that will be assigned to line color. If the desired field is nested inside of another field (ex. mass_fractions.total), first the outer field and then the nested field should be provided (ex. {“mass_fractions”, “total”}). </dof>
+			<type> Must be always set to continuous, indicating that the degree-of-freedom that has been assigned to line color is continuous. </type>
+			<plot_values> Must be set to a string cell array (ex. {“jet”}) that has only one element which corresponds to the color map that will be used to map each value of the system’s continuous degree-of-freedom that has been assigned to line color, to a color in the visualization. </plot_values>
+			<default_plot_value> Must be set to a vector (ex. [0, 0, 0]) corresponding to [r, g, b] that will be used as the default color when a line needs to be visualized but line color has not been assigned to a degree-of-freedom. </default_plot_value>
+		</line_color>
+		
+		<marker_type> Contains subfields specifying options for assigning a system’s degree-of-freedom to marker.
+			<active> Must be set to true or false, indicating whether the marker will be activated for the visualizations. </active>
+			<dof> Must be set to a string cell array {ex. {“thrust”}, {“mass_fractions”, “total”}) that specifies the field of the evolution data structure (the system’s degree-of-freedom) that will be assigned to marker. If the desired field is nested inside of another field (ex. mass_fractions.total), first the outer field and then the nested field should be provided (ex. {“mass_fractions”, “total”}). </dof>
+			<type> Must be always set to discrete, indicating that the degree-of-freedom that has been assigned to marker is discrete. </type>
+			<dof_values> Must be set to a string cell (ex. {“He”, “Xe”, “NH3”}) that corresponds to the possible values of the system’s discrete degree-of-freedom that has been assigned to marker. </dof_values>
+			<plot_values> Must be set to a string cell (ex. {“+“, “o", "*"}) corresponding to the markers that will be used in the visualization. The number of cell’s elements must be equal to the possible values of the system's discrete degree-of-freedom that has been assigned to marker. </plot_values>
+			<default_plot_value> Must be set to a character (ex. +, o) that will be used as the default marker when a mark needs to be visualized but marker has not been assigned to a degree-of-freedom. </default_plot_value>
+		</marker_type>
+		
+		<marker_color> Contains subfields specifying options for assigning a system’s degree-of-freedom to marker color.
+			<active> Must be set to true or false, indicating whether the marker color will be activated for the visualizations. </active>
+			<dof> Must be set to a string cell array {ex. {“thrust”}, {“mass_fractions”, “total”}) that specifies the field of the evolution data structure (the system’s degree-of-freedom) that will be assigned to marker color. If the desired field is nested inside of another field (ex. mass_fractions.total), first the outer field and then the nested field should be provided (ex. {“mass_fractions”, “total”}). </dof>
+			<type> Must be always set to continuous, indicating that the degree-of-freedom that has been assigned to marker color is continuous. </type>
+			<plot_values> Must be set to a string cell array (ex. {“jet”}) that has only one element which corresponds to the color map that will be used to map each value of the system’s continuous degree-of-freedom that has been assigned to marker color, to a color in the visualization. </plot_values>
+			<default_plot_value> Must be set to a vector (ex. [0, 0, 0]) corresponding to [r, g, b] that will be used as the default color when a mark needs to be visualized but marker color has not been assigned to a degree-of-freedom. </default_plot_value>
+		</marker_color>
+		
+		<subsystems_bars> Contains subfield specifying options for the visualization of stacked bar graphs.
+			<active> Must be set to true or false, indicating whether the stacked bar graphs will be activated for this visualization. </active>
+			<container_field> Must be set to a string (ex. mass_fractions) which corresponds to the evolution data field that contains subfields for each subsystem. </container_field>
+			<line_type> Must be set to a character/string (ex. -, --) which corresponds to a valid line style that will be used for the creation of the stacked bar charts. </line_type>
+			<line_colors_colormap> Must be set to string cell (ex. {“lines”}) that contains only one string which corresponds to a valid color map from which the color for each subsystem will be sampled. </line_colors_colormap>
+			<line_width> Must be set to a number (ex. 3) corresponding to the line width that will be used for the creation of the stacked bar graphs. </line_width>
+		</subsystems_bars>
+		
+		<seed_points> Contains subfields specifying options for the visualization of seed points.
+			<active> Must set to true or false, indicating whether the seed points will have a different appearance to the rest of the design points. </active> 
+			<sizedata> Must be set to a number (ex. 172) corresponding to the scatter size of the seed points. </sizedata>
+		</seed_points>
+		
+		<failed_mutations> Contains subfields specifying options for activating and customizing the visualization of failed mutations.
+			<active> Must be set to true of false, indicating whether the failed mutations will be included in the visualization. </active>
+			
+			<custom_plot_values> Contains subfields for customizing the visualization of failed mutations.
+				<line_type> Contains subfields for customizing the line style of the failed mutations.
+					<active> Must be set to true or false, indicating whether failed mutations will have a different line style. </active>
+					<custom_plot_value> Must be set to a character/string (ex. -, --) which corresponds to a valid custom line style that will be used for the visualization of failed mutations. </custom_plot_value>
+				</line_type>
+				
+				<line_color> Contains subfields for customizing the line color of the failed mutations.
+					<active> Must be set to true or false, indicating whether failed mutations will have a different line color. </active>
+					<custom_plot_value> Must be set to a character or [r, g, b] vector (ex. k, [0, 0, 0]) corresponding to a valid color that will be used as the custom line color for the visualization of failed mutations. </custom_plot_value>
+				</line_color>
+				
+				<marker_type> Contains subfields for customizing the marker of the failed mutations.
+					<active> Must be set to true or false, indicating whether failed mutations will have a different marker. </active>
+					<custom_plot_value> Must be set to a character (ex. +, o) which corresponds to a valid custom marker that will be used for the visualization of failed mutations. </custom_plot_value>
+				</marker_type>
+				
+				<marker_color> Contains subfields for customizing the marker color of the failed mutations.
+					<active> Must be set to true or false, indicating whether failed mutations will have a different marker color. </active>
+					<custom_plot_value> Must be set to a character or [r, g, b] vector (ex. k, [0, 0, 0]) corresponding to a valid color that will be used as the custom marker color for the visualization of failed mutations. </custom_plot_value>
+				</marker_color>
+			</custom_plot_values>
+		</failed_mutations>
+	
+	</plot_case>
+	
+</plots>
