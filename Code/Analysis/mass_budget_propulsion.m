@@ -10,7 +10,7 @@ function [mass_propulsion] = mass_budget_propulsion(data,db_data)
   mass_propulsion.structure  = m_scale_structure(data.propulsion_system);
   
   % in the end goes to mass scale power system
-  mass_propulsion.PV         = m_scale_PV(data.power_propulsion);
+  mass_propulsion.PV         = m_scale_PV(data.power_propulsion, db_data);
 
   mass_total=0;
   for i=1:  numel(fieldnames(mass_propulsion))
