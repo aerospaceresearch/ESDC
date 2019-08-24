@@ -28,6 +28,39 @@
 			</thruster>
 			<thruster>
 					<type>arcjet</type>
+					<name>TALOS</name>
+					<thrust>0.1025</thrust>
+					<c_e>4767.442</c_e>
+					<massflow>21.5e-06</massflow>
+					<efficiency> 0.305414</efficiency>
+					<propellant>NH3</propellant>
+					<structure_mass> 0.94815</structure_mass>
+					<source>IRS arcjet database</source>
+			</thruster>
+			<thruster>
+					<type>arcjet</type>
+					<name>ESEX -flight </name>
+					<thrust>1.93</thrust>
+					<c_e>7710.66</c_e>
+					<massflow>0.000250302827514</massflow>
+					<efficiency> 0.267</efficiency>
+					<propellant>NH3</propellant>
+					<structure_mass> 0.94815</structure_mass>
+					<source>IRS arcjet database</source>
+			</thruster>
+			<thruster>
+					<type>arcjet</type>
+					<name>ESEX -IM</name>
+					<thrust>2</thrust>
+					<c_e>7848</c_e>
+					<massflow>0.000254841997961</massflow>
+					<efficiency> 0.299541984732824</efficiency>
+					<propellant>NH3</propellant>
+					<structure_mass> 0.94815</structure_mass>
+					<source>IRS arcjet database</source>
+			</thruster>
+			<thruster>
+					<type>arcjet</type>
 					<name>Artur He</name>
 					<thrust>0.270</thrust>
 					<c_e>6136.35</c_e>
@@ -97,7 +130,14 @@
 				<efficiency>0.91</efficiency>
 				<source> MR-512, Enyclopedia Astronautica, Webpage, http://www.astronautix.com/m/mr-512.html, last accessed 24.10.2016</source>
 			</ppu>
-	
+			<ppu>
+				<type>arcjet</type>
+				<name>ESEX</name>
+				<power>30000</power>
+				<mass>48.4</mass>
+				<efficiency>0.95</efficiency>
+				<source> https://erps.spacegrant.org/uploads/images/images/iepc_articledownload_1988-2007/1993index/IEPC1993-048.pdf</source>
+			</ppu>
 			<requiredsystems>
 				<system>PPU</system>
 				<system>Structure</system>
@@ -112,16 +152,16 @@
 					<thrust>0.012</thrust>
 					<c_e>23544</c_e>
 					<massflow>0.00000050968399592253</massflow>
-					<mass>8</mass>
+					<mass>1.8</mass>
 					<efficiency>0.35316</efficiency>
 					<propellant>Xe</propellant>
-					<structure_mass>2</structure_mass>
+					<structure_mass>5</structure_mass>
 					<source> Ariane Group - ARCLIGHT
 ELECTRIC PROPULSION SYSTEM DESIGNED FOR SMALL SATELLITES6, http://www.space-propulsion.com/brochures/electric-propulsion/arclight-electric-space-propulsion.pdf</source>
 			</thruster>
 			<thruster>
 					<type>gridionthruster</type>
-					<name>RIT 10 EVO</name>
+					<name>RIT 10 EVO mean</name>
 					<thrust>0.015</thrust>
 					<c_e>29430</c_e>
 					<massflow>0.00000050968399592253</massflow>
@@ -131,9 +171,54 @@ ELECTRIC PROPULSION SYSTEM DESIGNED FOR SMALL SATELLITES6, http://www.space-prop
 					<structure_mass>5</structure_mass>
 					<source> Ariane Group - http://www.space-propulsion.com/spacecraft-propulsion/propulsion-systems/electric-propulsion/images/rit-thruster-family-performance-data.jpg</source>
 			</thruster>
+			<thruster>
+					<type>gridionthruster</type>
+					<name>RIT 10 EVO min</name>
+					<thrust>0.005</thrust>
+					<c_e>18639</c_e>
+					<mass>1.8</mass>
+					<efficiency>0.3213662068</efficiency>
+					<propellant>Xe</propellant>
+					<structure_mass>5</structure_mass>
+					<source> Ariane Group - http://www.space-propulsion.com/spacecraft-propulsion/propulsion-systems/electric-propulsion/images/rit-thruster-family-performance-data.jpg</source>
+			</thruster>
+			<thruster>
+					<type>gridionthruster</type>
+					<name>RIT 10 EVO max</name>
+					<thrust>0.025</thrust>
+					<c_e>31392</c_e>
+					<mass>1.8</mass>
+					<efficiency>0.516315789</efficiency>
+					<propellant>Xe</propellant>
+					<structure_mass>5</structure_mass>
+					<source> Ariane Group - http://www.space-propulsion.com/spacecraft-propulsion/propulsion-systems/electric-propulsion/images/rit-thruster-family-performance-data.jpg</source>
+			</thruster>
+			<thruster>
+					<type>gridionthruster</type>
+					<name>RIT µX max</name>
+					<thrust>0.0005</thrust>
+					<c_e>29430</c_e>
+					<mass>0.44</mass>
+					<efficiency>0.516315789</efficiency>
+					<propellant>Xe</propellant>
+					<structure_mass>5</structure_mass>
+					<source> Ariane Group - http://www.space-propulsion.com/spacecraft-propulsion/propulsion-systems/electric-propulsion/images/rit-thruster-family-performance-data.jpg</source>
+			</thruster>
+			<thruster>
+					<type>gridionthruster</type>
+					<name>RIT µX min</name>
+					<thrust>0.00005</thrust>
+					<c_e>2943</c_e>
+					<mass>0.44</mass>
+					<efficiency>0.14435415</efficiency>
+					<propellant>Xe</propellant>
+					<structure_mass>5</structure_mass>
+					<source> Ariane Group - http://www.space-propulsion.com/spacecraft-propulsion/propulsion-systems/electric-propulsion/images/rit-thruster-family-performance-data.jpg</source>
+			</thruster>
 			<ppu>
 					<type>gridionthruster</type>
 					<name>Arclight PPU</name>
+					<mass> 6.5</mass>
 					<power>450</power>
 					<efficiency>0.92</efficiency>
 			</ppu>
@@ -145,5 +230,55 @@ ELECTRIC PROPULSION SYSTEM DESIGNED FOR SMALL SATELLITES6, http://www.space-prop
 			</requiredsystems>
 		</gridionthruster>
 	</propulsion_system>
+	<power_generation>
+		<photovoltaic>
+			<cell>
+					<type>photovoltaic</type>
+					<name>Solar Panels 1U</name>
+					<power_max>2.3</power_max>
+					<mass> 0.05</mass>
+					<area>0.01 </area>
+					<efficiency>0.30</efficiency>
+					<source> https://www.isispace.nl/wp-content/uploads/2016/02/Solar-Panels-Brochure-v1.pdf</source>
+			</cell>
+			<cell>
+					<type>photovoltaic</type>
+					<name>Solar Panels 2U</name>
+					<power_max>4.6</power_max>
+					<mass> 0.1</mass>
+					<area>0.02 </area>
+					<efficiency>0.30</efficiency>
+					<source> https://www.isispace.nl/wp-content/uploads/2016/02/Solar-Panels-Brochure-v1.pdf</source>
+			</cell>
+			<cell>
+					<type>photovoltaic</type>
+					<name>Solar Panels 3U</name>
+					<power_max>6.9</power_max>
+					<mass> 0.15</mass>
+					<area> 0.03 </area>
+					<efficiency>0.30</efficiency>
+					<source> https://www.isispace.nl/wp-content/uploads/2016/02/Solar-Panels-Brochure-v1.pdf</source>
+			</cell>
+			<cell>
+					<type>photovoltaic</type>
+					<name>Solar Panels 6U</name>
+					<power_max>17</power_max>
+					<mass> 0.3</mass>
+					<area> 0.06 </area>
+					<efficiency>0.30</efficiency>
+					<source> https://www.isispace.nl/wp-content/uploads/2016/02/Solar-Panels-Brochure-v1.pdf</source>
+			</cell>
+			<cell>
+					<type>photovoltaic</type>
+					<name>JUNO Spacecraft Array</name>
+					<power_max>14000</power_max>
+					<mass> 340</mass>
+					<area> 60</area>
+					<efficiency>0.30</efficiency>
+					<source> Mass: https://www.nasa.gov/mission_pages/juno/launch/Juno_solarpower.html , area: https://www.jpl.nasa.gov/news/press_kits/juno/facts/, </source>
+					<comment> Max power is power generated at 1 AU</comment>
+			</cell>
+		</photovoltaic>
+	</power_generation>
 </reference_data>
 
