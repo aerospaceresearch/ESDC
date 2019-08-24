@@ -39,7 +39,7 @@
 			</thruster>
 			<thruster>
 					<type>arcjet</type>
-					<name>ESEX -flight</name>
+					<name>ESEX -flight </name>
 					<thrust>1.93</thrust>
 					<c_e>7710.66</c_e>
 					<massflow>0.000250302827514</massflow>
@@ -152,10 +152,10 @@
 					<thrust>0.012</thrust>
 					<c_e>23544</c_e>
 					<massflow>0.00000050968399592253</massflow>
-					<mass>8</mass>
+					<mass>1.8</mass>
 					<efficiency>0.35316</efficiency>
 					<propellant>Xe</propellant>
-					<structure_mass>12</structure_mass>
+					<structure_mass>5</structure_mass>
 					<source> Ariane Group - ARCLIGHT
 ELECTRIC PROPULSION SYSTEM DESIGNED FOR SMALL SATELLITES6, http://www.space-propulsion.com/brochures/electric-propulsion/arclight-electric-space-propulsion.pdf</source>
 			</thruster>
@@ -218,6 +218,7 @@ ELECTRIC PROPULSION SYSTEM DESIGNED FOR SMALL SATELLITES6, http://www.space-prop
 			<ppu>
 					<type>gridionthruster</type>
 					<name>Arclight PPU</name>
+					<mass> 6.5</mass>
 					<power>450</power>
 					<efficiency>0.92</efficiency>
 			</ppu>
@@ -229,5 +230,55 @@ ELECTRIC PROPULSION SYSTEM DESIGNED FOR SMALL SATELLITES6, http://www.space-prop
 			</requiredsystems>
 		</gridionthruster>
 	</propulsion_system>
+	<power_generation>
+		<photovoltaic>
+			<cell>
+					<type>photovoltaic</type>
+					<name>Solar Panels 1U</name>
+					<power_max>2.3</power_max>
+					<mass> 0.05</mass>
+					<area>0.01 </area>
+					<efficiency>0.30</efficiency>
+					<source> https://www.isispace.nl/wp-content/uploads/2016/02/Solar-Panels-Brochure-v1.pdf</source>
+			</cell>
+			<cell>
+					<type>photovoltaic</type>
+					<name>Solar Panels 2U</name>
+					<power_max>4.6</power_max>
+					<mass> 0.1</mass>
+					<area>0.02 </area>
+					<efficiency>0.30</efficiency>
+					<source> https://www.isispace.nl/wp-content/uploads/2016/02/Solar-Panels-Brochure-v1.pdf</source>
+			</cell>
+			<cell>
+					<type>photovoltaic</type>
+					<name>Solar Panels 3U</name>
+					<power_max>6.9</power_max>
+					<mass> 0.15</mass>
+					<area> 0.03 </area>
+					<efficiency>0.30</efficiency>
+					<source> https://www.isispace.nl/wp-content/uploads/2016/02/Solar-Panels-Brochure-v1.pdf</source>
+			</cell>
+			<cell>
+					<type>photovoltaic</type>
+					<name>Solar Panels 6U</name>
+					<power_max>17</power_max>
+					<mass> 0.3</mass>
+					<area> 0.06 </area>
+					<efficiency>0.30</efficiency>
+					<source> https://www.isispace.nl/wp-content/uploads/2016/02/Solar-Panels-Brochure-v1.pdf</source>
+			</cell>
+			<cell>
+					<type>photovoltaic</type>
+					<name>JUNO Spacecraft Array</name>
+					<power_max>14000</power_max>
+					<mass> 340</mass>
+					<area> 60</area>
+					<efficiency>0.30</efficiency>
+					<source> Mass: https://www.nasa.gov/mission_pages/juno/launch/Juno_solarpower.html , area: https://www.jpl.nasa.gov/news/press_kits/juno/facts/, </source>
+					<comment> Max power is power generated at 1 AU</comment>
+			</cell>
+		</photovoltaic>
+	</power_generation>
 </reference_data>
 
