@@ -16,6 +16,6 @@ function [F propellant] = get_random_thrust_and_propellant(data, propulsion)
     n_case=randi(n_thrusters);
     F = F_list(n_case);                     
     propellant = propellant_list{n_case};
-    
   end
+  
 end
