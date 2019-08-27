@@ -20,11 +20,11 @@
 			
 			<image>
 				<active>true</active>
-				<formats>{"png", "jpg"}</formats>
+				<formats>{"png"}</formats>
 			</image>
 			
 			<octave_figure>
-				<active>true</active>
+				<active>false</active>
 			</octave_figure>
 		</save>
 		
@@ -32,7 +32,7 @@
 			<active>true</active>
 			<compression>true</compression>
 			<fps>24</fps>
-			<animation_order>by_lineage</animation_order>
+			<animation_order>by_generation</animation_order>
 		</animate_and_save>
 		
 		<lineages>
@@ -52,7 +52,7 @@
 			</custom_limits>
 			
 			<title>
-				<active>true</active>
+				<active>false</active>
 				<name>Propulsion Unit Optimization</name>
 				<fontsize>14</fontsize>
 			</title>
@@ -70,17 +70,17 @@
 			<custom_display_names>
 				<x>
 					<active>true</active>
-					<name>Effective Exhaust Velocity [m/s]</name>
+					<name>Effective Exhaust Velocity / m/s</name>
 				</x>
 				
 				<y>
 					<active>true</active>
-					<name>Thrust [N]</name>
+					<name>Thrust / N</name>
 				</y>
 				
 				<z>
 					<active>true</active>
-					<name>Total Mass Fraction [-]</name>
+					<name>Mass Fraction / - </name>
 				</z>
 				
 				<line_type>
@@ -136,7 +136,7 @@
 		</line_type>
 		
 		<line_color>
-			<active>true</active>
+			<active>false</active>
 			<dof>{"c_e"}</dof>
 			<type>continuous</type>
 			<plot_values>{"jet"}</plot_values>
@@ -153,7 +153,7 @@
 		</marker_type>
 		
 		<marker_color>
-			<active>true</active>
+			<active>false</active>
 			<dof>{"thrust"}</dof>
 			<type>continuous</type>
 			<plot_values>{"jet"}</plot_values>
@@ -208,7 +208,7 @@
 <plot_case>
 		<active>true</active>
 		<type>2d</type>
-		<input_cases>[1]</input_cases>
+		<input_cases>[1,2]</input_cases>
 		
 		<save>
 			<filename>
@@ -224,11 +224,11 @@
 			
 			<image>
 				<active>true</active>
-				<formats>{"png", "jpg"}</formats>
+				<formats>{"png"}</formats>
 			</image>
 			
 			<octave_figure>
-				<active>true</active>
+				<active>false</active>
 			</octave_figure>
 		</save>
 		
@@ -253,7 +253,7 @@
 			</custom_limits>
 			
 			<title>
-				<active>true</active>
+				<active>false</active>
 				<name>Propulsion Unit Optimization</name>
 				<fontsize>14</fontsize>
 			</title>
@@ -271,12 +271,12 @@
 			<custom_display_names>
 				<x>
 					<active>true</active>
-					<name>Generation [-]</name>
+					<name>Generation / - </name>
 				</x>
 				
 				<y>
 					<active>true</active>
-					<name>Total Mass Fraction [-]</name>
+					<name>Total Mass Fraction / - </name>
 				</y>
 				
 				<line_type>
@@ -296,7 +296,7 @@
 				
 				<marker_color>
 					<active>true</active>
-					<name>Thrust [N]</name>
+					<name>Thrust / N s</name>
 				</marker_color>
 			</custom_display_names>
 			
@@ -320,7 +320,7 @@
 		</line_type>
 		
 		<line_color>
-			<active>true</active>
+			<active>false</active>
 			<dof>{"c_e"}</dof>
 			<type>continuous</type>
 			<plot_values>{"jet"}</plot_values>
@@ -337,7 +337,7 @@
 		</marker_type>
 		
 		<marker_color>
-			<active>true</active>
+			<active>false</active>
 			<dof>{"thrust"}</dof>
 			<type>continuous</type>
 			<plot_values>{"jet"}</plot_values>
