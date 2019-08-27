@@ -3,7 +3,6 @@ t_0 = now;
 addpath('Code/Analysis');
 addpath('Code/Evolver');
 addpath('Code/Input');
-%addpath('Code/Modelling')
 addpath('Code/Output');
 addpath('Code/Scaling');
 addpath('Code/Support');
@@ -28,10 +27,15 @@ t_2=now;
 
 evolution_time(t_1,t_2)
 
-%Create and Save Visualizations
-visualization(evolution_data, input, db_data, config);
-
+disp('XML production ')
 output_XML_generation(input, db_data, config, evolution_data);
+disp('XML production complete')
+
+disp('Visual production ')
+visualization(evolution_data, input, db_data, config);
+disp('Visual production complete')
+
+
 
 disp('ESDC complete')
 t_end = now;
