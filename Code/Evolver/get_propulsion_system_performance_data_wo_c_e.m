@@ -5,4 +5,13 @@ function [c_e power_thruster power_jet eff_ppu eff_thruster] = get_propulsion_sy
   power_thruster = power_propulsion*eff_ppu;
   power_jet = power_thruster*eff_thruster;
   c_e = 2*power_jet/F; 
+  
+  dummy_struct = struct;
+  dummy_struct.propellant = propellant;
+  
+  [c_e_min c_e_max] = search_min_max(data.(propulsion).thruster, dummy_struct, 'c_e', 'propellant');
+
+  if c_e > c_e_max
+      c_e = c_e_max;
+  endif
 end
