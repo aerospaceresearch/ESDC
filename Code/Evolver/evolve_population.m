@@ -14,7 +14,7 @@ function [generation_new, convergence] = evolve_population(input, db_data, confi
       population(i,j) = mutate_individual(input, db_data, config, generation_data{n_successor}(i,j));
       
       %refresh other system data                  
-      population(i,j).subsystem_masses = mass_budget_propulsion(population(i,j));
+      population(i,j).subsystem_masses = mass_budget_propulsion(population(i,j), db_data);
       population(i,j).mass_fractions= mass_fractions(population(i,j));
       population(i,j).mission_parameters = mission_parameters(population(i,j));
       
