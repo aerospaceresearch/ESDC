@@ -5,13 +5,14 @@ function [in_struct] = typeset_struct(in_struct)
   if isstruct(in_struct)                  %check if directly struct
     %disp("struct case");
     fields_1 =fieldnames(in_struct);
+    
     for i=1: size(fields_1,1)
       if isstruct(in_struct.(fields_1{i}))    %struct upon struct allows text
          %disp("struct *2 case");
         fields_2 =fieldnames(in_struct.(fields_1{i}));
-        if (strcmp(fields_2{1},"Text"))
+        if strcmp(fields_2{1},"Text")
           [num, state] = str2num(in_struct.(fields_1{i}).Text);
-          if state ==0
+          if state == 0
             %disp('string');
             field_value = char(in_struct.(fields_1{i}).Text);
           else
@@ -19,11 +20,17 @@ function [in_struct] = typeset_struct(in_struct)
             field_value = num;
           end
           in_struct.(fields_1{i})  = field_value;     %redefine previous substructure with field "text" to field with generated value
+          
+        elseif strcmp(fields_2{1},"Attributes")
+          disp("here stuff for Attributes")
+          
+        elseif strcmp(fields_2{1},"show") || strcmp(fields_2{1},"version")
+          % do nothing
         else                                 % if struct upon struct is not text decend deeper
           in_struct.(fields_1{i}) = typeset_struct(in_struct.(fields_1{i})); 
         end
         
-      else                                  %if type is cell decend deeper in cell array
+      else                                  %if type is cell descent deeper in cell array
         %disp("cell case")
         for j=1:size(in_struct.(fields_1{i}),2)
         fields_2 =fieldnames(in_struct.(fields_1{i}){1,j});
@@ -47,6 +54,8 @@ function [in_struct] = typeset_struct(in_struct)
       end
     end  
   end
+  
+
 end
 
 % MIT License

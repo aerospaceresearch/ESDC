@@ -171,9 +171,8 @@ function attributes = parseAttributes(theNode)
             %attrib = item(theAttributes,count-1);
             %attr_name = regexprep(char(getName(attrib)),'[-:.]','_');
             %attributes.(attr_name) = char(getValue(attrib));
-
             %Suggestion of Adrian Wanner
-            str = char(item(theAttributes,count-1));
+            str = char(theAttributes.item(count-1)); %Modified here by M. Ehresmann
             k = strfind(str,'='); 
             attr_name = str(1:(k(1)-1));
             attr_name = strrep(attr_name, '-', '_dash_');
