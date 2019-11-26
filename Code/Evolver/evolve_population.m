@@ -37,7 +37,7 @@ function [generation_new, convergence] = evolve_population(input, db_data, confi
   
   %full convergence testing is done here.
   [convergence n_convergence] = test_full_convergence(population);
-  if !mod(size(generation_data,2),config.Simulation_parameters.evolver.n_verbosity)
+  if !mod(size(generation_data,2),config.Simulation_parameters.output.CLI.n_verbosity)
     disp(sprintf('Converged lineages: %d / %d', n_convergence, size(input.Satellite_parameters.input_case,2)*config.Simulation_parameters.evolver.seed_points))
     fflush(stdout);
   end

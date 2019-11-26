@@ -9,7 +9,7 @@ function evolution_data = evolver(input, db_data, config)
   while !(convergence)
     n_gen=n_gen+1;
     [generation{n_gen}, convergence]= evolve_population(input, db_data, config, generation);
-    if !(mod(n_gen,config.Simulation_parameters.evolver.n_verbosity))
+    if !(mod(n_gen,config.Simulation_parameters.output.CLI.n_verbosity))
       disp(sprintf('Iterated generations: %d', n_gen))
       fflush(stdout);
     end

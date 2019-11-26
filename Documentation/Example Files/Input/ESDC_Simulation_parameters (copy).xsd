@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"  elementFormDefault="qualified" attributeFormDefault="unqualified" version="20191025">
+	<xs:element name="Simulation_parameters"> 
+		<xs:complexType>
+		<xs:sequence>
+		<xs:element name="evolver" minOccurs="1" maxOccurs="1">
+			<xs:complexType>
+			<xs:sequence>
+ 					<xs:element name="seed_points">
+					<xs:complexType>
+					<xs:simpleContent>
+							<xs:extension base="xs:integer">
+							<xs:anyAttribute processContents="skip" />
+							</xs:extension>
+					</xs:simpleContent>
+					</xs:complexType>
+					</xs:element>
+ 					<xs:element name="minimal_step_size">
+					<xs:complexType>
+					<xs:simpleContent>
+							<xs:extension base="xs:double">
+							<xs:anyAttribute processContents="skip" />
+							</xs:extension>
+					</xs:simpleContent>
+					</xs:complexType>
+					</xs:element>
+					<xs:element name="max_jump_range">
+					<xs:complexType>
+					<xs:simpleContent>
+							<xs:extension base="xs:integer">
+							<xs:anyAttribute processContents="skip" />
+							</xs:extension>
+					</xs:simpleContent>
+					</xs:complexType>
+					</xs:element>
+					<xs:element name="n_fails_to_converge">
+					<xs:complexType>
+					<xs:simpleContent>
+							<xs:extension base="xs:integer">
+							<xs:anyAttribute processContents="skip" />
+							</xs:extension>
+					</xs:simpleContent>
+					</xs:complexType>
+					</xs:element>
+			</xs:sequence>
+			<xs:anyAttribute processContents="skip" />
+			</xs:complexType>
+		</xs:element>
+		<xs:element name="output" minOccurs="1" maxOccurs="1">
+			<xs:complexType>
+			<xs:sequence>
+					<xs:element name="CLI">
+					<xs:complexType>
+						<xs:element name="n_verbosity">
+						<xs:complexType>
+						<xs:simpleContent>
+							<xs:extension base="xs:integer">
+							<xs:anyAttribute processContents="skip" />
+							</xs:extension>
+						</xs:simpleContent>
+						</xs:complexType>
+						</xs:element>	
+					<xs:anyAttribute processContents="skip" />
+					</xs:complexType>
+					</xs:element>
+					<xs:element name="xml">
+					<xs:complexType>
+						<xs:element name="full_history">
+						<xs:complexType>
+						<xs:simpleContent>
+							<xs:extension base="xs:integer">
+							<xs:anyAttribute processContents="skip" />
+							</xs:extension>
+						</xs:simpleContent>
+						</xs:complexType>
+						</xs:element>
+						<xs:element name="optimal_candidates">
+						<xs:complexType>
+						<xs:simpleContent>
+							<xs:extension base="xs:integer">
+							<xs:anyAttribute processContents="skip" />
+							</xs:extension>
+						</xs:simpleContent>
+						</xs:complexType>
+						</xs:element>	
+					<xs:anyAttribute processContents="skip" />
+					</xs:complexType>
+					</xs:element>
+			</xs:sequence>
+			<xs:anyAttribute processContents="skip" />
+			</xs:complexType>
+		</xs:element>
+		</xs:sequence>
+		<xs:attribute name="version" type="xs:string" />
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
+
+

@@ -1,14 +1,13 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Satellite_parameters>
-	<input_case>
-		<totalmass>155</totalmass>
-		<deltav>685.97</deltav>
-		<P_propulsion>202.9</P_propulsion>
+<Satellite_parameters version="20191025" show="false">
+	<input_case show="false">
+		<totalmass name="Satellite Mass" unit="kg" description="Currently estimated mass of satellite">155</totalmass>
+		<deltav name="Required Delta v" unit="m/s" description="Minimum Delta v to be delivered by propulsion system">685.97</deltav>
+		<P_propulsion name="Available Power" unit="W" description="Power available for propulsion system">202.9</P_propulsion>
 	</input_case>
-	<input_case>
-		<totalmass>155</totalmass>
-		<deltav>526.25</deltav>
-		<P_propulsion>202.9</P_propulsion>	
+	<input_case show="false">
+		<totalmass show="false">155</totalmass>
+		<deltav show="false">526.25</deltav>
+		<P_propulsion show="false">202.9</P_propulsion>	
 	</input_case>
 </Satellite_parameters>
-

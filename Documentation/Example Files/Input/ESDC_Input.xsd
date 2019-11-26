@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"  elementFormDefault="qualified" attributeFormDefault="unqualified" version="20191025">
+	<xs:element name="Satellite_parameters"> 
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="input_case" minOccurs="2" maxOccurs="unbounded">
+				  <xs:complexType>
+					  <xs:sequence>
+					    <xs:element name="totalmass">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:extension base="xs:double">
+										<xs:anyAttribute processContents="skip" />
+									</xs:extension>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+					    <xs:element name="deltav" >
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:extension base="xs:double">
+										<xs:anyAttribute processContents="skip" />
+									</xs:extension>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+					    <xs:element name="P_propulsion">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:extension base="xs:double">
+										<xs:anyAttribute processContents="skip" />
+									</xs:extension>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+					  </xs:sequence>
+					<xs:anyAttribute processContents="skip" />
+				  </xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="version" type="xs:string" />
+			<xs:attribute name="show" type="xs:boolean" />
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
+

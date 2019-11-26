@@ -24,7 +24,7 @@ function [in_struct] = typeset_struct(in_struct)
         elseif strcmp(fields_2{1},"Attributes")
           disp("here stuff for Attributes")
           
-        elseif strcmp(fields_2{1},"show") || strcmp(fields_2{1},"version")
+        elseif strcmp(fields_2{1},"show") || strcmp(fields_2{1},"version") || strcmp(fields_2{1},"description")
           % do nothing
         else                                 % if struct upon struct is not text decend deeper
           in_struct.(fields_1{i}) = typeset_struct(in_struct.(fields_1{i})); 

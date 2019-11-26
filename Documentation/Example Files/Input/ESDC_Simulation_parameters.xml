@@ -1,17 +1,19 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Simulation_parameters>
-	<evolver>
-		<seed_points> 18 </seed_points>
-		<fitness_landscape_resolution> 50 </fitness_landscape_resolution>
-		<minimal_step_size>0.000001</minimal_step_size>
-		<max_jump_range>20</max_jump_range>
-		<n_fails_to_converge>10</n_fails_to_converge>
-		<n_verbosity>10</n_verbosity>
+<Simulation_parameters version="20192023" show="false">
+	<evolver description="Options to define operation of the evolution algorithms are set here">
+		<seed_points name="Seed point number" unit="-"  description="Define number of seed points/lineages to be used per input case"> 18 </seed_points>
+		<minimal_step_size name="Evolution minimal mutation resolution" unit="-" description="Evolution algorithm minimal mutation resolution for continuous degrees of freedom. Recommended value:0.00001">0.00001</minimal_step_size>
+		<max_jump_range name="Evolution maximum mutation range" unit="-" description="Evolution algorithm maximum mutation step size - multiple of minimal resolution. Recommended value >10.">20</max_jump_range>
+		<n_fails_to_converge name="Evolution maximum mutation range" unit="-" description="Evolution algorithm maximum mutation step size - multiple of minimal resolution. Recommended value >10.">3</n_fails_to_converge>
+		
 	</evolver> 
-	<output>
+	<output description="Options to define how output is generated is defined here">
+		<CLI>
+			<n_verbosity name="CLI output verbosity"  unit="-" description="Command line output verbosity - set by number of subsequently iterated generations.">10</n_verbosity>
+		</CLI>
 		<xml>
-			<full_history>0</full_history>
-			<optimal_candidates>3</optimal_candidates>
+			<full_history  description="Produce an XML file with the full evolutionary history: options 0/1">0</full_history>
+			<optimal_candidates description="Produce an XML file with a set number of optimal candidates to be included per input case">1</optimal_candidates>
 		</xml>
 	</output>
 </Simulation_parameters>
