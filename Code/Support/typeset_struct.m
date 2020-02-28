@@ -7,9 +7,12 @@ function [in_struct] = typeset_struct(in_struct)
     fields_1 =fieldnames(in_struct);
     
     for i=1: size(fields_1,1)
+      %disp(fields_1)
       if isstruct(in_struct.(fields_1{i}))    %struct upon struct allows text
          %disp("struct *2 case");
         fields_2 =fieldnames(in_struct.(fields_1{i}));
+        
+        %disp(fields_2)
         if strcmp(fields_2{1},"Text")
           [num, state] = str2num(in_struct.(fields_1{i}).Text);
           if state == 0
@@ -21,15 +24,13 @@ function [in_struct] = typeset_struct(in_struct)
           end
           in_struct.(fields_1{i})  = field_value;     %redefine previous substructure with field "text" to field with generated value
           
-        elseif strcmp(fields_2{1},"Attributes")
-          disp("here stuff for Attributes")
-          
-        elseif strcmp(fields_2{1},"show") || strcmp(fields_2{1},"version") || strcmp(fields_2{1},"description")
-          % do nothing
+        elseif strcmp(fields_2{1},"Attributes") || strcmp(fields_1{i},"Attributes") 
+##        elseif strcmp(fields_2{1},"version") ||strcmp(fields_2{1},"show") ||strcmp(fields_2{1},"dcep_show") || strcmp(fields_2{1},"dcep_version") || strcmp(fields_2{1},"dcep_description") || strcmp(fields_2{1},"dcep_name") || strcmp(fields_2{1},"dcep_unit")  || strcmp(fields_2{1},"description") 
+
         else                                 % if struct upon struct is not text decend deeper
           in_struct.(fields_1{i}) = typeset_struct(in_struct.(fields_1{i})); 
         end
-        
+     
       else                                  %if type is cell descent deeper in cell array
         %disp("cell case")
         for j=1:size(in_struct.(fields_1{i}),2)

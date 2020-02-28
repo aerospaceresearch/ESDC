@@ -8,6 +8,54 @@
 
 %Factor - 1 no propulsion , 2  LEO up to 1000 km, 3 - above 1000, 4 - planetary probe
 
+function [systemmasses] = SMAD_scalings(data)
+   systemmasses = struct();
+   
+   sc_type = determine_sc_type(data);
+   systemmasses.m_dry_nomargin  = determine_m_dry(data);
+   systemmasses.m_margin        = m_Margin(systemmasses.m_dry_nomargin, sc_type);
+   systemmasses.m_dry_margin    = systemmasses.m_dry_nomargin - systemmasses.m_margin;
+   systemmasses.m_propellant    = data.mass - systemmasses.m_dry_nomargin;
+   
+   systemmasses.m_payload       = m_scale_Payload(systemmasses.m_dry_margin, sc_type);
+   systemmasses.m_structure     = m_scale_StructMecha(systemmasses.m_dry_margin, sc_type);
+   systemmasses.m_thermal       = m_scale_Thermal(systemmasses.m_dry_margin, sc_type);
+   systemmasses.m_power         = m_scale_Power(systemmasses.m_dry_margin, sc_type);
+   systemmasses.m_ttc           = m_scale_TTC(systemmasses.m_dry_margin, sc_type);
+   systemmasses.m_adc           = m_scale_ADC(systemmasses.m_dry_margin, sc_type);
+   systemmasses.m_propulsion    = m_scale_Propulsion(systemmasses.m_dry_margin, sc_type);
+   systemmasses.m_misc          = m_scale_Misc(systemmasses.m_dry_margin, sc_type);
+   
+   %Check for remaining difference
+   checksum =  systemmasses.m_margin +systemmasses.m_propellant+systemmasses.m_payload+systemmasses.m_structure +systemmasses.m_thermal+ systemmasses.m_power+ systemmasses.m_ttc+ systemmasses.m_adc+systemmasses.m_propulsion+ systemmasses.m_misc;
+   
+   %Add discrepancy to margin
+   systemmasses.m_margin= systemmasses.m_margin+ data.mass-checksum;
+   
+   %disp(systemmasses);
+endfunction
+
+function [sc_type] = determine_sc_type(data)
+    if isfield(data,'dv') && (data.dv >0) % only type 1,2,3 when propelled
+      sc_type = 2; % LEO type mission is default
+      if (data.dv >2000) && (data.dv <=4300)
+        sc_type = 3; % High Earth type mission like GEO
+      elseif (data.dv >4300) % dv to escape earth from orbital velocity, makes planetary probe type mission (3)
+        sc_type = 4;
+      endif
+    else 
+      sc_type = 1;
+    endif
+endfunction
+
+function [m_dry] = determine_m_dry(data)
+  if isfield(data,'dv')
+    m_dry = exp(-data.dv/data.c_e)*data.mass;
+  else
+    m_dry = data.mass; %
+  endif
+endfunction
+
 
 function m = m_scale_Payload(m_dry, sc_type)
   factor=[.41 .31 .32 .15];
@@ -61,7 +109,8 @@ end
 
 function m = m_scale_Misc(m_dry, sc_type)
   %balance+launch
-  factor=[.03 .03 .03 .03]
+  factor=[.03 .03 .03 .03];
+  m = m_dry*(factor(sc_type));
 end
 
 function m = m_Margin(m_dry, sc_type)

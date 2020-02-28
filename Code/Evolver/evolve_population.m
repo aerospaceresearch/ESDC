@@ -14,18 +14,32 @@ function [generation_new, convergence] = evolve_population(input, db_data, confi
       population(i,j) = mutate_individual(input, db_data, config, generation_data{n_successor}(i,j));
       
       %refresh other system data                  
-      population(i,j).subsystem_masses = mass_budget_propulsion(population(i,j), db_data);
-      population(i,j).mass_fractions= mass_fractions(population(i,j));
+      population(i,j).subsystem_masses = SMAD_scalings(population(i,j));
+      
+      %population(i,j).subsystem_masses = = mass_budget_propulsion(population(i,j), db_data);
+      % here problem because inconsistent with fields of SMAD scaling format
+      
+      % add function to overwrite .subsystem_masses.propulsion with new mass()
+      % add remaining mass to margin or payload ...or remove from total mass...potential for reiterate
+      % change evolutionary fitness condition for minimal mass? or from maximum margin+payload mass?
+      EP_scalings = mass_budget_propulsion(population(i,j), db_data);
+      population(i,j).subsystem_masses.m_propulsion = EP_scalings.total; 
+      
+      population(i,j).mass_fractions= mass_fractions(population(i,j))
+      
+  
       population(i,j).mission_parameters = mission_parameters(population(i,j));
       
       %test for improvement of pop member
       lineage = get_lineage(generation_data, i, j);
-      population(i,j).evolution_success = test_minimize_parameter(population(i,j), lineage, {'mass_fractions','total'}); % add this to sim parameter options 
+      population(i,j).evolution_success = test_minimize_parameter(population(i,j), lineage, {'mass_fractions','m_propulsion'}); % add this to sim parameter options 
       
       %refresh the number of the last sucessful lineage member here
       if population(i,j).evolution_success== 1
         population(i,j).n_success = size(generation_data,2)+1;
       end
+      
+
       
        %test for convergence here, maybe add number of non convergence gere
       population(i,j).convergence = test_lineage_convergence_simple(population(i,j), lineage, config);  % add a parmeter specific epsilon convergence test

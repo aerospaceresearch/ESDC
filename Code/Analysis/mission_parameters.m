@@ -4,6 +4,7 @@ function [mission_parameters] =  mission_parameters(data)
 end  
 
 function [time] = maneuver_duration(data)
+  disp(data)
     massflow=(data.thrust/data.c_e);
-    time = data.subsystem_masses.propellant/massflow;
+    time = data.subsystem_masses.m_propellant/massflow;
 end
