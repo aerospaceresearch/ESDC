@@ -25,15 +25,15 @@ fflush(stdout);
 evolution_data = evolver(input, db_data, config);
 t_2=now;
 
-evolution_time(t_1,t_2)
+evolution_time(t_1,t_2);
 
 disp('XML production ')
 output_XML_generation(input, db_data, config, evolution_data);
 disp('XML production complete')
 
-disp('Visual production ')
-visualization(evolution_data, input, db_data, config);
-disp('Visual production complete')
+%disp('Visual production ')
+%visualization(evolution_data, input, db_data, config);
+%disp('Visual production complete')
 
 
 

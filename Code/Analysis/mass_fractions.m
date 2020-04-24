@@ -4,7 +4,7 @@ function [mass_fractions] = mass_fractions(data)
   mass_fractions = struct();
   
   for i=1:numel(names)
-  mass_fractions.(names{i}) = data.subsystem_masses.(names{i})/m_ref;
+  mass_fractions.(strcat('frac_',names{i})) = data.subsystem_masses.(names{i})/m_ref;
   end
 
 end

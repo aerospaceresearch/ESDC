@@ -8,7 +8,7 @@
 
 %Factor - 1 no propulsion , 2  LEO up to 1000 km, 3 - above 1000, 4 - planetary probe
 
-function [systemmasses] = SMAD_scalings(data)
+function [systemmasses systempowers] = SMAD_scalings(data)
    systemmasses = struct();
    
    sc_type = determine_sc_type(data);

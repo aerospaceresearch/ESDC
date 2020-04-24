@@ -1,4 +1,4 @@
-function result = test_minimize_parameter(new_data, lineage_data, parameter_list)
+function result = test_maximize_parameter(new_data, lineage_data, parameter_list)
   %tests whether a field specified in the parameter list of new_data is minimal to all the respective fields in lineage_data  
   
   %walk down the field tree to find relevant comparison value of the new data
@@ -17,12 +17,11 @@ function result = test_minimize_parameter(new_data, lineage_data, parameter_list
    value_list(j)=gen_val;
   end  
   
-  min_val = min(value_list); % get minimum of current list
+  max_val = max(value_list); % get maximum of current list
 
-    if new_val < min_val % TODO here should be a leq instead of eq .... but becomes a problem with convergence when declearing identity with success !
+    if new_val > max_val % TODO here should be a leq instead of eq .... but becomes a problem with convergence when declearing identity with success !
       result = 1;
     else
       result = 0;
     end
 end
-

@@ -43,7 +43,7 @@ initial_pop = struct();
       initial_pop(i,j).n_success =1;
       initial_pop(i,j).convergence=0;
       
-      disp(initial_pop(i,j))
+     % disp(initial_pop(i,j));
     end
   end
 end
