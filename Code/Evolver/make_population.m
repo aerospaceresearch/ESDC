@@ -7,7 +7,7 @@ n_seeds = config.Simulation_parameters.evolver.seed_points;
 %number of degrees of freedom
 n_DOF = num_struct_members_full(db_data.DOF, 'DOF');
 
-%TODO add here disp of relevant inputs 
+
 
 initial_pop = struct();
   for i=1:size(input.Satellite_parameters.input_case,2)

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Simulation_parameters>
+	<evolver>
+		<seed_points> 18 </seed_points>
+		<fitness_landscape_resolution> 50 </fitness_landscape_resolution>
+		<minimal_step_size>0.00001</minimal_step_size>
+		<max_jump_range>20</max_jump_range>
+		<n_fails_to_converge>3</n_fails_to_converge>
+		<n_verbosity>10</n_verbosity>
+	</evolver> 
+	<output>
+		<xml>
+			<full_history>0</full_history>
+			<optimal_candidates>1</optimal_candidates>
+		</xml>
+		<plots>
+			<system>1</system>
+			<components>1</components>
+		</plots>
+	</output>
+</Simulation_parameters>

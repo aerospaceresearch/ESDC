@@ -17,16 +17,25 @@ function output_XML_best_candidates(config, evolution_data)
     
     %produce the reduced optimal index list
     
-    optimal_solution.best_solutions.Attributes.show ="true";
-    optimal_solution.best_solutions.Attributes.version=num2str(ceil(now));
+    optimal_solution.best_solutions.Attributes.dcep_show ="true";
+    optimal_solution.best_solutions.Attributes.dcep_version=20200428;
     
     
-    optimal_solution.best_solutions.(strcat('case_',num2str(j))).Attributes.show ="true";
-    optimal_solution.best_solutions.(strcat('case_',num2str(j))).Attributes.version=num2str(ceil(now));
+   if j==1
+   optimal_solution.best_solutions.(strcat('case_',num2str(j))).Attributes.dcep_show ="true";
+   else 
+   optimal_solution.best_solutions.(strcat('case_',num2str(j))).Attributes.dcep_show ="false";
+   end
+
     for k=1:config.Simulation_parameters.output.xml.optimal_candidates
       optimal_solution.best_solutions.(strcat('case_',num2str(j))).(strcat('best_',num2str(k))) =  evolution_data{end}(j,idx(k));
-      optimal_solution.best_solutions.(strcat('case_',num2str(j))).(strcat('best_',num2str(k))).Attributes.show ="true";
-      optimal_solution.best_solutions.(strcat('case_',num2str(j))).(strcat('best_',num2str(k))).Attributes.version=num2str(ceil(now));
+      
+        if k==1 && j==1
+          optimal_solution.best_solutions.(strcat('case_',num2str(j))).(strcat('best_',num2str(k))).Attributes.dcep_show ="true";
+        else
+          optimal_solution.best_solutions.(strcat('case_',num2str(j))).(strcat('best_',num2str(k))).Attributes.dcep_show ="false";
+        end
+
     end
     
     

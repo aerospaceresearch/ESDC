@@ -1,209 +1,221 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <variable_attributes>
+	<best_solutions>
+		<dcep_show>True</dcep_show>
+		<dcep_version>20191026</dcep_version>
+		<dcep_description>Lists the as optimal determined solutions in descending order</dcep_description>
+	</best_solutions>
+	<case_1>
+		<dcep_show>True</dcep_show>
+		<dcep_description>The optimal solution for the first input case</dcep_description>
+	</case_1>
+	<best_1>
+		<dcep_show>True</dcep_show>
+		<dcep_description>The most optimal solution</dcep_description>
+	</best_1>
 	<mass>
-		<name>total system mass</name>
-		<unit>kg</unit>
-		<description>Input: Total system mass wet including margins</description>
+		<dcep_name>total system mass</dcep_name>
+		<dcep_unit>kg</dcep_unit>
+		<dcep_description>Input: Total system mass wet including margins</dcep_description>
 	</mass>
 	<m_dry_nomargin>
-		<name>total dry mass</name>
-		<unit>kg</unit>
-		<description>total dry mass including all margins</description>
+		<dcep_name>total dry mass</dcep_name>
+		<dcep_unit>kg</dcep_unit>
+		<dcep_description>total dry mass including all margins</dcep_description>
 	</m_dry_nomargin>
 	<m_margin>
-		<name>total margin mass</name>
-		<unit>kg</unit>
-		<description>total mass of all margins. based on statistics.</description>
+		<dcep_name>total margin mass</dcep_name>
+		<dcep_unit>kg</dcep_unit>
+		<dcep_description>total mass of all margins. based on statistics.</dcep_description>
 	</m_margin>
 	<m_dry_margin>
-		<name>total marginless dry mass </name>
-		<unit>kg</unit>
-		<description>total dry mass without margin</description>
+		<dcep_name>total marginless dry mass </dcep_name>
+		<dcep_unit>kg</dcep_unit>
+		<dcep_description>total dry mass without margin</dcep_description>
 	</m_dry_margin>
 	<m_propellant>
-		<name>total propellant mass</name>
-		<unit>kg</unit>
-		<description>propellant mass calculated by tsiolkosvky of inputs</description>
+		<dcep_name>total propellant mass</dcep_name>
+		<dcep_unit>kg</dcep_unit>
+		<dcep_description>propellant mass calculated by tsiolkosvky of inputs</dcep_description>
 	</m_propellant>
 	<m_payload>
-		<name>total payload mass</name>
-		<unit>kg</unit>
-		<description>total payload mass. based on statistics.</description>
+		<dcep_name>total payload mass</dcep_name>
+		<dcep_unit>kg</dcep_unit>
+		<dcep_description>total payload mass. based on statistics.</dcep_description>
 	</m_payload>
 	<m_structure>
-		<name>total structural mass</name>
-		<unit>kg</unit>
-		<description>total structural mass. based on statistics.</description>
+		<dcep_name>total structural mass</dcep_name>
+		<dcep_unit>kg</dcep_unit>
+		<dcep_description>total structural mass. based on statistics.</dcep_description>
 	</m_structure>
 	<m_thermal>
-		<name>total thermal system mass</name>
-		<unit>kg</unit>
-		<description>total thermal system mass. based on statistics.</description>
+		<dcep_name>total thermal system mass</dcep_name>
+		<dcep_unit>kg</dcep_unit>
+		<dcep_description>total thermal system mass. based on statistics.</dcep_description>
 	</m_thermal>
 	<m_power>
-		<name>total power system mass</name>
-		<unit>kg</unit>
-		<description>total power system mass. based on statistics.</description>
+		<dcep_name>total power system mass</dcep_name>
+		<dcep_unit>kg</dcep_unit>
+		<dcep_description>total power system mass. based on statistics.</dcep_description>
 	</m_power>
 	<m_ttc>
-		<name>total ttc mass</name>
-		<unit>kg</unit>
-		<description>total telemetry, tracking and control system mass. based on statistics.</description>
+		<dcep_name>total ttc mass</dcep_name>
+		<dcep_unit>kg</dcep_unit>
+		<dcep_description>total telemetry, tracking and control system mass. based on statistics.</dcep_description>
 	</m_ttc>
 	<m_adc>
-		<name>total adc mass</name>
-		<unit>kg</unit>
-		<description>total attitude determination and control system mass. based on statistics.</description>
+		<dcep_name>total adc mass</dcep_name>
+		<dcep_unit>kg</dcep_unit>
+		<dcep_description>total attitude determination and control system mass. based on statistics.</dcep_description>
 	</m_adc>
 	<m_propulsion>
-		<name>total propulsion system mass</name>
-		<unit>kg</unit>
-		<description>total propulsion system mass. based on statistics, refined by additional modelling.</description>
+		<dcep_name>total propulsion system mass</dcep_name>
+		<dcep_unit>kg</dcep_unit>
+		<dcep_description>total propulsion system mass. based on statistics, refined by additional modelling.</dcep_description>
 	</m_propulsion>
 	<m_misc>
-		<name>total miscellaneous mass</name>
-		<unit>kg</unit>
-		<description>accounting for other minor masses, could be considered additional margin.</description>
+		<dcep_name>total miscellaneous mass</dcep_name>
+		<dcep_unit>kg</dcep_unit>
+		<dcep_description>accounting for other minor masses, could be considered additional margin.</dcep_description>
 	</m_misc>
 	<mass_fractions>
-		<name>Subsystem mass fractions</name>
-		<unit>-</unit>
-		<description>Ratios of all subsystem masses in relation to the total system mass</description>
+		<dcep_name>Subsystem mass fractions</dcep_name>
+		<dcep_unit>-</dcep_unit>
+		<dcep_description>Ratios of all subsystem masses in relation to the total system mass</dcep_description>
 	</mass_fractions>
 	<frac_m_dry_nomargin>
-		<name>total dry mass fraction</name>
-		<unit>-</unit>
-		<description>total dry mass including all margins to total mass fraction</description>
+		<dcep_name>total dry mass fraction</dcep_name>
+		<dcep_unit>-</dcep_unit>
+		<dcep_description>total dry mass including all margins to total mass fraction</dcep_description>
 	</frac_m_dry_nomargin>
 	<frac_m_margin>
-		<name>total margin mass fraction </name>
-		<unit>-</unit>
-		<description>total mass of all margins to total mass fraction</description>
+		<dcep_name>total margin mass fraction </dcep_name>
+		<dcep_unit>-</dcep_unit>
+		<dcep_description>total mass of all margins to total mass fraction</dcep_description>
 	</frac_m_margin>
 	<frac_m_dry_margin>
-		<name>total marginless dry mass fraction</name>
-		<unit>-</unit>
-		<description>total dry mass without margin to total mass fraction</description>
+		<dcep_name>total marginless dry mass fraction</dcep_name>
+		<dcep_unit>-</dcep_unit>
+		<dcep_description>total dry mass without margin to total mass fraction</dcep_description>
 	</frac_m_dry_margin>
 	<frac_m_propellant>
-		<name>total propellant mass fraction</name>
-		<unit>-</unit>
-		<description>propellant mass to total mass fraction</description>
+		<dcep_name>total propellant mass fraction</dcep_name>
+		<dcep_unit>-</dcep_unit>
+		<dcep_description>propellant mass to total mass fraction</dcep_description>
 	</frac_m_propellant>
 	<frac_m_payload>
-		<name>total payload mass fraction</name>
-		<unit>-</unit>
-		<description>total payload mass to total mass fraction</description>
+		<dcep_name>total payload mass fraction</dcep_name>
+		<dcep_unit>-</dcep_unit>
+		<dcep_description>total payload mass to total mass fraction</dcep_description>
 	</frac_m_payload>
 	<frac_m_structure>
-		<name>total structural mass  fraction</name>
-		<unit>-</unit>
-		<description>total structural mass to total mass fraction</description>
+		<dcep_name>total structural mass  fraction</dcep_name>
+		<dcep_unit>-</dcep_unit>
+		<dcep_description>total structural mass to total mass fraction</dcep_description>
 	</frac_m_structure>
 	<frac_m_thermal>
-		<name>total thermal system mass fraction</name>
-		<unit>-</unit>
-		<description>total thermal system mass to total mass fraction</description>
+		<dcep_name>total thermal system mass fraction</dcep_name>
+		<dcep_unit>-</dcep_unit>
+		<dcep_description>total thermal system mass to total mass fraction</dcep_description>
 	</frac_m_thermal>
 	<frac_m_power>
-		<name>total power system mass fraction</name>
-		<unit>-</unit>
-		<description>total power system mass to total mass fraction</description>
+		<dcep_name>total power system mass fraction</dcep_name>
+		<dcep_unit>-</dcep_unit>
+		<dcep_description>total power system mass to total mass fraction</dcep_description>
 	</frac_m_power>
 	<frac_m_ttc>
-		<name>total ttc mass fraction</name>
-		<unit>-</unit>
-		<description>total telemetry, tracking and control system mass to total mass fraction </description>
+		<dcep_name>total ttc mass fraction</dcep_name>
+		<dcep_unit>-</dcep_unit>
+		<dcep_description>total telemetry, tracking and control system mass to total mass fraction </dcep_description>
 	</frac_m_ttc>
 	<frac_m_adc>
-		<name>total adc mass fraction</name>
-		<unit>-</unit>
-		<description>total attitude determination and control system mass to total mass fraction</description>
+		<dcep_name>total adc mass fraction</dcep_name>
+		<dcep_unit>-</dcep_unit>
+		<dcep_description>total attitude determination and control system mass to total mass fraction</dcep_description>
 	</frac_m_adc>
 	<frac_m_propulsion>
-		<name>total propulsion system mass fraction</name>
-		<unit>-</unit>
-		<description>total propulsion system mass to total mass fraction </description>
+		<dcep_name>total propulsion system mass fraction</dcep_name>
+		<dcep_unit>-</dcep_unit>
+		<dcep_description>total propulsion system mass to total mass fraction </dcep_description>
 	</frac_m_propulsion>
 	<frac_m_misc>
-		<name>total miscelleanous mass  fraction</name>
-		<unit>-</unit>
-		<description>misscellameous to total mass fraction</description>
+		<dcep_name>total miscelleanous mass  fraction</dcep_name>
+		<dcep_unit>-</dcep_unit>
+		<dcep_description>misscellameous to total mass fraction</dcep_description>
 	</frac_m_misc>
 	<dv>
-		<name>delta v</name>
-		<unit>m/s</unit>
-		<description>Input: Total velocity increment of the mission</description>
+		<dcep_name>delta v</dcep_name>
+		<dcep_unit>m/s</dcep_unit>
+		<dcep_description>Input: Total velocity increment of the mission</dcep_description>
 	</dv>
 	<power_propulsion>
-		<name>Propulsion system power</name>
-		<unit>W</unit>
-		<description>Input: Total propulsion system electric power</description>
+		<dcep_name>Propulsion system power</dcep_name>
+		<dcep_unit>W</dcep_unit>
+		<dcep_description>Input: Total propulsion system electric power</dcep_description>
 	</power_propulsion>
 	<power_jet>
-		<name>Jet exhaust power</name>
-		<unit>W</unit>
-		<description>Total jet output power of the propulsion system</description>
+		<dcep_name>Jet exhaust power</dcep_name>
+		<dcep_unit>W</dcep_unit>
+		<dcep_description>Total jet output power of the propulsion system</dcep_description>
 	</power_jet>
 	<power_thruster>
-		<name>Thruster power</name>
-		<unit>W</unit>
-		<description>Total electric power consumption of the propulsion system</description>
+		<dcep_name>Thruster power</dcep_name>
+		<dcep_unit>W</dcep_unit>
+		<dcep_description>Total electric power consumption of the propulsion system</dcep_description>
 	</power_thruster>
 	<propulsion_system>
-		<name>Propulsion system type</name>
-		<unit>-</unit>
-		<description>Describes the current propulsion system</description>
+		<dcep_name>Propulsion system type</dcep_name>
+		<dcep_unit>-</dcep_unit>
+		<dcep_description>Describes the current propulsion system</dcep_description>
 	</propulsion_system>
 	<propellant>
-		<name>Propellant</name>
-		<unit>-</unit>
-		<description>Describes the current propellant used by the propulsion system</description>
+		<dcep_name>Propellant</dcep_name>
+		<dcep_unit>-</dcep_unit>
+		<dcep_description>Describes the current propellant used by the propulsion system</dcep_description>
 	</propellant>
 	<c_e>
-		<name>Effective exhaust velocity</name>
-		<unit>m/s</unit>
-		<description>Effective exhaust velocity of the propulsion system</description>
+		<dcep_name>Effective exhaust velocity</dcep_name>
+		<dcep_unit>m/s</dcep_unit>
+		<dcep_description>Effective exhaust velocity of the propulsion system</dcep_description>
 	</c_e>
 	<thrust>
-		<name>Thrust</name>
-		<unit>N</unit>
-		<description>Thrust of the propulsion system</description>
+		<dcep_name>Thrust</dcep_name>
+		<dcep_unit>N</dcep_unit>
+		<dcep_description>Thrust of the propulsion system</dcep_description>
 	</thrust>
 	<eff_PPU>
-		<name>PPU efficiency</name>
-		<unit>-</unit>
-		<description>Power conversion efficiency of the Power Propulsion Unit (PPU)</description>
+		<dcep_name>PPU efficiency</dcep_name>
+		<dcep_unit>-</dcep_unit>
+		<dcep_description>Power conversion efficiency of the Power Propulsion Unit (PPU)</dcep_description>
 	</eff_PPU>
 	<eff_thruster>
-		<name>Thruster efficiency</name>
-		<unit>-</unit>
-		<description>El. power to jet power conversion efficiency of the thruster</description>
+		<dcep_name>Thruster efficiency</dcep_name>
+		<dcep_unit>-</dcep_unit>
+		<dcep_description>El. power to jet power conversion efficiency of the thruster</dcep_description>
 	</eff_thruster>
 	<subsystem_masses>
-		<name>Subsystem masses</name>
-		<unit>-</unit>
-		<description>Masses of all spacecraft subsystems</description>
+		<dcep_name>Subsystem masses</dcep_name>
+		<dcep_unit>-</dcep_unit>
+		<dcep_description>Masses of all spacecraft subsystems</dcep_description>
 	</subsystem_masses>
 	<mission_parameters>
-		<name>Mission parameters</name>
-		<unit>-</unit>
-		<description>Mission specific parameters</description>
+		<dcep_name>Mission parameters</dcep_name>
+		<dcep_unit>-</dcep_unit>
+		<dcep_description>Mission specific parameters</dcep_description>
 	</mission_parameters>
 	<maneuver_duration>
-		<name>Total maneuvre duration</name>
-		<unit>s</unit>
-		<description>Total time to perform the full dv of all maneuvres.</description>
+		<dcep_name>Total maneuvre duration</dcep_name>
+		<dcep_unit>s</dcep_unit>
+		<dcep_description>Total time to perform the full dv of all maneuvres.</dcep_description>
 	</maneuver_duration>
 	<evolution_success>
-		<name>Flag for Evolution sucess</name>
-		<unit>-</unit>
-		<description>Flags the sucess of the recent generation. Relevant for algorithm analysis and debugging.</description>
+		<dcep_name>Flag for Evolution sucess</dcep_name>
+		<dcep_unit>-</dcep_unit>
+		<dcep_description>Flags the sucess of the recent generation. Relevant for algorithm analysis and debugging.</dcep_description>
 	</evolution_success>
 	<n_success>
-		<name>Success counter</name>
-		<unit>-</unit>
-		<description>Counter for convergence of lineage. Relevant for algorithm analysis and debugging.</description>
+		<dcep_name>Success counter</dcep_name>
+		<dcep_unit>-</dcep_unit>
+		<dcep_description>Counter for convergence of lineage. Relevant for algorithm analysis and debugging.</dcep_description>
 	</n_success>
-
 </variable_attributes>
