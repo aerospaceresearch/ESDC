@@ -36,7 +36,6 @@ disp('XML production complete')
 %disp('Visual production complete')
 
 
-
 disp('ESDC complete')
 t_end = now;
 disp(sprintf('Exiting program after total runtime of %d s.',(t_end-t_0)*60*60*24))

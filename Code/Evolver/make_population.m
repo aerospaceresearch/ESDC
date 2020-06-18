@@ -31,7 +31,8 @@ initial_pop = struct();
       
       %calculate system masses and mission parameters
  %     initial_pop(i,j).subsystem_masses = mass_budget_propulsion(initial_pop(i,j), db_data);
-      initial_pop(i,j).subsystem_masses = SMAD_scalings(initial_pop(i,j));
+      [initial_pop(i,j).subsystem_masses initial_pop(i,j).subsystem_powers] = SMAD_scalings(initial_pop(i,j));
+      
       
       initial_pop(i,j).mission_parameters = mission_parameters(initial_pop(i,j));
       

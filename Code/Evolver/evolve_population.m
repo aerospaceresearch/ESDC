@@ -14,8 +14,8 @@ function [generation_new, convergence] = evolve_population(input, db_data, confi
       population(i,j) = mutate_individual(input, db_data, config, generation_data{n_successor}(i,j));
       
       %refresh other system data                  
-      population(i,j).subsystem_masses = SMAD_scalings(population(i,j));
-      
+      [population(i,j).subsystem_masses population(i,j).subsystem_powers]= SMAD_scalings(population(i,j));
+
       %population(i,j).subsystem_masses = = mass_budget_propulsion(population(i,j), db_data);
       % here problem because inconsistent with fields of SMAD scaling format
       

@@ -218,4 +218,54 @@
 		<dcep_unit>-</dcep_unit>
 		<dcep_description>Counter for convergence of lineage. Relevant for algorithm analysis and debugging.</dcep_description>
 	</n_success>
+	<subsystem_powers>
+		<dcep_name>Subsystem powers</dcep_name>
+		<dcep_unit>-</dcep_unit>
+		<dcep_description>Power requirement of all spacecraft subsystems</dcep_description>
+	</subsystem_powers>
+	<p_total>
+		<dcep_name>power total</dcep_name>
+		<dcep_unit>W</dcep_unit>
+		<dcep_description>total power demand spacecraft</dcep_description>
+	</p_total>
+	<p_payload>
+		<dcep_name>power payload</dcep_name>
+		<dcep_unit>W</dcep_unit>
+		<dcep_description>power demand of the payload</dcep_description>
+	</p_payload>
+	<p_structmech>
+		<dcep_name>power structure and mechanisms</dcep_name>
+		<dcep_unit>W</dcep_unit>
+		<dcep_description>power demand for operation structures and mechanisms</dcep_description>
+	</p_structmech>
+	<p_thermal>
+		<dcep_name>power thermal system</dcep_name>
+		<dcep_unit>W</dcep_unit>
+		<dcep_description>power demand for thermal control</dcep_description>
+	</p_thermal>
+	<p_power>
+		<dcep_name>power for power system</dcep_name>
+		<dcep_unit>W</dcep_unit>
+		<dcep_description>power demand for power conditioning</dcep_description>
+	</p_power>
+	<p_TTC>
+		<dcep_name>power TTC</dcep_name>
+		<dcep_unit>W</dcep_unit>
+		<dcep_description>power demand for tracking telemetry and command</dcep_description>
+	</p_TTC>
+	<p_OBC>
+		<dcep_name>power OBC</dcep_name>
+		<dcep_unit>W</dcep_unit>
+		<dcep_description>power demand for on-board computer</dcep_description>
+	</p_OBC>
+	<p_ADC>
+		<dcep_name>power ADC</dcep_name>
+		<dcep_unit>W</dcep_unit>
+		<dcep_description>power demand for attitude determination and control</dcep_description>
+	</p_ADC>
+	<p_propulsion>
+		<dcep_name>power propulsion</dcep_name>
+		<dcep_unit>W</dcep_unit>
+		<dcep_description>power demand for propulsion systems</dcep_description>
+	</p_propulsion>
 </variable_attributes>

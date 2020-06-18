@@ -10,6 +10,7 @@
 
 function [systemmasses systempowers] = SMAD_scalings(data)
    systemmasses = struct();
+   systempowers = struct();
    
    sc_type = determine_sc_type(data);
    systemmasses.m_dry_nomargin  = determine_m_dry(data);
@@ -32,7 +33,21 @@ function [systemmasses systempowers] = SMAD_scalings(data)
    %Add discrepancy to margin
    systemmasses.m_margin= systemmasses.m_margin+ data.mass-checksum;
    
-   %disp(systemmasses);
+   if isfield(data,'p_total')
+    systempowers.p_total = data.p_total;
+   else
+    systempowers.p_total = p_tot_average(systemmasses.m_dry_nomargin, sc_type);
+   end
+   
+    systempowers.p_payload      = p_scale_Payload(systempowers.p_total,sc_type);
+    systempowers.p_structmech   = p_scale_StructMecha(systempowers.p_total,sc_type);
+    systempowers.p_thermal      = p_scale_Thermal(systempowers.p_total,sc_type);
+    systempowers.p_power        = p_scale_Power(systempowers.p_total,sc_type);
+    systempowers.p_TTC          = p_scale_TTC(systempowers.p_total,sc_type);
+    systempowers.p_OBC          = p_scale_OnBoardProcessing(systempowers.p_total,sc_type);
+    systempowers.p_ADC          = p_scale_ADC(systempowers.p_total,sc_type);
+    systempowers.p_propulsion   = p_scale_Propulsion(systempowers.p_total,sc_type);
+
 endfunction
 
 function [sc_type] = determine_sc_type(data)
@@ -122,56 +137,62 @@ end
 
 
 %Power Scaling
-%Page 422 Tab 14-20 Average Mass by System as a Percentage of Dry Mass for 4 Types of Spacecraft
+%Page 423 Tab 14-20 Average Mass by System as a Percentage of Dry Mass for 4 Types of Spacecraft
 
 %Factor - 1 no propulsion , 2  LEO up to 1000 km, 3 - above 1000, 4 - planetary probe
+
+function P = p_tot_average(mass_dry, sc_type)
+  power_factor=[299 794 691 749];
+  mass_factor = mass_dry./[1497 2344 1258 888];
+   P= mass_factor(sc_type)^(2/3)*power_factor(sc_type); % continue here with better data from 966 new SMAD
+end
+
 function P = p_scale_Payload(P_tot, sc_type)
   factor=[.43 .46 .35 .22];
-  m = m_dry*(factor(sc_type));
+  P = P_tot*(factor(sc_type));
   
 end
 
 function P = p_scale_StructMecha(P_tot, sc_type)
   factor=[.0 .1 .0 .1];
-  m = m_dry*(factor(sc_type));
+  P = P_tot*(factor(sc_type));
   
 end
 
 function P = p_scale_Thermal(P_tot, sc_type)
   factor=[.5 .10 .14 .15];
-  m = m_dry*(factor(sc_type));
-  
+  P = P_tot*(factor(sc_type));
 end
 
 function P = p_scale_Power(P_tot, sc_type)
   %power including harness
   factor=[.10 .09 .07 .10];
-  m = m_dry*(factor(sc_type));
+  P = P_tot*(factor(sc_type));
   
 end
 
 function P = p_scale_TTC(P_tot, sc_type)
   factor=[.11 .12 .16 .18];
-  m = m_dry*(factor(sc_type));
+  P = P_tot*(factor(sc_type));
   
 end
 
 function P = p_scale_OnBoardProcessing(P_tot, sc_type)
   factor=[.13 .12 .10 .11];
-  m = m_dry*(factor(sc_type));
+  P = P_tot*(factor(sc_type));
     
 end
 
 function P = p_scale_ADC(P_tot, sc_type)
   %attitude determination and control
   factor=[.18 .10 .16 .12];
-  m = m_dry*(factor(sc_type));
+  P = P_tot*(factor(sc_type));
   
 end
 
 function P = p_scale_Propulsion(P_tot, sc_type)
   factor=[0 0 .02 .11];
-  m = m_dry*(factor(sc_type));
+  P = P_tot*(factor(sc_type));
 
 end
 

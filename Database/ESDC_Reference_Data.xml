@@ -218,7 +218,7 @@ ELECTRIC PROPULSION SYSTEM DESIGNED FOR SMALL SATELLITES6, http://www.space-prop
 			<ppu>
 					<type>gridionthruster</type>
 					<name>Arclight PPU</name>
-					<mass> 6.5</mass>
+					<mass>6.5</mass>
 					<power>450</power>
 					<efficiency>0.92</efficiency>
 			</ppu>
