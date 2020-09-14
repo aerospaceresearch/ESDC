@@ -1,5 +1,7 @@
 function [  ] =ESDC()
-t_0 = now;
+
+t_0= now;
+
 addpath('Code/Analysis');
 addpath('Code/Evolver');
 addpath('Code/Input');

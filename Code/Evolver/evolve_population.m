@@ -29,36 +29,80 @@ function [generation_new, convergence] = evolve_population(input, db_data, confi
       
       population(i,j).subsystem_masses.m_propulsion = EP_scalings.total;
       
+      population(i,j).subsystem_masses.propulsion.m_tank      =  EP_scalings.tank;
+      population(i,j).subsystem_masses.propulsion.m_thruster  =  EP_scalings.thruster;
+      population(i,j).subsystem_masses.propulsion.m_PPU       =  EP_scalings.PPU;
+      
+
+      %TODO - recalculate power
+      %TODO - reiterate power system sizing
+      
       %adjust available margin mass accordingly
       
-      
-      population(i,j).subsystem_masses.m_margin = population(i,j).subsystem_masses.m_margin-d_EP;
+      population(i,j).subsystem_masses.m_margin = population(i,j).subsystem_masses.m_margin-d_EP;  %TODO: THINK HERE
       if population(i,j).subsystem_masses.m_margin <0
           %disp('Alert system margin fully consumed by propulsion system')
+          %population(i,j).mass = population(i,j).mass-population(i,j).subsystem_masses.m_margin;
+          population(i,j).subsystem_masses.m_margin =0;
           %TODO better handling here
       end
+      
+      d_powersys = population(i,j).subsystem_powers.p_propulsion - population(i,j).power_propulsion;
 
+      if population(i,j).subsystem_powers.p_propulsion< population(i,j).power_propulsion
+        population(i,j).subsystem_powers.p_propulsion = population(i,j).power_propulsion;
+      end
       
-      %TODO HERE - design loop for changed mass ...or reduce margin mass???
+      %update p_total
+      power_fields = fieldnames(population(i,j).subsystem_powers);
+      p_new = 0;
+      for k=2:numel(power_fields)    %start with 2 as 1 is p_total itself
+        p_new = p_new+population(i,j).subsystem_powers.(power_fields{k,1});
+      end
+%      disp(population(i,j).subsystem_powers.p_total)
+%      disp(p_new)
+%      
+%      frac_pow12 = p_new/population(i,j).subsystem_powers.p_total;
+      population(i,j).subsystem_powers.p_total= p_new;
+%      
+%      population(i,j).subsystem_masses.m_power= population(i,j).subsystem_masses.m_power*(frac_pow12-1);
+%      disp(population(i,j).subsystem_masses.m_power)
+      sc_type = determine_sc_type(population(i,j));
+      m_pow_1 = population(i,j).subsystem_masses.m_power;
+      population(i,j).subsystem_masses.m_power = scale_SMAD_parameter(population(i,j).subsystem_powers.p_total, sc_type, "power_total", "fraction_m_power")*population(i,j).mass;
+      d_m_pow = m_pow_1-  population(i,j).subsystem_masses.m_power;
       
-      %population(i,j).subsystem_masses.m_propulsion = EP_scalings.total; %
+      population(i,j).subsystem_masses.m_margin = population(i,j).subsystem_masses.m_margin-d_m_pow;
+      if population(i,j).subsystem_masses.m_margin <0
+          %disp('Alert system margin fully consumed by propulsion system')
+          %population(i,j).mass = population(i,j).mass-population(i,j).subsystem_masses.m_margin;     %TODO: THINK HERE
+          population(i,j).subsystem_masses.m_margin =0;    %TODO: THINK HERE
+      end
       
-      population(i,j).mass_fractions= mass_fractions(population(i,j));
+      %total mass
+      mass_fields =  fieldnames(population(i,j).subsystem_masses);
+      m_new=0;
+      for k=4:numel(mass_fields)-1    %start with 4 as three previous fields are irrelvant -1 is another struct - beware!
+        m_new = m_new+population(i,j).subsystem_masses.(mass_fields{k,1});
+      end
+      population(i,j).subsystem_masses.m_dry_margin = m_new;
       
-  
+      population(i,j).subsystem_masses.m_dry_nomargin = population(i,j).mass-population(i,j).subsystem_masses.m_propellant;
+      population(i,j).subsystem_masses.m_margin = population(i,j).subsystem_masses.m_dry_nomargin-population(i,j).subsystem_masses.m_dry_margin;
+      %population(i,j).mass_fractions= mass_fractions(population(i,j));
+      
       population(i,j).mission_parameters = mission_parameters(population(i,j));
       
       %test for improvement of pop member
       lineage = get_lineage(generation_data, i, j);
       population(i,j).evolution_success = test_maximize_parameter(population(i,j), lineage, {'subsystem_masses','m_margin'}); % add this to sim parameter options 
+      %population(i,j).evolution_success = test_minimize_parameter(population(i,j), lineage, {'mass'});                        % does not work properly!!
       
       %refresh the number of the last sucessful lineage member here
       if population(i,j).evolution_success== 1
         population(i,j).n_success = size(generation_data,2)+1;
       end
-      
-
-      
+       
        %test for convergence here, maybe add number of non convergence gere
       population(i,j).convergence = test_lineage_convergence_simple(population(i,j), lineage, config);  % add a parmeter specific epsilon convergence test
     end
@@ -70,7 +114,7 @@ function [generation_new, convergence] = evolve_population(input, db_data, confi
   %full convergence testing is done here.
   [convergence n_convergence] = test_full_convergence(population);
   if !mod(size(generation_data,2),config.Simulation_parameters.output.CLI.n_verbosity)
-    disp(sprintf('Converged lineages: %d / %d', n_convergence, size(input.Satellite_parameters.input_case,2)*config.Simulation_parameters.evolver.seed_points))
+    disp(sprintf('Converged lineages: %d / %d', n_convergence, size(input.Satellite_parameters.input_case,2)*config.Simulation_parameters.evolver.seed_points));
     fflush(stdout);
   end
 

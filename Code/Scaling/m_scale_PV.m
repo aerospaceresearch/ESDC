@@ -3,7 +3,6 @@ function [m_PV] = m_scale_PV(P_out, db_data)
 
 
     data = dlmread(filename,",");
-    
 
   m_PV = scaling_linear(P_out,data);
   

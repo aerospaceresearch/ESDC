@@ -7,12 +7,16 @@ function [m_thruster] = m_scale_thruster(P_thruster, propulsion_type, propellant
   
   if exist(filename)
     data = dlmread(filename,",");
-%    if size(data,2)==1                  %linear scaling when only single data point available
-%      data = [data(:,1), 2.*data(:,1)];
-%    end
+    if size(data,2)==1                  %linear scaling when only single data point available
+      data = [data(:,1), 2.*data(:,1)];
+    end
+  
+
   data(1:2,:) = [data(2,:);data(1,:)];
   data(3:4,:) = [data(4,:);data(3,:)];
-  %data = [data(2,:);data(1,:)];
+  
+  
+  
     % Interpolate for known data, extrapolate beyond.
     m_thruster = scaling_linear(P_thruster,data);
   else % regenerate missing data 

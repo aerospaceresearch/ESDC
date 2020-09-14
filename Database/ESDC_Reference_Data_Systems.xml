@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>  
 <reference_data>
 	<propulsion_system>
 		<arcjet>
@@ -7,6 +7,7 @@
 					<name>Velarc</name>
 					<thrust>0.04002</thrust>
 					<c_e>4415</c_e>
+					<power_jet>88.34415</power_jet>
 					<massflow>9e-06</massflow>
 					<mass>0.3</mass>
 					<efficiency> 0.3178</efficiency>
@@ -19,6 +20,7 @@
 					<name>ARTUS IM3</name>
 					<thrust>0.1068829</thrust>
 					<c_e>4836</c_e>
+					<power_jet>258.4428522</power_jet>
 					<massflow>22.1e-06</massflow>
 					<mass>0.732</mass>
 					<efficiency> 0.324839</efficiency>
@@ -31,6 +33,7 @@
 					<name>TALOS</name>
 					<thrust>0.1025</thrust>
 					<c_e>4767.442</c_e>
+					<power_jet>244.3314025</power_jet>
 					<massflow>21.5e-06</massflow>
 					<efficiency> 0.305414</efficiency>
 					<propellant>NH3</propellant>
@@ -42,6 +45,7 @@
 					<name>ESEX -flight </name>
 					<thrust>1.93</thrust>
 					<c_e>7710.66</c_e>
+					<power_jet>7440.7869</power_jet>
 					<massflow>0.000250302827514</massflow>
 					<efficiency> 0.267</efficiency>
 					<propellant>NH3</propellant>
@@ -53,6 +57,7 @@
 					<name>ESEX -IM</name>
 					<thrust>2</thrust>
 					<c_e>7848</c_e>
+					<power_jet>7848</power_jet>
 					<massflow>0.000254841997961</massflow>
 					<efficiency> 0.299541984732824</efficiency>
 					<propellant>NH3</propellant>
@@ -64,6 +69,7 @@
 					<name>Artur He</name>
 					<thrust>0.270</thrust>
 					<c_e>6136.35</c_e>
+					<power_jet>828.40725</power_jet>
 					<massflow>44e-06</massflow>
 					<mass>0.455</mass>
 					<efficiency> 0.702040</efficiency>
@@ -76,6 +82,7 @@
 					<name>Artur He</name>
 					<thrust>0.180</thrust>
 					<c_e>4090.909302</c_e>
+					<power_jet>368.18183718</power_jet>
 					<massflow>44e-06</massflow>
 					<mass>0.455</mass>
 					<efficiency> 0.73636</efficiency>
@@ -88,6 +95,7 @@
 					<name>Velarc</name>
 					<thrust>0.0345</thrust>
 					<c_e>5886</c_e>
+					<power_jet>101.5335</power_jet>
 					<massflow>6e-06</massflow>
 					<mass>0.3</mass>
 					<efficiency> 0.7532</efficiency>
@@ -151,6 +159,7 @@
 					<name>Arclight</name>
 					<thrust>0.012</thrust>
 					<c_e>23544</c_e>
+					<power_jet>141.264</power_jet>
 					<massflow>0.00000050968399592253</massflow>
 					<mass>1.8</mass>
 					<efficiency>0.35316</efficiency>
@@ -164,6 +173,7 @@ ELECTRIC PROPULSION SYSTEM DESIGNED FOR SMALL SATELLITES6, http://www.space-prop
 					<name>RIT 10 EVO mean</name>
 					<thrust>0.015</thrust>
 					<c_e>29430</c_e>
+					<power_jet>220.725</power_jet>
 					<massflow>0.00000050968399592253</massflow>
 					<mass>1.8</mass>
 					<efficiency>0.507413793103448275</efficiency>
@@ -176,6 +186,7 @@ ELECTRIC PROPULSION SYSTEM DESIGNED FOR SMALL SATELLITES6, http://www.space-prop
 					<name>RIT 10 EVO min</name>
 					<thrust>0.005</thrust>
 					<c_e>18639</c_e>
+					<power_jet>46.5975</power_jet>
 					<mass>1.8</mass>
 					<efficiency>0.3213662068</efficiency>
 					<propellant>Xe</propellant>
@@ -187,6 +198,7 @@ ELECTRIC PROPULSION SYSTEM DESIGNED FOR SMALL SATELLITES6, http://www.space-prop
 					<name>RIT 10 EVO max</name>
 					<thrust>0.025</thrust>
 					<c_e>31392</c_e>
+					<power_jet>392.4</power_jet>
 					<mass>1.8</mass>
 					<efficiency>0.516315789</efficiency>
 					<propellant>Xe</propellant>
@@ -197,9 +209,10 @@ ELECTRIC PROPULSION SYSTEM DESIGNED FOR SMALL SATELLITES6, http://www.space-prop
 					<type>gridionthruster</type>
 					<name>RIT µX max</name>
 					<thrust>0.0005</thrust>
-					<c_e>29430</c_e>
+					<c_e>2943</c_e>
+					<power_jet>.73575</power_jet>
 					<mass>0.44</mass>
-					<efficiency>0.516315789</efficiency>
+					<efficiency>0.014715</efficiency>
 					<propellant>Xe</propellant>
 					<structure_mass>5</structure_mass>
 					<source> Ariane Group - http://www.space-propulsion.com/spacecraft-propulsion/propulsion-systems/electric-propulsion/images/rit-thruster-family-performance-data.jpg</source>
@@ -208,9 +221,10 @@ ELECTRIC PROPULSION SYSTEM DESIGNED FOR SMALL SATELLITES6, http://www.space-prop
 					<type>gridionthruster</type>
 					<name>RIT µX min</name>
 					<thrust>0.00005</thrust>
-					<c_e>2943</c_e>
+					<c_e>29430</c_e>
+					<power_jet>.73575</power_jet>
 					<mass>0.44</mass>
-					<efficiency>0.14435415</efficiency>
+					<efficiency>0.014715</efficiency>
 					<propellant>Xe</propellant>
 					<structure_mass>5</structure_mass>
 					<source> Ariane Group - http://www.space-propulsion.com/spacecraft-propulsion/propulsion-systems/electric-propulsion/images/rit-thruster-family-performance-data.jpg</source>

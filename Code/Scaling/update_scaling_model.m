@@ -1,49 +1,131 @@
 function [scaling_model_struct] = update_scaling_model()
   disp('Database check:');
-  
-  [data] = read_reference_data(); 
-  update_generic_scaling_model(data);
-  
-  if exist("Database/ESDC_Reference_Data_hash")
-    
-    hash_file = fopen('Database/ESDC_Reference_Data_hash', "r");
+ 
+  %System scaling
+  update_system_scaling(); %generates .csv look-up tables for component data from database
+  %[data] = read_reference_data();    
+  %update_generic_component_scaling_model(data);  
+
+  %SC data scaling
+  update_SC_scaling(); %generates .csv look-up tables for spacecraft data
+  % [data] = read_reference_spacecraft_data();     %for debugging
+  % update_generic_spacecraft_scaling_model(data);
+end
+
+function[] = update_SC_scaling()
+    if exist("Database/ESDC_Reference_Data_Spacecrafts_hash");
+    hash_file = fopen('Database/ESDC_Reference_Data_Spacecrafts_hash', "r");
     hash_val = fgetl(hash_file);
     fclose(hash_file);
-    current_hash = hash('md5', fileread('Database/ESDC_Reference_Data.xml'));
+    current_hash = hash('md5', fileread('Database/ESDC_Reference_Data_Spacecrafts.xml'));
+    if (hash_val == current_hash)
+      disp('No updates to spacecraft database detected.');
+        return;
+      else
+      disp('Updates to spacecraft database detected.');
+        [data] = read_reference_spacecraft_data();                    % add output here
+        hash_file= fopen('Database/ESDC_Reference_Data_Spacecrafts_hash', "w");
+        fprintf(hash_file, hash('md5', fileread('Database/ESDC_Reference_Data_Spacecrafts.xml')));
+        fclose(hash_file);
+        update_generic_spacecraft_scaling_model(data);
+        %update_generic_component_scaling_model(data);
+        disp('Updates to S/C db complete.');
+      end
+    else
+      disp('No spacecraft database hash file found');
+      disp('Creating hash file');
+      hash_file= fopen('Database/ESDC_Reference_Data_Spacecrafts_hash', "a");
+      disp('Write hash');
+      fprintf(hash_file, hash('md5', fileread('Database/ESDC_Reference_Data_Spacecrafts.xml')));
+      fclose(hash_file);
+      update_SC_scaling();
+  end  
+end
+
+function [] =  update_generic_spacecraft_scaling_model(data)
+    disp('Updating spacecraft scaling models');
+    data = data.reference_data_spracecraft{1,1}.spacecraft;
+    
+    %determine different cases of orbit types
+    distinct_orbit_cases  = {};
+    for i=1:numel(data)
+      distinct_orbit_cases{i}=data{1,i}.orbit_type;
+    end
+    distinct_orbit_cases = unique(distinct_orbit_cases);
+
+    
+    %determine number of potentially corellatable fields  
+    all_fields = {};
+    n=0;
+    for i=1:numel(data)
+        case_fields = fieldnames(data{1,i});
+        for j=1:numel(case_fields)
+          n=n+1;
+          all_fields{n} =case_fields{j,1};
+        end
+          all_fields = unique(all_fields);
+          n=numel(all_fields);
+    end
+    
+    to_correlate = {'m_total','m_payload','power_total','p_payload'}; 
+    for i=1: numel(distinct_orbit_cases);
+      for j=1:numel(to_correlate)                                                                               
+       for k=1:numel(all_fields)
+         if strcmp(all_fields{1,k},'name') || strcmp(all_fields{1,k},'launch_year') || strcmp(all_fields{1,k},'source') || strcmp(all_fields{1,k},'orbit_type')  % exclusion from numerical correlation
+           %just skip
+         else
+          update_generic_spacecraft_system_scaling_a_to_b(data,char(distinct_orbit_cases{i}),char(to_correlate{1,j}),char(all_fields{1,k}));
+         end
+       end
+      end
+    end
+  
+   disp('Updating Spacecraft system scalings complete');
+end
+
+
+
+function [] = update_system_scaling()
+
+  
+  if exist("Database/ESDC_Reference_Data_Systems_hash")
+    hash_file = fopen('Database/ESDC_Reference_Data_Systems_hash', "r");
+    hash_val = fgetl(hash_file);
+    fclose(hash_file);
+    current_hash = hash('md5', fileread('Database/ESDC_Reference_Data_Systems.xml'));
  
     if (hash_val == current_hash)
       disp('No updates to database detected.');
       else
       disp('Updates to database detected.');
         [data] = read_reference_data();                    % add output here
-        hash_file= fopen('Database/ESDC_Reference_Data_hash', "w");
-        fprintf(hash_file, hash('md5', fileread('Database/ESDC_Reference_Data.xml')));
+        hash_file= fopen('Database/ESDC_Reference_Data_Systems_hash', "w");
+        fprintf(hash_file, hash('md5', fileread('Database/ESDC_Reference_Data_Systems.xml')));
         fclose(hash_file);
-        update_generic_scaling_model(data);
+        update_generic_component_scaling_model(data);
         disp('Updates complete.');
       end
   else
     disp('No database hash file found');
     disp('Creating hash file');
-    hash_file= fopen('Database/ESDC_Reference_Data_hash', "a");
+    hash_file= fopen('Database/ESDC_Reference_Data_Systems_hash', "a");
     disp('Write hash');
-    fprintf(hash_file, hash('md5', fileread('Database/ESDC_Reference_Data.xml')));
+    fprintf(hash_file, hash('md5', fileread('Database/ESDC_Reference_Data_Systems.xml')));
     fclose(hash_file);
+    update_system_scaling();
   end
 end
 
-
-function [] = update_generic_scaling_model(data)
+function [] =  update_generic_component_scaling_model(data)
 disp('Starting updating of scaling data');
 disp('');
-system_type_names=fieldnames(data.reference_data);        % System loop - e.g. propulsion, power etc.
+system_type_names=fieldnames(data.reference_data); % System loop - e.g. propulsion, power etc.
 for k=1:numel(system_type_names)
   
   technology_type_names=fieldnames(data.reference_data.(char(system_type_names(k))));
   for i=1:numel(technology_type_names)                    % Technology loop - e.g. arcjet, GIT etc.
-    component_type_names=fieldnames(data.reference_data.(char(system_type_names(k))).(char(technology_type_names(i))))
+    component_type_names=fieldnames(data.reference_data.(char(system_type_names(k))).(char(technology_type_names(i))));
     for j=1:numel(component_type_names)                   % Component loop - e.g. thruster, ppu, solar cell, etc.
-      
       if not(isstruct(data.reference_data.(char(system_type_names(k))).(char(technology_type_names(i))).(char(component_type_names(j))))) % HERE single field will not be considered
         parameter_names=fieldnames(data.reference_data.(char(system_type_names(k))).(char(technology_type_names(i))).(char(component_type_names(j))){1,i});
       else
@@ -55,9 +137,9 @@ for k=1:numel(system_type_names)
       end
         for l=1:numel(parameter_names)                      % Parameter loop - e.g. mass, power, etc 
           if strcmp(char(component_type_names(j)),'thruster')     % Case distinction of scaling parameters of thrusters being propellant dependent
-          update_generic_component_scaling_a_to_b(data,char(system_type_names(k)),char(technology_type_names(i)),char(component_type_names(j)),'mass',char(parameter_names(l)), 'propellant')
+          update_generic_component_scaling_a_to_b(data,char(system_type_names(k)),char(technology_type_names(i)),char(component_type_names(j)),'mass',char(parameter_names(l)), 'propellant');
           else                                                    % Generic correlation of two parameters
-          update_generic_component_scaling_a_to_b(data,char(system_type_names(k)),char(technology_type_names(i)),char(component_type_names(j)),'mass',char(parameter_names(l)))
+          update_generic_component_scaling_a_to_b(data,char(system_type_names(k)),char(technology_type_names(i)),char(component_type_names(j)),'mass',char(parameter_names(l)));
           end
         
         end
@@ -72,100 +154,3 @@ disp('Updating scaling data complete');
 disp('');
 
 end
-
-function [] = update_generic_component_scaling_a_to_b(db_data, system_type, technology_type, component_type, field_x, field_y, varargin)
-
-%Exclusion of certain y-fields that can not be sorted , non int
-if strcmp(field_y,'type') ||  strcmp(field_y,'name') ||  strcmp(field_y,'source') ||  strcmp(field_y,'propellant') 
-  return
-end
-
-if strcmp(field_x, field_y)
- return
-end
-%filename = strcat("Database/Scaling/scaling_PPU_mass_to_power_",propulsion_type, ".csv");
-path = "Database/Scaling/";
-
-
-%CASE FOR ADDITIONAL SUB DIMENSIONS - currently only one more implemented
-
-add_dim=char(varargin);  % could add here check for for size 1,1
-if nargin==7
-    distinct_cases  = {};
-      n_cases = numel(db_data.reference_data.(system_type).(technology_type).(component_type));
-    for i=1:n_cases
-      distinct_cases{i}  = db_data.reference_data.(system_type).(technology_type).(component_type){1,i}.(add_dim);
-    end
-      distinct_cases= unique(distinct_cases);
-
-    for j=1:numel(distinct_cases) 
-
-      x = [];
-      y = [];
-      data_point =db_data.reference_data.(system_type).(technology_type).(component_type){1,j};
-      for i=1:numel(data_point)
-        if isfield(data_point, field_x) && isfield(data_point, field_y) && isfield(data_point, add_dim) %&& strcmp(data_point.(add_dim),distinct_cases(j))
-            %calculate and collect data
-            x = [x data_point.(field_x)];
-            y = [y data_point.(field_y)];
-            %maybe add here name ?
-        endif
-      end
-        filename = strcat(path,"scaling_",system_type,"_",technology_type,"_",component_type,"_with_",add_dim,"_",char(distinct_cases(j)),"_",field_x,"_to_",field_y,".csv");
-        write_selected_data_to_file(x,y, filename);
-    endfor
-
-
-else % generic case handling
-    x = [];
-    y = [];
-    
-
-
-    %Walk db for case instances
-    n_cases = numel(db_data.reference_data.(system_type).(technology_type).(component_type));
-    for i=1:n_cases
-      %Shortcut to relevant data
-      if n_cases == 1
-         data_point =db_data.reference_data.(system_type).(technology_type).(component_type);
-      else
-        data_point =db_data.reference_data.(system_type).(technology_type).(component_type){1,i};
-      endif
-
-      %test for relevant field existance
-      if isfield(data_point, field_x) && isfield(data_point, field_y)
-            %calculate and collect data
-            x = [x data_point.(field_x)];
-            y = [y data_point.(field_y)];
-            %maybe add here name ?
-      endif
-    end
-      filename = strcat(path,"scaling_",system_type,"_",technology_type,"_",component_type,"_",field_x,"_to_",field_y,".csv");
-      write_selected_data_to_file(x,y,filename)
-end
-
-
-end
-
-function [] = write_selected_data_to_file(x,y, filename)   %function to write 
-  
-    data = sort_data(x,y);
-    %write file  
-    dlmwrite(filename, data, ",");
-    disp(strcat(filename, " updated"));
-  
- endfunction
- 
- function [data] = sort_data(x,y)
-       %Sort data according dim_y
-    [sorted_y idx] = sort(y);
-    
-    %arranged related data
-    for i=1:numel(y)
-     sorted_x(i) = x(idx(i));
-    endfor
-    %Pad cases for y 0 for minimal mass of lightest known piece of hardware % likely questionsbale for some cases
-    sorted_y = [0 sorted_y];
-    sorted_x = [sorted_x(1) sorted_x];
-    data = [sorted_y; sorted_x];
- endfunction

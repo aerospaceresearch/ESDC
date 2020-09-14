@@ -233,11 +233,11 @@
 		<dcep_unit>W</dcep_unit>
 		<dcep_description>power demand of the payload</dcep_description>
 	</p_payload>
-	<p_structmech>
+	<p_structure>
 		<dcep_name>power structure and mechanisms</dcep_name>
 		<dcep_unit>W</dcep_unit>
 		<dcep_description>power demand for operation structures and mechanisms</dcep_description>
-	</p_structmech>
+	</p_structure>
 	<p_thermal>
 		<dcep_name>power thermal system</dcep_name>
 		<dcep_unit>W</dcep_unit>
@@ -248,24 +248,69 @@
 		<dcep_unit>W</dcep_unit>
 		<dcep_description>power demand for power conditioning</dcep_description>
 	</p_power>
-	<p_TTC>
+	<p_ttc>
 		<dcep_name>power TTC</dcep_name>
 		<dcep_unit>W</dcep_unit>
 		<dcep_description>power demand for tracking telemetry and command</dcep_description>
-	</p_TTC>
-	<p_OBC>
+	</p_ttc>
+	<p_obc>
 		<dcep_name>power OBC</dcep_name>
 		<dcep_unit>W</dcep_unit>
 		<dcep_description>power demand for on-board computer</dcep_description>
-	</p_OBC>
-	<p_ADC>
+	</p_obc>
+	<p_adc>
 		<dcep_name>power ADC</dcep_name>
 		<dcep_unit>W</dcep_unit>
 		<dcep_description>power demand for attitude determination and control</dcep_description>
-	</p_ADC>
+	</p_adc>
 	<p_propulsion>
 		<dcep_name>power propulsion</dcep_name>
 		<dcep_unit>W</dcep_unit>
 		<dcep_description>power demand for propulsion systems</dcep_description>
 	</p_propulsion>
+	<frac_p_total>
+		<dcep_name>fraction power total</dcep_name>
+		<dcep_unit>W</dcep_unit>
+		<dcep_description>total power demand fraction spacecraft</dcep_description>
+	</frac_p_total>
+	<frac_p_payload>
+		<dcep_name>fraction power payload</dcep_name>
+		<dcep_unit>W</dcep_unit>
+		<dcep_description>power demand fraction of the payload</dcep_description>
+	</frac_p_payload>
+	<frac_p_structure>
+		<dcep_name>fraction power structure and mechanisms</dcep_name>
+		<dcep_unit>W</dcep_unit>
+		<dcep_description>power demand fraction for operation structures and mechanisms</dcep_description>
+	</frac_p_structure>
+	<frac_p_thermal>
+		<dcep_name>fraction power thermal system</dcep_name>
+		<dcep_unit>W</dcep_unit>
+		<dcep_description>power demand fraction for thermal control</dcep_description>
+	</frac_p_thermal>
+	<frac_p_power>
+		<dcep_name>fraction power for power system</dcep_name>
+		<dcep_unit>W</dcep_unit>
+		<dcep_description>power demand fraction for power conditioning</dcep_description>
+	</frac_p_power>
+	<frac_p_ttc>
+		<dcep_name>fraction power TTC</dcep_name>
+		<dcep_unit>W</dcep_unit>
+		<dcep_description>power demand fraction for tracking telemetry and command</dcep_description>
+	</frac_p_ttc>
+	<frac_p_obc>
+		<dcep_name>fraction power OBC</dcep_name>
+		<dcep_unit>W</dcep_unit>
+		<dcep_description>power demand fraction for on-board computer</dcep_description>
+	</frac_p_obc>
+	<frac_p_adc>
+		<dcep_name>fraction power ADC</dcep_name>
+		<dcep_unit>W</dcep_unit>
+		<dcep_description>power demand fraction for attitude determination and control</dcep_description>
+	</frac_p_adc>
+	<frac_p_propulsion>
+		<dcep_name>fraction power propulsion</dcep_name>
+		<dcep_unit>W</dcep_unit>
+		<dcep_description>power demand fraction for propulsion systems</dcep_description>
+	</frac_p_propulsion>
 </variable_attributes>

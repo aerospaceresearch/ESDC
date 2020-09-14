@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<reference_data_spracecraft>
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>   
+<reference_data_spracecraft> 
 	<spacecraft>
 		<name>AIM</name>
 		<launch_year>2007</launch_year>
@@ -501,7 +501,7 @@
 		<launch_year>2008</launch_year>
 		<source>Space Mission Engineering - Authors: The New SMAD, James Wertz, David Everett, Jeffery Puschell; Series: Space Technology Library, Vol. 28; Publisher: Microcosm Press, Year: 2011,  ISBN: 978-1881883159, p950ff </source>
 		<orbit_type>Low Earth</orbit_type>
-		<m_total>4307/m_total>
+		<m_total>4307</m_total>
 		<m_total_dry>3947</m_total_dry>
 		<power_total>1646</power_total>
 		<m_payload>2889</m_payload>
@@ -917,7 +917,6 @@
 		<orbit_type>High Earth </orbit_type>
 		<m_total>1226</m_total>
 		<m_total_dry>856</m_total_dry>
-		<power_total> </power_total>
 		<m_payload>182</m_payload>
 		<fraction_m_payload>.21</fraction_m_payload>
 		<fraction_m_structmech>.23</fraction_m_structmech> 
@@ -928,15 +927,6 @@
 		<fraction_m_ADC>.02</fraction_m_ADC>
 		<fraction_m_propulsion>.05</fraction_m_propulsion>
 		<fraction_m_other>.05</fraction_m_other>
-		<fraction_p_payload> </fraction_p_payload>
-		<fraction_p_structmech> </fraction_p_structmech>  
-		<fraction_p_thermal> </fraction_p_thermal>
-		<fraction_p_power> </fraction_p_power>
-		<fraction_p_TTC> </fraction_p_TTC>
-		<fraction_p_OBC> </fraction_p_OBC>
-		<fraction_p_ADC> </fraction_p_ADC>
-		<fraction_p_propulsion> </fraction_p_propulsion>
-		<fraction_p_other> </fraction_p_other>
 	</spacecraft>
 	<spacecraft>
 		<name>GOES 12</name>

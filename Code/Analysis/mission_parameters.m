@@ -1,5 +1,5 @@
 function [mission_parameters] =  mission_parameters(data)  
-  mission_parameters = struct();
+  mission_parameters = struct;
   mission_parameters.maneuver_duration = maneuver_duration(data);
 end  
 

@@ -1,12 +1,11 @@
-function [y] = scaling_linear(x, data)
+function [x] = scaling_linear(y, data)
     % Interpolate for known data, extrapolate beyond.
-  if x<=data(1,end)
-    y = interp1(data(1,:),data(2,:),x,"linear");
-  else
-    y = interp1([data(1,1) data(1,end)],[data(2,1) data(2,end)],x,"extrap");
-    if numel(data(1,:)==1)
-      disp(strcat("Warning: Insufficent extrapolation data"));
-    end
-  end
 
+    x = interp1(data(4,:),data(3,:),y,'linear','extrap');
+    
+    %some values become negative - check!!!
+      
+  if x<0      %exclude negatives
+    x=0;
+  end
 endfunction

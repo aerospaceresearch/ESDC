@@ -7,8 +7,6 @@ n_seeds = config.Simulation_parameters.evolver.seed_points;
 %number of degrees of freedom
 n_DOF = num_struct_members_full(db_data.DOF, 'DOF');
 
-
-
 initial_pop = struct();
   for i=1:size(input.Satellite_parameters.input_case,2)
     for j=1:n_seeds
@@ -44,7 +42,7 @@ initial_pop = struct();
       initial_pop(i,j).n_success =1;
       initial_pop(i,j).convergence=0;
       
-     % disp(initial_pop(i,j));
+      %disp(initial_pop(i,j));
     end
   end
 end
