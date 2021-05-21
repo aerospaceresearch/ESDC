@@ -1,17 +1,17 @@
+%Function to advance the population by one generation. Generates newly mutated system variant. All members of a generation are the current population.  
 function [generation_new, convergence] = evolve_population(input, db_data, config, generation_data)
-  %Iterates the current generation to obtain a fresh mutated generation. All members of a generation are the current population.  
-  population = struct();
+  population = struct();                                                        % Initialize population struct
   
   %Number of cases parallely simulated
-  for i=1:size(input.Satellite_parameters.input_case,2)
-    %number of individuals within a generation of a case.
-    for j=1:config.Simulation_parameters.evolver.seed_points
-      
-      %number of last sucessful member of that population
-      n_successor = generation_data{end}(i,j).n_success;
+  n_cases = size(input.Satellite_parameters.input_case,2);                      % Number of different simulation cases, potential for paralelisation here
+  n_seeds = config.Simulation_parameters.evolver.seed_points;                   % Number of seed points or lineages
+
+  for i=1:n_cases                                                               % Loop  over cases 
+    for j=1:n_seeds                                                             % Loop over seeds or lineages
+      n_successor = generation_data{end}(i,j).n_success;                        % Index of latest succesfull generation, i.e. ignore newer but worse generations
       
       %mutation handling is done here
-      population(i,j) = mutate_individual(input, db_data, config, generation_data{n_successor}(i,j));
+      population(i,j) = mutate_individual(input, db_data, config, generation_data{n_successor}(i,j));  %remove db_data argument??
       
       %refresh other system data                  
       [population(i,j).subsystem_masses population(i,j).subsystem_powers]= SMAD_scalings(population(i,j));
@@ -22,7 +22,7 @@ function [generation_new, convergence] = evolve_population(input, db_data, confi
       % add function to overwrite .subsystem_masses.propulsion with new mass()
       % add remaining mass to margin or payload ...or remove from total mass...potential for reiterate
       % change evolutionary fitness condition for minimal mass? or from maximum margin+payload mass?
-      EP_scalings = mass_budget_propulsion(population(i,j), db_data, population(i,j).subsystem_masses.m_propellant);
+      EP_scalings = mass_budget_propulsion(population(i,j), population(i,j).subsystem_masses.m_propellant);
 
       %Calculate diff between smad and tool
       d_EP =  EP_scalings.total - population(i,j).subsystem_masses.m_propulsion;
@@ -31,8 +31,9 @@ function [generation_new, convergence] = evolve_population(input, db_data, confi
       
       population(i,j).subsystem_masses.propulsion.m_tank      =  EP_scalings.tank;
       population(i,j).subsystem_masses.propulsion.m_thruster  =  EP_scalings.thruster;
-      population(i,j).subsystem_masses.propulsion.m_PPU       =  EP_scalings.PPU;
-      
+      if isfield(EP_scalings,'PPU')
+        population(i,j).subsystem_masses.propulsion.m_PPU       =  EP_scalings.PPU;
+      end
 
       %TODO - recalculate power
       %TODO - reiterate power system sizing
@@ -40,17 +41,17 @@ function [generation_new, convergence] = evolve_population(input, db_data, confi
       %adjust available margin mass accordingly
       
       population(i,j).subsystem_masses.m_margin = population(i,j).subsystem_masses.m_margin-d_EP;  %TODO: THINK HERE
-      if population(i,j).subsystem_masses.m_margin <0
+      if population(i,j).subsystem_masses.m_margin < 0
           %disp('Alert system margin fully consumed by propulsion system')
           %population(i,j).mass = population(i,j).mass-population(i,j).subsystem_masses.m_margin;
-          population(i,j).subsystem_masses.m_margin =0;
+          population(i,j).subsystem_masses.m_margin = 0;
           %TODO better handling here
       end
       
-      d_powersys = population(i,j).subsystem_powers.p_propulsion - population(i,j).power_propulsion;
+      d_powersys = population(i,j).subsystem_powers.p_propulsion - population(i,j).p_propulsion;
 
-      if population(i,j).subsystem_powers.p_propulsion< population(i,j).power_propulsion
-        population(i,j).subsystem_powers.p_propulsion = population(i,j).power_propulsion;
+      if population(i,j).subsystem_powers.p_propulsion< population(i,j).p_propulsion
+        population(i,j).subsystem_powers.p_propulsion = population(i,j).p_propulsion;
       end
       
       %update p_total
@@ -69,7 +70,7 @@ function [generation_new, convergence] = evolve_population(input, db_data, confi
 %      disp(population(i,j).subsystem_masses.m_power)
       sc_type = determine_sc_type(population(i,j));
       m_pow_1 = population(i,j).subsystem_masses.m_power;
-      population(i,j).subsystem_masses.m_power = scale_SMAD_parameter(population(i,j).subsystem_powers.p_total, sc_type, "power_total", "fraction_m_power")*population(i,j).mass;
+      population(i,j).subsystem_masses.m_power = scale_SMAD_parameter(population(i,j).subsystem_powers.p_total, sc_type, "p_total", "fraction_m_power")*population(i,j).mass;
       d_m_pow = m_pow_1-  population(i,j).subsystem_masses.m_power;
       
       population(i,j).subsystem_masses.m_margin = population(i,j).subsystem_masses.m_margin-d_m_pow;

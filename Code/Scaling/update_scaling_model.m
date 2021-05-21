@@ -10,6 +10,7 @@ function [scaling_model_struct] = update_scaling_model()
   update_SC_scaling(); %generates .csv look-up tables for spacecraft data
   % [data] = read_reference_spacecraft_data();     %for debugging
   % update_generic_spacecraft_scaling_model(data);
+
 end
 
 function[] = update_SC_scaling()
@@ -28,7 +29,6 @@ function[] = update_SC_scaling()
         fprintf(hash_file, hash('md5', fileread('Database/ESDC_Reference_Data_Spacecrafts.xml')));
         fclose(hash_file);
         update_generic_spacecraft_scaling_model(data);
-        %update_generic_component_scaling_model(data);
         disp('Updates to S/C db complete.');
       end
     else
@@ -67,11 +67,11 @@ function [] =  update_generic_spacecraft_scaling_model(data)
           n=numel(all_fields);
     end
     
-    to_correlate = {'m_total','m_payload','power_total','p_payload'}; 
+    to_correlate = {'m_total','m_payload','p_total','p_payload'}; 
     for i=1: numel(distinct_orbit_cases);
       for j=1:numel(to_correlate)                                                                               
        for k=1:numel(all_fields)
-         if strcmp(all_fields{1,k},'name') || strcmp(all_fields{1,k},'launch_year') || strcmp(all_fields{1,k},'source') || strcmp(all_fields{1,k},'orbit_type')  % exclusion from numerical correlation
+         if strcmp(all_fields{1,k},'name') || strcmp(all_fields{1,k},'launch_year') || strcmp(all_fields{1,k},'source') || strcmp(all_fields{1,k},'orbit_type') || strcmp(all_fields{1,k},'TRL')  % exclusion from numerical correlation
            %just skip
          else
           update_generic_spacecraft_system_scaling_a_to_b(data,char(distinct_orbit_cases{i}),char(to_correlate{1,j}),char(all_fields{1,k}));
@@ -86,7 +86,10 @@ end
 
 
 function [] = update_system_scaling()
-
+  
+  %%DEBUG block:  Always do system scaling
+  %data= read_reference_data(); 
+  %update_generic_component_scaling_model(data); 
   
   if exist("Database/ESDC_Reference_Data_Systems_hash")
     hash_file = fopen('Database/ESDC_Reference_Data_Systems_hash', "r");
@@ -120,11 +123,17 @@ function [] =  update_generic_component_scaling_model(data)
 disp('Starting updating of scaling data');
 disp('');
 system_type_names=fieldnames(data.reference_data); % System loop - e.g. propulsion, power etc.
+%disp(system_type_names)
 for k=1:numel(system_type_names)
   
   technology_type_names=fieldnames(data.reference_data.(char(system_type_names(k))));
   for i=1:numel(technology_type_names)                    % Technology loop - e.g. arcjet, GIT etc.
-    component_type_names=fieldnames(data.reference_data.(char(system_type_names(k))).(char(technology_type_names(i))));
+
+    %disp(data.reference_data.(char(system_type_names(k))).(char(technology_type_names(i))))
+    %disp(system_type_names(k))
+    %disp(technology_type_names(i))
+    %disp(data.reference_data.(char(system_type_names(k))))
+    component_type_names=fieldnames(data.reference_data.(char(system_type_names(k))).(char(technology_type_names(i)))); %bug here , when updating DB, probably because tech types dont exist?
     for j=1:numel(component_type_names)                   % Component loop - e.g. thruster, ppu, solar cell, etc.
       if not(isstruct(data.reference_data.(char(system_type_names(k))).(char(technology_type_names(i))).(char(component_type_names(j))))) % HERE single field will not be considered
         parameter_names=fieldnames(data.reference_data.(char(system_type_names(k))).(char(technology_type_names(i))).(char(component_type_names(j))){1,i});

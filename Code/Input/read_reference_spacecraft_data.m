@@ -18,7 +18,7 @@ if exist("Database/ESDC_Reference_Data_Spacecrafts.xml")
   fflush(stdout);
 
 else 
-  disp('No spacecraft rerference data found')
+  disp('ERROR: No spacecraft rerference data found')
 end
 
 end

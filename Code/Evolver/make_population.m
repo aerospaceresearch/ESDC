@@ -11,7 +11,10 @@ initial_pop = struct();
   for i=1:size(input.Satellite_parameters.input_case,2)
     for j=1:n_seeds
       if isfield(input.Satellite_parameters.input_case{i},'totalmass')
-      initial_pop(i,j).mass=input.Satellite_parameters.input_case{i}.totalmass;
+        initial_pop(i,j).mass = input.Satellite_parameters.input_case{i}.totalmass;
+      else
+        initial_pop(i,j).mass = input.Satellite_parameters.input_case{i}.derived{2}.mass.totalmass;
+       % initial_pop(i,j).mass = input.Satellite_parameters.input_case{i}.derived.
       end
       if isfield(input.Satellite_parameters.input_case{i},'totalimpulse')
       initial_pop(i,j).totalimpulse=input.Satellite_parameters.input_case{i}.totalimpulse;
@@ -19,16 +22,19 @@ initial_pop = struct();
       if isfield(input.Satellite_parameters.input_case{i},'deltav')
       initial_pop(i,j).dv=input.Satellite_parameters.input_case{i}.deltav;
       end
-      if isfield(input.Satellite_parameters.input_case{i},'P_propulsion')
-      initial_pop(i,j).power_propulsion=input.Satellite_parameters.input_case{i}.P_propulsion;
+      if isfield(input.Satellite_parameters.input_case{i},'p_propulsion')
+      initial_pop(i,j).p_propulsion=input.Satellite_parameters.input_case{i}.p_propulsion;
       end
       % determine respective random case DOF parameters
-      
+      %disp(input)
       %here issue with fractions later...
-      [initial_pop(i,j).propulsion_system  initial_pop(i,j).propellant  initial_pop(i,j).c_e  initial_pop(i,j).thrust initial_pop(i,j).power_thruster initial_pop(i,j).power_jet initial_pop(i,j).eff_PPU initial_pop(i,j).eff_thruster]  = set_random_case_parameters(db_data, initial_pop(i,j).power_propulsion);
+      [initial_pop(i,j).propulsion_system  initial_pop(i,j).propellant  initial_pop(i,j).c_e  initial_pop(i,j).thrust initial_pop(i,j).power_thruster initial_pop(i,j).power_jet initial_pop(i,j).eff_PPU initial_pop(i,j).eff_thruster]  = set_random_case_parameters(db_data, initial_pop(i,j).p_propulsion);
       
       %calculate system masses and mission parameters
- %     initial_pop(i,j).subsystem_masses = mass_budget_propulsion(initial_pop(i,j), db_data);
+ %     initial_pop(i,j).subsystem_masses = mass_budget_propulsion(initial_pop(i,j));
+      %disp(input)
+      
+
       [initial_pop(i,j).subsystem_masses initial_pop(i,j).subsystem_powers] = SMAD_scalings(initial_pop(i,j));
       
       

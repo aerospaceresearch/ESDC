@@ -4,6 +4,9 @@
     sorted_y = [];
    % sorted_name = {};
     %arranged related data
+    %disp(sort_index)
+    %disp(y)
+    %disp(x)
     for i=1:numel(x)
      sorted_y(i) = y(sort_index(i));
      %sorted_name{1,i} = name{1,sort_index(i)};

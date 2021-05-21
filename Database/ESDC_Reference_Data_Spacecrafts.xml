@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>  
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <reference_data_spracecraft>
 	<spacecraft>
 		<name>AIM</name>
@@ -6,7 +6,7 @@
 		<source>Space Mission Engineering - Authors: The New SMAD, James Wertz, David Everett, Jeffery Puschell; Series: Space Technology Library, Vol. 28; Publisher: Microcosm Press, Year: 2011,  ISBN: 978-1881883159, p950ff </source>
 		<orbit_type>No Propulsion</orbit_type>
 		<m_total>200</m_total>
-		<power_total>216</power_total>
+		<p_total>216</p_total>
 		<m_payload>64</m_payload>
 		<fraction_m_payload>.32</fraction_m_payload>
 		<fraction_m_structmech>.27</fraction_m_structmech>  
@@ -18,6 +18,7 @@
 		<fraction_m_propulsion>0</fraction_m_propulsion>
 		<fraction_m_other>0</fraction_m_other>
 		<fraction_p_payload>.38</fraction_p_payload>
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>COBE</name>
@@ -35,6 +36,7 @@
 		<fraction_m_ADC>.1 </fraction_m_ADC>
 		<fraction_m_propulsion>0</fraction_m_propulsion>
 		<fraction_m_other>0</fraction_m_other>
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>FAST</name>
@@ -42,7 +44,7 @@
 		<source>Space Mission Engineering - Authors: The New SMAD, James Wertz, David Everett, Jeffery Puschell; Series: Space Technology Library, Vol. 28; Publisher: Microcosm Press, Year: 2011,  ISBN: 978-1881883159, p950ff </source>
 		<orbit_type>No Propulsion</orbit_type>
 		<m_total>191</m_total>
-		<power_total>52</power_total>
+		<p_total>52</p_total>
 		<m_payload>65</m_payload>
 		<fraction_m_payload>.34</fraction_m_payload>
 		<fraction_m_structmech>.14</fraction_m_structmech> 
@@ -61,6 +63,7 @@
 		<fraction_p_OBC>.11</fraction_p_OBC>
 		<fraction_p_ADC>.8</fraction_p_ADC>
 		<fraction_p_propulsion>0</fraction_p_propulsion>
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>FUSE</name>
@@ -68,7 +71,7 @@
 		<source>Space Mission Engineering - Authors: The New SMAD, James Wertz, David Everett, Jeffery Puschell; Series: Space Technology Library, Vol. 28; Publisher: Microcosm Press, Year: 2011,  ISBN: 978-1881883159, p950ff </source>
 		<orbit_type>No Propulsion</orbit_type>
 		<m_total>1332</m_total>
-		<power_total>520</power_total>
+		<p_total>520</p_total>
 		<m_payload>782</m_payload>
 		<fraction_m_payload>.59</fraction_m_payload>
 		<fraction_m_structmech>.19</fraction_m_structmech> 
@@ -80,6 +83,7 @@
 		<fraction_m_propulsion>0</fraction_m_propulsion>
 		<fraction_m_other>0</fraction_m_other>
 		<fraction_p_payload>.58</fraction_p_payload>
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>GALEX</name>
@@ -87,7 +91,7 @@
 		<source>Space Mission Engineering - Authors: The New SMAD, James Wertz, David Everett, Jeffery Puschell; Series: Space Technology Library, Vol. 28; Publisher: Microcosm Press, Year: 2011,  ISBN: 978-1881883159, p950ff </source>
 		<orbit_type>No Propulsion</orbit_type>
 		<m_total>287</m_total>
-		<power_total>362</power_total>
+		<p_total>362</p_total>
 		<m_payload>133</m_payload>
 		<fraction_m_payload>.46</fraction_m_payload>
 		<fraction_m_structmech>.14</fraction_m_structmech> 
@@ -106,6 +110,7 @@
 		<fraction_p_OBC>.16</fraction_p_OBC>
 		<fraction_p_ADC>.16</fraction_p_ADC>
 		<fraction_p_propulsion>.0</fraction_p_propulsion>
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>HESSI</name>
@@ -113,7 +118,7 @@
 		<source>Space Mission Engineering - Authors: The New SMAD, James Wertz, David Everett, Jeffery Puschell; Series: Space Technology Library, Vol. 28; Publisher: Microcosm Press, Year: 2011,  ISBN: 978-1881883159, p950ff </source>
 		<orbit_type>No Propulsion</orbit_type>
 		<m_total>284</m_total>
-		<power_total>252</power_total>
+		<p_total>252</p_total>
 		<m_payload>131</m_payload>
 		<fraction_m_payload>.46</fraction_m_payload>
 		<fraction_m_structmech>.24</fraction_m_structmech> 
@@ -132,6 +137,7 @@
 		<fraction_p_OBC>.1</fraction_p_OBC>
 		<fraction_p_ADC>.02</fraction_p_ADC>
 		<fraction_p_propulsion>0</fraction_p_propulsion>
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>HST</name>
@@ -149,6 +155,7 @@
 		<fraction_m_ADC>.04</fraction_m_ADC>
 		<fraction_m_propulsion>0</fraction_m_propulsion>
 		<fraction_m_other>.1</fraction_m_other>
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>IMAGE</name>
@@ -156,7 +163,7 @@
 		<source>Space Mission Engineering - Authors: The New SMAD, James Wertz, David Everett, Jeffery Puschell; Series: Space Technology Library, Vol. 28; Publisher: Microcosm Press, Year: 2011,  ISBN: 978-1881883159, p950ff </source>
 		<orbit_type>No Propulsion</orbit_type>
 		<m_total>492</m_total>
-		<power_total>238</power_total>
+		<p_total>238</p_total>
 		<m_payload>178</m_payload>
 		<fraction_m_payload>.36</fraction_m_payload>
 		<fraction_m_structmech>.28</fraction_m_structmech> 
@@ -175,6 +182,7 @@
 		<fraction_p_OBC>.05</fraction_p_OBC>
 		<fraction_p_ADC>.06</fraction_p_ADC>
 		<fraction_p_propulsion>0</fraction_p_propulsion>
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>RXTE</name>
@@ -182,7 +190,7 @@
 		<source>Space Mission Engineering - Authors: The New SMAD, James Wertz, David Everett, Jeffery Puschell; Series: Space Technology Library, Vol. 28; Publisher: Microcosm Press, Year: 2011,  ISBN: 978-1881883159, p950ff </source>
 		<orbit_type>No Propulsion</orbit_type>
 		<m_total>3040</m_total>
-		<power_total> </power_total>
+		<p_total> </p_total>
 		<m_payload>995</m_payload>
 		<fraction_m_payload>.33</fraction_m_payload>
 		<fraction_m_structmech>.38</fraction_m_structmech> 
@@ -192,6 +200,7 @@
 		<fraction_m_OBC>.02</fraction_m_OBC>
 		<fraction_m_ADC>.05</fraction_m_ADC>
 		<fraction_m_propulsion>0</fraction_m_propulsion>
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>SAMPEX</name>
@@ -199,7 +208,7 @@
 		<source>Space Mission Engineering - Authors: The New SMAD, James Wertz, David Everett, Jeffery Puschell; Series: Space Technology Library, Vol. 28; Publisher: Microcosm Press, Year: 2011,  ISBN: 978-1881883159, p950ff </source>
 		<orbit_type>No Propulsion</orbit_type>
 		<m_total>162</m_total>
-		<power_total>73</power_total>
+		<p_total>73</p_total>
 		<m_payload>53</m_payload>
 		<fraction_m_payload>.32</fraction_m_payload>
 		<fraction_m_structmech>.16</fraction_m_structmech> 
@@ -218,6 +227,7 @@
 		<fraction_p_OBC>.28</fraction_p_OBC>
 		<fraction_p_ADC>.15</fraction_p_ADC>
 		<fraction_p_propulsion>0</fraction_p_propulsion>
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>SWAS</name>
@@ -225,7 +235,7 @@
 		<source>Space Mission Engineering - Authors: The New SMAD, James Wertz, David Everett, Jeffery Puschell; Series: Space Technology Library, Vol. 28; Publisher: Microcosm Press, Year: 2011,  ISBN: 978-1881883159, p950ff </source>
 		<orbit_type>No Propulsion</orbit_type>
 		<m_total>293</m_total>
-		<power_total>182</power_total>
+		<p_total>182</p_total>
 		<m_payload>95</m_payload>
 		<fraction_m_payload>.33</fraction_m_payload>
 		<fraction_m_structmech>.18</fraction_m_structmech> 
@@ -244,6 +254,7 @@
 		<fraction_p_OBC>.14</fraction_p_OBC>
 		<fraction_p_ADC>.34</fraction_p_ADC>
 		<fraction_p_propulsion>0</fraction_p_propulsion>
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>SWIFT</name>
@@ -251,7 +262,7 @@
 		<source>Space Mission Engineering - Authors: The New SMAD, James Wertz, David Everett, Jeffery Puschell; Series: Space Technology Library, Vol. 28; Publisher: Microcosm Press, Year: 2011,  ISBN: 978-1881883159, p950ff </source>
 		<orbit_type>No Propulsion</orbit_type>
 		<m_total>1465</m_total>
-		<power_total>966</power_total>
+		<p_total>966</p_total>
 		<m_payload>854</m_payload>
 		<fraction_m_payload>.58</fraction_m_payload>
 		<fraction_m_structmech>.16</fraction_m_structmech> 
@@ -270,6 +281,7 @@
 		<fraction_p_OBC>.06</fraction_p_OBC>
 		<fraction_p_ADC>.14</fraction_p_ADC>
 		<fraction_p_propulsion>0</fraction_p_propulsion>
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>TERRIERS</name>
@@ -287,6 +299,7 @@
 		<fraction_m_ADC>.07</fraction_m_ADC>
 		<fraction_m_propulsion>0</fraction_m_propulsion>
 		<fraction_m_other>.2</fraction_m_other>
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>TRACE</name>
@@ -304,6 +317,7 @@
 		<fraction_m_ADC>.17</fraction_m_ADC>
 		<fraction_m_propulsion>0</fraction_m_propulsion>
 		<fraction_m_other>.02</fraction_m_other>
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>WIRE</name>
@@ -311,7 +325,7 @@
 		<source>Space Mission Engineering - Authors: The New SMAD, James Wertz, David Everett, Jeffery Puschell; Series: Space Technology Library, Vol. 28; Publisher: Microcosm Press, Year: 2011,  ISBN: 978-1881883159, p950ff </source>
 		<orbit_type>No Propulsion</orbit_type>
 		<m_total>260</m_total>
-		<power_total>132</power_total>
+		<p_total>132</p_total>
 		<m_payload>107</m_payload>
 		<fraction_m_payload>.41</fraction_m_payload>
 		<fraction_m_structmech>.12</fraction_m_structmech> 
@@ -330,6 +344,7 @@
 		<fraction_p_OBC>.15</fraction_p_OBC>
 		<fraction_p_ADC>.47</fraction_p_ADC>
 		<fraction_p_propulsion>0</fraction_p_propulsion>
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>Astro-E</name>
@@ -338,7 +353,7 @@
 		<orbit_type>Low Earth</orbit_type>
 		<m_total>1678</m_total>
 		<m_total_dry>1578</m_total_dry>
-		<power_total>858</power_total>
+		<p_total>858</p_total>
 		<m_payload>977</m_payload>
 		<fraction_m_payload>.62</fraction_m_payload>
 		<fraction_m_structmech>.11</fraction_m_structmech> 
@@ -351,6 +366,7 @@
 		<fraction_m_other>0</fraction_m_other>
 		<fraction_p_payload>.58</fraction_p_payload>
 		<fraction_p_thermal>.14</fraction_p_thermal>
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>Aqua</name>
@@ -359,7 +375,7 @@
 		<orbit_type>Low Earth</orbit_type>
 		<m_total>2941</m_total>
 		<m_total_dry>2799</m_total_dry>
-		<power_total>1609</power_total>
+		<p_total>1609</p_total>
 		<m_payload>1022</m_payload>
 		<fraction_m_payload>.37</fraction_m_payload>
 		<fraction_m_structmech>.26</fraction_m_structmech> 
@@ -377,6 +393,7 @@
 		<fraction_p_OBC>.2</fraction_p_OBC>
 		<fraction_p_ADC>.1</fraction_p_ADC>
 		<fraction_p_propulsion>.01</fraction_p_propulsion>
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>CGRO</name>
@@ -395,6 +412,7 @@
 		<fraction_m_ADC>.03</fraction_m_ADC>
 		<fraction_m_propulsion>.02</fraction_m_propulsion>
 		<fraction_m_other>.04</fraction_m_other>
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>CALIPSO</name>
@@ -403,7 +421,7 @@
 		<orbit_type>Low Earth</orbit_type>
 		<m_total>577</m_total>
 		<m_total_dry>548</m_total_dry>
-		<power_total>508</power_total>
+		<p_total>508</p_total>
 		<m_payload>283</m_payload>
 		<fraction_m_payload>.52</fraction_m_payload>
 		<fraction_m_structmech>.12</fraction_m_structmech> 
@@ -416,6 +434,7 @@
 		<fraction_m_other>0</fraction_m_other>
 		<fraction_p_payload>.5</fraction_p_payload>
 		<fraction_p_propulsion>0</fraction_p_propulsion>
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>CloudSat</name>
@@ -424,7 +443,7 @@
 		<orbit_type>Low Earth</orbit_type>
 		<m_total>847</m_total>
 		<m_total_dry>771</m_total_dry>
-		<power_total>598</power_total>
+		<p_total>598</p_total>
 		<m_payload>255</m_payload>
 		<fraction_m_payload>.33</fraction_m_payload>
 		<fraction_m_structmech>.25</fraction_m_structmech> 
@@ -443,6 +462,7 @@
 		<fraction_p_OBC>.05</fraction_p_OBC>
 		<fraction_p_ADC>.14</fraction_p_ADC>
 		<fraction_p_propulsion>0</fraction_p_propulsion>
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>EO-1</name>
@@ -451,7 +471,7 @@
 		<orbit_type>Low Earth</orbit_type>
 		<m_total>579</m_total>
 		<m_total_dry>556</m_total_dry>
-		<power_total>298</power_total>
+		<p_total>298</p_total>
 		<m_payload>185</m_payload>
 		<fraction_m_payload>.33</fraction_m_payload>
 		<fraction_m_structmech>.26</fraction_m_structmech> 
@@ -470,6 +490,7 @@
 		<fraction_p_OBC>.12</fraction_p_OBC>
 		<fraction_p_ADC>.26</fraction_p_ADC>
 		<fraction_p_propulsion>0</fraction_p_propulsion>
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>Equator-S</name>
@@ -478,7 +499,7 @@
 		<orbit_type>Low Earth</orbit_type>
 		<m_total>230</m_total>
 		<m_total_dry>189</m_total_dry>
-		<power_total>89</power_total>
+		<p_total>89</p_total>
 		<m_payload>46</m_payload>
 		<fraction_m_payload>.25</fraction_m_payload>
 		<fraction_m_structmech>.42</fraction_m_structmech> 
@@ -495,6 +516,7 @@
 		<fraction_p_power>.16</fraction_p_power>
 		<fraction_p_ADC>.34</fraction_p_ADC>
 		<fraction_p_propulsion>0</fraction_p_propulsion>
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>Fermi GLAST</name>
@@ -503,7 +525,7 @@
 		<orbit_type>Low Earth</orbit_type>
 		<m_total>4307</m_total>
 		<m_total_dry>3947</m_total_dry>
-		<power_total>1646</power_total>
+		<p_total>1646</p_total>
 		<m_payload>2889</m_payload>
 		<fraction_m_payload>.73</fraction_m_payload>
 		<fraction_m_structmech>.11</fraction_m_structmech> 
@@ -522,6 +544,7 @@
 		<fraction_p_OBC>.09</fraction_p_OBC>
 		<fraction_p_ADC>.1</fraction_p_ADC>
 		<fraction_p_propulsion>.02</fraction_p_propulsion>
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>GRACE</name>
@@ -530,7 +553,7 @@
 		<orbit_type>Low Earth</orbit_type>
 		<m_total>471</m_total>
 		<m_total_dry>458</m_total_dry>
-		<power_total>92</power_total>
+		<p_total>92</p_total>
 		<m_payload>70</m_payload>
 		<fraction_m_payload>.15</fraction_m_payload>
 		<fraction_m_structmech>.35</fraction_m_structmech> 
@@ -549,6 +572,7 @@
 		<fraction_p_OBC>.32</fraction_p_OBC>
 		<fraction_p_ADC>0</fraction_p_ADC>
 		<fraction_p_propulsion>0</fraction_p_propulsion>
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>Lewis</name>
@@ -567,6 +591,7 @@
 		<fraction_m_ADC>.1</fraction_m_ADC>
 		<fraction_m_propulsion>.05</fraction_m_propulsion>
 		<fraction_m_other>.01</fraction_m_other>
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>ST-5</name>
@@ -575,7 +600,7 @@
 		<orbit_type>Low Earth</orbit_type>
 		<m_total>25</m_total>
 		<m_total_dry>24</m_total_dry>
-		<power_total>40</power_total>
+		<p_total>40</p_total>
 		<m_payload>1</m_payload>
 		<fraction_m_payload>.03</fraction_m_payload>
 		<fraction_m_structmech>.32</fraction_m_structmech> 
@@ -594,6 +619,7 @@
 		<fraction_p_OBC>.11</fraction_p_OBC>
 		<fraction_p_ADC>.02</fraction_p_ADC>
 		<fraction_p_propulsion>.01</fraction_p_propulsion>
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>Terra</name>
@@ -602,7 +628,7 @@
 		<orbit_type>Low Earth</orbit_type>
 		<m_total>4771</m_total>
 		<m_total_dry>4432</m_total_dry>
-		<power_total>2159</power_total>
+		<p_total>2159</p_total>
 		<m_payload>1096</m_payload>
 		<fraction_m_payload>.25</fraction_m_payload>
 		<fraction_m_structmech>.33</fraction_m_structmech> 
@@ -620,6 +646,7 @@
 		<fraction_p_OBC>.34</fraction_p_OBC>
 		<fraction_p_ADC>.08</fraction_p_ADC>
 		<fraction_p_propulsion>0</fraction_p_propulsion>
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>TOMS/EP</name>
@@ -638,6 +665,7 @@
 		<fraction_m_ADC>.12</fraction_m_ADC>
 		<fraction_m_propulsion>.08</fraction_m_propulsion>
 		<fraction_m_other>.03</fraction_m_other>
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>TRMM</name>
@@ -646,7 +674,7 @@
 		<orbit_type>Low Earth</orbit_type>
 		<m_total>3512</m_total>
 		<m_total_dry>2611</m_total_dry>
-		<power_total>1019</power_total>
+		<p_total>1019</p_total>
 		<m_payload>640</m_payload>
 		<fraction_m_payload>.24</fraction_m_payload>
 		<fraction_m_structmech>.38</fraction_m_structmech> 
@@ -665,6 +693,7 @@
 		<fraction_p_OBC>.05</fraction_p_OBC>
 		<fraction_p_ADC>.15</fraction_p_ADC>
 		<fraction_p_propulsion>0</fraction_p_propulsion>
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>UARS</name>
@@ -683,6 +712,7 @@
 		<fraction_m_ADC>.04</fraction_m_ADC>
 		<fraction_m_propulsion>.02</fraction_m_propulsion>
 		<fraction_m_other>.15</fraction_m_other>
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>LandSat 7</name>
@@ -701,6 +731,7 @@
 		<fraction_m_ADC>.04</fraction_m_ADC>
 		<fraction_m_propulsion>.01</fraction_m_propulsion>
 		<fraction_m_other>.1</fraction_m_other>
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>NOAA 16</name>
@@ -709,7 +740,7 @@
 		<orbit_type>Low Earth</orbit_type>
 		<m_total>2246</m_total>
 		<m_total_dry>1595</m_total_dry>
-		<power_total>778</power_total>
+		<p_total>778</p_total>
 		<m_payload>362</m_payload>
 		<fraction_m_payload>.23</fraction_m_payload>
 		<fraction_m_structmech>.2</fraction_m_structmech> 
@@ -728,6 +759,7 @@
 		<fraction_p_OBC>.05</fraction_p_OBC>
 		<fraction_p_ADC>.09</fraction_p_ADC>
 		<fraction_p_propulsion>.0 </fraction_p_propulsion>
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>NOAA-N prime</name>
@@ -736,7 +768,7 @@
 		<orbit_type>Low Earth</orbit_type>
 		<m_total>1391</m_total>
 		<m_total_dry>1382</m_total_dry>
-		<power_total>858</power_total>
+		<p_total>858</p_total>
 		<m_payload>312</m_payload>
 		<fraction_m_payload>.23</fraction_m_payload>
 		<fraction_m_structmech>.34</fraction_m_structmech> 
@@ -755,6 +787,7 @@
 		<fraction_p_OBC>.05</fraction_p_OBC>
 		<fraction_p_ADC>.09</fraction_p_ADC>
 		<fraction_p_propulsion>0</fraction_p_propulsion>
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>ACE</name>
@@ -763,7 +796,7 @@
 		<orbit_type>High Earth </orbit_type>
 		<m_total>759</m_total>
 		<m_total_dry>561</m_total_dry>
-		<power_total>305</power_total>
+		<p_total>305</p_total>
 		<m_payload>168</m_payload>
 		<fraction_m_payload>0.3</fraction_m_payload>
 		<fraction_m_structmech>.23</fraction_m_structmech> 
@@ -782,6 +815,7 @@
 		<fraction_p_OBC>.27</fraction_p_OBC>
 		<fraction_p_ADC>.04</fraction_p_ADC>
 		<fraction_p_propulsion>0</fraction_p_propulsion>
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>Chandra</name>
@@ -800,6 +834,7 @@
 		<fraction_m_ADC>.04</fraction_m_ADC>
 		<fraction_m_propulsion>.04</fraction_m_propulsion>
 		<fraction_m_other>.02</fraction_m_other>
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>MAP</name>
@@ -808,7 +843,7 @@
 		<orbit_type>High Earth </orbit_type>
 		<m_total>814</m_total>
 		<m_total_dry>741</m_total_dry>
-		<power_total>371</power_total>
+		<p_total>371</p_total>
 		<m_payload>305</m_payload>
 		<fraction_m_payload>.41</fraction_m_payload>
 		<fraction_m_structmech>.23</fraction_m_structmech> 
@@ -827,6 +862,7 @@
 		<fraction_p_OBC>.13</fraction_p_OBC>
 		<fraction_p_ADC>.24</fraction_p_ADC>
 		<fraction_p_propulsion>0</fraction_p_propulsion>
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>SOHO</name>
@@ -835,7 +871,7 @@
 		<orbit_type>High Earth </orbit_type>
 		<m_total>1854</m_total>
 		<m_total_dry>1602</m_total_dry>
-		<power_total>1186</power_total>
+		<p_total>1186</p_total>
 		<m_payload>899</m_payload>
 		<fraction_m_payload>.56</fraction_m_payload>
 		<fraction_m_structmech>.12 </fraction_m_structmech> 
@@ -854,7 +890,7 @@
 		<fraction_p_OBC>.11</fraction_p_OBC>
 		<fraction_p_ADC>.13</fraction_p_ADC>
 		<fraction_p_propulsion>.02</fraction_p_propulsion>
-
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>STEREO</name>
@@ -863,7 +899,7 @@
 		<orbit_type>High Earth </orbit_type>
 		<m_total>619</m_total>
 		<m_total_dry>558</m_total_dry>
-		<power_total>514</power_total>
+		<p_total>514</p_total>
 		<m_payload>138</m_payload>
 		<fraction_m_payload>.25</fraction_m_payload>
 		<fraction_m_structmech>.28</fraction_m_structmech> 
@@ -882,6 +918,7 @@
 		<fraction_p_OBC>.08</fraction_p_OBC>
 		<fraction_p_ADC>.16</fraction_p_ADC>
 		<fraction_p_propulsion>0</fraction_p_propulsion>
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>Triana</name>
@@ -890,7 +927,7 @@
 		<orbit_type>High Earth </orbit_type>
 		<m_total>2995</m_total>
 		<m_total_dry>577</m_total_dry>
-		<power_total>394</power_total>
+		<p_total>394</p_total>
 		<m_payload>104</m_payload>
 		<fraction_m_payload>.18</fraction_m_payload>
 		<fraction_m_structmech>.11</fraction_m_structmech> 
@@ -909,6 +946,7 @@
 		<fraction_p_OBC>.04</fraction_p_OBC>
 		<fraction_p_ADC>.23</fraction_p_ADC>
 		<fraction_p_propulsion>0</fraction_p_propulsion>
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>WIND</name>
@@ -927,6 +965,7 @@
 		<fraction_m_ADC>.02</fraction_m_ADC>
 		<fraction_m_propulsion>.05</fraction_m_propulsion>
 		<fraction_m_other>.05</fraction_m_other>
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>GOES 12</name>
@@ -935,7 +974,7 @@
 		<orbit_type>High Earth </orbit_type>
 		<m_total>2275</m_total>
 		<m_total_dry>1058</m_total_dry>
-		<power_total>1046</power_total>
+		<p_total>1046</p_total>
 		<m_payload>343</m_payload>
 		<fraction_m_payload>.32</fraction_m_payload>
 		<fraction_m_structmech>.22</fraction_m_structmech> 
@@ -954,6 +993,7 @@
 		<fraction_p_OBC>.03</fraction_p_OBC>
 		<fraction_p_ADC>.15</fraction_p_ADC>
 		<fraction_p_propulsion>0</fraction_p_propulsion>
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>TDRS 7</name>
@@ -962,7 +1002,7 @@
 		<orbit_type>High Earth </orbit_type>
 		<m_total>2201</m_total>
 		<m_total_dry>1649</m_total_dry>
-		<power_total>1621</power_total>
+		<p_total>1621</p_total>
 		<m_payload>311</m_payload>
 		<fraction_m_payload>.19</fraction_m_payload>
 		<fraction_m_structmech>.28</fraction_m_structmech> 
@@ -981,6 +1021,7 @@
 		<fraction_p_OBC>.04</fraction_p_OBC>
 		<fraction_p_ADC>.12</fraction_p_ADC>
 		<fraction_p_propulsion>.01</fraction_p_propulsion>
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>Spitzer</name>
@@ -989,7 +1030,7 @@
 		<orbit_type>High Earth </orbit_type>
 		<m_total>849</m_total>
 		<m_total_dry>833</m_total_dry>
-		<power_total>434</power_total>
+		<p_total>434</p_total>
 		<m_payload>453</m_payload>
 		<fraction_m_payload>.54</fraction_m_payload>
 		<fraction_m_structmech>.17</fraction_m_structmech> 
@@ -1001,6 +1042,7 @@
 		<fraction_m_propulsion>.03</fraction_m_propulsion>
 		<fraction_m_other>0</fraction_m_other>
 		<fraction_p_payload>.14</fraction_p_payload>
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>IBEX</name>
@@ -1009,7 +1051,7 @@
 		<orbit_type>High Earth </orbit_type>
 		<m_total>458</m_total>
 		<m_total_dry>117</m_total_dry>
-		<power_total>70</power_total>
+		<p_total>70</p_total>
 		<m_payload>26</m_payload>
 		<fraction_m_payload>.22</fraction_m_payload>
 		<fraction_m_structmech>.44</fraction_m_structmech> 
@@ -1028,6 +1070,7 @@
 		<fraction_p_OBC>.22</fraction_p_OBC>
 		<fraction_p_ADC>.17</fraction_p_ADC>
 		<fraction_p_propulsion>.02</fraction_p_propulsion>
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>GOES-N</name>
@@ -1046,6 +1089,7 @@
 		<fraction_m_ADC>.08</fraction_m_ADC>
 		<fraction_m_propulsion>.06</fraction_m_propulsion>
 		<fraction_m_other>0</fraction_m_other>
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>SDO</name>
@@ -1054,7 +1098,7 @@
 		<orbit_type>High Earth </orbit_type>
 		<m_total>2975</m_total>
 		<m_total_dry>1561</m_total_dry>
-		<power_total>969</power_total>
+		<p_total>969</p_total>
 		<m_payload>298</m_payload>
 		<fraction_m_payload>.19</fraction_m_payload>
 		<fraction_m_structmech>.35</fraction_m_structmech> 
@@ -1073,6 +1117,7 @@
 		<fraction_p_OBC>.07</fraction_p_OBC>
 		<fraction_p_ADC>.18</fraction_p_ADC>
 		<fraction_p_propulsion>.01</fraction_p_propulsion>
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>Cassini</name>
@@ -1081,7 +1126,7 @@
 		<orbit_type>Planetary </orbit_type>
 		<m_total>5565</m_total>
 		<m_total_dry>2558</m_total_dry>
-		<power_total>1338</power_total>
+		<p_total>1338</p_total>
 		<m_payload>688</m_payload>
 		<fraction_m_payload>.27</fraction_m_payload>
 		<fraction_m_structmech>.14</fraction_m_structmech> 
@@ -1100,6 +1145,7 @@
 		<fraction_p_OBC>.11</fraction_p_OBC>
 		<fraction_p_ADC>.11</fraction_p_ADC>
 		<fraction_p_propulsion>.7</fraction_p_propulsion>
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>Clementine</name>
@@ -1118,6 +1164,7 @@
 		<fraction_m_ADC>.06</fraction_m_ADC>
 		<fraction_m_propulsion>.21</fraction_m_propulsion>
 		<fraction_m_other>.13</fraction_m_other>
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>Galileo</name>
@@ -1136,6 +1183,7 @@
 		<fraction_m_ADC>.08</fraction_m_ADC>
 		<fraction_m_propulsion>.1</fraction_m_propulsion>
 		<fraction_m_other>.1</fraction_m_other>
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>LRO</name>
@@ -1144,7 +1192,7 @@
 		<orbit_type>Planetary </orbit_type>
 		<m_total>1915</m_total>
 		<m_total_dry>1018</m_total_dry>
-		<power_total>620</power_total>
+		<p_total>620</p_total>
 		<m_payload>96</m_payload>
 		<fraction_m_payload>.09</fraction_m_payload>
 		<fraction_m_structmech>.31</fraction_m_structmech> 
@@ -1163,6 +1211,7 @@
 		<fraction_p_OBC>.15</fraction_p_OBC>
 		<fraction_p_ADC>.18</fraction_p_ADC>
 		<fraction_p_propulsion>.02</fraction_p_propulsion>
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>Magellan</name>
@@ -1181,6 +1230,7 @@
 		<fraction_m_ADC>.08</fraction_m_ADC>
 		<fraction_m_propulsion>.07</fraction_m_propulsion>
 		<fraction_m_other>.09</fraction_m_other>
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>Mars Odyssey</name>
@@ -1199,6 +1249,7 @@
 		<fraction_m_ADC>.06</fraction_m_ADC>
 		<fraction_m_propulsion>.13</fraction_m_propulsion>
 		<fraction_m_other>.03</fraction_m_other>
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>NEAR</name>
@@ -1207,7 +1258,7 @@
 		<orbit_type>Planetary </orbit_type>
 		<m_total>808</m_total>
 		<m_total_dry>482</m_total_dry>
-		<power_total>852</power_total>
+		<p_total>852</p_total>
 		<m_payload>56</m_payload>
 		<fraction_m_payload>.12</fraction_m_payload>
 		<fraction_m_structmech>.19</fraction_m_structmech> 
@@ -1226,6 +1277,7 @@
 		<fraction_p_OBC>.1</fraction_p_OBC>
 		<fraction_p_ADC>.06</fraction_p_ADC>
 		<fraction_p_propulsion>.47</fraction_p_propulsion>
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>MESSENGER</name>
@@ -1234,7 +1286,7 @@
 		<orbit_type>Planetary </orbit_type>
 		<m_total>1102</m_total>
 		<m_total_dry>508</m_total_dry>
-		<power_total>633</power_total>
+		<p_total>633</p_total>
 		<m_payload>47</m_payload>
 		<fraction_m_payload>.09</fraction_m_payload>
 		<fraction_m_structmech>.25</fraction_m_structmech> 
@@ -1253,6 +1305,7 @@
 		<fraction_p_OBC>.05</fraction_p_OBC>
 		<fraction_p_ADC>.19</fraction_p_ADC>
 		<fraction_p_propulsion>.19</fraction_p_propulsion>
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>MRO</name>
@@ -1261,7 +1314,7 @@
 		<orbit_type>Planetary </orbit_type>
 		<m_total>2114</m_total>
 		<m_total_dry>953</m_total_dry>
-		<power_total>815</power_total>
+		<p_total>815</p_total>
 		<m_payload>130</m_payload>
 		<fraction_m_payload>.14</fraction_m_payload>
 		<fraction_m_structmech>.33</fraction_m_structmech> 
@@ -1280,6 +1333,7 @@
 		<fraction_p_OBC>.11</fraction_p_OBC>
 		<fraction_p_ADC>.09</fraction_p_ADC>
 		<fraction_p_propulsion>0</fraction_p_propulsion>
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>New Horizons</name>
@@ -1298,6 +1352,7 @@
 		<fraction_m_ADC>.05</fraction_m_ADC>
 		<fraction_m_propulsion>.07</fraction_m_propulsion>
 		<fraction_m_other>0</fraction_m_other>
+		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
 		<name>Stardust</name>
@@ -1306,7 +1361,7 @@
 		<orbit_type>Planetary </orbit_type>
 		<m_total>385</m_total>
 		<m_total_dry>299</m_total_dry>
-		<power_total>234</power_total>
+		<p_total>234</p_total>
 		<m_payload>71</m_payload>
 		<fraction_m_payload>.24</fraction_m_payload>
 		<fraction_m_structmech>.2</fraction_m_structmech> 
@@ -1325,6 +1380,7 @@
 		<fraction_p_OBC>.16</fraction_p_OBC>
 		<fraction_p_ADC>.11</fraction_p_ADC>
 		<fraction_p_propulsion>.03</fraction_p_propulsion>
+		<TRL>8</TRL>
 	</spacecraft>
 </reference_data_spracecraft>
 	

@@ -1,4 +1,7 @@
 function output_XML_generation(input, db_data, config, evolution_data)
+disp('XML production ')
+
+
 %Pre-Processing data to lineages
 output_struct=struct;
 
@@ -18,7 +21,7 @@ if config.Simulation_parameters.output.xml.optimal_candidates
 end
 
 %completing program
-%disp('XML Output complete')
+disp('XML Output complete')
 disp(' ')
 
 end
@@ -46,7 +49,9 @@ end
 
 processed_data =unprocessed_data;
 
-%  processed_data = attributeGenAbstractParameter(unprocessed_data);
+
+
+%processed_data = attributeGenAbstractParameter(unprocessed_data);  % this is unused?
 end
 
 function out = createAttributes(name, val, attr_definitions)

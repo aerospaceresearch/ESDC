@@ -1,45 +1,46 @@
+%main function of the ESDC program. The tools allows for generic spacecraft design based on correlations and application of an evolutionary algorithm.
+ 
 function [  ] =ESDC()
+t_0= now;                               % Reference timer for performance evaluation: Start
 
-t_0= now;
+% Path adding for relevant folders containing code 
+addpath('Code/Analysis');               % Code concercning system analaysis
+addpath('Code/Evolver');                % Code concerning Evolution algorithm definitions
+addpath('Code/Input');                  % Code dealinng with input handling
+addpath('Code/Output');                 % Code deadling with output handling
+addpath('Code/Scaling');                % Code dealing with scaling laws
+addpath('Code/Support');                % Code serving various support functions 
+add_paths_for_visualization();          % additional paths for the visulisation codes like video and animation creation
 
-addpath('Code/Analysis');
-addpath('Code/Evolver');
-addpath('Code/Input');
-addpath('Code/Output');
-addpath('Code/Scaling');
-addpath('Code/Support');
-add_paths_for_visualization();
+% Start
+startup();                              % Display startup messages, licenses etc.
 
-clc;
+%Update
+update_scaling_model();                 % Checks for changes in the data bases and derives changed scaling laws
 
-startup();
-fflush(stdout);
+%Input
+[input db_data config] = input_processing();   %Reads input files for the specific simulaton at hand
 
-update_scaling_model();
+%Evolve
+t_1=now;                              % Reference timer for performance evaluation: After evoluation completion
 
-[input db_data config] = input_processing();
-t_1=now;
+evolution_data = evolver(input, db_data, config); % Main solver performance here
 
-disp('Starting Evolution ...');
-disp(' ');
-fflush(stdout);
+evolution_time(t_1);                % Calculate the time for the evolution process
 
-evolution_data = evolver(input, db_data, config);
-t_2=now;
+%Output
+output_XML_generation(input, db_data, config, evolution_data);  
 
-evolution_time(t_1,t_2);
-
-disp('XML production ')
-output_XML_generation(input, db_data, config, evolution_data);
-disp('XML production complete')
-
+%Visual Output
 %disp('Visual production ')
 %visualization(evolution_data, input, db_data, config);
 %disp('Visual production complete')
 
 
+%End
 disp('ESDC complete')
-t_end = now;
-disp(sprintf('Exiting program after total runtime of %d s.',(t_end-t_0)*60*60*24))
-disp(' ')
-end
+eval_total_time(t_0, t_end=now)
+
+
+endfunction
+

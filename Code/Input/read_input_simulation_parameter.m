@@ -7,7 +7,7 @@ function [simulation_parameters] = read_input_simulation_parameter()
    disp(' ');
    fflush(stdout);
   else
-   disp('No Simulation Parameter Input File')
+   disp('ERROR: No Simulation Parameter Input File')
   end
 end
 
