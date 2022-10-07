@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"  elementFormDefault="qualified" attributeFormDefault="unqualified" version="20210521">
+	<xs:element name="Satellite_parameters"> 
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="input_case" minOccurs="1" maxOccurs="unbounded">
+				  <xs:complexType>
+					  <xs:sequence>
+					    <xs:element minOccurs="0" maxOccurs="1" name="totalmass">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:extension base="xs:double">
+										<xs:anyAttribute processContents="skip" />
+									</xs:extension>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+					    <xs:element minOccurs="0" maxOccurs="1" name="deltav" >
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:extension base="xs:double">
+										<xs:anyAttribute processContents="skip" />
+									</xs:extension>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+					    <xs:element minOccurs="0" maxOccurs="1" name="p_propulsion">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:extension base="xs:double">
+										<xs:anyAttribute processContents="skip" />
+									</xs:extension>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+						 <xs:element minOccurs="0" maxOccurs="1" name="m_propellant">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:extension base="xs:double">
+										<xs:anyAttribute processContents="skip" />
+									</xs:extension>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+						 <xs:element minOccurs="0" maxOccurs="1" name="m_payload">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:extension base="xs:double">
+										<xs:anyAttribute processContents="skip" />
+									</xs:extension>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element minOccurs="0" maxOccurs="1" name="m_structmech">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:extension base="xs:double">
+										<xs:anyAttribute processContents="skip" />
+									</xs:extension>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element minOccurs="0" maxOccurs="1" name="m_thermal">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:extension base="xs:double">
+										<xs:anyAttribute processContents="skip" />
+									</xs:extension>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element minOccurs="0" maxOccurs="1" name="m_power">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:extension base="xs:double">
+										<xs:anyAttribute processContents="skip" />
+									</xs:extension>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element minOccurs="0" maxOccurs="1" name="m_TTC">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:extension base="xs:double">
+										<xs:anyAttribute processContents="skip" />
+									</xs:extension>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element minOccurs="0" maxOccurs="1" name="m_ADC">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:extension base="xs:double">
+										<xs:anyAttribute processContents="skip" />
+									</xs:extension>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element minOccurs="0" maxOccurs="1" name="m_propulsion">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:extension base="xs:double">
+										<xs:anyAttribute processContents="skip" />
+									</xs:extension>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element minOccurs="0" maxOccurs="1" name="m_other">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:extension base="xs:double">
+										<xs:anyAttribute processContents="skip" />
+									</xs:extension>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+						 <xs:element minOccurs="0" maxOccurs="1" name="p_total">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:extension base="xs:double">
+										<xs:anyAttribute processContents="skip" />
+									</xs:extension>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+						 <xs:element minOccurs="0" maxOccurs="1" name="p_payload">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:extension base="xs:double">
+										<xs:anyAttribute processContents="skip" />
+									</xs:extension>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element minOccurs="0" maxOccurs="1" name="p_structmech">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:extension base="xs:double">
+										<xs:anyAttribute processContents="skip" />
+									</xs:extension>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element minOccurs="0" maxOccurs="1" name="p_thermal">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:extension base="xs:double">
+										<xs:anyAttribute processContents="skip" />
+									</xs:extension>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element minOccurs="0" maxOccurs="1" name="p_power">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:extension base="xs:double">
+										<xs:anyAttribute processContents="skip" />
+									</xs:extension>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element minOccurs="0" maxOccurs="1" name="p_TTC">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:extension base="xs:double">
+										<xs:anyAttribute processContents="skip" />
+									</xs:extension>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element minOccurs="0" maxOccurs="1" name="p_ADC">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:extension base="xs:double">
+										<xs:anyAttribute processContents="skip" />
+									</xs:extension>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>					
+					  </xs:sequence>
+					<xs:anyAttribute processContents="skip" />
+				  </xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="dcep_version" type="xs:string" />
+			<xs:attribute name="dcep_show" type="xs:boolean" />
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
+

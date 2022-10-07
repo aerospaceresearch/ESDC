@@ -10,5 +10,10 @@
 			<DOF>propellant</DOF>
 			<DOF>thrust</DOF>
 		</gridionthruster>
+		<FEEP>
+			<DOF>c_e</DOF>
+			<DOF>propellant</DOF>
+			<DOF>thrust</DOF>
+		</FEEP>
 	</propulsion_system>
 

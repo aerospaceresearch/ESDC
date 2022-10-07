@@ -1,6 +1,6 @@
 function [] = startup()
-clc;
-close all;
+clc;                                                  % Clear the Command Line
+close all;                                            % Close any potentially still open figures.
 disp('Evolutionary System Design Converger')
 disp('Institute of Space Systems')
 disp('University of Stuttgart')
@@ -23,6 +23,7 @@ disp(' ')
 disp(' ')
 disp('Loading Files ...')
 disp(' ')
+fflush(stdout);                                     % Forces output writing
 end
 
 

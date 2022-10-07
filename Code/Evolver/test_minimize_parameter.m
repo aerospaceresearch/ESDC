@@ -11,9 +11,9 @@ function result = test_minimize_parameter(new_data, lineage_data, parameter_list
   value_list = zeros(numel(lineage_data),1);
   for j=1:numel(lineage_data)
    gen_val=lineage_data{j};
-   for i=1:numel(parameter_list)  
+    for i=1:numel(parameter_list)  
      gen_val = gen_val.(parameter_list{i});
-   end
+    end
    value_list(j)=gen_val;
   end  
   
@@ -25,3 +25,4 @@ function result = test_minimize_parameter(new_data, lineage_data, parameter_list
       result = 0;
     end
 end
+

@@ -4,9 +4,9 @@ disp(' ')
 
 output = struct();
 
-class(input)
-size(input)
-disp(input)
+class(input);
+size(input);
+%disp(input)
 
 % recursion to walk down the array tree
 
