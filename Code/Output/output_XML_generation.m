@@ -8,12 +8,11 @@ output_struct=struct;
 %Adding attributes and field descrptions
 evolution_data = output_XML_attributes(evolution_data);
 
-%output_struct.evolution_lineage_history = evolution_data_preprocessing(evolution_data);
-
+output_struct.evolution_lineage_history = evolution_data_preprocessing(evolution_data);
 % Producing full output
-%if config.Simulation_parameters.output.xml.full_history
-%   output_XML_full_history(output_struct);
-%end
+if config.Simulation_parameters.output.xml.full_history
+   output_XML_full_history(output_struct);
+end
 
 %Producing optimal output
 if config.Simulation_parameters.output.xml.optimal_candidates

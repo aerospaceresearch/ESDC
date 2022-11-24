@@ -18,7 +18,7 @@ add_paths_for_visualization();          % additional paths for the visulisation 
 startup();                              % Display startup messages, licenses etc.
 
 %Update Scaling Data Base
-force_db_update = 1 ;
+force_db_update = 0 ;
 update_scaling_model(force_db_update);                 % Checks for changes in the data bases and derives changed scaling laws
 
 %Input
