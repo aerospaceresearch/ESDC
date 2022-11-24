@@ -1,27 +1,28 @@
-function [scaling_model_struct] = update_scaling_model()
+function [scaling_model_struct] = update_scaling_model(force_update_flag)
   disp('Database check:');
- 
   %System scaling
-  update_system_scaling(); %generates .csv look-up tables for component data from database
+  update_system_scaling(force_update_flag); %generates .csv look-up tables for component data from database
   %[data] = read_reference_data();    
   %update_generic_component_scaling_model(data);  
 
   %SC data scaling
-  update_SC_scaling(); %generates .csv look-up tables for spacecraft data
+  update_SC_scaling(force_update_flag); %generates .csv look-up tables for spacecraft data
   % [data] = read_reference_spacecraft_data();     %for debugging
   % update_generic_spacecraft_scaling_model(data);
 
 end
 
-function[] = update_SC_scaling()
+function[] = update_SC_scaling(force_update)
+
+    make_update = 0;
     if exist("Database/ESDC_Reference_Data_Spacecrafts_hash");
     hash_file = fopen('Database/ESDC_Reference_Data_Spacecrafts_hash', "r");
     hash_val = fgetl(hash_file);
     fclose(hash_file);
     current_hash = hash('md5', fileread('Database/ESDC_Reference_Data_Spacecrafts.xml'));
-    if (hash_val == current_hash)
+      if (hash_val == current_hash)
       disp('No updates to spacecraft database detected.');
-        return;
+        %return;
       else
       disp('Updates to spacecraft database detected.');
         [data] = read_reference_spacecraft_data();                    % add output here
@@ -38,8 +39,16 @@ function[] = update_SC_scaling()
       disp('Write hash');
       fprintf(hash_file, hash('md5', fileread('Database/ESDC_Reference_Data_Spacecrafts.xml')));
       fclose(hash_file);
-      update_SC_scaling();
-  end  
+      make_update = 1;
+    end
+    
+    if (force_update)
+      disp('Forcing Spacecraft Database Update');
+    end
+    if (make_update | force_update)
+      [data] = read_reference_spacecraft_data();
+      update_generic_spacecraft_scaling_model(data);
+    end
 end
 
 function [] =  update_generic_spacecraft_scaling_model(data)
@@ -88,8 +97,8 @@ end
 
 
 
-function [] = update_system_scaling()
-  
+function [] = update_system_scaling(force_update)
+  make_update = 0;
   %%DEBUG block:  Always do system scaling
   %data= read_reference_data(); 
   %update_generic_component_scaling_model(data); 
@@ -99,7 +108,6 @@ function [] = update_system_scaling()
     hash_val = fgetl(hash_file);
     fclose(hash_file);
     current_hash = hash('md5', fileread('Database/ESDC_Reference_Data_Systems.xml'));
- 
     if (hash_val == current_hash)
       disp('No updates to database detected.');
       else
@@ -118,7 +126,14 @@ function [] = update_system_scaling()
     disp('Write hash');
     fprintf(hash_file, hash('md5', fileread('Database/ESDC_Reference_Data_Systems.xml')));
     fclose(hash_file);
-    update_system_scaling();
+    make_update= 1;
+  end
+  if force_update
+    disp('Forcing Component Database Update');
+  end
+  if (make_update | force_update)
+    [data] = read_reference_data();
+    update_generic_component_scaling_model(data);
   end
 end
 

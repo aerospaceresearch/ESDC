@@ -40,7 +40,8 @@ function [] = make_makeshift_graph(filename_old, data, data_fit)
 
     #extract type, add to text box 
     
-      fig_handle = figure('Name',title);
+      fig_handle = figure('Name',title,'visible','off');
+      set(0,'CurrentFigure',fig_handle);
       hold on;
       annotation('textbox',[.15 .9 .3 .8],'String',annotation_string,'FitBoxToText','on','Edgecolor','white','FontSize',16);
       xlabel(strcat(str_param_x_axis,str_unit_x_axis),'FontSize',16);

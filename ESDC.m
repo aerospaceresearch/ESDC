@@ -17,8 +17,9 @@ add_paths_for_visualization();          % additional paths for the visulisation 
 % Start
 startup();                              % Display startup messages, licenses etc.
 
-%Update
-update_scaling_model();                 % Checks for changes in the data bases and derives changed scaling laws
+%Update Scaling Data Base
+force_db_update = 1 ;
+update_scaling_model(force_db_update);                 % Checks for changes in the data bases and derives changed scaling laws
 
 %Input
 [input db_data config] = input_processing();   %Reads input files for the specific simulaton at hand
@@ -35,7 +36,7 @@ output_XML_generation(input, db_data, config, evolution_data);
 
 %Visual Output
 %disp('Visual production ')
-%visualization(evolution_data, input, db_data, config);
+%visualization(evolution_data, config);
 %disp('Visual production complete')
 
 
