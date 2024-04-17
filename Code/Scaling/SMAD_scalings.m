@@ -16,15 +16,16 @@ function [systemmasses systempowers] = SMAD_scalings(data)
    systempowers                 = struct;
    
    sc_type                      = determine_sc_type(data);
-   systemmasses.m_dry_nomargin  = determine_m_dry(data);          
+   systemmasses.m_dry_nomargin  = determine_m_dry(data);                                 % total mass of system without considering any margin
    
-   systemmasses.m_margin        = m_margin(systemmasses.m_dry_nomargin, sc_type);   
-   systemmasses.m_dry_margin    = systemmasses.m_dry_nomargin - systemmasses.m_margin;
+   systemmasses.m_margin        = m_margin(systemmasses.m_dry_nomargin, sc_type);       % obtain typical margin mass to be applied to such a system
+   systemmasses.m_dry_margin    = systemmasses.m_dry_nomargin - systemmasses.m_margin;  % calculate new maximum mass available when subtracting the margin mass
    
-   systemmasses.m_propellant    = data.mass - systemmasses.m_dry_nomargin;
-   
-   %TODO: AUTOMATE THIS IN A LOOP
-   systemmasses.m_payload       = scale_SMAD_parameter(systemmasses.m_dry_margin, sc_type, "m_total", "m_payload");
+   systemmasses.m_propellant    = data.mass - systemmasses.m_dry_nomargin;              % calculate the propellant mass by difference of total mass to dry mass
+  
+  
+   %Scale subsystem masses accordingly
+   systemmasses.m_payload       = scale_SMAD_parameter(systemmasses.m_dry_margin, sc_type, "m_total", "fraction_m_payload")*systemmasses.m_dry_margin;;
    systemmasses.m_structmech    = scale_SMAD_parameter(systemmasses.m_dry_margin, sc_type, "m_total", "fraction_m_structmech")*systemmasses.m_dry_margin;
    systemmasses.m_thermal       = scale_SMAD_parameter(systemmasses.m_dry_margin, sc_type, "m_total", "fraction_m_thermal")*systemmasses.m_dry_margin;
    systemmasses.m_power         = scale_SMAD_parameter(systemmasses.m_dry_margin, sc_type, "m_total", "fraction_m_power")*systemmasses.m_dry_margin;  
@@ -35,10 +36,13 @@ function [systemmasses systempowers] = SMAD_scalings(data)
 
 %   
    %Check for remaining mass difference
-   checksum =  systemmasses.m_margin +systemmasses.m_propellant+systemmasses.m_payload+systemmasses.m_structmech +systemmasses.m_thermal+ systemmasses.m_power+ systemmasses.m_ttc+ systemmasses.m_adc+systemmasses.m_propulsion+ systemmasses.m_other;
-   
+   %checksum = systemmasses.m_propellant+systemmasses.m_payload+systemmasses.m_structmech +systemmasses.m_thermal+ systemmasses.m_power+ systemmasses.m_ttc+ systemmasses.m_adc+systemmasses.m_propulsion+ systemmasses.m_other;
+   systemmasses.m_dry_margin = systemmasses.m_payload+systemmasses.m_structmech +systemmasses.m_thermal+ systemmasses.m_power+ systemmasses.m_ttc+ systemmasses.m_adc+systemmasses.m_propulsion+ systemmasses.m_other;
+
    %Add discrepancy to margin
-   systemmasses.m_margin= systemmasses.m_margin+ data.mass-checksum;
+
+   systemmasses.m_margin= systemmasses.m_dry_nomargin -systemmasses.m_dry_margin;
+
    
    if systemmasses.m_margin<0
       disp('No system margin left');
@@ -50,7 +54,7 @@ function [systemmasses systempowers] = SMAD_scalings(data)
    end
    
    systempowers.p_payload       = scale_SMAD_parameter(systempowers.p_total, sc_type, "p_total", "fraction_p_payload")*systempowers.p_total;
-   systempowers.p_structmech     = scale_SMAD_parameter(systempowers.p_total, sc_type, "p_total", "fraction_p_structmech")*systempowers.p_total;
+   systempowers.p_structmech    = scale_SMAD_parameter(systempowers.p_total, sc_type, "p_total", "fraction_p_structmech")*systempowers.p_total;
    systempowers.p_thermal       = scale_SMAD_parameter(systempowers.p_total, sc_type, "p_total", "fraction_p_thermal")*systempowers.p_total;
    systempowers.p_power         = scale_SMAD_parameter(systempowers.p_total, sc_type, "p_total", "fraction_p_power")*systempowers.p_total;  
    systempowers.p_ttc           = scale_SMAD_parameter(systempowers.p_total, sc_type, "p_total", "fraction_p_TTC")*systempowers.p_total;
@@ -64,6 +68,8 @@ endfunction
 function [m_dry] = determine_m_dry(data)
     if isfield(data,'dv') && isfield(data,'c_e')
       m_dry = exp(-data.dv/data.c_e)*data.mass;
+    elseif isfield(data,'m_propellant')
+      m_dry = data.mass - data.m_propellant;
     else
       m_dry = data.mass; %
     endif
@@ -85,5 +91,5 @@ end
 function P = p_tot_average(mass_dry, sc_type)
   power_factor=[299 794 691 749];
   mass_factor = mass_dry./[1497 2344 1258 888];
-   P= mass_factor(sc_type)^(2/3)*power_factor(sc_type); % continue here with better data from 966 new SMAD
+  P= mass_factor(sc_type)^(2/3)*power_factor(sc_type); % continue here with better data from 966 new SMAD
 end

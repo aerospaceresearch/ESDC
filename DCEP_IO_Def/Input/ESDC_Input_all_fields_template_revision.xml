@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Satellite_parameters dcep_version="20191025" dcep_show="false">
+        <input_case dcep_show="false">
+                <totalmass dcep_name="Satellite Mass" dcep_unit="kg" dcep_description="Currently estimated mass of satellite">155</totalmass>
+                <deltav dcep_name="Required Delta v" dcep_unit="m/s" dcep_description="Minimum Delta v to be delivered by propulsion system">685.97</deltav>
+                <m_propellant>1</m_propellant>
+                <m_payload>1</m_payload>
+                <m_structmech>1</m_structmech>
+                <m_thermal>1</m_thermal>
+                <m_power>1</m_power>
+                <m_TTC>1</m_TTC>
+                <m_ADC>1</m_ADC>
+                <m_propulsion>1</m_propulsion>
+                <m_other>1</m_other>
+                <p_total>1</p_total>
+                <p_propulsion dcep_name="Available Power" dcep_unit="W" dcep_description="Power available for propulsion system">202.9</p_propulsion>
+                <p_payload>1</p_payload>
+                <p_structmech>1</p_structmech>
+                <p_thermal>1</p_thermal>
+                <p_power>1</p_power>
+                <p_TTC>1</p_TTC>
+                <p_ADC>1</p_ADC>
+        </input_case>
+</Satellite_parameters>
+
+
+
+    <complete_elem>
+        <dcep_info>
+            <dcep_name>mass total</dcep_name>
+            <dcep_unit>kg</dcep_unit>
+            <dcep_description>Currently estimated mass of spacecraft</dcep_description>
+            <dcep_type>float</dcep_type>
+            <dcep_no_value>false</dcep_no_value>
+            <dcep_default>150</dcep_default>
+            <dcep_min_occurrence>0</dcep_min_occurrence>
+            <dcep_max_occurrence>1</dcep_max_occurrence>
+            <dcep_min_inclusive>0</dcep_min_inclusive>
+            <dcep_max_inclusive>50000</dcep_max_inclusive>
+        </dcep_info>
+    </complete_elem>
+    <complete_elem>
+        <dcep_info>
+            <dcep_name>mass propellant</dcep_name>
+            <dcep_unit>kg</dcep_unit>
+            <dcep_description>Currently estimated propellant mass of spacecraft</dcep_description>
+            <dcep_type>float</dcep_type>
+            <dcep_no_value>false</dcep_no_value>
+            <dcep_default>75</dcep_default>
+            <dcep_min_occurrence>0</dcep_min_occurrence>
+            <dcep_max_occurrence>1</dcep_max_occurrence>
+            <dcep_min_inclusive>0</dcep_min_inclusive>
+            <dcep_max_inclusive>50000</dcep_max_inclusive>
+        </dcep_info>
+    </complete_elem>
+    <complete_elem>
+        <dcep_info>
+            <dcep_name>mass payload</dcep_name>
+            <dcep_unit>kg</dcep_unit>
+            <dcep_description>Currently estimated payload mass of spacecraft</dcep_description>
+            <dcep_type>float</dcep_type>
+            <dcep_no_value>false</dcep_no_value>
+            <dcep_default>20</dcep_default>
+            <dcep_min_occurrence>0</dcep_min_occurrence>
+            <dcep_max_occurrence>1</dcep_max_occurrence>
+            <dcep_min_inclusive>0</dcep_min_inclusive>
+            <dcep_max_inclusive>50000</dcep_max_inclusive>
+        </dcep_info>
+    </complete_elem>  
+    <complete_elem>
+        <dcep_info>
+            <dcep_name>mass structure and mechanics</dcep_name>
+            <dcep_unit>kg</dcep_unit>
+            <dcep_description>Currently estimated structure and mechanism mass of spacecraft</dcep_description>
+            <dcep_type>float</dcep_type>
+            <dcep_no_value>false</dcep_no_value>
+            <dcep_default>20</dcep_default>
+            <dcep_min_occurrence>0</dcep_min_occurrence>
+            <dcep_max_occurrence>1</dcep_max_occurrence>
+            <dcep_min_inclusive>0</dcep_min_inclusive>
+            <dcep_max_inclusive>50000</dcep_max_inclusive>
+        </dcep_info>
+    </complete_elem>  
+     <complete_elem>
+        <dcep_info>
+            <dcep_name>mass thermal system</dcep_name>
+            <dcep_unit>kg</dcep_unit>
+            <dcep_description>Currently estimated thermal managment system mass of spacecraft</dcep_description>
+            <dcep_type>float</dcep_type>
+            <dcep_no_value>false</dcep_no_value>
+            <dcep_default>20</dcep_default>
+            <dcep_min_occurrence>0</dcep_min_occurrence>
+            <dcep_max_occurrence>1</dcep_max_occurrence>
+            <dcep_min_inclusive>0</dcep_min_inclusive>
+            <dcep_max_inclusive>50000</dcep_max_inclusive>
+        </dcep_info>
+    </complete_elem>       
+     <complete_elem>
+        <dcep_info>
+            <dcep_name>mass power system</dcep_name>
+            <dcep_unit>kg</dcep_unit>
+            <dcep_description>Currently estimated power managment system mass of spacecraft</dcep_description>
+            <dcep_type>float</dcep_type>
+            <dcep_no_value>false</dcep_no_value>
+            <dcep_default>20</dcep_default>
+            <dcep_min_occurrence>0</dcep_min_occurrence>
+            <dcep_max_occurrence>1</dcep_max_occurrence>
+            <dcep_min_inclusive>0</dcep_min_inclusive>
+            <dcep_max_inclusive>50000</dcep_max_inclusive>
+        </dcep_info>
+    </complete_elem>     
+    <complete_elem>
+        <dcep_info>
+            <dcep_name>mass TTC system</dcep_name>
+            <dcep_unit>kg</dcep_unit>
+            <dcep_description>Currently estimated telemetry, tracking and control system mass of spacecraft</dcep_description>
+            <dcep_type>float</dcep_type>
+            <dcep_no_value>false</dcep_no_value>
+            <dcep_default>20</dcep_default>
+            <dcep_min_occurrence>0</dcep_min_occurrence>
+            <dcep_max_occurrence>1</dcep_max_occurrence>
+            <dcep_min_inclusive>0</dcep_min_inclusive>
+            <dcep_max_inclusive>50000</dcep_max_inclusive>
+        </dcep_info>
+    </complete_elem>     
+     <complete_elem>
+        <dcep_info>
+            <dcep_name>mass ADC system</dcep_name>
+            <dcep_unit>kg</dcep_unit>
+            <dcep_description>Currently estimated attitude determination and control system mass of spacecraft</dcep_description>
+            <dcep_type>float</dcep_type>
+            <dcep_no_value>false</dcep_no_value>
+            <dcep_default>20</dcep_default>
+            <dcep_min_occurrence>0</dcep_min_occurrence>
+            <dcep_max_occurrence>1</dcep_max_occurrence>
+            <dcep_min_inclusive>0</dcep_min_inclusive>
+            <dcep_max_inclusive>50000</dcep_max_inclusive>
+        </dcep_info>
+    </complete_elem>            
+
+     <complete_elem>
+        <dcep_info>
+            <dcep_name>mass propulsion system</dcep_name>
+            <dcep_unit>kg</dcep_unit>
+            <dcep_description>Currently estimated propulsion system mass of spacecraft</dcep_description>
+            <dcep_type>float</dcep_type>
+            <dcep_no_value>false</dcep_no_value>
+            <dcep_default>20</dcep_default>
+            <dcep_min_occurrence>0</dcep_min_occurrence>
+            <dcep_max_occurrence>1</dcep_max_occurrence>
+            <dcep_min_inclusive>0</dcep_min_inclusive>
+            <dcep_max_inclusive>50000</dcep_max_inclusive>
+        </dcep_info>
+    </complete_elem>      
+     <complete_elem>
+        <dcep_info>
+            <dcep_name>mass other</dcep_name>
+            <dcep_unit>kg</dcep_unit>
+            <dcep_description>Unaccounted mass of spacecraft not fitting in other system estimates</dcep_description>
+            <dcep_type>float</dcep_type>
+            <dcep_no_value>false</dcep_no_value>
+            <dcep_default>20</dcep_default>
+            <dcep_min_occurrence>0</dcep_min_occurrence>
+            <dcep_max_occurrence>1</dcep_max_occurrence>
+            <dcep_min_inclusive>0</dcep_min_inclusive>
+            <dcep_max_inclusive>50000</dcep_max_inclusive>
+        </dcep_info>
+    </complete_elem>      
+
+
+
+    <complete_elem>
+        <dcep_info>
+            <dcep_name>power total</dcep_name>
+            <dcep_unit>W</dcep_unit>
+            <dcep_description>Currently estimated total power requirement of spacecraft</dcep_description>
+            <dcep_type>float</dcep_type>
+            <dcep_no_value>false</dcep_no_value>
+            <dcep_default>150</dcep_default>
+            <dcep_min_occurrence>0</dcep_min_occurrence>
+            <dcep_max_occurrence>1</dcep_max_occurrence>
+            <dcep_min_inclusive>0</dcep_min_inclusive>
+            <dcep_max_inclusive>50000</dcep_max_inclusive>
+        </dcep_info>
+    </complete_elem>
+
+    <complete_elem>
+        <dcep_info>
+            <dcep_name>power payload</dcep_name>
+            <dcep_unit>W</dcep_unit>
+            <dcep_description>Currently estimated payload power requirement spacecraft</dcep_description>
+            <dcep_type>float</dcep_type>
+            <dcep_no_value>false</dcep_no_value>
+            <dcep_default>50</dcep_default>
+            <dcep_min_occurrence>0</dcep_min_occurrence>
+            <dcep_max_occurrence>1</dcep_max_occurrence>
+            <dcep_min_inclusive>0</dcep_min_inclusive>
+            <dcep_max_inclusive>50000</dcep_max_inclusive>
+        </dcep_info>
+    </complete_elem>  
+    <complete_elem>
+        <dcep_info>
+            <dcep_name>power structure and mechanics</dcep_name>
+            <dcep_unit>kg</dcep_unit>
+            <dcep_description>Currently estimated structure and mechanism power requirement of spacecraft</dcep_description>
+            <dcep_type>float</dcep_type>
+            <dcep_no_value>false</dcep_no_value>
+            <dcep_default>20</dcep_default>
+            <dcep_min_occurrence>0</dcep_min_occurrence>
+            <dcep_max_occurrence>1</dcep_max_occurrence>
+            <dcep_min_inclusive>0</dcep_min_inclusive>
+            <dcep_max_inclusive>50000</dcep_max_inclusive>
+        </dcep_info>
+    </complete_elem>  
+     <complete_elem>
+        <dcep_info>
+            <dcep_name>power thermal system</dcep_name>
+            <dcep_unit>kg</dcep_unit>
+            <dcep_description>Currently estimated thermal managment system power requirement of spacecraft</dcep_description>
+            <dcep_type>float</dcep_type>
+            <dcep_no_value>false</dcep_no_value>
+            <dcep_default>50</dcep_default>
+            <dcep_min_occurrence>0</dcep_min_occurrence>
+            <dcep_max_occurrence>1</dcep_max_occurrence>
+            <dcep_min_inclusive>0</dcep_min_inclusive>
+            <dcep_max_inclusive>50000</dcep_max_inclusive>
+        </dcep_info>
+    </complete_elem>       
+     <complete_elem>
+        <dcep_info>
+            <dcep_name>power power system</dcep_name>
+            <dcep_unit>W</dcep_unit>
+            <dcep_description>Currently estimated power managment system power requirementof spacecraft</dcep_description>
+            <dcep_type>float</dcep_type>
+            <dcep_no_value>false</dcep_no_value>
+            <dcep_default>10</dcep_default>
+            <dcep_min_occurrence>0</dcep_min_occurrence>
+            <dcep_max_occurrence>1</dcep_max_occurrence>
+            <dcep_min_inclusive>0</dcep_min_inclusive>
+            <dcep_max_inclusive>50000</dcep_max_inclusive>
+        </dcep_info>
+    </complete_elem>     
+    <complete_elem>
+        <dcep_info>
+            <dcep_name>power TTC system</dcep_name>
+            <dcep_unit>W</dcep_unit>
+            <dcep_description>Currently estimated telemetry, tracking and control system power requirement of spacecraft</dcep_description>
+            <dcep_type>float</dcep_type>
+            <dcep_no_value>false</dcep_no_value>
+            <dcep_default>50</dcep_default>
+            <dcep_min_occurrence>0</dcep_min_occurrence>
+            <dcep_max_occurrence>1</dcep_max_occurrence>
+            <dcep_min_inclusive>0</dcep_min_inclusive>
+            <dcep_max_inclusive>50000</dcep_max_inclusive>
+        </dcep_info>
+    </complete_elem>     
+     <complete_elem>
+        <dcep_info>
+            <dcep_name>power ADC system</dcep_name>
+            <dcep_unit>W</dcep_unit>
+            <dcep_description>Currently estimated attitude determination and control system power requirement of spacecraft</dcep_description>
+            <dcep_type>float</dcep_type>
+            <dcep_no_value>false</dcep_no_value>
+            <dcep_default>20</dcep_default>
+            <dcep_min_occurrence>0</dcep_min_occurrence>
+            <dcep_max_occurrence>1</dcep_max_occurrence>
+            <dcep_min_inclusive>0</dcep_min_inclusive>
+            <dcep_max_inclusive>50000</dcep_max_inclusive>
+        </dcep_info>
+    </complete_elem>            
+
+     <complete_elem>
+        <dcep_info>
+            <dcep_name>power propulsion system</dcep_name>
+            <dcep_unit>W</dcep_unit>
+            <dcep_description>Currently estimated propulsion system power requirement of spacecraft</dcep_description>
+            <dcep_type>float</dcep_type>
+            <dcep_no_value>false</dcep_no_value>
+            <dcep_default>150</dcep_default>
+            <dcep_min_occurrence>0</dcep_min_occurrence>
+            <dcep_max_occurrence>1</dcep_max_occurrence>
+            <dcep_min_inclusive>0</dcep_min_inclusive>
+            <dcep_max_inclusive>50000</dcep_max_inclusive>
+        </dcep_info>
+    </complete_elem>      
+
+    
+    <complete_elem>
+        <dcep_info>
+            <dcep_name>deltav</dcep_name>
+            <dcep_unit>m/s</dcep_unit>
+            <dcep_description>VMinimum Delta v to be delivered by propulsion system</dcep_description>
+            <dcep_type>float</dcep_type>
+            <dcep_no_value>false</dcep_no_value>
+            <dcep_default>150</dcep_default>
+            <dcep_min_occurrence>0</dcep_min_occurrence>
+            <dcep_max_occurrence>1</dcep_max_occurrence>
+            <dcep_min_inclusive>0</dcep_min_inclusive>
+            <dcep_max_inclusive>50000</dcep_max_inclusive>
+        </dcep_info>
+    </complete_elem>

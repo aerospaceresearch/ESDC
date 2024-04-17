@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<best_solutions>
+    <case_1>
+    	<dcep_info>
+    	           <dcep_name>ESDC Solution</dcep_name>
+                   <dcep_description>Best solution of the ESDC tool</dcep_description>
+    	<best_1>
+            <mass><dcep_info>
+                    <dcep_name>total system mass</dcep_name>
+                    <dcep_unit>kg</dcep_unit>
+                    <dcep_description>Input: Total system mass wet including margins</dcep_description>
+                </dcep_info>
+            </mass>
+            <dv>500<dcep_info>
+                    <dcep_name>delta v</dcep_name>
+                    <dcep_unit>m/s</dcep_unit>
+                    <dcep_description>Input: Total velocity increment of the mission</dcep_description>
+                </dcep_info>
+            </dv>
+            <p_propulsion>4000<dcep_info>
+                    <dcep_name>power propulsion</dcep_name>
+                    <dcep_unit>W</dcep_unit>
+                    <dcep_description>power demand for propulsion systems</dcep_description>
+                </dcep_info>
+            </p_propulsion>
+            <propulsion_system>FEEP<dcep_info>
+                    <dcep_name>Propulsion system type</dcep_name>
+                    <dcep_unit>-</dcep_unit>
+                    <dcep_description>Describes the current propulsion system</dcep_description>
+                </dcep_info>
+            </propulsion_system>
+            <propellant>Indium<dcep_info>
+                    <dcep_name>Propellant</dcep_name>
+                    <dcep_unit>-</dcep_unit>
+                    <dcep_description>Describes the current propellant used by the propulsion system</dcep_description>
+                </dcep_info>
+            </propellant>
+            <c_e>250436.5833<dcep_info>
+                    <dcep_name>Effective exhaust velocity</dcep_name>
+                    <dcep_unit>m/s</dcep_unit>
+                    <dcep_description>Effective exhaust velocity of the propulsion system</dcep_description>
+                </dcep_info>
+            </c_e>
+            <thrust>0.004<dcep_info>
+                    <dcep_name>Thrust</dcep_name>
+                    <dcep_unit>N</dcep_unit>
+                    <dcep_description>Thrust of the propulsion system</dcep_description>
+                </dcep_info>
+            </thrust>
+            <power_thruster>4000<dcep_info>
+                    <dcep_name>Thruster power</dcep_name>
+                    <dcep_unit>W</dcep_unit>
+                    <dcep_description>Total electric power consumption of the propulsion system</dcep_description>
+                </dcep_info>
+            </power_thruster>
+            <power_jet>500.8732<dcep_info>
+                    <dcep_name>Jet exhaust power</dcep_name>
+                    <dcep_unit>W</dcep_unit>
+                    <dcep_description>Total jet output power of the propulsion system</dcep_description>
+                </dcep_info>
+            </power_jet>
+            <eff_PPU>1<dcep_info>
+                    <dcep_name>PPU efficiency</dcep_name>
+                    <dcep_unit>-</dcep_unit>
+                    <dcep_description>Power conversion efficiency of the Power Propulsion Unit (PPU)</dcep_description>
+                </dcep_info>
+            </eff_PPU>
+            <eff_thruster>0.12522<dcep_info>
+                    <dcep_name>Thruster efficiency</dcep_name>
+                    <dcep_unit>-</dcep_unit>
+                    <dcep_description>El. power to jet power conversion efficiency of the thruster</dcep_description>
+                </dcep_info>
+            </eff_thruster>
+            <subsystem_masses>
+                <dcep_info>
+                    <dcep_name>Subsystem masses</dcep_name>
+                    <dcep_unit>-</dcep_unit>
+                    <dcep_description>Masses of all spacecraft subsystems</dcep_description>
+                </dcep_info>
+                <m_dry_nomargin>998.0055<dcep_info>
+                        <dcep_name>total dry mass</dcep_name>
+                        <dcep_unit>kg</dcep_unit>
+                        <dcep_description>total dry mass including all margins</dcep_description>
+                    </dcep_info>
+                </m_dry_nomargin>
+                <m_margin>481.1795<dcep_info>
+                        <dcep_name>total margin mass</dcep_name>
+                        <dcep_unit>kg</dcep_unit>
+                        <dcep_description>total mass of all margins. based on statistics.</dcep_description>
+                    </dcep_info>
+                </m_margin>
+                <m_dry_margin>516.826<dcep_info>
+                        <dcep_name>total marginless dry mass </dcep_name>
+                        <dcep_unit>kg</dcep_unit>
+                        <dcep_description>total dry mass without margin</dcep_description>
+                    </dcep_info>
+                </m_dry_margin>
+                <m_propellant>1.9945<dcep_info>
+                        <dcep_name>total propellant mass</dcep_name>
+                        <dcep_unit>kg</dcep_unit>
+                        <dcep_description>propellant mass calculated by tsiolkosvky of inputs</dcep_description>
+                    </dcep_info>
+                </m_propellant>
+                <m_payload>204.9121<dcep_info>
+                        <dcep_name>total payload mass</dcep_name>
+                        <dcep_unit>kg</dcep_unit>
+                        <dcep_description>total payload mass. based on statistics.</dcep_description>
+                    </dcep_info>
+                </m_payload>
+                <m_structmech>201.3421<dcep_info>
+                        <none>no attributes defined</none>
+                    </dcep_info>
+                </m_structmech>
+                <m_thermal>19.8573<dcep_info>
+                        <dcep_name>total thermal system mass</dcep_name>
+                        <dcep_unit>kg</dcep_unit>
+                        <dcep_description>total thermal system mass. based on statistics.</dcep_description>
+                    </dcep_info>
+                </m_thermal>
+                <m_power>0<dcep_info>
+                        <dcep_name>total power system mass</dcep_name>
+                        <dcep_unit>kg</dcep_unit>
+                        <dcep_description>total power system mass. based on statistics.</dcep_description>
+                    </dcep_info>
+                </m_power>
+                <m_ttc>13.7108<dcep_info>
+                        <dcep_name>total ttc mass</dcep_name>
+                        <dcep_unit>kg</dcep_unit>
+                        <dcep_description>total telemetry, tracking and control system mass. based on statistics.</dcep_description>
+                    </dcep_info>
+                </m_ttc>
+                <m_adc>57.8014<dcep_info>
+                        <dcep_name>total adc mass</dcep_name>
+                        <dcep_unit>kg</dcep_unit>
+                        <dcep_description>total attitude determination and control system mass. based on statistics.</dcep_description>
+                    </dcep_info>
+                </m_adc>
+                <m_propulsion>5.2632<dcep_info>
+                        <dcep_name>total propulsion system mass</dcep_name>
+                        <dcep_unit>kg</dcep_unit>
+                        <dcep_description>total propulsion system mass. based on statistics, refined by additional modelling.</dcep_description>
+                    </dcep_info>
+                </m_propulsion>
+                <m_other>11.9444<dcep_info>
+                        <dcep_name>total other mass</dcep_name>
+                        <dcep_unit>kg</dcep_unit>
+                        <dcep_description>accounting for other minor masses, could be considered an additional margin.</dcep_description>
+                    </dcep_info>
+                </m_other>
+                <propulsion>
+                    <dcep_info>
+                        <none>no attributes defined</none>
+                    </dcep_info>
+                    <m_tank>5.2632<dcep_info>
+                            <dcep_name>estimated tank mass</dcep_name>
+                            <dcep_unit>kg</dcep_unit>
+                            <dcep_description>tank mass required for system solution</dcep_description>
+                        </dcep_info>
+                    </m_tank>
+                    <m_thruster>0<dcep_info>
+                            <dcep_name>estimated thruster mass</dcep_name>
+                            <dcep_unit>kg</dcep_unit>
+                            <dcep_description>thruster mass required for system solution</dcep_description>
+                        </dcep_info>
+                    </m_thruster>
+                </propulsion>
+            </subsystem_masses>
+            <subsystem_powers>
+                <dcep_info>
+                    <dcep_name>Subsystem powers</dcep_name>
+                    <dcep_unit>-</dcep_unit>
+                    <dcep_description>Power requirement of all spacecraft subsystems</dcep_description>
+                </dcep_info>
+                <p_total>4468.6749<dcep_info>
+                        <dcep_name>power total</dcep_name>
+                        <dcep_unit>W</dcep_unit>
+                        <dcep_description>total power demand spacecraft</dcep_description>
+                    </dcep_info>
+                </p_total>
+                <p_payload>216.2388<dcep_info>
+                        <dcep_name>power payload</dcep_name>
+                        <dcep_unit>W</dcep_unit>
+                        <dcep_description>power demand of the payload</dcep_description>
+                    </dcep_info>
+                </p_payload>
+                <p_structmech>4.4047<dcep_info>
+                        <none>no attributes defined</none>
+                    </dcep_info>
+                </p_structmech>
+                <p_thermal>34.4729<dcep_info>
+                        <dcep_name>power thermal system</dcep_name>
+                        <dcep_unit>W</dcep_unit>
+                        <dcep_description>power demand for thermal control</dcep_description>
+                    </dcep_info>
+                </p_thermal>
+                <p_power>40.1812<dcep_info>
+                        <dcep_name>power for power system</dcep_name>
+                        <dcep_unit>W</dcep_unit>
+                        <dcep_description>power demand for power conditioning</dcep_description>
+                    </dcep_info>
+                </p_power>
+                <p_ttc>111.0209<dcep_info>
+                        <dcep_name>power TTC</dcep_name>
+                        <dcep_unit>W</dcep_unit>
+                        <dcep_description>power demand for tracking telemetry and command</dcep_description>
+                    </dcep_info>
+                </p_ttc>
+                <p_adc>62.3565<dcep_info>
+                        <dcep_name>power ADC</dcep_name>
+                        <dcep_unit>W</dcep_unit>
+                        <dcep_description>power demand for attitude determination and control</dcep_description>
+                    </dcep_info>
+                </p_adc>
+                <p_propulsion>4000<dcep_info>
+                        <dcep_name>power propulsion</dcep_name>
+                        <dcep_unit>W</dcep_unit>
+                        <dcep_description>power demand for propulsion systems</dcep_description>
+                    </dcep_info>
+                </p_propulsion>
+            </subsystem_powers>
+            <mission_parameters>
+                <dcep_info>
+                    <dcep_name>Mission parameters</dcep_name>
+                    <dcep_unit>-</dcep_unit>
+                    <dcep_description>Mission specific parameters</dcep_description>
+                </dcep_info>
+                <maneuver_duration>124875300.9127<dcep_info>
+                        <dcep_name>Total maneuvre duration</dcep_name>
+                        <dcep_unit>s</dcep_unit>
+                        <dcep_description>Total time to perform the full dv of all maneuvres.</dcep_description>
+                    </dcep_info>
+                </maneuver_duration>
+            </mission_parameters>
+            <mass_fractions>
+                <dcep_info>
+                    <dcep_name>Subsystem mass fractions</dcep_name>
+                    <dcep_unit>-</dcep_unit>
+                    <dcep_description>Ratios of all subsystem masses in relation to the total system mass</dcep_description>
+                </dcep_info>
+                <frac_m_dry_nomargin>0.98542<dcep_info>
+                        <dcep_name>total dry mass fraction</dcep_name>
+                        <dcep_unit>-</dcep_unit>
+                        <dcep_description>total dry mass including all margins to total mass fraction</dcep_description>
+                    </dcep_info>
+                </frac_m_dry_nomargin>
+                <frac_m_margin>0.29684<dcep_info>
+                        <dcep_name>total margin mass fraction </dcep_name>
+                        <dcep_unit>-</dcep_unit>
+                        <dcep_description>total mass of all margins to total mass fraction</dcep_description>
+                    </dcep_info>
+                </frac_m_margin>
+                <frac_m_dry_margin>0.68858<dcep_info>
+                        <dcep_name>total marginless dry mass fraction</dcep_name>
+                        <dcep_unit>-</dcep_unit>
+                        <dcep_description>total dry mass without margin to total mass fraction</dcep_description>
+                    </dcep_info>
+                </frac_m_dry_margin>
+                <frac_m_propellant>0.01458<dcep_info>
+                        <dcep_name>total propellant mass fraction</dcep_name>
+                        <dcep_unit>-</dcep_unit>
+                        <dcep_description>propellant mass to total mass fraction</dcep_description>
+                    </dcep_info>
+                </frac_m_propellant>
+                <frac_m_payload>0.20207<dcep_info>
+                        <dcep_name>total payload mass fraction</dcep_name>
+                        <dcep_unit>-</dcep_unit>
+                        <dcep_description>total payload mass to total mass fraction</dcep_description>
+                    </dcep_info>
+                </frac_m_payload>
+                <frac_m_structmech>0.19886<dcep_info>
+                        <none>no attributes defined</none>
+                    </dcep_info>
+                </frac_m_structmech>
+                <frac_m_thermal>0.019612<dcep_info>
+                        <dcep_name>total thermal system mass fraction</dcep_name>
+                        <dcep_unit>-</dcep_unit>
+                        <dcep_description>total thermal system mass to total mass fraction</dcep_description>
+                    </dcep_info>
+                </frac_m_thermal>
+                <frac_m_power>0.1589<dcep_info>
+                        <dcep_name>total power system mass fraction</dcep_name>
+                        <dcep_unit>-</dcep_unit>
+                        <dcep_description>total power system mass to total mass fraction</dcep_description>
+                    </dcep_info>
+                </frac_m_power>
+                <frac_m_ttc>0.013546<dcep_info>
+                        <dcep_name>total ttc mass fraction</dcep_name>
+                        <dcep_unit>-</dcep_unit>
+                        <dcep_description>total telemetry, tracking and control system mass to total mass fraction </dcep_description>
+                    </dcep_info>
+                </frac_m_ttc>
+                <frac_m_adc>0.057169<dcep_info>
+                        <dcep_name>total adc mass fraction</dcep_name>
+                        <dcep_unit>-</dcep_unit>
+                        <dcep_description>total attitude determination and control system mass to total mass fraction</dcep_description>
+                    </dcep_info>
+                </frac_m_adc>
+                <frac_m_propulsion>0.026651<dcep_info>
+                        <dcep_name>total propulsion system mass fraction</dcep_name>
+                        <dcep_unit>-</dcep_unit>
+                        <dcep_description>total propulsion system mass to total mass fraction </dcep_description>
+                    </dcep_info>
+                </frac_m_propulsion>
+                <frac_m_other>0.011767<dcep_info>
+                        <dcep_name>total other system mass fraction</dcep_name>
+                        <dcep_unit>-</dcep_unit>
+                        <dcep_description>misscellameous to total mass fraction, can be considered to be a margin</dcep_description>
+                    </dcep_info>
+                </frac_m_other>
+            </mass_fractions>
+            <evolution_success>0<dcep_info>
+                    <dcep_name>Flag for Evolution sucess</dcep_name>
+                    <dcep_unit>-</dcep_unit>
+                    <dcep_description>Flags the sucess of the recent generation. Relevant for algorithm analysis and debugging.</dcep_description>
+                </dcep_info>
+            </evolution_success>
+            <n_success>5<dcep_info>
+                    <dcep_name>Success counter</dcep_name>
+                    <dcep_unit>-</dcep_unit>
+                    <dcep_description>Counter for convergence of lineage. Relevant for algorithm analysis and debugging.</dcep_description>
+                </dcep_info>
+            </n_success>
+            <convergence>1<dcep_info>
+                    <dcep_name>Lineage convergence</dcep_name>
+                    <dcep_unit>-</dcep_unit>
+                    <dcep_description>Indicator of lineage has converged, should always be 1 </dcep_description>
+                </dcep_info>
+            </convergence>
+            <system>
+                <dcep_info>
+                    <dcep_name>System solutions</dcep_name>
+                    <dcep_unit>-</dcep_unit>
+                    <dcep_description>Parametric modelled system parameters are listed here</dcep_description>
+                </dcep_info>
+                <power>
+                    <dcep_info>
+                        <dcep_name>Power systems</dcep_name>
+                        <dcep_unit>-</dcep_unit>
+                        <dcep_description>Power system parameters are listed here</dcep_description>
+                    </dcep_info>
+                    <PV>
+                        <dcep_info>
+                            <dcep_name>Photovoltaics</dcep_name>
+                            <dcep_unit>-</dcep_unit>
+                            <dcep_description>Photovoltaic system parameters are listed here</dcep_description>
+                        </dcep_info>
+                        <PV_power_output_required>6097.0375<dcep_info>
+                                <dcep_name>Photovoltaics output</dcep_name>
+                                <dcep_unit>W</dcep_unit>
+                                <dcep_description>Photovoltaic cells worst case output required power</dcep_description>
+                            </dcep_info>
+                        </PV_power_output_required>
+                        <PV_efficiency>0.4<dcep_info>
+                                <dcep_name>Photovoltaics efficiency</dcep_name>
+                                <dcep_unit>-</dcep_unit>
+                                <dcep_description>Photovoltaic assumption on efficiency</dcep_description>
+                            </dcep_info>
+                        </PV_efficiency>
+                        <PV_eff_area_required>11.2012<dcep_info>
+                                <dcep_name>Photovoltaics area</dcep_name>
+                                <dcep_unit>m²</dcep_unit>
+                                <dcep_description>Photovoltaic required total area for worst case power assumption</dcep_description>
+                            </dcep_info>
+                        </PV_eff_area_required>
+                        <heat>
+                            <dcep_info>
+                                <dcep_name>Generated heat</dcep_name>
+                                <dcep_unit>W</dcep_unit>
+                                <dcep_description>Worst case generated heat of this component</dcep_description>
+                            </dcep_info>
+                            <Q_PV_solar_irradiance>9145.5563<dcep_info>
+                                    <dcep_name>PV heat on solar</dcep_name>
+                                    <dcep_unit>W</dcep_unit>
+                                    <dcep_description>Worst case heat on photovoltaic cells created by solar irradiance</dcep_description>
+                                </dcep_info>
+                            </Q_PV_solar_irradiance>
+                        </heat>
+                    </PV>
+                    <battery>
+                        <dcep_info>
+                            <dcep_name>battery system</dcep_name>
+                            <dcep_unit>-</dcep_unit>
+                            <dcep_description>Parameters of the required battery system are listed here</dcep_description>
+                        </dcep_info>
+                        <E_battery_required_max>9842186.8701<dcep_info>
+                                <dcep_name>battery energy</dcep_name>
+                                <dcep_unit>0+1i</dcep_unit>
+                                <dcep_description>Maximum to be stored electrical energy</dcep_description>
+                            </dcep_info>
+                        </E_battery_required_max>
+                        <P_batt_max>4682.5248<dcep_info>
+                                <dcep_name>battery power</dcep_name>
+                                <dcep_unit>W</dcep_unit>
+                                <dcep_description>Maximum battery output power</dcep_description>
+                            </dcep_info>
+                        </P_batt_max>
+                        <heat>
+                            <dcep_info>
+                                <dcep_name>Generated heat</dcep_name>
+                                <dcep_unit>W</dcep_unit>
+                                <dcep_description>Worst case generated heat of this component</dcep_description>
+                            </dcep_info>
+                            <Q_batt_max>234.1262<dcep_info>
+                                    <dcep_name>battery heat</dcep_name>
+                                    <dcep_unit>W</dcep_unit>
+                                    <dcep_description>Maximum battery heat</dcep_description>
+                                </dcep_info>
+                            </Q_batt_max>
+                        </heat>
+                        <voltage>28<dcep_info>
+                                <dcep_name>Nominal voltage</dcep_name>
+                                <dcep_unit>V</dcep_unit>
+                                <dcep_description>Nominalvoltage of satellite bus</dcep_description>
+                            </dcep_info>
+                        </voltage>
+                        <current_max>167.233<dcep_info>
+                                <dcep_name>Battery maxixmum current</dcep_name>
+                                <dcep_unit>A</dcep_unit>
+                                <dcep_description>Battery maxixmum current</dcep_description>
+                            </dcep_info>
+                        </current_max>
+                        <n_cycles_per_year>5011<dcep_info>
+                                <dcep_name>Batt cycles</dcep_name>
+                                <dcep_unit>yearly</dcep_unit>
+                                <dcep_description>Number of battery cycles required for a full year stay in nominal orbit</dcep_description>
+                            </dcep_info>
+                        </n_cycles_per_year>
+                        <batt_efficiency>0.95<dcep_info>
+                                <dcep_name>battery efficiency</dcep_name>
+                                <dcep_unit>-</dcep_unit>
+                                <dcep_description>Assumed battery effiency</dcep_description>
+                            </dcep_info>
+                        </batt_efficiency>
+                    </battery>
+                    <converter>
+                        <dcep_info>
+                            <dcep_name>power conversion</dcep_name>
+                            <dcep_unit>-</dcep_unit>
+                            <dcep_description>parameters of the power conversion system listed here</dcep_description>
+                        </dcep_info>
+                        <I_PDU_in>217.7513<dcep_info>
+                                <dcep_name>PDU input current</dcep_name>
+                                <dcep_unit>A</dcep_unit>
+                                <dcep_description>Maximum input current of PV to batt</dcep_description>
+                            </dcep_info>
+                        </I_PDU_in>
+                        <I_PDU_out>160.5437<dcep_info>
+                                <dcep_name>PDU output current</dcep_name>
+                                <dcep_unit>A</dcep_unit>
+                                <dcep_description>Maximum output current of batt to sat</dcep_description>
+                            </dcep_info>
+                        </I_PDU_out>
+                        <heat>
+                            <dcep_info>
+                                <dcep_name>Generated heat</dcep_name>
+                                <dcep_unit>W</dcep_unit>
+                                <dcep_description>Worst case generated heat of this component</dcep_description>
+                            </dcep_info>
+                            <Q_conv_max>187.301<dcep_info>
+                                    <dcep_name>PDU heat</dcep_name>
+                                    <dcep_unit>W</dcep_unit>
+                                    <dcep_description>Maximum PDU heat</dcep_description>
+                                </dcep_info>
+                            </Q_conv_max>
+                        </heat>
+                        <PDU_efficiency>0.96<dcep_info>
+                                <none>no attributes defined</none>
+                            </dcep_info>
+                        </PDU_efficiency>
+                    </converter>
+                    <parameter>
+                        <dcep_info>
+                            <none>no attributes defined</none>
+                        </dcep_info>
+                        <p_a_mean>1360.8<dcep_info>
+                                <dcep_name>Solar power orbit mean</dcep_name>
+                                <dcep_unit>W/m²</dcep_unit>
+                                <dcep_description>Mean solar irradiance constant of nominal orbit</dcep_description>
+                            </dcep_info>
+                        </p_a_mean>
+                        <p_a_min>1360.6659<dcep_info>
+                                <dcep_name>Solar power orbit min</dcep_name>
+                                <dcep_unit>W/m²</dcep_unit>
+                                <dcep_description>Minimum solar irradiance constant of nominal orbit</dcep_description>
+                            </dcep_info>
+                        </p_a_min>
+                        <p_a_max>1360.9341<dcep_info>
+                                <dcep_name>Solar power orbit max</dcep_name>
+                                <dcep_unit>W/m²</dcep_unit>
+                                <dcep_description>Maximum solar irradiance constant of nominal orbit</dcep_description>
+                            </dcep_info>
+                        </p_a_max>
+                        <p_consumed_max>4448.3986<dcep_info>
+                                <dcep_name>Power consumption max</dcep_name>
+                                <dcep_unit>W</dcep_unit>
+                                <dcep_description>Maximum output power to be consumed from batteries in worst case</dcep_description>
+                            </dcep_info>
+                        </p_consumed_max>
+                        <power_margin>1.25<dcep_info>
+                                <dcep_name>Power margin</dcep_name>
+                                <dcep_unit>-</dcep_unit>
+                                <dcep_description>Reference standard power margin applied for system design.</dcep_description>
+                            </dcep_info>
+                        </power_margin>
+                    </parameter>
+                </power>
+            </system>
+            <orbit>
+                <dcep_info>
+                    <dcep_name>Orbit time</dcep_name>
+                    <dcep_unit>s</dcep_unit>
+                    <dcep_description>Time to complete full orbit revolution</dcep_description>
+                </dcep_info>
+                <orbit>
+                    <dcep_info>
+                        <dcep_name>Orbit time</dcep_name>
+                        <dcep_unit>s</dcep_unit>
+                        <dcep_description>Time to complete full orbit revolution</dcep_description>
+                    </dcep_info>
+                    <height>7371008.4<dcep_info>
+                            <dcep_name>Orbit height</dcep_name>
+                            <dcep_unit>m</dcep_unit>
+                            <dcep_description>Reference orbit height above Earrth center for circular nominal orbit</dcep_description>
+                        </dcep_info>
+                    </height>
+                    <velocity>7353.816<dcep_info>
+                            <dcep_name>Orbit velocity</dcep_name>
+                            <dcep_unit>m/s</dcep_unit>
+                            <dcep_description>Mean velocity for circular nominal orbit</dcep_description>
+                        </dcep_info>
+                    </velocity>
+                    <time>
+                        <dcep_info>
+                            <dcep_name>Orbit times</dcep_name>
+                            <dcep_unit>s</dcep_unit>
+                            <dcep_description>Orbit times are listed here</dcep_description>
+                        </dcep_info>
+                        <orbit>6297.8747<dcep_info>
+                                <dcep_name>Orbit time</dcep_name>
+                                <dcep_unit>s</dcep_unit>
+                                <dcep_description>Time to complete full orbit revolution</dcep_description>
+                            </dcep_info>
+                        </orbit>
+                        <shadow>
+                            <dcep_info>
+                                <dcep_name>Orbit shadow times</dcep_name>
+                                <dcep_unit>s</dcep_unit>
+                                <dcep_description>Orbit shadow times are listed here</dcep_description>
+                            </dcep_info>
+                            <umbra>2083.2899<dcep_info>
+                                    <dcep_name>Umbra time</dcep_name>
+                                    <dcep_unit>s</dcep_unit>
+                                    <dcep_description>Time spacecraft in core shadow umbra for nominal orbit</dcep_description>
+                                </dcep_info>
+                            </umbra>
+                            <penumbra>18.6075<dcep_info>
+                                    <dcep_name>Penumbra time</dcep_name>
+                                    <dcep_unit>s</dcep_unit>
+                                    <dcep_description>Time spacecraft in partial shadow penumbra for nominal orbit</dcep_description>
+                                </dcep_info>
+                            </penumbra>
+                            <total>2101.8974<dcep_info>
+                                    <none>no attributes defined</none>
+                                </dcep_info>
+                            </total>
+                        </shadow>
+                        <average_light>4205.281<dcep_info>
+                                <dcep_name>Average light time</dcep_name>
+                                <dcep_unit>s</dcep_unit>
+                                <dcep_description>Averaged time spacecraft in illumination for nominal orbit</dcep_description>
+                            </dcep_info>
+                        </average_light>
+                        <full_light>4195.9772<dcep_info>
+                                <dcep_name>Full light time</dcep_name>
+                                <dcep_unit>s</dcep_unit>
+                                <dcep_description>Time spacecraft in full light for nominal orbit</dcep_description>
+                            </dcep_info>
+                        </full_light>
+                        <comm_max>1056.4101<dcep_info>
+                                <dcep_name>Maximum communication time</dcep_name>
+                                <dcep_unit>s</dcep_unit>
+                                <dcep_description>Time spacecraft in possible communication with groundstation with direct overpass, passing from horizon to horizon</dcep_description>
+                            </dcep_info>
+                        </comm_max>
+                    </time>
+                    <magneticfield>1.4587e-05<dcep_info>
+                            <dcep_name>Earth magnetic field</dcep_name>
+                            <dcep_unit>T</dcep_unit>
+                            <dcep_description>Earth equatorial magnetic field strength at nominal orbit height</dcep_description>
+                        </dcep_info>
+                    </magneticfield>
+                </orbit>
+            </orbit>
+        </best_1>
+        </dcep_info>
+   </case_1>
+</best_solutions>

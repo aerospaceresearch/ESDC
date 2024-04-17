@@ -1,0 +1,38 @@
+                                                                                                            
+{
+        "available_versions": [
+        {
+                "version": "v0.9.00",
+                "output_folder": "/home/DCEP_group/ESDC/Output/$run_id",
+                "start_command": "/home/DCEP_group/run_ESDC_remote.sh $run_id",
+                "dcep_log_file" : "/home/DCEP_group/ESDC/Output/$run_id/ESDC_tool.log",
+                "input": [
+                        {
+                        "name": "ESDC_Input.xml",
+                        "path": "/home/DCEP_group/ESDC/Input/",
+                        "format": "XML",
+                        "template_path": "/home/DCEP_group/ESDC/DCEP_IO_Def/Input/ESDC_Input_all_fields_template_revision_v2.xml"
+                        },
+                        {
+                        "name": "ESDC_Simulation_parameters.xml",
+                        "path": "/home/DCEP_group/ESDC/Input/",
+                        "format": "XML",
+                        "template_path": "/home/DCEP_group/ESDC/DCEP_IO_Def/Input/ESDC_Simulation_parameters_template_revision_v2.xml"
+                        }
+                ],
+                "output": [
+                        {
+                        "name": "ESDC_best_candidates.xml",
+                        "path": "/home/DCEP_group/ESDC/Output/$run_id",
+                        "format": "XML"
+                        }
+                        ]
+        }
+        ]
+}
+
+
+
+
+
+

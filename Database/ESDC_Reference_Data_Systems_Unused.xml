@@ -1,0 +1,46 @@
+		
+		<HET>
+			<ppu>
+				<type>HET</type>
+				<name>MK1</name>
+				<company>Thales</company>
+				<power>1500</power>
+				<mass>10.9</mass>
+				<efficiency>0.916</efficiency>
+				<source> todo - La Rosa</source>
+			</ppu>
+			<ppu>
+				<type>HET</type>
+				<name>MK2</name>
+				<company>Thales</company>
+				<power>2500</power>
+				<efficiency>0.95</efficiency>
+				<source> todo - La Rosa</source>
+			</ppu>
+			<ppu>
+				<type>HET</type>
+				<name>MK3</name>
+				<company>Thales</company>
+				<power>5000</power>
+				<mass>18.6</mass>
+				<efficiency>0.95</efficiency>
+				<source> todo - La Rosa</source>
+			</ppu>
+			<ppu>
+				<type>HET</type>
+				<name>ELEKTRO</name>
+				<company>Airbus</company>
+				<power>5000</power>
+				<mass>21</mass>
+				<efficiency>0.95</efficiency>
+				<source> todo - La Rosa</source>
+			</ppu>
+			<ppu>
+				<type>HET</type>
+				<name>SITAEL 5kW</name>
+				<company>SITAEL</company>
+				<power>5000</power>
+				<mass>13</mass>
+				<source> todo - La Rosa</source>
+			</ppu>
+		</HET>

@@ -1,2 +1,9 @@
 /Output
 /Input 
+*.csv
+*.pdf
+octave-workspace
+git_ESDC.code-workspace
+Thumbs.db
+Thumbs.db:encryptable
+.vscode/

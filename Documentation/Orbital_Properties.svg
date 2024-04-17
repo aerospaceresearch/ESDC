@@ -1,0 +1,1160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="Orbital_Properties.svg"
+   inkscape:version="1.1 (1:1.1+202105261517+ce6663b3b7)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     showguides="false"
+     inkscape:guide-bbox="true"
+     inkscape:zoom="0.55118715"
+     inkscape:cx="361.94603"
+     inkscape:cy="573.30799"
+     inkscape:window-width="1862"
+     inkscape:window-height="1020"
+     inkscape:window-x="58"
+     inkscape:window-y="23"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <sodipodi:guide
+       position="224.36448,314.09534"
+       orientation="0,-1"
+       id="guide1073" />
+    <sodipodi:guide
+       position="82.714996,283.41164"
+       orientation="1,0"
+       id="guide1077" />
+    <sodipodi:guide
+       position="171.44118,119.40206"
+       orientation="1,0"
+       id="guide26854" />
+    <sodipodi:guide
+       position="21.893142,267.97886"
+       orientation="1,0"
+       id="guide26856" />
+    <sodipodi:guide
+       position="108.96556,151.43258"
+       orientation="1,0"
+       id="guide247482" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible"
+       id="marker198646"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mstart"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.4) translate(10,0)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path198644" />
+    </marker>
+    <marker
+       style="overflow:visible;"
+       id="Arrow1Mend"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.4) rotate(180) translate(10,0)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt;"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path26867" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Mstart"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mstart"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.4) translate(10,0)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path26864" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke-width:0.21839;stroke-linecap:square"
+       id="rect217"
+       width="193.62875"
+       height="270.58191"
+       x="16.761822"
+       y="1.5519145"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <circle
+       style="fill:#000000;fill-opacity:0.290411;fill-rule:evenodd;stroke:#000000;stroke-width:0.188326;stroke-linecap:square;stroke-opacity:1"
+       id="path31"
+       cx="171.19958"
+       cy="30.675674"
+       r="13.989852"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <circle
+       style="fill:#000000;fill-opacity:0.290411;fill-rule:evenodd;stroke:#000000;stroke-width:0.0784269;stroke-linecap:square;stroke-opacity:1"
+       id="circle1071"
+       cx="82.595413"
+       cy="30.55381"
+       r="5.8259463"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <circle
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.290995;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:0.290995, 1.74597;stroke-dashoffset:0;stroke-opacity:1"
+       id="circle1075"
+       cx="82.701546"
+       cy="30.467522"
+       r="17.462061"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 171.2533,30.545633 H 21.734483"
+       id="path1112"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 171.2533,30.545633 -0.17529,14.255345"
+       id="path1227"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Mstart);marker-end:url(#Arrow1Mend)"
+       d="M 171.2533,30.545633 171.2085,16.446845"
+       id="path1229"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 171.2085,16.446845 21.734483,30.545633"
+       id="path1231"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 171.2085,44.833142 21.734483,30.734354"
+       id="path1504"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.11667px;line-height:125%;font-family:hershey;-inkscape-font-specification:hershey;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="172.43797"
+       y="24.251869"
+       id="text4976"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449"><tspan
+         sodipodi:role="line"
+         id="tspan4974"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11667px;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, ';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+         x="172.43797"
+         y="24.251869">r<tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11667px;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, ';baseline-shift:sub;stroke:none"
+   id="tspan12854">Sun</tspan></tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Mstart);marker-end:url(#Arrow1Mend)"
+       d="m 82.714996,24.736806 v 5.647349"
+       id="path21894"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.11667px;line-height:125%;font-family:hershey;-inkscape-font-specification:hershey;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="84.281075"
+       y="28.194614"
+       id="text22066"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449"><tspan
+         sodipodi:role="line"
+         id="tspan22064"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11667px;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, ';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+         x="84.281075"
+         y="28.194614">r<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan25312">Earth</tspan></tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Mstart);marker-end:url(#Arrow1Mend)"
+       d="M 82.714996,30.384155 66.082039,26.350433"
+       id="path26659"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Mstart);marker-end:url(#Arrow1Mend)"
+       d="M 21.893142,55.718533 82.714996,55.617205"
+       id="path27570"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Mstart);marker-end:url(#Arrow1Mend)"
+       d="M 83.276514,55.718533 171.2085,55.617205"
+       id="path27941"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.11667px;line-height:125%;font-family:hershey;-inkscape-font-specification:hershey;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="117.40525"
+       y="60.764404"
+       id="text28004"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449"><tspan
+         sodipodi:role="line"
+         id="tspan28002"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11667px;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, ';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+         x="117.40525"
+         y="60.764404">Astronomical Unit</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.11667px;line-height:125%;font-family:hershey;-inkscape-font-specification:hershey;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="49.479294"
+       y="59.641655"
+       id="text30182"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449"><tspan
+         sodipodi:role="line"
+         id="tspan30180"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11667px;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, ';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+         x="49.479294"
+         y="59.641655">x<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan35208">Umbra</tspan></tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 53.180628,27.659759 c 1.633805,1.117047 1.074483,2.017012 0.837975,2.94893"
+       id="path36775"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.11667px;line-height:125%;font-family:hershey;-inkscape-font-specification:hershey;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="47.026031"
+       y="44.360222"
+       id="text36914"><tspan
+         sodipodi:role="line"
+         id="tspan36912"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11667px;font-family:'Noto Sans Bengali UI';-inkscape-font-specification:'Noto Sans Bengali UI';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-opacity:1"
+         x="47.026031"
+         y="44.360222" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.30729px;line-height:125%;font-family:hershey;-inkscape-font-specification:hershey;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="37.321724"
+       y="24.417858"
+       id="text133990"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449"><tspan
+         id="tspan135246"
+         x="37.321724"
+         y="24.417858"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:hershey;-inkscape-font-specification:hershey;fill:#000000;fill-opacity:1;stroke:none"
+         sodipodi:role="line"> <tspan
+   style="font-size:2.11667px"
+   id="tspan298807">α</tspan><tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan302741">Umbra</tspan></tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+       d="m 48.546426,25.003121 3.713407,4.229869"
+       id="path145495"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.11667px;line-height:125%;font-family:hershey;-inkscape-font-specification:hershey;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="61.452045"
+       y="38.739586"
+       id="text161518"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449"><tspan
+         sodipodi:role="line"
+         id="tspan164154"
+         x="61.452045"
+         y="38.739586"
+         style="font-size:2.11667px;fill:#000000;fill-opacity:1;stroke:none">γ<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan281197">Umbra</tspan> </tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.11667px;line-height:125%;font-family:hershey;-inkscape-font-specification:hershey;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="72.086319"
+       y="32.511265"
+       id="text175416"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449"><tspan
+         sodipodi:role="line"
+         id="tspan175414"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11667px;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, ';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+         x="72.086319"
+         y="32.511265">r<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan180512">orbit</tspan></tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Mstart);marker-end:url(#Arrow1Mend)"
+       d="M 82.714996,30.384155 65.16811,30.485676"
+       id="path180627"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.11667px;line-height:125%;font-family:hershey;-inkscape-font-specification:hershey;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="73.573051"
+       y="27.275509"
+       id="text180770"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449"><tspan
+         sodipodi:role="line"
+         id="tspan180768"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11667px;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, ';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+         x="73.573051"
+         y="27.275509">r<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan180766">orbit</tspan></tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 73.155585,28.092734 c -0.987873,0.598883 -1.427474,1.670599 -0.384187,2.469324"
+       id="path180805"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#marker198646)"
+       d="m 73.267708,29.313635 c -0.314769,0.274518 -9.829436,8.330531 -9.829436,8.330531"
+       id="path184981"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 70.494905,27.423777 C 65.16627,30.006178 62.761769,28.591476 60.465927,27.028244"
+       id="path185016"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.11667px;line-height:125%;font-family:hershey;-inkscape-font-specification:hershey;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="60.598186"
+       y="23.201565"
+       id="text185157"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449"><tspan
+         sodipodi:role="line"
+         id="tspan188073"
+         x="60.598186"
+         y="23.201565"
+         style="fill:#000000;fill-opacity:1;stroke:none">β</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+       d="m 62.403333,22.785341 2.404123,4.454207"
+       id="path198562"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.30729px;line-height:125%;font-family:hershey;-inkscape-font-specification:hershey;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="21.893143"
+       y="8.2715816"
+       id="text239401"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449"><tspan
+         sodipodi:role="line"
+         id="tspan239399"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+         x="21.893143"
+         y="8.2715816">UMBRA</tspan></text>
+    <circle
+       style="fill:#000000;fill-opacity:0.290411;fill-rule:evenodd;stroke:#000000;stroke-width:0.188326;stroke-linecap:square;stroke-opacity:1"
+       id="circle244613"
+       cx="171.19958"
+       cy="96.292435"
+       r="13.989852"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <circle
+       style="fill:#000000;fill-opacity:0.290411;fill-rule:evenodd;stroke:#000000;stroke-width:0.0784269;stroke-linecap:square;stroke-opacity:1"
+       id="circle244615"
+       cx="82.595413"
+       cy="96.17054"
+       r="5.8259463"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <circle
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.290995;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:0.290995, 1.74597;stroke-dashoffset:0;stroke-opacity:1"
+       id="circle244617"
+       cx="82.701546"
+       cy="96.084259"
+       r="17.462061"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 171.2533,96.162344 H 21.734483"
+       id="path244619"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 171.2533,96.162344 -0.17529,14.255396"
+       id="path244621"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Mstart);marker-end:url(#Arrow1Mend)"
+       d="M 171.2533,96.162344 171.2085,82.063552"
+       id="path244623"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 171.2085,82.063552 21.893142,115.77568"
+       id="path244625"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 171.2085,110.44991 21.893142,76.326275"
+       id="path244627"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.11667px;line-height:125%;font-family:hershey;-inkscape-font-specification:hershey;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="172.43797"
+       y="89.868629"
+       id="text244633"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449"><tspan
+         sodipodi:role="line"
+         id="tspan244631"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11667px;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, ';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+         x="172.43797"
+         y="89.868629">r<tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11667px;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, ';baseline-shift:sub;stroke:none"
+   id="tspan244629">Sun</tspan></tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Mstart);marker-end:url(#Arrow1Mend)"
+       d="m 82.714996,90.353517 v 5.647347"
+       id="path244635"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.11667px;line-height:125%;font-family:hershey;-inkscape-font-specification:hershey;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="84.326241"
+       y="94.747871"
+       id="text244641"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449"><tspan
+         sodipodi:role="line"
+         id="tspan244639"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11667px;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, ';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+         x="84.326241"
+         y="94.747871">r<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan244637">Earth</tspan></tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Mstart);marker-end:url(#Arrow1Mend)"
+       d="M 82.714996,96.000864 68.194301,87.110475"
+       id="path244643"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Mstart);marker-end:url(#Arrow1Mend)"
+       d="m 109.49473,117.09832 -26.250567,-0.0976"
+       id="path244645"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Mstart);marker-end:url(#Arrow1Mend)"
+       d="M 83.276514,121.33536 171.2085,121.23403"
+       id="path244647"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.11667px;line-height:125%;font-family:hershey;-inkscape-font-specification:hershey;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="117.40525"
+       y="126.38113"
+       id="text244651"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449"><tspan
+         sodipodi:role="line"
+         id="tspan244649"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11667px;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, ';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+         x="117.40525"
+         y="126.38113">Astronomical Unit</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.11667px;line-height:125%;font-family:hershey;-inkscape-font-specification:hershey;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="92.381874"
+       y="119.52938"
+       id="text244657"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449"><tspan
+         sodipodi:role="line"
+         id="tspan244655"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11667px;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, ';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+         x="92.381874"
+         y="119.52938">x<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan244653">Penumbra</tspan></tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 96.978283,93.556139 c -1.633805,1.117044 -0.827454,1.737338 -0.590946,2.669255"
+       id="path244659"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.11667px;line-height:125%;font-family:hershey;-inkscape-font-specification:hershey;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="47.026031"
+       y="139.61012"
+       id="text244663"><tspan
+         sodipodi:role="line"
+         id="tspan244661"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11667px;font-family:'Noto Sans Bengali UI';-inkscape-font-specification:'Noto Sans Bengali UI';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-opacity:1"
+         x="47.026031"
+         y="139.61012" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.30729px;line-height:125%;font-family:hershey;-inkscape-font-specification:hershey;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="102.40929"
+       y="90.034554"
+       id="text244671"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449"><tspan
+         sodipodi:role="line"
+         id="tspan244669"
+         x="102.40929"
+         y="90.034554"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:hershey;-inkscape-font-specification:hershey;fill:#000000;fill-opacity:1;stroke:none"> <tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11667px;font-family:hershey;-inkscape-font-specification:hershey;fill:#000000;fill-opacity:1"
+   id="tspan244665">α</tspan><tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:65%;font-family:hershey;-inkscape-font-specification:hershey;baseline-shift:sub;fill:#000000;fill-opacity:1"
+   id="tspan244667">Penumbra</tspan></tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+       d="M 102.77529,90.619824 99.061866,94.8497"
+       id="path244673"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.11667px;line-height:125%;font-family:hershey;-inkscape-font-specification:hershey;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="67.320969"
+       y="101.64027"
+       id="text244677"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449"><tspan
+         sodipodi:role="line"
+         id="tspan244675"
+         x="67.320969"
+         y="101.64027"
+         style="font-size:2.11667px;fill:#000000;fill-opacity:1;stroke:none">γ<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan306568">Penumbra</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.11667px;line-height:125%;font-family:hershey;-inkscape-font-specification:hershey;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="66.162819"
+       y="98.053818"
+       id="text244683"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449"><tspan
+         sodipodi:role="line"
+         id="tspan244681"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11667px;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, ';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+         x="66.162819"
+         y="98.053818">r<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan244679">orbit</tspan></tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Mstart);marker-end:url(#Arrow1Mend)"
+       d="M 82.714996,96.000864 65.16811,96.102384"
+       id="path244685"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.11667px;line-height:125%;font-family:hershey;-inkscape-font-specification:hershey;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="67.059036"
+       y="90.76429"
+       id="text244691"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449"><tspan
+         sodipodi:role="line"
+         id="tspan244689"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11667px;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, ';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+         x="67.059036"
+         y="90.76429">r<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan244687">orbit</tspan></tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 76.788832,92.326515 c -0.987873,0.598877 -2.048144,3.083522 -1.004857,3.882249"
+       id="path244693"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#marker198646)"
+       d="m 77.805927,94.533963 c -0.314769,0.274517 -8.218485,5.507397 -8.218485,5.507397"
+       id="path244695"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.11667px;line-height:125%;font-family:hershey;-inkscape-font-specification:hershey;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="84.530563"
+       y="88.255875"
+       id="text244701"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449"><tspan
+         sodipodi:role="line"
+         id="tspan244699"
+         x="84.530563"
+         y="88.255875"
+         style="fill:#000000;fill-opacity:1;stroke:none">β<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan313128">1</tspan></tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+       d="M 72.359318,84.879607 71.35037,88.001149"
+       id="path244703"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.30729px;line-height:125%;font-family:hershey;-inkscape-font-specification:hershey;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="21.893143"
+       y="72.300812"
+       id="text244707"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449"><tspan
+         sodipodi:role="line"
+         id="tspan244705"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+         x="21.893143"
+         y="72.300812">PENUMBRA</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.11667px;line-height:125%;font-family:hershey;-inkscape-font-specification:hershey;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="79.872849"
+       y="87.329201"
+       id="text307248"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449"><tspan
+         sodipodi:role="line"
+         id="tspan307246"
+         x="79.872849"
+         y="87.329201"
+         style="fill:#000000;fill-opacity:1;stroke:none">β<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan317296">2</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.30729px;line-height:125%;font-family:hershey;-inkscape-font-specification:hershey;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="71.784912"
+       y="84.188118"
+       id="text307256"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449"><tspan
+         sodipodi:role="line"
+         id="tspan307254"
+         x="71.784912"
+         y="84.188118"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:hershey;-inkscape-font-specification:hershey;fill:#000000;fill-opacity:1;stroke:none"> <tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11667px;font-family:hershey;-inkscape-font-specification:hershey;fill:#000000;fill-opacity:1"
+   id="tspan307250">α</tspan><tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:65%;font-family:hershey;-inkscape-font-specification:hershey;baseline-shift:sub;fill:#000000;fill-opacity:1"
+   id="tspan307252">h</tspan></tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 72.261084,89.5845 c 1.019468,-0.346297 1.36539,-0.857354 1.507553,-1.418261"
+       id="path318982"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 82.714996,92.567775 c -3.5895,-0.12575 -4.0382,-1.864081 -4.049457,-3.147395"
+       id="path319188"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+       d="M 81.313363,87.892159 80.30782,90.374447"
+       id="path319403"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 82.714996,92.567775 c 1.53719,0.295307 2.998183,0.380097 3.812937,-1.320624"
+       id="path319495"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+       d="m 85.546699,88.950493 -1.005543,2.482288"
+       id="path319672"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <circle
+       style="fill:#000000;fill-opacity:0.290411;fill-rule:evenodd;stroke:#000000;stroke-width:0.517878;stroke-linecap:square;stroke-opacity:1"
+       id="circle127"
+       cx="171.17711"
+       cy="175.40732"
+       r="38.470688"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <circle
+       style="fill:#000000;fill-opacity:0.290411;fill-rule:evenodd;stroke:#000000;stroke-width:0.0784269;stroke-linecap:square;stroke-opacity:1"
+       id="circle129"
+       cx="82.595413"
+       cy="175.54491"
+       r="5.8259463"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <circle
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.425078;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:0.425078, 2.55047;stroke-dashoffset:0;stroke-opacity:1"
+       id="circle131"
+       cx="82.877197"
+       cy="175.63263"
+       r="25.508139"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 171.2533,175.53782 H 21.734483"
+       id="path133"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#marker198646);marker-end:url(#Arrow1Mend)"
+       d="m 171.44118,148.0245 -0.18788,27.51332"
+       id="path135"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Mstart);marker-end:url(#Arrow1Mend)"
+       d="m 172.31164,175.53782 -0.0448,-38.7315"
+       id="path137"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 171.44118,148.0245 57.457071,175.55628"
+       id="path139"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.11667px;line-height:125%;font-family:hershey;-inkscape-font-specification:hershey;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="176.35748"
+       y="156.99857"
+       id="text147"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449"><tspan
+         sodipodi:role="line"
+         id="tspan145"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11667px;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, ';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+         x="176.35748"
+         y="156.99857">r<tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11667px;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, ';baseline-shift:sub;stroke:none"
+   id="tspan143">Sun</tspan></tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Mstart);marker-end:url(#Arrow1Mend)"
+       d="m 82.714996,169.72896 v 5.64738"
+       id="path149"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.11667px;line-height:125%;font-family:hershey;-inkscape-font-specification:hershey;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="84.326241"
+       y="174.12224"
+       id="text155"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449"><tspan
+         sodipodi:role="line"
+         id="tspan153"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11667px;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, ';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+         x="84.326241"
+         y="174.12224">r<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan151">Earth</tspan></tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Mstart);marker-end:url(#Arrow1Mend)"
+       d="M 83.276514,202.82754 171.2085,202.72621"
+       id="path161"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.11667px;line-height:125%;font-family:hershey;-inkscape-font-specification:hershey;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="117.40525"
+       y="207.8717"
+       id="text165"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449"><tspan
+         sodipodi:role="line"
+         id="tspan163"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11667px;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, ';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+         x="117.40525"
+         y="207.8717">Astronomical Unit</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.30729px;line-height:125%;font-family:hershey;-inkscape-font-specification:hershey;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="42.14465"
+       y="171.47307"
+       id="text181"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449"><tspan
+         sodipodi:role="line"
+         id="tspan179"
+         x="42.14465"
+         y="171.47307"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:hershey;-inkscape-font-specification:hershey;fill:#000000;fill-opacity:1;stroke:none"> <tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11667px;font-family:hershey;-inkscape-font-specification:hershey;fill:#000000;fill-opacity:1"
+   id="tspan175">α</tspan><tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:65%;font-family:hershey;-inkscape-font-specification:hershey;baseline-shift:sub;fill:#000000;fill-opacity:1"
+   id="tspan177">Penumbra</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.11667px;line-height:125%;font-family:hershey;-inkscape-font-specification:hershey;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="66.162819"
+       y="177.42813"
+       id="text195"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449"><tspan
+         sodipodi:role="line"
+         id="tspan193"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11667px;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, ';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+         x="66.162819"
+         y="177.42813">r<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan191">orbit</tspan></tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Mstart);marker-end:url(#Arrow1Mend)"
+       d="m 82.714996,175.37634 -25.257925,0.17994"
+       id="path197"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.30729px;line-height:125%;font-family:hershey;-inkscape-font-specification:hershey;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="21.893143"
+       y="138.44655"
+       id="text219"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449"><tspan
+         sodipodi:role="line"
+         id="tspan217"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+         x="21.893143"
+         y="138.44655">EARTH PROJECTION ON SUN</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 67.40685,173.25438 c 0.441067,0.60147 1.025478,1.10997 0.672745,2.22622"
+       id="path10398"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 56.157338,171.64548 9.753801,3.06239"
+       id="path10490"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.11667px;line-height:125%;font-family:hershey;-inkscape-font-specification:hershey;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="159.9281"
+       y="162.77917"
+       id="text22808"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449"><tspan
+         sodipodi:role="line"
+         id="tspan22806"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11667px;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, ';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+         x="159.9281"
+         y="162.77917">x<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan29162">Penumbra</tspan></tspan></text>
+    <circle
+       style="fill:#000000;fill-opacity:0.290411;fill-rule:evenodd;stroke:#000000;stroke-width:0.0784269;stroke-linecap:square;stroke-opacity:1"
+       id="circle33650"
+       cx="82.595413"
+       cy="246.98145"
+       r="5.8259463"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <circle
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.290995;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:0.290995, 1.74597;stroke-dashoffset:0;stroke-opacity:1"
+       id="circle33652"
+       cx="82.701546"
+       cy="246.89514"
+       r="17.462061"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Mstart);marker-end:url(#Arrow1Mend)"
+       d="m 76.672447,246.85151 6.042549,-0.0372"
+       id="path33654"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.11667px;line-height:125%;font-family:hershey;-inkscape-font-specification:hershey;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="79.98761"
+       y="249.53436"
+       id="text33660"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449"><tspan
+         sodipodi:role="line"
+         id="tspan33658"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11667px;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, ';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+         x="79.98761"
+         y="249.53436">r<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan33656">Earth</tspan></tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Mstart);marker-end:url(#Arrow1Mend)"
+       d="M 82.714996,246.81429 76.672447,230.29714"
+       id="path33662"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.11667px;line-height:125%;font-family:hershey;-inkscape-font-specification:hershey;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="80.856087"
+       y="238.15071"
+       id="text33682"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449"><tspan
+         sodipodi:role="line"
+         id="tspan33680"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11667px;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, ';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+         x="80.856087"
+         y="238.15071">r<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan33678">orbit</tspan></tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 81.435821,243.36674 c -0.20708,0.22854 -2.667744,2.32182 -2.302069,3.44195"
+       id="path33684"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#marker198646)"
+       d="m 79.856929,247.35098 c -1.323733,1.16586 -9.886242,8.58197 -14.527333,13.10212"
+       id="path33686"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.30729px;line-height:125%;font-family:hershey;-inkscape-font-specification:hershey;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="21.893143"
+       y="217.29132"
+       id="text33778"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449"><tspan
+         sodipodi:role="line"
+         id="tspan33776"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+         x="21.893143"
+         y="217.29132">COMMUNICATION</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 76.672447,246.85151 V 230.29714"
+       id="path38107"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 76.69534,263.26278 -0.02289,-16.0322"
+       id="path38638"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.30729px;line-height:125%;font-family:hershey;-inkscape-font-specification:hershey;letter-spacing:0px;word-spacing:0px;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="58.101604"
+       y="262.33475"
+       id="text38901"
+       inkscape:export-filename="/home/op/Documents/IRS_Owncloud/Projekte/IRAS/DCEP/git_ESDC/Documentation/Orbit_geometries.png"
+       inkscape:export-xdpi="449"
+       inkscape:export-ydpi="449"><tspan
+         sodipodi:role="line"
+         id="tspan38899"
+         x="58.101604"
+         y="262.33475"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:hershey;-inkscape-font-specification:hershey;fill:#000000;fill-opacity:1;stroke:none"> <tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11667px;font-family:hershey;-inkscape-font-specification:hershey;fill:#000000;fill-opacity:1"
+   id="tspan38895">α</tspan><tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:65%;font-family:hershey;-inkscape-font-specification:hershey;baseline-shift:sub;fill:#000000;fill-opacity:1"
+   id="tspan38897">comm,max</tspan></tspan></text>
+  </g>
+</svg>

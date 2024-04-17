@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Simulation_parameters>
+		<dcep_info>
+			<dcep_name>ESDC Simulation Parameter Definition</dcep_name>
+			<dcep_description>The required set of values for performing an ESDC optimization</dcep_description>
+			<dcep_min_occurrence>1</dcep_min_occurrence>
+			<dcep_no_value>true</dcep_no_value>
+		</dcep_info>
+		<defaults>
+			<dcep_name>Orbit Default Values</dcep_name>
+			<dcep_description>Orbit height defauts are defined here</dcep_description>
+			<dcep_min_occurrence>1</dcep_min_occurrence>
+			<dcep_no_value>true</dcep_no_value>
+			
+			<orbit_min>
+           			<dcep_name>Minimum orbit height</dcep_name>
+            			<dcep_unit>km</dcep_unit>
+            			<dcep_description>Minimum orbit height considered during orbit height variation</dcep_description>
+            			<dcep_type>float</dcep_type>
+           			<dcep_no_value>false</dcep_no_value>
+           			<dcep_default>350</dcep_default>
+            			<dcep_min_occurrence>1</dcep_min_occurrence>
+            			<dcep_max_occurrence>1</dcep_max_occurrence>
+            			<dcep_min_inclusive>0</dcep_min_inclusive>
+			</orbit_min>
+			<orbit_max>
+           			<dcep_name>Maximum orbit height</dcep_name>
+            			<dcep_unit>km</dcep_unit>
+            			<dcep_description>Maximum orbit height considered during orbit height variation</dcep_description>
+            			<dcep_type>float</dcep_type>
+           			<dcep_no_value>false</dcep_no_value>
+           			<dcep_default>45000</dcep_default>
+            			<dcep_min_occurrence>1</dcep_min_occurrence>
+            			<dcep_max_occurrence>1</dcep_max_occurrence>
+            			<dcep_min_inclusive>0</dcep_min_inclusive>
+			</orbit_max>
+			<orbit>
+				<dcep_info>
+				<dcep_name>Default orbit heights</dcep_name>
+				<dcep_description>Default orbit heights to be used if none are given</dcep_description>
+				<dcep_min_occurrence>1</dcep_min_occurrence>
+				<dcep_no_value>true</dcep_no_value>
+				</dcep_info>
+				<no_propulsion>
+					<dcep_info>
+					<dcep_name>Default orbit height - no propulsion</dcep_name>
+					<dcep_unit>km</dcep_unit>
+					<dcep_description>Default orbit heights to be used if none is given for the case of no propulsion</dcep_description>
+            				<dcep_type>float</dcep_type>
+           				<dcep_no_value>false</dcep_no_value>
+           				<dcep_default>550</dcep_default>
+            				<dcep_min_occurrence>1</dcep_min_occurrence>
+            				<dcep_max_occurrence>1</dcep_max_occurrence>
+            				<dcep_min_inclusive>0</dcep_min_inclusive>
+					</dcep_info>
+				</no_propulsion>
+				<Low_Earth>
+					<dcep_info>
+					<dcep_name>Default orbit height - LEO</dcep_name>
+					<dcep_unit>km</dcep_unit>
+					<dcep_description>Default orbit heights to be used if none is given for the case of propelled LEO spacecraft</dcep_description>
+            				<dcep_type>float</dcep_type>
+           				<dcep_no_value>false</dcep_no_value>
+           				<dcep_default>1000</dcep_default>
+            				<dcep_min_occurrence>1</dcep_min_occurrence>
+            				<dcep_max_occurrence>1</dcep_max_occurrence>
+            				<dcep_min_inclusive>0</dcep_min_inclusive>
+					</dcep_info>				
+				</Low_Earth>
+				<High_Earth>
+					<dcep_info>
+					<dcep_name>Default orbit height - HEO</dcep_name>
+					<dcep_unit>km</dcep_unit>
+					<dcep_description>Default orbit heights to be used if none is given for the case of propelled HEO spacecraft (GEO)</dcep_description>
+            				<dcep_type>float</dcep_type>
+           				<dcep_no_value>false</dcep_no_value>
+           				<dcep_default>35786</dcep_default>
+            				<dcep_min_occurrence>1</dcep_min_occurrence>
+            				<dcep_max_occurrence>1</dcep_max_occurrence>
+            				<dcep_min_inclusive>0</dcep_min_inclusive>
+					</dcep_info>					
+				</High_Earth>	
+			</orbit>
+		</defaults>
+		
+		<evolver>
+				<dcep_info>
+				<dcep_name>Evolver parameters</dcep_name>
+				<dcep_description>Default orbit heights to be used if none are given</dcep_description>
+				<dcep_min_occurrence>1</dcep_min_occurrence>
+				<dcep_no_value>true</dcep_no_value>
+				</dcep_info>
+				<seed_points>
+					<dcep_info>
+					<dcep_name>Seed point number</dcep_name>
+					<dcep_unit>-</dcep_unit>
+					<dcep_description>efine number of seed points/lineages to be used per input case"</dcep_description>
+            				<dcep_type>float</dcep_type>
+           				<dcep_no_value>false</dcep_no_value>
+           				<dcep_default>50</dcep_default>
+            				<dcep_min_occurrence>1</dcep_min_occurrence>
+            				<dcep_max_occurrence>1</dcep_max_occurrence>
+            				<dcep_min_inclusive>0</dcep_min_inclusive>
+					</dcep_info>		
+				</seed_points>
+				<minimal_step_size>
+					<dcep_info>
+					<dcep_name>Evolution minimal mutation resolution</dcep_name>
+					<dcep_unit>-</dcep_unit>
+					<dcep_description>volution algorithm minimal mutation resolution for continuous degrees of freedom</dcep_description>
+            				<dcep_type>float</dcep_type>
+           				<dcep_no_value>false</dcep_no_value>
+           				<dcep_default>0.00001</dcep_default>
+            				<dcep_min_occurrence>1</dcep_min_occurrence>
+            				<dcep_max_occurrence>1</dcep_max_occurrence>
+					</dcep_info>				
+				</minimal_step_size>
+				<max_jump_range>
+					<dcep_info>
+					<dcep_name>Evolution maximum mutation range</dcep_name>
+					<dcep_unit>-</dcep_unit>
+					<dcep_description>Evolution algorithm maximum mutation step size - multiple of minimal resolution.</dcep_description>
+            				<dcep_type>float</dcep_type>
+           				<dcep_no_value>false</dcep_no_value>
+           				<dcep_default>50</dcep_default>
+            				<dcep_min_occurrence>1</dcep_min_occurrence>
+            				<dcep_max_occurrence>1</dcep_max_occurrence>
+            				<dcep_min_inclusive>0</dcep_min_inclusive>
+					</dcep_info>				
+				</max_jump_range>
+				<n_fails_to_converge>
+					<dcep_info>
+					<dcep_name>Evolution convergence threshold</dcep_name>
+					<dcep_unit>-</dcep_unit>
+					<dcep_description>Number of evolution attemps before convergence is assumed</dcep_description>
+            				<dcep_type>float</dcep_type>
+           				<dcep_no_value>false</dcep_no_value>
+           				<dcep_default>50</dcep_default>
+            				<dcep_min_occurrence>1</dcep_min_occurrence>
+            				<dcep_max_occurrence>1</dcep_max_occurrence>
+            				<dcep_min_inclusive>0</dcep_min_inclusive>
+					</dcep_info>				
+				</n_fails_to_converge>
+		</evolver>
+		<output>
+			<dcep_info>
+			<dcep_name>Output definition parameters</dcep_name>
+			<dcep_description>Options to define how output is generated is defined here</dcep_description>
+			<dcep_min_occurrence>1</dcep_min_occurrence>
+			<dcep_no_value>true</dcep_no_value>
+			</dcep_info>
+			<CLI>
+				<dcep_info>
+				<dcep_name>Options for CLI and Log File</dcep_name>
+				<dcep_description>Definitions for Command Line and Log File</dcep_description>
+				<dcep_min_occurrence>1</dcep_min_occurrence>
+				<dcep_no_value>true</dcep_no_value>
+				</dcep_info>
+				<n_verbosity>					
+					<dcep_info>
+					<dcep_name>Verbosity Frequency</dcep_name>
+					<dcep_unit>-</dcep_unit>
+					<dcep_description>Number of generations to pass before new status output is generated</dcep_description>
+            				<dcep_type>float</dcep_type>
+           				<dcep_no_value>false</dcep_no_value>
+           				<dcep_default>5</dcep_default>
+            				<dcep_min_occurrence>1</dcep_min_occurrence>
+            				<dcep_max_occurrence>1</dcep_max_occurrence>
+            				<dcep_min_inclusive>0</dcep_min_inclusive>
+					</dcep_info>	
+				</n_verbosity>
+			</CLI>
+			<xml>
+				<dcep_info>
+				<dcep_name>Options for XML Files</dcep_name>
+				<dcep_description>Definitions for XML data content and generation</dcep_description>
+				<dcep_min_occurrence>1</dcep_min_occurrence>
+				<dcep_no_value>true</dcep_no_value>
+				</dcep_info>
+				<full_history>
+					<dcep_info>
+					<dcep_name>Full history</dcep_name>
+					<dcep_unit>-</dcep_unit>
+					<dcep_description>Produce an XML file with the full evolutionary history, i.e. every generation of every lineage. Might be time consuming to outpt. Not DCEP supported, mainly for debugging. Options 0 or 1</dcep_description>
+            				<dcep_type>float</dcep_type>
+           				<dcep_no_value>false</dcep_no_value>
+           				<dcep_default>0</dcep_default>
+            				<dcep_min_occurrence>1</dcep_min_occurrence>
+            				<dcep_max_occurrence>1</dcep_max_occurrence>
+            				<dcep_min_inclusive>0</dcep_min_inclusive>
+					</dcep_info>	
+				</full_history>
+				<optimal_candidates>
+					<dcep_info>
+					<dcep_name>Optimal Solutions</dcep_name>
+					<dcep_unit>-</dcep_unit>
+					<dcep_description>Produce an XML file with a set number of optimal candidates to be included per input case. Increasing the number might be time consuming.</dcep_description>
+            				<dcep_type>float</dcep_type>
+           				<dcep_no_value>false</dcep_no_value>
+           				<dcep_default>5</dcep_default>
+            				<dcep_min_occurrence>1</dcep_min_occurrence>
+            				<dcep_max_occurrence>1</dcep_max_occurrence>
+            				<dcep_min_inclusive>0</dcep_min_inclusive>
+					</dcep_info>	
+				</optimal_candidates>
+			</xml>
+		</output>
+</Simulation_parameters>
+

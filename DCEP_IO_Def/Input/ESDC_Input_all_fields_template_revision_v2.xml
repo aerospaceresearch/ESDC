@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Satellite_parameter>
+		<dcep_info>
+			<dcep_name>ESDC Case Input Definition</dcep_name>
+			<dcep_description>One instance for each spacecraft requirement set to be analysed</dcep_description>
+			<dcep_min_occurrence>1</dcep_min_occurrence>
+			<dcep_no_value>true</dcep_no_value>
+		</dcep_info>
+    <mass_total>
+        <dcep_info>
+            <dcep_name>mass total</dcep_name>
+            <dcep_unit>kg</dcep_unit>
+            <dcep_description>Currently estimated mass of spacecraft</dcep_description>
+            <dcep_type>float</dcep_type>
+            <dcep_no_value>false</dcep_no_value>
+            <dcep_default>150</dcep_default>
+            <dcep_min_occurrence>0</dcep_min_occurrence>
+            <dcep_max_occurrence>1</dcep_max_occurrence>
+            <dcep_min_inclusive>0</dcep_min_inclusive>
+	    <dcep_one_of>[$dcep_ref ~ Satellite_parameter*mass_total, $dcep_ref ~ Satellite_parameter*mass_propellant, $dcep_ref ~ Satellite_parameter*mass_payload, $dcep_ref ~ Satellite_parameter*mass_structure, $dcep_ref ~ Satellite_parameter*mass_thermal, $dcep_ref ~ Satellite_parameter*mass_power, $dcep_ref ~ Satellite_parameter*mass_TTC, $dcep_ref ~ Satellite_parameter*mass_ADC, $dcep_ref ~ Satellite_parameter*mass_propulsion, $dcep_ref ~ Satellite_parameter*mass_other, $dcep_ref ~ Satellite_parameter*power_total, $dcep_ref ~ Satellite_parameter*power_payload, $dcep_ref ~ Satellite_parameter*power_structure, $dcep_ref ~ Satellite_parameter*power_thermal, $dcep_ref ~ Satellite_parameter*power_power_sys, $dcep_ref ~ Satellite_parameter*power_TTC, $dcep_ref ~ Satellite_parameter*power_ADC, $dcep_ref ~ Satellite_parameter*power_propulsion]</dcep_one_of>
+        </dcep_info>
+    </mass_total>
+    <mass_propellant>
+        <dcep_info>
+            <dcep_name>mass propellant</dcep_name>
+            <dcep_unit>kg</dcep_unit>
+            <dcep_description>Currently estimated propellant mass of spacecraft</dcep_description>
+            <dcep_type>float</dcep_type>
+            <dcep_no_value>false</dcep_no_value>
+            <dcep_default>75</dcep_default>
+            <dcep_min_occurrence>0</dcep_min_occurrence>
+            <dcep_max_occurrence>1</dcep_max_occurrence>
+            <dcep_min_inclusive>0</dcep_min_inclusive>
+	    <dcep_one_of>[$dcep_ref ~ Satellite_parameter*mass_total, $dcep_ref ~ Satellite_parameter*mass_propellant, $dcep_ref ~ Satellite_parameter*mass_payload, $dcep_ref ~ Satellite_parameter*mass_structure, $dcep_ref ~ Satellite_parameter*mass_thermal, $dcep_ref ~ Satellite_parameter*mass_power, $dcep_ref ~ Satellite_parameter*mass_TTC, $dcep_ref ~ Satellite_parameter*mass_ADC, $dcep_ref ~ Satellite_parameter*mass_propulsion, $dcep_ref ~ Satellite_parameter*mass_other, $dcep_ref ~ Satellite_parameter*power_total, $dcep_ref ~ Satellite_parameter*power_payload, $dcep_ref ~ Satellite_parameter*power_structure, $dcep_ref ~ Satellite_parameter*power_thermal, $dcep_ref ~ Satellite_parameter*power_power_sys, $dcep_ref ~ Satellite_parameter*power_TTC, $dcep_ref ~ Satellite_parameter*power_ADC, $dcep_ref ~ Satellite_parameter*power_propulsion]</dcep_one_of>
+        </dcep_info>
+    </mass_propellant>
+    <mass_payload>
+        <dcep_info>
+            <dcep_name>mass payload</dcep_name>
+            <dcep_unit>kg</dcep_unit>
+            <dcep_description>Currently estimated payload mass of spacecraft</dcep_description>
+            <dcep_type>float</dcep_type>
+            <dcep_no_value>false</dcep_no_value>
+            <dcep_default>20</dcep_default>
+            <dcep_min_occurrence>0</dcep_min_occurrence>
+            <dcep_max_occurrence>1</dcep_max_occurrence>
+            <dcep_min_inclusive>0</dcep_min_inclusive>
+	    <dcep_one_of>[$dcep_ref ~ Satellite_parameter*mass_total, $dcep_ref ~ Satellite_parameter*mass_propellant, $dcep_ref ~ Satellite_parameter*mass_payload, $dcep_ref ~ Satellite_parameter*mass_structure, $dcep_ref ~ Satellite_parameter*mass_thermal, $dcep_ref ~ Satellite_parameter*mass_power, $dcep_ref ~ Satellite_parameter*mass_TTC, $dcep_ref ~ Satellite_parameter*mass_ADC, $dcep_ref ~ Satellite_parameter*mass_propulsion, $dcep_ref ~ Satellite_parameter*mass_other, $dcep_ref ~ Satellite_parameter*power_total, $dcep_ref ~ Satellite_parameter*power_payload, $dcep_ref ~ Satellite_parameter*power_structure, $dcep_ref ~ Satellite_parameter*power_thermal, $dcep_ref ~ Satellite_parameter*power_power_sys, $dcep_ref ~ Satellite_parameter*power_TTC, $dcep_ref ~ Satellite_parameter*power_ADC, $dcep_ref ~ Satellite_parameter*power_propulsion]</dcep_one_of>
+        </dcep_info>
+    </mass_payload>  
+    <mass_structure>
+        <dcep_info>
+            <dcep_name>mass structure and mechanics</dcep_name>
+            <dcep_unit>kg</dcep_unit>
+            <dcep_description>Currently estimated structure and mechanism mass of spacecraft</dcep_description>
+            <dcep_type>float</dcep_type>
+            <dcep_no_value>false</dcep_no_value>
+            <dcep_default>20</dcep_default>
+            <dcep_min_occurrence>0</dcep_min_occurrence>
+            <dcep_max_occurrence>1</dcep_max_occurrence>
+            <dcep_min_inclusive>0</dcep_min_inclusive>
+	    <dcep_one_of>[$dcep_ref ~ Satellite_parameter*mass_total, $dcep_ref ~ Satellite_parameter*mass_propellant, $dcep_ref ~ Satellite_parameter*mass_payload, $dcep_ref ~ Satellite_parameter*mass_structure, $dcep_ref ~ Satellite_parameter*mass_thermal, $dcep_ref ~ Satellite_parameter*mass_power, $dcep_ref ~ Satellite_parameter*mass_TTC, $dcep_ref ~ Satellite_parameter*mass_ADC, $dcep_ref ~ Satellite_parameter*mass_propulsion, $dcep_ref ~ Satellite_parameter*mass_other, $dcep_ref ~ Satellite_parameter*power_total, $dcep_ref ~ Satellite_parameter*power_payload, $dcep_ref ~ Satellite_parameter*power_structure, $dcep_ref ~ Satellite_parameter*power_thermal, $dcep_ref ~ Satellite_parameter*power_power_sys, $dcep_ref ~ Satellite_parameter*power_TTC, $dcep_ref ~ Satellite_parameter*power_ADC, $dcep_ref ~ Satellite_parameter*power_propulsion]</dcep_one_of>
+        </dcep_info>
+    </mass_structure>  
+     <mass_thermal>
+        <dcep_info>
+            <dcep_name>mass thermal system</dcep_name>
+            <dcep_unit>kg</dcep_unit>
+            <dcep_description>Currently estimated thermal managment system mass of spacecraft</dcep_description>
+            <dcep_type>float</dcep_type>
+            <dcep_no_value>false</dcep_no_value>
+            <dcep_default>20</dcep_default>
+            <dcep_min_occurrence>0</dcep_min_occurrence>
+            <dcep_max_occurrence>1</dcep_max_occurrence>
+            <dcep_min_inclusive>0</dcep_min_inclusive>
+	    <dcep_one_of>[$dcep_ref ~ Satellite_parameter*mass_total, $dcep_ref ~ Satellite_parameter*mass_propellant, $dcep_ref ~ Satellite_parameter*mass_payload, $dcep_ref ~ Satellite_parameter*mass_structure, $dcep_ref ~ Satellite_parameter*mass_thermal, $dcep_ref ~ Satellite_parameter*mass_power, $dcep_ref ~ Satellite_parameter*mass_TTC, $dcep_ref ~ Satellite_parameter*mass_ADC, $dcep_ref ~ Satellite_parameter*mass_propulsion, $dcep_ref ~ Satellite_parameter*mass_other, $dcep_ref ~ Satellite_parameter*power_total, $dcep_ref ~ Satellite_parameter*power_payload, $dcep_ref ~ Satellite_parameter*power_structure, $dcep_ref ~ Satellite_parameter*power_thermal, $dcep_ref ~ Satellite_parameter*power_power_sys, $dcep_ref ~ Satellite_parameter*power_TTC, $dcep_ref ~ Satellite_parameter*power_ADC, $dcep_ref ~ Satellite_parameter*power_propulsion]</dcep_one_of>
+        </dcep_info>
+    </mass_thermal>       
+     <mass_power>
+        <dcep_info>
+            <dcep_name>mass power system</dcep_name>
+            <dcep_unit>kg</dcep_unit>
+            <dcep_description>Currently estimated power managment system mass of spacecraft</dcep_description>
+            <dcep_type>float</dcep_type>
+            <dcep_no_value>false</dcep_no_value>
+            <dcep_default>20</dcep_default>
+            <dcep_min_occurrence>0</dcep_min_occurrence>
+            <dcep_max_occurrence>1</dcep_max_occurrence>
+            <dcep_min_inclusive>0</dcep_min_inclusive>
+	    <dcep_one_of>[$dcep_ref ~ Satellite_parameter*mass_total, $dcep_ref ~ Satellite_parameter*mass_propellant, $dcep_ref ~ Satellite_parameter*mass_payload, $dcep_ref ~ Satellite_parameter*mass_structure, $dcep_ref ~ Satellite_parameter*mass_thermal, $dcep_ref ~ Satellite_parameter*mass_power, $dcep_ref ~ Satellite_parameter*mass_TTC, $dcep_ref ~ Satellite_parameter*mass_ADC, $dcep_ref ~ Satellite_parameter*mass_propulsion, $dcep_ref ~ Satellite_parameter*mass_other, $dcep_ref ~ Satellite_parameter*power_total, $dcep_ref ~ Satellite_parameter*power_payload, $dcep_ref ~ Satellite_parameter*power_structure, $dcep_ref ~ Satellite_parameter*power_thermal, $dcep_ref ~ Satellite_parameter*power_power_sys, $dcep_ref ~ Satellite_parameter*power_TTC, $dcep_ref ~ Satellite_parameter*power_ADC, $dcep_ref ~ Satellite_parameter*power_propulsion]</dcep_one_of>
+        </dcep_info>
+    </mass_power>     
+    <mass_TTC>
+        <dcep_info>
+            <dcep_name>mass TTC system</dcep_name>
+            <dcep_unit>kg</dcep_unit>
+            <dcep_description>Currently estimated telemetry, tracking and control system mass of spacecraft</dcep_description>
+            <dcep_type>float</dcep_type>
+            <dcep_no_value>false</dcep_no_value>
+            <dcep_default>20</dcep_default>
+            <dcep_min_occurrence>0</dcep_min_occurrence>
+            <dcep_max_occurrence>1</dcep_max_occurrence>
+            <dcep_min_inclusive>0</dcep_min_inclusive>
+	    <dcep_one_of>[$dcep_ref ~ Satellite_parameter*mass_total, $dcep_ref ~ Satellite_parameter*mass_propellant, $dcep_ref ~ Satellite_parameter*mass_payload, $dcep_ref ~ Satellite_parameter*mass_structure, $dcep_ref ~ Satellite_parameter*mass_thermal, $dcep_ref ~ Satellite_parameter*mass_power, $dcep_ref ~ Satellite_parameter*mass_TTC, $dcep_ref ~ Satellite_parameter*mass_ADC, $dcep_ref ~ Satellite_parameter*mass_propulsion, $dcep_ref ~ Satellite_parameter*mass_other, $dcep_ref ~ Satellite_parameter*power_total, $dcep_ref ~ Satellite_parameter*power_payload, $dcep_ref ~ Satellite_parameter*power_structure, $dcep_ref ~ Satellite_parameter*power_thermal, $dcep_ref ~ Satellite_parameter*power_power_sys, $dcep_ref ~ Satellite_parameter*power_TTC, $dcep_ref ~ Satellite_parameter*power_ADC, $dcep_ref ~ Satellite_parameter*power_propulsion]</dcep_one_of>
+        </dcep_info>
+    </mass_TTC>     
+     <mass_ADC>
+        <dcep_info>
+            <dcep_name>mass ADC system</dcep_name>
+            <dcep_unit>kg</dcep_unit>
+            <dcep_description>Currently estimated attitude determination and control system mass of spacecraft</dcep_description>
+            <dcep_type>float</dcep_type>
+            <dcep_no_value>false</dcep_no_value>
+            <dcep_default>20</dcep_default>
+            <dcep_min_occurrence>0</dcep_min_occurrence>
+            <dcep_max_occurrence>1</dcep_max_occurrence>
+            <dcep_min_inclusive>0</dcep_min_inclusive>
+	    <dcep_one_of>[$dcep_ref ~ Satellite_parameter*mass_total, $dcep_ref ~ Satellite_parameter*mass_propellant, $dcep_ref ~ Satellite_parameter*mass_payload, $dcep_ref ~ Satellite_parameter*mass_structure, $dcep_ref ~ Satellite_parameter*mass_thermal, $dcep_ref ~ Satellite_parameter*mass_power, $dcep_ref ~ Satellite_parameter*mass_TTC, $dcep_ref ~ Satellite_parameter*mass_ADC, $dcep_ref ~ Satellite_parameter*mass_propulsion, $dcep_ref ~ Satellite_parameter*mass_other, $dcep_ref ~ Satellite_parameter*power_total, $dcep_ref ~ Satellite_parameter*power_payload, $dcep_ref ~ Satellite_parameter*power_structure, $dcep_ref ~ Satellite_parameter*power_thermal, $dcep_ref ~ Satellite_parameter*power_power_sys, $dcep_ref ~ Satellite_parameter*power_TTC, $dcep_ref ~ Satellite_parameter*power_ADC, $dcep_ref ~ Satellite_parameter*power_propulsion]</dcep_one_of>
+        </dcep_info>
+    </mass_ADC>            
+    <mass_propulsion>
+        <dcep_info>
+            <dcep_name>mass propulsion system</dcep_name>
+            <dcep_unit>kg</dcep_unit>
+            <dcep_description>Currently estimated propulsion system mass of spacecraft</dcep_description>
+            <dcep_type>float</dcep_type>
+            <dcep_no_value>false</dcep_no_value>
+            <dcep_default>20</dcep_default>
+            <dcep_min_occurrence>0</dcep_min_occurrence>
+            <dcep_max_occurrence>1</dcep_max_occurrence>
+            <dcep_min_inclusive>0</dcep_min_inclusive>
+	    <dcep_one_of>[$dcep_ref ~ Satellite_parameter*mass_total, $dcep_ref ~ Satellite_parameter*mass_propellant, $dcep_ref ~ Satellite_parameter*mass_payload, $dcep_ref ~ Satellite_parameter*mass_structure, $dcep_ref ~ Satellite_parameter*mass_thermal, $dcep_ref ~ Satellite_parameter*mass_power, $dcep_ref ~ Satellite_parameter*mass_TTC, $dcep_ref ~ Satellite_parameter*mass_ADC, $dcep_ref ~ Satellite_parameter*mass_propulsion, $dcep_ref ~ Satellite_parameter*mass_other, $dcep_ref ~ Satellite_parameter*power_total, $dcep_ref ~ Satellite_parameter*power_payload, $dcep_ref ~ Satellite_parameter*power_structure, $dcep_ref ~ Satellite_parameter*power_thermal, $dcep_ref ~ Satellite_parameter*power_power_sys, $dcep_ref ~ Satellite_parameter*power_TTC, $dcep_ref ~ Satellite_parameter*power_ADC, $dcep_ref ~ Satellite_parameter*power_propulsion]</dcep_one_of>
+        </dcep_info>
+    </mass_propulsion>      
+     <mass_other>
+        <dcep_info>
+            <dcep_name>mass other</dcep_name>
+            <dcep_unit>kg</dcep_unit>
+            <dcep_description>Unaccounted mass of spacecraft not fitting in other system estimates</dcep_description>
+            <dcep_type>float</dcep_type>
+            <dcep_no_value>false</dcep_no_value>
+            <dcep_default>20</dcep_default>
+            <dcep_min_occurrence>0</dcep_min_occurrence>
+            <dcep_max_occurrence>1</dcep_max_occurrence>
+            <dcep_min_inclusive>0</dcep_min_inclusive>
+	    <dcep_one_of>[$dcep_ref ~ Satellite_parameter*mass_total, $dcep_ref ~ Satellite_parameter*mass_propellant, $dcep_ref ~ Satellite_parameter*mass_payload, $dcep_ref ~ Satellite_parameter*mass_structure, $dcep_ref ~ Satellite_parameter*mass_thermal, $dcep_ref ~ Satellite_parameter*mass_power, $dcep_ref ~ Satellite_parameter*mass_TTC, $dcep_ref ~ Satellite_parameter*mass_ADC, $dcep_ref ~ Satellite_parameter*mass_propulsion, $dcep_ref ~ Satellite_parameter*mass_other, $dcep_ref ~ Satellite_parameter*power_total, $dcep_ref ~ Satellite_parameter*power_payload, $dcep_ref ~ Satellite_parameter*power_structure, $dcep_ref ~ Satellite_parameter*power_thermal, $dcep_ref ~ Satellite_parameter*power_power_sys, $dcep_ref ~ Satellite_parameter*power_TTC, $dcep_ref ~ Satellite_parameter*power_ADC, $dcep_ref ~ Satellite_parameter*power_propulsion]</dcep_one_of>
+        </dcep_info>
+    </mass_other>      
+
+    <power_total>
+        <dcep_info>
+            <dcep_name>power total</dcep_name>
+            <dcep_unit>W</dcep_unit>
+            <dcep_description>Currently estimated total power requirement of spacecraft</dcep_description>
+            <dcep_type>float</dcep_type>
+            <dcep_no_value>false</dcep_no_value>
+            <dcep_default>150</dcep_default>
+            <dcep_min_occurrence>0</dcep_min_occurrence>
+            <dcep_max_occurrence>1</dcep_max_occurrence>
+            <dcep_min_inclusive>0</dcep_min_inclusive>
+	    <dcep_one_of>[$dcep_ref ~ Satellite_parameter*mass_total, $dcep_ref ~ Satellite_parameter*mass_propellant, $dcep_ref ~ Satellite_parameter*mass_payload, $dcep_ref ~ Satellite_parameter*mass_structure, $dcep_ref ~ Satellite_parameter*mass_thermal, $dcep_ref ~ Satellite_parameter*mass_power, $dcep_ref ~ Satellite_parameter*mass_TTC, $dcep_ref ~ Satellite_parameter*mass_ADC, $dcep_ref ~ Satellite_parameter*mass_propulsion, $dcep_ref ~ Satellite_parameter*mass_other, $dcep_ref ~ Satellite_parameter*power_total, $dcep_ref ~ Satellite_parameter*power_payload, $dcep_ref ~ Satellite_parameter*power_structure, $dcep_ref ~ Satellite_parameter*power_thermal, $dcep_ref ~ Satellite_parameter*power_power_sys, $dcep_ref ~ Satellite_parameter*power_TTC, $dcep_ref ~ Satellite_parameter*power_ADC, $dcep_ref ~ Satellite_parameter*power_propulsion]</dcep_one_of>
+        </dcep_info>
+    </power_total>
+    <power_payload>
+        <dcep_info>
+            <dcep_name>power payload</dcep_name>
+            <dcep_unit>W</dcep_unit>
+            <dcep_description>Currently estimated payload power requirement spacecraft</dcep_description>
+            <dcep_type>float</dcep_type>
+            <dcep_no_value>false</dcep_no_value>
+            <dcep_default>50</dcep_default>
+            <dcep_min_occurrence>0</dcep_min_occurrence>
+            <dcep_max_occurrence>1</dcep_max_occurrence>
+            <dcep_min_inclusive>0</dcep_min_inclusive>
+	    <dcep_one_of>[$dcep_ref ~ Satellite_parameter*mass_total, $dcep_ref ~ Satellite_parameter*mass_propellant, $dcep_ref ~ Satellite_parameter*mass_payload, $dcep_ref ~ Satellite_parameter*mass_structure, $dcep_ref ~ Satellite_parameter*mass_thermal, $dcep_ref ~ Satellite_parameter*mass_power, $dcep_ref ~ Satellite_parameter*mass_TTC, $dcep_ref ~ Satellite_parameter*mass_ADC, $dcep_ref ~ Satellite_parameter*mass_propulsion, $dcep_ref ~ Satellite_parameter*mass_other, $dcep_ref ~ Satellite_parameter*power_total, $dcep_ref ~ Satellite_parameter*power_payload, $dcep_ref ~ Satellite_parameter*power_structure, $dcep_ref ~ Satellite_parameter*power_thermal, $dcep_ref ~ Satellite_parameter*power_power_sys, $dcep_ref ~ Satellite_parameter*power_TTC, $dcep_ref ~ Satellite_parameter*power_ADC, $dcep_ref ~ Satellite_parameter*power_propulsion]</dcep_one_of>
+        </dcep_info>
+    </power_payload>  
+    <power_structure>
+        <dcep_info>
+            <dcep_name>power structure and mechanics</dcep_name>
+            <dcep_unit>kg</dcep_unit>
+            <dcep_description>Currently estimated structure and mechanism power requirement of spacecraft</dcep_description>
+            <dcep_type>float</dcep_type>
+            <dcep_no_value>false</dcep_no_value>
+            <dcep_default>20</dcep_default>
+            <dcep_min_occurrence>0</dcep_min_occurrence>
+            <dcep_max_occurrence>1</dcep_max_occurrence>
+            <dcep_min_inclusive>0</dcep_min_inclusive>
+	    <dcep_one_of>[$dcep_ref ~ Satellite_parameter*mass_total, $dcep_ref ~ Satellite_parameter*mass_propellant, $dcep_ref ~ Satellite_parameter*mass_payload, $dcep_ref ~ Satellite_parameter*mass_structure, $dcep_ref ~ Satellite_parameter*mass_thermal, $dcep_ref ~ Satellite_parameter*mass_power, $dcep_ref ~ Satellite_parameter*mass_TTC, $dcep_ref ~ Satellite_parameter*mass_ADC, $dcep_ref ~ Satellite_parameter*mass_propulsion, $dcep_ref ~ Satellite_parameter*mass_other, $dcep_ref ~ Satellite_parameter*power_total, $dcep_ref ~ Satellite_parameter*power_payload, $dcep_ref ~ Satellite_parameter*power_structure, $dcep_ref ~ Satellite_parameter*power_thermal, $dcep_ref ~ Satellite_parameter*power_power_sys, $dcep_ref ~ Satellite_parameter*power_TTC, $dcep_ref ~ Satellite_parameter*power_ADC, $dcep_ref ~ Satellite_parameter*power_propulsion]</dcep_one_of>
+        </dcep_info>
+    </power_structure>  
+     <power_thermal>
+        <dcep_info>
+            <dcep_name>power thermal system</dcep_name>
+            <dcep_unit>kg</dcep_unit>
+            <dcep_description>Currently estimated thermal managment system power requirement of spacecraft</dcep_description>
+            <dcep_type>float</dcep_type>
+            <dcep_no_value>false</dcep_no_value>
+            <dcep_default>50</dcep_default>
+            <dcep_min_occurrence>0</dcep_min_occurrence>
+            <dcep_max_occurrence>1</dcep_max_occurrence>
+            <dcep_min_inclusive>0</dcep_min_inclusive>
+            <dcep_max_inclusive>500000</dcep_max_inclusive>
+	    <dcep_one_of>[$dcep_ref ~ Satellite_parameter*mass_total, $dcep_ref ~ Satellite_parameter*mass_propellant, $dcep_ref ~ Satellite_parameter*mass_payload, $dcep_ref ~ Satellite_parameter*mass_structure, $dcep_ref ~ Satellite_parameter*mass_thermal, $dcep_ref ~ Satellite_parameter*mass_power, $dcep_ref ~ Satellite_parameter*mass_TTC, $dcep_ref ~ Satellite_parameter*mass_ADC, $dcep_ref ~ Satellite_parameter*mass_propulsion, $dcep_ref ~ Satellite_parameter*mass_other, $dcep_ref ~ Satellite_parameter*power_total, $dcep_ref ~ Satellite_parameter*power_payload, $dcep_ref ~ Satellite_parameter*power_structure, $dcep_ref ~ Satellite_parameter*power_thermal, $dcep_ref ~ Satellite_parameter*power_power_sys, $dcep_ref ~ Satellite_parameter*power_TTC, $dcep_ref ~ Satellite_parameter*power_ADC, $dcep_ref ~ Satellite_parameter*power_propulsion]</dcep_one_of>
+        </dcep_info>
+    </power_thermal>       
+     <power_power_sys>
+        <dcep_info>
+            <dcep_name>power power system</dcep_name>
+            <dcep_unit>W</dcep_unit>
+            <dcep_description>Currently estimated power managment system power requirementof spacecraft</dcep_description>
+            <dcep_type>float</dcep_type>
+            <dcep_no_value>false</dcep_no_value>
+            <dcep_default>10</dcep_default>
+            <dcep_min_occurrence>0</dcep_min_occurrence>
+            <dcep_max_occurrence>1</dcep_max_occurrence>
+            <dcep_min_inclusive>0</dcep_min_inclusive>
+	    <dcep_one_of>[$dcep_ref ~ Satellite_parameter*mass_total, $dcep_ref ~ Satellite_parameter*mass_propellant, $dcep_ref ~ Satellite_parameter*mass_payload, $dcep_ref ~ Satellite_parameter*mass_structure, $dcep_ref ~ Satellite_parameter*mass_thermal, $dcep_ref ~ Satellite_parameter*mass_power, $dcep_ref ~ Satellite_parameter*mass_TTC, $dcep_ref ~ Satellite_parameter*mass_ADC, $dcep_ref ~ Satellite_parameter*mass_propulsion, $dcep_ref ~ Satellite_parameter*mass_other, $dcep_ref ~ Satellite_parameter*power_total, $dcep_ref ~ Satellite_parameter*power_payload, $dcep_ref ~ Satellite_parameter*power_structure, $dcep_ref ~ Satellite_parameter*power_thermal, $dcep_ref ~ Satellite_parameter*power_power_sys, $dcep_ref ~ Satellite_parameter*power_TTC, $dcep_ref ~ Satellite_parameter*power_ADC, $dcep_ref ~ Satellite_parameter*power_propulsion]</dcep_one_of>
+        </dcep_info>
+    </power_power_sys>     
+    <power_TTC>
+        <dcep_info>
+            <dcep_name>power TTC system</dcep_name>
+            <dcep_unit>W</dcep_unit>
+            <dcep_description>Currently estimated telemetry, tracking and control system power requirement of spacecraft</dcep_description>
+            <dcep_type>float</dcep_type>
+            <dcep_no_value>false</dcep_no_value>
+            <dcep_default>50</dcep_default>
+            <dcep_min_occurrence>0</dcep_min_occurrence>
+            <dcep_max_occurrence>1</dcep_max_occurrence>
+            <dcep_min_inclusive>0</dcep_min_inclusive>
+	    <dcep_one_of>[$dcep_ref ~ Satellite_parameter*mass_total, $dcep_ref ~ Satellite_parameter*mass_propellant, $dcep_ref ~ Satellite_parameter*mass_payload, $dcep_ref ~ Satellite_parameter*mass_structure, $dcep_ref ~ Satellite_parameter*mass_thermal, $dcep_ref ~ Satellite_parameter*mass_power, $dcep_ref ~ Satellite_parameter*mass_TTC, $dcep_ref ~ Satellite_parameter*mass_ADC, $dcep_ref ~ Satellite_parameter*mass_propulsion, $dcep_ref ~ Satellite_parameter*mass_other, $dcep_ref ~ Satellite_parameter*power_total, $dcep_ref ~ Satellite_parameter*power_payload, $dcep_ref ~ Satellite_parameter*power_structure, $dcep_ref ~ Satellite_parameter*power_thermal, $dcep_ref ~ Satellite_parameter*power_power_sys, $dcep_ref ~ Satellite_parameter*power_TTC, $dcep_ref ~ Satellite_parameter*power_ADC, $dcep_ref ~ Satellite_parameter*power_propulsion]</dcep_one_of>
+        </dcep_info>
+    </power_TTC>     
+    <power_ADC>
+        <dcep_info>
+            <dcep_name>power ADC system</dcep_name>
+            <dcep_unit>W</dcep_unit>
+            <dcep_description>Currently estimated attitude determination and control system power requirement of spacecraft</dcep_description>
+            <dcep_type>float</dcep_type>
+            <dcep_no_value>false</dcep_no_value>
+            <dcep_default>20</dcep_default>
+            <dcep_min_occurrence>0</dcep_min_occurrence>
+            <dcep_max_occurrence>1</dcep_max_occurrence>
+            <dcep_min_inclusive>0</dcep_min_inclusive>
+	    <dcep_one_of>[$dcep_ref ~ Satellite_parameter*mass_total, $dcep_ref ~ Satellite_parameter*mass_propellant, $dcep_ref ~ Satellite_parameter*mass_payload, $dcep_ref ~ Satellite_parameter*mass_structure, $dcep_ref ~ Satellite_parameter*mass_thermal, $dcep_ref ~ Satellite_parameter*mass_power, $dcep_ref ~ Satellite_parameter*mass_TTC, $dcep_ref ~ Satellite_parameter*mass_ADC, $dcep_ref ~ Satellite_parameter*mass_propulsion, $dcep_ref ~ Satellite_parameter*mass_other, $dcep_ref ~ Satellite_parameter*power_total, $dcep_ref ~ Satellite_parameter*power_payload, $dcep_ref ~ Satellite_parameter*power_structure, $dcep_ref ~ Satellite_parameter*power_thermal, $dcep_ref ~ Satellite_parameter*power_power_sys, $dcep_ref ~ Satellite_parameter*power_TTC, $dcep_ref ~ Satellite_parameter*power_ADC, $dcep_ref ~ Satellite_parameter*power_propulsion]</dcep_one_of>
+        </dcep_info>
+    </power_ADC>            
+    <power_propulsion>
+        <dcep_info>
+            <dcep_name>power propulsion system</dcep_name>
+            <dcep_unit>W</dcep_unit>
+            <dcep_description>Currently estimated propulsion system power requirement of spacecraft</dcep_description>
+            <dcep_type>float</dcep_type>
+            <dcep_no_value>false</dcep_no_value>
+            <dcep_default>150</dcep_default>
+            <dcep_min_occurrence>0</dcep_min_occurrence>
+            <dcep_max_occurrence>1</dcep_max_occurrence>
+            <dcep_min_inclusive>0</dcep_min_inclusive>
+	    <dcep_one_of>[$dcep_ref ~ Satellite_parameter*mass_total, $dcep_ref ~ Satellite_parameter*mass_propellant, $dcep_ref ~ Satellite_parameter*mass_payload, $dcep_ref ~ Satellite_parameter*mass_structure, $dcep_ref ~ Satellite_parameter*mass_thermal, $dcep_ref ~ Satellite_parameter*mass_power, $dcep_ref ~ Satellite_parameter*mass_TTC, $dcep_ref ~ Satellite_parameter*mass_ADC, $dcep_ref ~ Satellite_parameter*mass_propulsion, $dcep_ref ~ Satellite_parameter*mass_other, $dcep_ref ~ Satellite_parameter*power_total, $dcep_ref ~ Satellite_parameter*power_payload, $dcep_ref ~ Satellite_parameter*power_structure, $dcep_ref ~ Satellite_parameter*power_thermal, $dcep_ref ~ Satellite_parameter*power_power_sys, $dcep_ref ~ Satellite_parameter*power_TTC, $dcep_ref ~ Satellite_parameter*power_ADC, $dcep_ref ~ Satellite_parameter*power_propulsion]</dcep_one_of>
+        </dcep_info>
+    </power_propulsion>   
+    <complete_elem>
+        <dcep_info>
+            <dcep_name>deltav</dcep_name>
+            <dcep_unit>m/s</dcep_unit>
+            <dcep_description>Minimum Delta v to be delivered by propulsion system</dcep_description>
+            <dcep_type>float</dcep_type>
+            <dcep_no_value>false</dcep_no_value>
+            <dcep_default>150</dcep_default>
+            <dcep_min_occurrence>0</dcep_min_occurrence>
+            <dcep_max_occurrence>1</dcep_max_occurrence>
+            <dcep_min_inclusive>0</dcep_min_inclusive>
+        </dcep_info>
+    </complete_elem>
+</Satellite_parameter>

@@ -1,0 +1,1429 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>     
+<reference_data>
+	<propulsion_system>
+		<arcjet>
+			<thruster>
+					<type>arcjet</type>
+					<name>Velarc</name>
+					<thrust>0.04002</thrust>
+					<c_e>4415</c_e>
+					<power_jet>88.34415</power_jet>
+					<massflow>9e-06</massflow>
+					<mass>0.3</mass>
+					<efficiency> 0.3178</efficiency>
+					<propellant>NH3</propellant>
+					<structure_mass> 0.94815</structure_mass>
+					<source>IRS arcjet database</source>
+					<TRL>6</TRL>
+			</thruster>
+			<thruster>
+					<type>arcjet</type>
+					<name>ARTUS IM3</name>
+					<thrust>0.1068829</thrust>
+					<c_e>4836</c_e>
+					<power_jet>258.4428522</power_jet>
+					<massflow>22.1e-06</massflow>
+					<mass>0.732</mass>
+					<efficiency> 0.324839</efficiency>
+					<propellant>NH3</propellant>
+					<structure_mass> 0.94815</structure_mass>
+					<source>IRS arcjet database</source>
+					<TRL>6</TRL>
+			</thruster>
+			<thruster>
+					<type>arcjet</type>
+					<name>TALOS</name>
+					<thrust>0.1025</thrust>
+					<c_e>4767.442</c_e>
+					<power_jet>244.3314025</power_jet>
+					<massflow>21.5e-06</massflow>
+					<efficiency> 0.305414</efficiency>
+					<propellant>NH3</propellant>
+					<structure_mass> 0.94815</structure_mass>
+					<source>IRS arcjet database</source>
+					<TRL>6</TRL>
+			</thruster>
+			<thruster>
+					<type>arcjet</type>
+					<name>ESEX -flight </name>
+					<thrust>1.93</thrust>
+					<c_e>7710.66</c_e>
+					<power_jet>7440.7869</power_jet>
+					<massflow>0.000250302827514</massflow>
+					<efficiency> 0.267</efficiency>
+					<propellant>NH3</propellant>
+					<structure_mass> 0.94815</structure_mass>
+					<source>IRS arcjet database</source>
+					<TRL>9</TRL>
+			</thruster>
+			<thruster>
+					<type>arcjet</type>
+					<name>ESEX -IM</name>
+					<thrust>2</thrust>
+					<c_e>7848</c_e>
+					<power_jet>7848</power_jet>
+					<massflow>0.000254841997961</massflow>
+					<efficiency> 0.299541984732824</efficiency>
+					<propellant>NH3</propellant>
+					<structure_mass> 0.94815</structure_mass>
+					<source>IRS arcjet database</source>
+					<TRL>8</TRL>
+			</thruster>
+			<thruster>
+					<type>arcjet</type>
+					<name>Artur He</name>
+					<thrust>0.270</thrust>
+					<c_e>6136.35</c_e>
+					<power_jet>828.40725</power_jet>
+					<massflow>44e-06</massflow>
+					<mass>0.455</mass>
+					<efficiency> 0.702040</efficiency>
+					<propellant>He</propellant>
+					<structure_mass>0.493</structure_mass>
+					<source>IRS arcjet database</source>
+					<TRL>6</TRL>
+			</thruster>
+			<thruster>
+					<type>arcjet</type>
+					<name>Artur He</name>
+					<thrust>0.180</thrust>
+					<c_e>4090.909302</c_e>
+					<power_jet>368.18183718</power_jet>
+					<massflow>44e-06</massflow>
+					<mass>0.455</mass>
+					<efficiency> 0.73636</efficiency>
+					<propellant>He</propellant>
+					<structure_mass>0.493</structure_mass>
+					<source>IRS arcjet database</source>
+					<TRL>6</TRL>
+			</thruster>
+			<thruster>
+					<type>arcjet</type>
+					<name>Velarc</name>
+					<thrust>0.0345</thrust>
+					<c_e>5886</c_e>
+					<power_jet>101.5335</power_jet>
+					<massflow>6e-06</massflow>
+					<mass>0.3</mass>
+					<efficiency> 0.7532</efficiency>
+					<propellant>He</propellant>
+					<structure_mass>0.493</structure_mass>
+					<source>IRS arcjet database</source>
+					<TRL>6</TRL>
+			</thruster>
+			<thruster>
+					<type>arcjet</type>
+					<name>ATOS-2 max</name>
+					<thrust>0.0345</thrust>
+					<c_e>6180.3</c_e>
+					<massflow>36e-03</massflow>
+					<mass>0.385</mass>
+					<power>1600</power>
+					<propellant>NH3</propellant>
+					<source>ATOS1 Daten_ESDC_IRS - 2001 - Riehle - ATOS-Final-Report</source>
+					<TRL>8</TRL>
+			</thruster>
+			<thruster>
+					<type>arcjet</type>
+					<name>ATOS-2 min</name>
+					<thrust>0.0345</thrust>
+					<c_e>4905</c_e>
+					<massflow>22e-03</massflow>
+					<mass>0.385</mass>
+					<power>1000</power>
+					<propellant>NH3</propellant>
+					<source>ATOS1 Daten_ESDC_IRS - 2001 - Riehle - ATOS-Final-Report</source>
+					<TRL>8</TRL>
+			</thruster>
+		
+			
+			<ppu>
+				<type>arcjet</type>
+				<name>ATOS</name>
+				<power>800</power>
+				<mass>1.89</mass>
+				<efficiency>0.92</efficiency>
+				<source> Riehle, M.: ATOS - Arcjet Flugexperiment auf dem Amateurfunksatelliten AMSAT-P3-D, Final report, DARA FKZ TT 50 TT 9404, 1994</source>
+				<TRL>8</TRL>
+			</ppu>
+			<ppu>
+				<type>arcjet</type>
+				<name>MR-509</name>
+				<power>1800</power>
+				<mass>4.12</mass>
+				<efficiency>0.90</efficiency>
+				<source> Smith, R. D., Roberts, C. R., Aadland, R. S., Lichtin, D. A., Davies, K.: Flight
+	qualification of the 1.8 kW MR-509 Hydrazine Arcjet System, IEPC-97-081, 25th International Electric Propulsion Conference, Cleveland Ohio. United States of America,1997, http://electricrocket.org/IEPC/7081.pdf</source>
+				<TRL>8</TRL>
+			</ppu>
+			<ppu>
+				<type>arcjet</type>
+				<name>MR-509-2</name>
+				<power>1745</power>
+				<mass>6.2</mass>
+				<efficiency>0.934</efficiency>
+				<source>Dieter Zube, Dan Fye, Ideo Masuda and Yoshifumi Gotoh: Low bus voltage hydrazine arcjet system for geostationary satellites, 2021,  https://doi.org/10.2514/6.1998-3631</source>
+				<TRL>8</TRL>
+			</ppu>
+			<ppu>
+				<type>arcjet</type>
+				<name>MR-512</name>
+				<power>1780</power>
+				<mass>6.2</mass>
+				<efficiency>0.91</efficiency>
+				<source> MR-512, Enyclopedia Astronautica, Webpage, http://www.astronautix.com/m/mr-512.html, last accessed 24.10.2016</source>
+				<TRL>8</TRL>
+			</ppu>
+			<ppu>
+				<type>arcjet</type>
+				<name>ESEX</name>
+				<power>30000</power>
+				<mass>48.4</mass>
+				<efficiency>0.95</efficiency>
+				<source> http://electricrocket.org/IEPC/IEPC1993-048.pdf</source>
+				<TRL>9</TRL>
+			</ppu>
+		
+			<requiredsystems>
+				<system>PPU</system>
+				<system>Structure</system>
+				<system>Propellant</system>
+				<system>Tank</system>
+			</requiredsystems>			
+		</arcjet>
+		<FEEP>
+		
+			<thruster>
+				<type>FEEP</type>
+				<name>Nano</name>
+				<thrust>330e-6</thrust>
+				<c_e>35316</c_e>
+				<mass>0.68</mass>
+				<mass_propellant>0.22</mass_propellant>
+				<power>40</power>
+				<propellant>Indium</propellant>
+				<source>https://www.enpulsion.com/order/enpulsion-nano/</source>
+				<source>https://www.enpulsion.com/wp-content/uploads/ENP2018-001.G-ENPULSION-NANO-Product-Overview.pdf</source>
+			</thruster>
+			<thruster>
+				<type>FEEP</type>
+				<name>Nano R3</name>
+				<thrust>350e-6</thrust>
+				<c_e>34335</c_e>
+				<mass>1.2</mass>
+				<mass_propellant>0.22</mass_propellant>
+				<power>40</power>
+				<propellant>Indium</propellant>
+				<source>https://www.enpulsion.com/order/enpulsion-nano/</source>
+				<source>https://www.enpulsion.com/wp-content/uploads/ENP2019-086.D-NANO-R3-Product-Overview.pdf</source>
+			</thruster>
+			<thruster>
+				<type>FEEP</type>
+				<name>Nano AR3</name>
+				<thrust>350e-6</thrust>
+				<c_e>34335</c_e>
+				<mass>1.23</mass>
+				<mass_propellant>0.22</mass_propellant>
+				<power>40</power>
+				<propellant>Indium</propellant>
+				<source>https://www.enpulsion.com/order/enpulsion-nano/</source>
+				<source>https://www.enpulsion.com/wp-content/uploads/ENP2018-015.D-NANO-AR3-Product-Overview.pdf</source>
+			</thruster>
+			<thruster>
+				<type>FEEP</type>
+				<name>Nano IR3</name>
+				<thrust>500e-6</thrust>
+				<c_e>19620</c_e>
+				<mass>1.2</mass>
+				<mass_propellant>0.22</mass_propellant>
+				<power>45</power>
+				<propellant>Indium</propellant>
+				<source>https://www.enpulsion.com/order/enpulsion-nano/</source>
+				<source>https://www.enpulsion.com/wp-content/uploads/ENP2020-078.A-NANO-IR3-Product-Overview.pdf</source>
+			</thruster>
+			<thruster>
+				<type>FEEP</type>
+				<name>Micro R3-1</name>
+				<thrust>1e-3</thrust>
+				<c_e>19620</c_e>
+				<mass>2.6</mass>
+				<mass_propellant>1.3</mass_propellant>
+				<power>100</power>
+				<propellant>Indium</propellant>
+				<source>https://www.enpulsion.com/order/enpulsion-nano/</source>
+				<source>https://www.enpulsion.com/wp-content/uploads/ENP2019-086.D-NANO-R3-Product-Overview.pdf</source>
+			</thruster>
+			<thruster>
+				<type>FEEP</type>
+				<name>Micro R3-4</name>
+				<thrust>4e-3</thrust>
+				<c_e>19620</c_e>
+				<mass>10.4</mass>
+				<mass_propellant>5.2</mass_propellant>
+				<power>400</power>
+				<propellant>Indium</propellant>
+				<source>https://www.enpulsion.com/order/enpulsion-nano/</source>
+				<source>https://www.enpulsion.com/wp-content/uploads/ENP2018-002.H-MICRO-Thruster-Product-Overview.pdf</source>
+			</thruster>	
+		</FEEP>
+		<RF_plasma>
+			<thruster>
+				<type>RF_plasma</type>
+				<name>REGULUS</name>
+				<c_e>5886</c_e>
+				<thrust>0.55e-3</thrust>
+				<mass>2.5</mass>
+				<massflow>0.1e-3</massflow>
+				<power>50</power>
+				<propellant>Iodine</propellant>
+				<total_impulse>3000</total_impulse>
+				<source>https://www.t4innovation.com/wp-content/uploads/2019/10/T4i_REGULUS_datasheet_.pdf</source>
+			</thruster>	
+		</RF_plasma>		
+		<gridionthruster>
+			<thruster>
+					<type>gridionthruster</type>
+					<name>Arclight</name>
+					<thrust>0.012</thrust>
+					<c_e>23544</c_e>
+					<power_jet>141.264</power_jet>
+					<massflow>0.00000050968399592253</massflow>
+					<mass>1.8</mass>
+					<efficiency>0.35316</efficiency>
+					<propellant>Xe</propellant>
+					<structure_mass>5</structure_mass>
+					<source> Ariane Group - ARCLIGHT
+ELECTRIC PROPULSION SYSTEM DESIGNED FOR SMALL SATELLITES6, http://www.space-propulsion.com/brochures/electric-propulsion/arclight-electric-space-propulsion.pdf</source>
+			</thruster>
+			<thruster>
+					<type>gridionthruster</type>
+					<name>RIT 10 EVO mean</name>
+					<thrust>0.015</thrust>
+					<c_e>29430</c_e>
+					<power_jet>220.725</power_jet>
+					<massflow>0.00000050968399592253</massflow>
+					<mass>1.8</mass>
+					<efficiency>0.507413793103448275</efficiency>
+					<propellant>Xe</propellant>
+					<structure_mass>5</structure_mass>
+					<source> Ariane Group - http://www.space-propulsion.com/spacecraft-propulsion/propulsion-systems/electric-propulsion/images/rit-thruster-family-performance-data.jpg</source>
+			</thruster>
+			<thruster>
+					<type>gridionthruster</type>
+					<name>RIT 10 EVO min</name>
+					<thrust>0.005</thrust>
+					<c_e>18639</c_e>
+					<power_jet>46.5975</power_jet>
+					<mass>1.8</mass>
+					<efficiency>0.3213662068</efficiency>
+					<propellant>Xe</propellant>
+					<structure_mass>5</structure_mass>
+					<source> Ariane Group - http://www.space-propulsion.com/spacecraft-propulsion/propulsion-systems/electric-propulsion/images/rit-thruster-family-performance-data.jpg</source>
+			</thruster>
+			<thruster>
+					<type>gridionthruster</type>
+					<name>RIT 10 EVO max</name>
+					<thrust>0.025</thrust>
+					<c_e>31392</c_e>
+					<power_jet>392.4</power_jet>
+					<mass>1.8</mass>
+					<efficiency>0.516315789</efficiency>
+					<propellant>Xe</propellant>
+					<structure_mass>5</structure_mass>
+					<source> Ariane Group - http://www.space-propulsion.com/spacecraft-propulsion/propulsion-systems/electric-propulsion/images/rit-thruster-family-performance-data.jpg</source>
+			</thruster>
+			<thruster>
+					<type>gridionthruster</type>
+					<name>RIT µX max</name>
+					<thrust>0.0005</thrust>
+					<c_e>2943</c_e>
+					<power_jet>.73575</power_jet>
+					<mass>0.44</mass>
+					<efficiency>0.014715</efficiency>
+					<propellant>Xe</propellant>
+					<structure_mass>5</structure_mass>
+					<source> Ariane Group - http://www.space-propulsion.com/spacecraft-propulsion/propulsion-systems/electric-propulsion/images/rit-thruster-family-performance-data.jpg</source>
+			</thruster>
+			<thruster>
+					<type>gridionthruster</type>
+					<name>RIT µX min</name>
+					<thrust>0.00005</thrust>
+					<c_e>29430</c_e>
+					<power_jet>.73575</power_jet>
+					<mass>0.44</mass>
+					<efficiency>0.014715</efficiency>
+					<propellant>Xe</propellant>
+					<structure_mass>5</structure_mass>
+					<source> Ariane Group - http://www.space-propulsion.com/spacecraft-propulsion/propulsion-systems/electric-propulsion/images/rit-thruster-family-performance-data.jpg</source>
+			</thruster>
+			<ppu>
+					<type>gridionthruster</type>
+					<name>Arclight PPU</name>
+					<mass>6.5</mass>
+					<power>450</power>
+					<efficiency>0.92</efficiency>
+			</ppu>
+			<requiredsystems>
+				<system>PPU</system>
+				<system>Structure</system>
+				<system>Propellant</system>
+				<system>Tank</system>
+			</requiredsystems>
+		</gridionthruster>
+		<chemical>
+			<thruster>
+					<type>chemical</type>
+					<name>PM200</name>
+					<thrust>0.5</thrust>
+					<c_e>2795.85</c_e>
+					<power>12</power>
+					<delta_v>230</delta_v>
+					<mass>1.1</mass>
+					<mass_propellant>0.31</mass_propellant>
+					<impulse_tot>850</impulse_tot>
+					<propellant>Bi</propellant>
+					<source>https://hyperiontechnologies.nl/wp-content/uploads/2019/11/HT_PM200.pdf</source>
+			</thruster>
+		</chemical>
+		<tank>
+			<vessel>
+				<type>tank</type>
+				<name>Metal Composite Xenon Tank XT-350</name>
+				<mass> 43.5</mass>
+				<propellant>Xenon</propellant>
+				<mass_propellant>570</mass_propellant>
+				<pressure>9.807*10^6</pressure>
+				<volume>0.35</volume>
+				<source>https://trade.glavkosmos.com/catalog/spacecraft/propulsion-systems/fuel-tank-components/metal-composite-xenon-tank-XT-350/</source>				
+			</vessel>
+			<vessel>
+				<type>tank</type>
+				<name>Metal Composite Xenon Tank XT-200</name>
+				<mass> 28</mass>
+				<propellant>Xenon</propellant>
+				<mass_propellant>570</mass_propellant>
+				<pressure>8.826*10^6</pressure>
+				<volume>0.2</volume>
+				<source>https://trade.glavkosmos.com/catalog/spacecraft/propulsion-systems/fuel-tank-components/metal-composite-xenon-tank-XT-200/</source>
+			</vessel>			
+			<vessel>
+				<type>tank</type>
+				<name>Bipropellant Tank with Stiff-Plastic Separation Devices (Diaphragms)</name>
+				<mass>15.5</mass>
+				<propellant>UDMH</propellant>
+				<propellant>NTO</propellant>
+				<pressure>2.94*10^6</pressure>
+				<volume>0.04</volume>
+				<source>https://trade.glavkosmos.com/catalog/spacecraft/propulsion-systems/fuel-tank-components/bipropellant-tank-with-stiff-plastic-separation-devices-diaphragms/</source>				
+			</vessel>
+			<vessel>
+				<type>tank</type>
+				<name>Monopropellant Tank with Stiff-Plastic Separation Device (Diaphragm)</name>
+				<mass>5.2</mass>
+				<propellant>UDMH</propellant>
+				<propellant>NTO</propellant>
+				<pressure>1.67*10^6</pressure>
+				<volume>0.0308</volume>
+				<source>https://trade.glavkosmos.com/catalog/spacecraft/propulsion-systems/fuel-tank-components/monopropellant-tank-with-stiff-plastic-separation-device-diaphragm/</source>				
+			</vessel>
+			<vessel>
+				<type>tank</type>
+				<name>Monopropellant Tank with Stiff-Plastic Separation Device (Diaphragm)</name>
+				<mass>5.2</mass>
+				<propellant>UDMH</propellant>
+				<propellant>NTO</propellant>
+				<pressure>1.67*10^6</pressure>
+				<volume>0.0308</volume>
+				<source>https://trade.glavkosmos.com/catalog/spacecraft/propulsion-systems/fuel-tank-components/monopropellant-tank-with-stiff-plastic-separation-device-diaphragm/</source>				
+			</vessel>
+			<vessel>
+				<type>tank</type>
+				<name>Composite Storage Tank</name>
+				<mass>8.7</mass>
+				<propellant>Xenon</propellant>
+				<propellant>Nitrogen</propellant>
+				<propellant>Air</propellant>
+				<propellant>Helium</propellant>
+				<pressure>14.2*10^6</pressure>
+				<volume>0.0382</volume>
+				<source>https://trade.glavkosmos.com/catalog/spacecraft/propulsion-systems/fuel-tank-components/composite-storage-tank/</source>				
+			</vessel>
+			<vessel>
+				<type>tank</type>
+				<name>Composite Vessel</name>
+				<mass>5.8</mass>
+				<propellant>Nitrogen</propellant>
+				<propellant>Air</propellant>
+				<propellant>Helium</propellant>
+				<pressure>17.6*10^6</pressure>
+				<volume>0.0018</volume>
+				<source>https://trade.glavkosmos.com/catalog/spacecraft/propulsion-systems/fuel-tank-components/composite-vessel/</source>				
+			</vessel>
+			<vessel>
+				<type>tank</type>
+				<name>Working Medium Tank MVSK </name>
+				<mass>2.5</mass>
+				<propellant>Hydrazine</propellant>
+				<pressure>1.32*10^6</pressure>
+				<volume>0.0084</volume>
+				<source>https://trade.glavkosmos.com/catalog/spacecraft/propulsion-systems/fuel-tank-components/working-medium-tank-mvsk/</source>				
+			</vessel>
+		</tank>
+	</propulsion_system>
+	<power_generation>
+		<photovoltaic>
+			<cell>
+					<type>photovoltaic</type>
+					<name>Solar Panels 1U</name>
+					<power_max>2.3</power_max>
+					<mass> 0.05</mass>
+					<area>0.01 </area>
+					<efficiency>0.30</efficiency>
+					<source>https://www.isispace.nl/wp-content/uploads/2016/02/Solar-Panels-Brochure-v1.pdf</source>
+			</cell>
+			<cell>
+					<type>photovoltaic</type>
+					<name>Solar Panels 2U</name>
+					<power_max>4.6</power_max>
+					<mass> 0.1</mass>
+					<area>0.02 </area>
+					<efficiency>0.30</efficiency>
+					<source>https://www.isispace.nl/wp-content/uploads/2016/02/Solar-Panels-Brochure-v1.pdf</source>
+			</cell>
+			<cell>
+					<type>photovoltaic</type>
+					<name>Solar Panels 3U</name>
+					<power_max>6.9</power_max>
+					<mass> 0.15</mass>
+					<area> 0.03 </area>
+					<efficiency>0.30</efficiency>
+					<source>https://www.isispace.nl/wp-content/uploads/2016/02/Solar-Panels-Brochure-v1.pdf</source>
+			</cell>
+			<cell>
+					<type>photovoltaic</type>
+					<name>Solar Panels 6U</name>
+					<power_max>17</power_max>
+					<mass> 0.3</mass>
+					<area> 0.06 </area>
+					<efficiency>0.30</efficiency>
+					<source>https://www.isispace.nl/wp-content/uploads/2016/02/Solar-Panels-Brochure-v1.pdf</source>
+			</cell>
+			<cell>
+					<type>photovoltaic</type>
+					<name>JUNO Spacecraft Array</name>
+					<power_max>14000</power_max>
+					<mass> 340</mass>
+					<area> 60</area>
+					<efficiency>0.30</efficiency>
+					<source> Mass: https://www.nasa.gov/mission_pages/juno/launch/Juno_solarpower.html , area: https://www.jpl.nasa.gov/news/press_kits/juno/facts/, </source>
+					<comment> Max power is power generated at 1 AU</comment>
+			</cell>
+		</photovoltaic>
+	</power_generation>
+	<thermal>
+		<active>
+			<heater>
+						<type>electric</type>
+						<name>Glavkosmos Electric Heaters for Manned Spacecraft</name>
+						<voltage>34</voltage>
+						<resistance>196</resistance>
+						<power>5.898</power>
+						<mass> 0.026</mass>
+						<source>https://trade.glavkosmos.com/catalog/spacecraft/temperature-control/heating-elements/electric-heaters-for-manned-spacecraft/</source>
+			</heater>
+			<heater>
+						<type>electric</type>
+						<name>Glavkosmos Electric Heaters for Manned Spacecraft</name>
+						<voltage>34</voltage>
+						<resistance>45</resistance>
+						<power>25.688</power>
+						<mass> 0.055</mass>
+						<source>https://trade.glavkosmos.com/catalog/spacecraft/temperature-control/heating-elements/electric-heaters-for-manned-spacecraft/</source>
+			</heater>
+			<heater>
+						<type>electric</type>
+						<name>Glavkosmos Electric Heaters for Manned Spacecraft</name>
+						<voltage>23</voltage>
+						<resistance>196</resistance>
+						<power>2.6990</power>
+						<mass> 0.026</mass>
+						<source>https://trade.glavkosmos.com/catalog/spacecraft/temperature-control/heating-elements/electric-heaters-for-manned-spacecraft/</source>
+			</heater>
+			<heater>
+						<type>electric</type>
+						<name>Glavkosmos Electric Heaters for Manned Spacecraft</name>
+						<voltage>23</voltage>
+						<resistance>45</resistance>
+						<power>11.7556</power>
+						<mass>0.055</mass>
+						<source>https://trade.glavkosmos.com/catalog/spacecraft/temperature-control/heating-elements/electric-heaters-for-manned-spacecraft/</source>
+			</heater>
+		</active>
+		<passive>
+			<isolator>
+						<type>panel</type>
+						<name>Glavkosmos Multi-layer Composite Structures</name>
+						<thickness>0.3</thickness>
+						<mass_per_sqm>4</mass_per_sqm>
+						<source>https://trade.glavkosmos.com/catalog/spacecraft/temperature-control/heat-transfer-tubes-radiators/multi-layer-composite-structures/</source>
+			</isolator>
+			<conductor>
+						<type>panel</type>
+						<name>Glavkosmos Arterial Heat Pipes</name>
+						<max_trans_Q>1000 W m</max_trans_Q>
+						<thickness>12</thickness>
+						<mass_per_m>0.145</mass_per_m>
+						<source>https://trade.glavkosmos.com/catalog/spacecraft/temperature-control/heat-transfer-tubes-radiators/arterial-heat-pipes/</source>
+						
+						<type>panel</type>
+						<name>Glavkosmos Arterial Heat Pipes</name>
+						<max_trans_Q>1000 W m</max_trans_Q>
+						<thickness>16</thickness>
+						<mass_per_m>0.22</mass_per_m>
+						<source>https://trade.glavkosmos.com/catalog/spacecraft/temperature-control/heat-transfer-tubes-radiators/arterial-heat-pipes/</source>
+			</conductor>
+		</passive>
+	</thermal>
+	<structure>
+		<CubeSat>
+			<bus>
+					<type>CubeSat</type> 
+					<name>Structure 1U CubeSat with Separation System</name> 
+					<length>0.1</length>
+					<height>0.1</height>
+					<width>0.1135</width>
+					<mass>0.132</mass>
+					<source>https://trade.glavkosmos.com/catalog/spacecraft/platform-bus/structure-1U-CubeSat-with-Separation-System/</source>
+			</bus>
+			<bus>
+					<type>CubeSat</type> 
+					<name>Structure 3U CubeSat with Separation System</name> 
+					<length>0.1</length>
+					<height>0.1</height>
+					<width>0.3405</width>
+					<mass>0.455</mass>
+					<source>https://trade.glavkosmos.com/catalog/spacecraft/platform-bus/structure-3U-CubeSat-with-separation-system/</source>
+			</bus>		
+		</CubeSat>
+	</structure>
+	<attitude_control>
+		<Magnetorquer>
+			<actuator>
+				<type>Magnetorquer</type>
+				<name>Cubetorquer</name>
+				<nom_mag_moment>0.24</nom_mag_moment>
+				<sat_mag_moment>1.5</sat_mag_moment>
+				<power_nom>0.2</power_nom>
+				<mass>0.028</mass>
+				<axis>1</axis>
+				<el_resistance>30</el_resistance>
+				<source>https://www.cubesatshop.com/wp-content/uploads/2016/06/CubeTorquer_Specsheet_V1.0.jpg</source>
+				<source>https://www.cubesatshop.com/product/cubetorquer-and-cubecoil/</source>
+			</actuator>
+			<actuator>
+				<type>Magnetorquer</type>
+				<name>Cubecoil</name>
+				<nom_mag_moment>0.13</nom_mag_moment>
+				<power_nom>0.3</power_nom>
+				<mass>0.046</mass>
+				<axis>1</axis>
+				<source>https://www.cubesatshop.com/wp-content/uploads/2016/06/CubeTorquer-CubeCoil-Brochure-August-2016.pdf</source>
+				<source>https://www.cubesatshop.com/product/cubetorquer-and-cubecoil/</source>
+			</actuator>
+			<actuator>
+				<type>Magnetorquer</type>
+				<name>ISIS Magnetorquer board</name>
+				<nom_mag_moment>0.2</nom_mag_moment>
+				<power_nom>0.175</power_nom>
+				<power_max>1.2</power_max>
+				<mass>0.196</mass>
+				<axis>3</axis>
+				<source>https://www.cubesatshop.com/product/isis-magnetorquer-board/</source>
+				<source>https://www.cubesatshop.com/wp-content/uploads/2016/06/iMTQ-Brochure-v1.pdf</source>
+			</actuator>
+			<actuator>
+				<type>Magnetorquer</type>
+				<name>NSS CubeSat ACS solution</name>
+				<nom_mag_moment>0.2</nom_mag_moment>
+				<power_nom>1.8</power_nom>
+				<power_max>3</power_max>
+				<mass>0.45</mass>
+				<axis>3</axis>
+				<source>https://www.cubesatshop.com/product/cubesat-acs-board/</source>
+				<source>https://www.cubesatshop.com/wp-content/uploads/2016/07/NSS-Cubesat-ACS-board.pdf</source>
+			</actuator>
+			<actuator>
+				<type>Magnetorquer</type>
+				<name>NCTR-M002 Magnetorquer Rod</name>
+				<nom_mag_moment>0.2</nom_mag_moment>
+				<power_nom>0.2</power_nom>
+				<mass>0.03</mass>
+				<axis>1</axis>
+				<source>https://www.cubesatshop.com/wp-content/uploads/2016/06/NewSpace-Magnetorquer-Rod_7b.pdf</source>
+			</actuator>
+			<actuator>
+				<type>Magnetorquer</type>
+				<name>NCTR-M012 Magnetorquer Rod</name>
+				<nom_mag_moment>1.19</nom_mag_moment>
+				<power_nom>0.8</power_nom>
+				<mass>0.05</mass>
+				<axis>1</axis>
+				<source>https://www.cubesatshop.com/wp-content/uploads/2016/06/NewSpace-Magnetorquer-Rod_7b.pdf</source>
+			</actuator>
+		</Magnetorquer>
+		<ReactionWheel>
+			<actuator>
+				<type>Reaction Wheel</type>
+				<name>Cube Wheel Large</name>
+				<torque_max>0.0023</torque_max>
+				<momentum_storage>0.03</momentum_storage>
+				<power_nom>0.27</power_nom>
+				<power_max>2.2</power_max>
+				<mass>0.22</mass>
+				<axis>1</axis>
+				<source>https://www.cubesatshop.com/wp-content/uploads/2016/06/CubeWheel-Brochure-August-2016.pdf</source>
+				<source>https://www.cubesatshop.com/product/cubewheel-large/</source>
+			</actuator>
+			<actuator>
+				<type>Reaction Wheel</type>
+				<name>Cube Wheel Medium</name>
+				<torque_max>0.0001</torque_max>
+				<momentum_storage>0.01</momentum_storage>
+				<power_nom>0.24</power_nom>
+				<power_max>1.5</power_max>
+				<mass>0.14</mass>
+				<axis>1</axis>
+				<source>https://www.cubesatshop.com/wp-content/uploads/2016/06/CubeWheel-Brochure-August-2016.pdf</source>
+				<source>https://www.cubesatshop.com/product/cubewheel-medium/</source>
+			</actuator>
+			<actuator>
+				<type>Reaction Wheel</type>
+				<name>Cube Wheel Small</name>
+				<torque_max>0.00023</torque_max>
+				<momentum_storage>0.0017</momentum_storage>
+				<power_nom>0.12</power_nom>
+				<power_max>0.72</power_max>
+				<mass>0.22</mass>
+				<axis>1</axis>
+				<source>https://www.cubesatshop.com/wp-content/uploads/2016/06/CubeWheel-Brochure-August-2016.pdf</source>
+				<source>https://www.cubesatshop.com/product/cubewheel-small/</source>
+			</actuator>
+			<actuator>
+				<type>Reaction Wheel</type>
+				<name>MAI-400 Reaction Wheel</name>
+				<torque_max>0.000635</torque_max>
+				<momentum_storage>0.00935</momentum_storage>
+				<power_nom>0.85</power_nom>
+				<power_max>2.2</power_max>
+				<mass>0.11</mass>
+				<axis>1</axis>
+				<source>https://www.cubesatshop.com/product/mai-400-reaction-wheel/</source>
+				<source>https://www.cubesatshop.com/wp-content/uploads/2016/06/MAI_Single_Axis_Reaction_Wheel_Assembly-Datasheet.pdf</source>
+			</actuator>
+			<actuator>
+				<type>Reaction Wheel</type>
+				<name>RS100 – Reaction Sphere</name>
+				<torque_max>0.001</torque_max>
+				<momentum_storage>0.01</momentum_storage>
+				<power_max>1</power_max>
+				<mass>0.4</mass>
+				<axis>4</axis>
+				<source>https://www.cubesatshop.com/product/reaction-sphere/</source>
+				<source>https://www.cubesatshop.com/wp-content/uploads/2020/09/Data-Sheet-of-the-Integrated-ADCS-and-Fine-Sun-Sensor.pdf</source>
+			</actuator>
+			<actuator>
+				<type>Reaction Wheel</type>
+				<name>NRWA-T005</name>
+				<torque_max>0.01</torque_max>
+				<momentum_storage>0.05</momentum_storage>
+				<power_nom>0.8</power_nom>
+				<mass>0.5</mass>
+				<axis>1</axis>
+				<source>https://www.cubesatshop.com/wp-content/uploads/2020/11/NewSpace-Reaction-Wheel_2020-10a.pdf</source>
+			</actuator>
+			<actuator>
+				<type>Reaction Wheel</type>
+				<name>NRWA-T065</name>
+				<torque_max>0.02</torque_max>
+				<momentum_storage>0.65</momentum_storage>
+				<power_nom>1.12</power_nom>
+				<mass>1.55</mass>
+				<axis>1</axis>
+				<source>https://www.cubesatshop.com/wp-content/uploads/2020/11/NewSpace-Reaction-Wheel_2020-10a.pdf</source> 
+			</actuator>
+			<actuator>
+				<type>Reaction Wheel</type>
+				<name>NRWA-T2</name>
+				<torque_max>0.021</torque_max>
+				<momentum_storage>2</momentum_storage>
+				<power_nom>0.336</power_nom>
+				<mass>1.8</mass>
+				<axis>1</axis>
+				<source>https://www.cubesatshop.com/wp-content/uploads/2020/11/NewSpace-Reaction-Wheel_2020-10a.pdf</source>
+			</actuator>	
+			<actuator>
+				<type>Reaction Wheel</type>
+				<name>RW Wittenstein</name>
+				<torque_nom>0.0001</torque_nom>
+				<momentum_storage>0.002</momentum_storage>
+				<power_nom>0.3</power_nom>
+				<power_max>1</power_max>
+				<mass>0.003</mass>
+				<axis>1</axis>
+				<source>https://cyber-motor.wittenstein.de/en-en/reaction-wheel/</source>
+			</actuator>
+			<actuator>
+				<type>Reaction Wheel</type>
+				<name>REWL-30</name>
+				<torque_max>0.015</torque_max>
+				<momentum_storage>0.003</momentum_storage>
+				<mass>0.055</mass>
+				<axis>1</axis>
+				<source>https://space-inventor.com/wordpress/wp-content/uploads/2019/11/REWL-30-features.pdf</source>
+				<source>https://space-inventor.com/wordpress/wp-content/uploads/2019/11/REWL-30-and-REWL-50-one-pager.pdf</source>
+			</actuator>
+			<actuator>
+				<type>Reaction Wheel</type>
+				<name>REWL-50</name>
+				<torque_max>0.042</torque_max>
+				<momentum_storage>0.005</momentum_storage>
+				<mass>0.155</mass>
+				<axis>1</axis>
+				<source>https://space-inventor.com/wordpress/wp-content/uploads/2019/11/REWL-50-features.pdf</source>
+				<source>https://space-inventor.com/wordpress/wp-content/uploads/2019/11/REWL-30-and-REWL-50-one-pager.pdf</source>
+			</actuator>
+			<actuator>
+				<type>Reaction Wheel</type>
+				<name>REWL-1000</name>
+				<torque_max>0.040</torque_max>
+				<momentum_storage>1.000</momentum_storage>
+				<mass>0.9</mass>
+				<power_nom>15</power_nom>
+				<power_max>500</power_max>
+				<axis>1</axis>
+				<source>https://space-inventor.com/wordpress/wp-content/uploads/2020/07/rewl-1000-factsheet.pdf</source>
+			</actuator>
+			<actuator>
+				<type>Reaction Wheel</type>
+				<name>KU Leuven RW</name>
+				<torque_max>0.005</torque_max>
+				<momentum_storage>0.004</momentum_storage>
+				<mass>0.085</mass>
+				<power_nom>0.2</power_nom>
+				<power_max>0.6</power_max>
+				<axis>1</axis>
+				<source>http://www.cubesatpointing.com/DownloadFiles/Datasheets/KULRWDatasheet.pdf </source>
+				<source>https://space-inventor.com/wordpress/wp-content/uploads/2020/07/rewl-1000-factsheet.pdf</source>
+			</actuator>
+			<actuator>
+				<type>Reaction Wheel</type>
+				<name>RW-0.01</name>
+				<torque_max>0.001</torque_max>
+				<momentum_storage>0.018</momentum_storage>
+				<mass>0.120</mass>
+				<power_nom>0.25</power_nom>
+				<power_max>1.05</power_max>
+				<axis>1</axis>
+				<source>https://satsearch.co/products/sinclair-interplanetary-rw-0-01</source>
+			</actuator>
+			<actuator>
+				<type>Reaction Wheel</type>
+				<name>RRW-0.003</name>
+				<torque_max>0.001</torque_max>
+				<momentum_storage>0.005</momentum_storage>
+				<mass>0.05</mass>
+				<axis>1</axis>
+				<source>http://www.sinclairinterplanetary.com/reactionwheels</source>
+			</actuator>
+			<actuator>
+				<type>Reaction Wheel</type>
+				<name>Nanosatellite Reaction Wheels (RW-0.03)</name>
+				<torque_max>0.04</torque_max>
+				<momentum_storage>0.04</momentum_storage>
+				<mass>0.185</mass>
+				<power_nom>0.3</power_nom>
+				<power_max>1.8</power_max>
+				<axis>1</axis>
+				<source>http://www.sinclairinterplanetary.com/reactionwheels</source>
+			</actuator>
+			<actuator>
+				<type>Reaction Wheel</type>
+				<name>Microsatellite Reaction Wheels (RW3-0.06)</name>
+				<torque_max>0.02</torque_max>
+				<momentum_storage>0.18</momentum_storage>
+				<mass>0.226</mass>
+				<power_nom>0.9</power_nom>
+				<power_max>23.4</power_max>
+				<axis>1</axis>
+				<source>http://www.sinclairinterplanetary.com/reactionwheels</source>
+			</actuator>
+			<actuator>
+				<type>Reaction Wheel</type>
+				<name>Rad-Hard Reaction Wheels (RW4-0.2)</name>
+				<torque_max>0.1</torque_max>
+				<momentum_storage>0.2</momentum_storage>
+				<mass>0.6</mass>
+				<axis>1</axis>
+				<source>http://www.sinclairinterplanetary.com/reactionwheels</source>
+			</actuator>
+			<actuator>
+				<type>Reaction Wheel</type>
+				<name>Rad-Hard Reaction Wheels (RW4-0.4)</name>
+				<torque_max>0.1</torque_max>
+				<momentum_storage>0.4</momentum_storage>
+				<mass>0.77</mass>
+				<axis>1</axis>
+				<source>http://www.sinclairinterplanetary.com/reactionwheels</source>
+			</actuator>
+			<actuator>
+				<type>Reaction Wheel</type>
+				<name>GEO Reaction Wheels (RW4-1.0)</name>
+				<torque_max>0.1</torque_max>
+				<momentum_storage>1.0</momentum_storage>
+				<mass>1.38</mass>
+				<power_nom>5.3</power_nom>
+				<power_max>45</power_max>
+				<axis>1</axis>
+				<source>http://www.sinclairinterplanetary.com/reactionwheels</source>
+			</actuator>
+			<actuator>
+				<type>Reaction Wheel</type>
+				<name>Microsatellite Reaction Wheels (RW3-1.0)</name>
+				<torque_max>0.05</torque_max>
+				<momentum_storage>1.0</momentum_storage>
+				<mass>0.97</mass>
+				<power_nom>15.1</power_nom>
+				<power_max>46.7</power_max>
+				<axis>1</axis>
+				<source>http://www.sinclairinterplanetary.com/reactionwheels</source>
+			</actuator>
+			<actuator>
+				<type>Reaction Wheel</type>
+				<name>RWP015</name>
+				<torque_max>0.004</torque_max>
+				<momentum_storage>0.015</momentum_storage>
+				<mass>0.13</mass>
+				<power_nom>1.</power_nom>
+				<axis>1</axis>
+				<source>https://www.bluecanyontech.com/static/datasheet/BCT_DataSheet_Components_ReactionWheels.pdf</source>
+			</actuator>
+			<actuator>
+				<type>Reaction Wheel</type>
+				<name>RWP050</name>
+				<torque_max>0.007</torque_max>
+				<momentum_storage>0.050</momentum_storage>
+				<mass>0.24</mass>
+				<power_nom>1.</power_nom>
+				<axis>1</axis>
+				<source>https://www.bluecanyontech.com/static/datasheet/BCT_DataSheet_Components_ReactionWheels.pdf</source>
+			</actuator>
+			<actuator>
+				<type>Reaction Wheel</type>
+				<name>RWP100</name>
+				<torque_max>0.007</torque_max>
+				<momentum_storage>0.1</momentum_storage>
+				<mass>0.35</mass>
+				<power_nom>1.</power_nom>
+				<axis>1</axis>
+				<source>https://www.bluecanyontech.com/static/datasheet/BCT_DataSheet_Components_ReactionWheels.pdf</source>
+			</actuator>
+			<actuator>
+				<type>Reaction Wheel</type>
+				<name>RWP500</name>
+				<torque_max>0.025</torque_max>
+				<momentum_storage>0.5</momentum_storage>
+				<mass>0.75</mass>
+				<power_nom>6.</power_nom>
+				<axis>1</axis>
+				<source>https://www.bluecanyontech.com/static/datasheet/BCT_DataSheet_Components_ReactionWheels.pdf</source>
+			</actuator>
+			<actuator>
+				<type>Reaction Wheel</type>
+				<name>RW1</name>
+				<torque_max>0.1</torque_max>
+				<momentum_storage>1</momentum_storage>
+				<mass>0.75</mass>
+				<power_nom>9.</power_nom>
+				<axis>1</axis>
+				<source>https://www.bluecanyontech.com/static/datasheet/BCT_DataSheet_Components_ReactionWheels.pdf</source>
+			</actuator>	
+			<actuator>
+				<type>Reaction Wheel</type>
+				<name>RW4</name>
+				<torque_max>0.25</torque_max>
+				<momentum_storage>4</momentum_storage>
+				<mass>3</mass>
+				<power_nom>10.</power_nom>
+				<axis>1</axis>
+				<source>https://www.bluecanyontech.com/static/datasheet/BCT_DataSheet_Components_ReactionWheels.pdf</source>
+			</actuator>
+			<actuator>
+				<type>Reaction Wheel</type>
+				<name>RW4</name>
+				<torque_max>0.25</torque_max>
+				<momentum_storage>8</momentum_storage>
+				<mass>4.1</mass>
+				<power_nom>10.</power_nom>
+				<axis>1</axis>
+				<source>https://www.bluecanyontech.com/static/datasheet/BCT_DataSheet_Components_ReactionWheels.pdf</source>
+			</actuator>	
+			<actuator>
+				<type>Reaction Wheel</type>
+				<name>CubeSat Reaction Wheels Control System SatBus 4RW0</name>
+				<torque_max>0.0059</torque_max>
+				<momentum_storage>0.037</momentum_storage>
+				<mass>0.665</mass>
+				<power_nom>0.6</power_nom>
+				<power_max>6.0</power_max>
+				<axis>4</axis>
+				<source>https://nanoavionics.com/cubesat-components/cubesat-reaction-wheels-control-system-satbus-4rw/</source>
+			</actuator>
+			<actuator>
+				<type>Reaction Wheel</type>
+				<name>RW400 - 15</name>
+				<torque_max>0.012</torque_max>
+				<momentum_storage>0.015</momentum_storage>
+				<mass>0.155</mass>
+				<power_nom>1.9</power_nom>
+				<power_max>15</power_max>
+				<axis>1</axis>
+				<source>https://hyperiontechnologies.nl/wp-content/uploads/2015/07/HT_RW400_v2.1-flyer.pdf</source>
+			</actuator>
+			<actuator>
+				<type>Reaction Wheel</type>
+				<name>RW400 - 30</name>
+				<torque_max>0.012</torque_max>
+				<momentum_storage>0.030</momentum_storage>
+				<mass>0.210</mass>
+				<power_nom>1.9</power_nom>
+				<power_max>15</power_max>
+				<axis>1</axis>
+				<source>https://hyperiontechnologies.nl/wp-content/uploads/2015/07/HT_RW400_v2.1-flyer.pdf</source>
+			</actuator>
+			<actuator>
+				<type>Reaction Wheel</type>
+				<name>RW400 - 60</name>
+				<torque_max>0.012</torque_max>
+				<momentum_storage>0.060</momentum_storage>
+				<mass>0.375</mass>
+				<power_nom>1.9</power_nom>
+				<power_max>15</power_max>
+				<axis>1</axis>
+				<source>https://hyperiontechnologies.nl/wp-content/uploads/2015/07/HT_RW400_v2.1-flyer.pdf</source>
+			</actuator>
+			<actuator>
+				<type>Reaction Wheel</type>
+				<name>NanoTorque GSW-600</name>
+				<torque_max>0.0015</torque_max>
+				<momentum_storage>0.019</momentum_storage>
+				<mass>0.180</mass>
+				<power_nom>0.3</power_nom>
+				<power_max>2.55</power_max>
+				<axis>1</axis>
+				<source>https://gomspace.com/UserFiles/Subsystems/datasheet/gs-ds-nanotorque-gsw-600-20.pdf</source>
+			</actuator>
+			<actuator>
+				<type>Reaction Wheel</type>
+				<name>Reaction Wheel RW1 for Pico and Nano Satellites Typ A</name>
+				<torque_max>0.000023</torque_max>
+				<momentum_storage>0.00058</momentum_storage>
+				<mass>0.125</mass>
+				<power_nom>0.62</power_nom>
+				<power_max>0.72</power_max>
+				<axis>4</axis>
+				<source>https://www.astrofein.com/2728/dwnld/admin/Datenblatt_RW1.pdf</source>
+			</actuator>
+			<actuator>
+				<type>Reaction Wheel</type>
+				<name>Reaction Wheel RW1 for Pico and Nano Satellites Typ B</name>
+				<torque_max>0.000004</torque_max>
+				<momentum_storage>0.0001</momentum_storage>
+				<mass>0.093</mass>
+				<power_nom>0.62</power_nom>
+				<power_max>0.72</power_max>
+				<axis>4</axis>
+				<source>https://www.astrofein.com/2728/dwnld/admin/Datenblatt_RW1.pdf</source>
+			</actuator>
+			<actuator>
+				<type>Reaction Wheel</type>
+				<name>Reaction Wheel RW35 for Nano and Micro Satellites</name>
+				<torque_max>0.005</torque_max>
+				<momentum_storage>0.1</momentum_storage>
+				<mass>0.5</mass>
+				<power_nom>4.5</power_nom>
+				<power_max>5</power_max>
+				<axis>1</axis>
+				<source>https://www.astrofein.com/2728/dwnld/admin/Datenblatt_RW35.pdf</source>
+			</actuator>
+			<actuator>
+				<type>Reaction Wheel</type>
+				<name>Reaction Wheel RW90 for Small and Micro Satellites </name>
+				<torque_max>0.015</torque_max>
+				<momentum_storage>0.34</momentum_storage>
+				<mass>0.9</mass>
+				<power_nom>3.5</power_nom>
+				<power_max>15</power_max>
+				<axis>1</axis>
+				<source>https://www.astrofein.com/2728/dwnld/48_Datenblatt_RW90.pdf</source>
+			</actuator>
+			<actuator>
+				<type>Reaction Wheel</type>
+				<name>Reaction Wheel RW150 for Small Satellites </name>
+				<torque_max>0.03</torque_max>
+				<momentum_storage>1</momentum_storage>
+				<mass>1.5</mass>
+				<power_nom>5</power_nom>
+				<power_max>50</power_max>
+				<axis>1</axis>
+				<source>https://www.astrofein.com/2728/dwnld/admin/Datenblatt_RW150.pdf</source>
+			</actuator>
+			<actuator>
+				<type>Reaction Wheel</type>
+				<name>Reaction Wheel RW250 for Small Satellites </name>
+				<torque_max>0.1</torque_max>
+				<momentum_storage>4</momentum_storage>
+				<mass>2.7</mass>
+				<power_nom>18</power_nom>
+				<power_max>150</power_max>
+				<axis>1</axis>
+				<source>https://www.astrofein.com/2728/dwnld/admin/Datenblatt_RW250.pdf</source>
+			</actuator>
+			<actuator>
+				<type>Reaction Wheel</type>
+				<name>RSI 15-215/20 </name>
+				<torque_max>0.215</torque_max>
+				<momentum_storage>15</momentum_storage>
+				<mass>7.7</mass>
+				<power_nom>15</power_nom>
+				<power_max>90</power_max>
+				<axis>1</axis>
+				<source>http://www.electronicnote.com/media/downloads/RSI%2045_A4.pdf</source>
+			</actuator>
+			<actuator>
+				<type>Reaction Wheel</type>
+				<name>RSI 45-75/60</name>
+				<torque_max>0.075</torque_max>
+				<momentum_storage>45</momentum_storage>
+				<mass>7.7</mass>
+				<power_nom>22</power_nom>
+				<power_max>90</power_max>
+				<axis>1</axis>
+				<source>http://www.electronicnote.com/media/downloads/RSI%2045_A4.pdf</source>
+			</actuator>
+			<actuator>
+				<type>Reaction Wheel</type>
+				<name>RSI 01-5/15</name>
+				<torque_max>0.005</torque_max>
+				<momentum_storage>0.04</momentum_storage>
+				<mass>0.6</mass>
+				<power_nom>2</power_nom>
+				<power_max>4</power_max>
+				<axis>1</axis>
+				<source>http://www.electronicnote.com/RCG/RSI%2001_A4.pdf</source>
+			</actuator>
+			<actuator>
+				<type>Reaction Wheel</type>
+				<name>RSI 01-5/28i</name>
+				<torque_max>0.005</torque_max>
+				<momentum_storage>0.12</momentum_storage>
+				<mass>0.7</mass>
+				<power_nom>2</power_nom>
+				<power_max>4</power_max>
+				<axis>1</axis>
+				<source>http://www.electronicnote.com/RCG/RSI%2001_A4.pdf</source>
+			</actuator>
+			<actuator>
+				<type>Reaction Wheel</type>
+				<name>MSCI MicroWheel 200</name>
+				<torque_max>0.030</torque_max>
+				<momentum_storage>0.18</momentum_storage>
+				<mass>0.94</mass>
+				<power_nom>7</power_nom>
+				<power_max>50</power_max>
+				<axis>1</axis>
+				<source>http://www.reactionwheel.ca/products/MicroWheel-200.pdf</source>
+			</actuator>
+			<actuator>
+				<type>Reaction Wheel</type>
+				<name>MSCI MicroWheel 1000</name>
+				<torque_max>0.030</torque_max>
+				<momentum_storage>1.1</momentum_storage>
+				<mass>1.44</mass>
+				<power_nom>9</power_nom>
+				<power_max>50</power_max>
+				<axis>1</axis>
+				<source>http://www.mscinc.ca/products/MicroWheel-1000.pdf</source>
+			</actuator>
+			<actuator>
+				<type>Reaction Wheel</type>
+				<name>MSCI MicroWheel 4000</name>
+				<torque_max>0.050</torque_max>
+				<momentum_storage>4</momentum_storage>
+				<mass>3.3</mass>
+				<power_nom>11</power_nom>
+				<power_max>200</power_max>
+				<axis>1</axis>
+				<source>http://www.reactionwheel.ca/products/MicroWheel-4000.pdf</source>
+			</actuator>
+			<actuator>
+				<type>Reaction Wheel</type>
+				<name>Reaction Wheel HMMW</name>
+				<torque_max>0.012</torque_max>
+				<momentum_storage>0.4</momentum_storage>
+				<mass>1.05</mass>
+				<power_nom>4.3</power_nom>
+				<axis>1</axis>
+				<source>https://www.mpcnet.co.jp/e/e_product/elec/img/UEX_110010-C(E)_RW-IRU.pdf</source>
+			</actuator>
+			<actuator>
+				<type>Reaction Wheel</type>
+				<name>Reaction Wheel Mini</name>
+				<torque_max>0.01</torque_max>
+				<momentum_storage>1.5</momentum_storage>
+				<mass>2.6</mass>
+				<power_nom>15</power_nom>
+				<power_max>25</power_max>
+				<axis>1</axis>
+				<source>https://www.mpcnet.co.jp/e/e_product/elec/img/UEX_110010-C(E)_RW-IRU.pdf</source>
+			</actuator>
+			<actuator>
+				<type>Reaction Wheel</type>
+				<name>Reaction Wheel Type S</name>
+				<torque_max>0.06</torque_max>
+				<momentum_storage>10</momentum_storage>
+				<mass>3.9</mass>
+				<power_nom>10</power_nom>
+				<power_max>50</power_max>
+				<axis>1</axis>
+				<source>https://www.mpcnet.co.jp/e/e_product/elec/img/UEX_110010-C(E)_RW-IRU.pdf</source>
+			</actuator>
+			<actuator>
+				<type>Reaction Wheel</type>
+				<name>Reaction Wheel Type M</name>
+				<torque_max>0.1</torque_max>
+				<momentum_storage>30</momentum_storage>
+				<mass>9.3</mass>
+				<power_nom>21</power_nom>
+				<power_max>115</power_max>
+				<axis>1</axis>
+				<source>https://www.mpcnet.co.jp/e/e_product/elec/img/UEX_110010-C(E)_RW-IRU.pdf</source>
+			</actuator>
+			<actuator>
+				<type>Reaction Wheel</type>
+				<name>Reaction Wheel Type M-A</name>
+				<torque_max>0.2</torque_max>
+				<momentum_storage>30</momentum_storage>
+				<mass>8.6</mass>
+				<power_nom>23</power_nom>
+				<power_max>208</power_max>
+				<axis>1</axis>
+				<source>https://www.mpcnet.co.jp/e/e_product/elec/img/UEX_110010-C(E)_RW-IRU.pdf</source>
+			</actuator>
+			<actuator>
+				<type>Reaction Wheel</type>
+				<name>Reaction Wheel Type L</name>
+				<torque_max>0.2</torque_max>
+				<momentum_storage>80</momentum_storage>
+				<mass>11</mass>
+				<power_nom>23</power_nom>
+				<power_max>208</power_max>
+				<axis>1</axis>
+				<source>https://www.mpcnet.co.jp/e/e_product/elec/img/UEX_110010-C(E)_RW-IRU.pdf</source>
+			</actuator>
+			<actuator>
+				<type>Reaction Wheel</type>
+				<name>Reaction Wheel（RW)</name>
+				<torque_max>0.02</torque_max>
+				<momentum_storage>0.3</momentum_storage>
+				<mass>1.1</mass>
+				<power_nom>3</power_nom>
+				<power_max>10</power_max>
+				<axis>1</axis>
+				<source>https://www.tamagawa-seiki.com/products/space/ta6494.html</source>
+			</actuator>
+			<actuator>
+				<type>Reaction Wheel</type>
+				<name>MAI-101</name>
+				<torque_max>0.000635</torque_max>
+				<momentum_storage>0.0011</momentum_storage>
+				<mass>0.64</mass>
+				<axis>4</axis>
+				<source>http://www.ati-space.com/ATI.files/11_index.files/MAI-101%20Specification%20ATI%203-18-11.pdf</source>
+			</actuator>
+		</ReactionWheel>
+		<Sensor>
+			<sensor>
+				<type>Magnetometer</type>
+				<name>MM200</name>
+				<power>0.28</power>
+				<sampling_rate>500</sampling_rate>
+				<mass>0.012</mass>
+				<source>https://hyperiontechnologies.nl/wp-content/uploads/2020/01/HT_MM200_V1.0.pdf</source>
+			</sensor>
+			<sensor>
+				<type>Sunsensor</type>
+				<name>SS200</name>
+				<power>0.04</power>
+				<accuracy>1</accuracy>
+				<FOV>110</FOV>
+				<sampling_rate>100</sampling_rate>
+				<mass>0.003</mass>
+				<source>https://hyperiontechnologies.nl/wp-content/uploads/2019/11/HT_SS200.pdf</source>
+			</sensor>
+			<sensor>
+				<type>Sunsensor</type>
+				<name>FSS-1</name>
+				<power>0.09</power>
+				<accuracy>1</accuracy>
+				<axis>2</axis>
+				<FOV>120</FOV>
+				<mass>0.008</mass>
+				<source>https://space-inventor.com/wordpress/wp-content/uploads/2020/07/FSS-1-factsheet.pdf</source>
+			</sensor>
+			<sensor>
+				<type>Startracker</type>
+				<name>ST200</name>
+				<power>0.6</power>
+				<accuracy_pitch>0.008333333333333333</accuracy_pitch>
+				<accuracy_yaw>0.008333333333333333</accuracy_yaw>
+				<accuracy_roll>0.05555555555555555</accuracy_roll>
+				<max_slew_tilt>0.3</max_slew_tilt>
+				<max_slew_roll>0.6</max_slew_roll>
+				<sampling_rate>5</sampling_rate>
+				<half_angle>30.45</half_angle>
+				<mass>0.042</mass>
+				<source>https://hyperiontechnologies.nl/wp-content/uploads/2015/07/HT_ST200_v2.1-flyer.pdf</source>
+			</sensor>
+			<sensor>
+				<type>Startracker</type>
+				<name>ST400</name>
+				<power>0.7</power>
+				<accuracy_pitch>0.002777777777777778</accuracy_pitch>
+				<accuracy_yaw>0.002777777777777778</accuracy_yaw>
+				<accuracy_roll>0.03333333333333333</accuracy_roll>
+				<max_slew_tilt>0.5</max_slew_tilt>
+				<max_slew_roll>1</max_slew_roll>
+				<sampling_rate>5</sampling_rate>
+				<half_angle>40</half_angle>
+				<mass>0.28</mass>
+				<source>https://hyperiontechnologies.nl/wp-content/uploads/2019/11/HT_ST400.pdf</source>
+			</sensor>
+			<sensor>
+				<type>Startracker</type>
+				<name>STAR-T3</name>
+				<power>1</power>
+				<accuracy_pitch>0.002777777777777778</accuracy_pitch>
+				<accuracy_yaw>0.002777777777777778</accuracy_yaw>
+				<accuracy_roll>0.03333333333333333</accuracy_roll>
+				<max_slew_tilt>0.3</max_slew_tilt>
+				<max_slew_roll>0.3</max_slew_roll>
+				<half_angle>37.5</half_angle>
+				<mass>0.35</mass>
+				<source>https://space-inventor.com/wordpress/wp-content/uploads/2019/11/STAR-T3-one-pager.pdf</source>
+			</sensor>
+		</Sensor>
+		<Integrated>
+			<integrated>
+				<type>ACS</type>
+				<name>iACS200</name>
+				<aggregate>Reaction Wheel</aggregate>
+				<aggregate>Magnetorquer</aggregate>
+				<aggregate>Magnetometer</aggregate>
+				<aggregate>IMU</aggregate>
+				<torque_max>0.1</torque_max>
+				<momentum_storage>0.006</momentum_storage>
+				<nom_mag_moment>0.1</nom_mag_moment>
+				<axis>3</axis>
+				<accuracy>15</accuracy>
+				<max_slew>1.5</max_slew>
+				<power>1.3</power>
+				<mass>0.41</mass>
+				<source>https://hyperiontechnologies.nl/wp-content/uploads/2019/11/HT_iACS200.pdf</source>
+			</integrated>
+			<integrated>
+				<type>ACS</type>
+				<name>iACS400</name>
+				<aggregate>Reaction Wheel</aggregate>
+				<aggregate>Magnetorquer</aggregate>
+				<aggregate>Magnetometer</aggregate>
+				<aggregate>IMU</aggregate>
+				<torque_max>2</torque_max>
+				<momentum_storage>0.050</momentum_storage>
+				<nom_mag_moment>0.4</nom_mag_moment>
+				<axis>3</axis>
+				<accuracy>1</accuracy>
+				<max_slew>1.5</max_slew>
+				<power>2</power>
+				<mass>1.7</mass>
+				<source>https://hyperiontechnologies.nl/wp-content/uploads/2015/07/HT_iADCS400_v2.1-flyer.pdf</source>
+			</integrated>
+			<integrated>
+				<type>ACS</type>
+				<name>iADCS200</name>
+				<aggregate>Reaction Wheel</aggregate>
+				<aggregate>Magnetorquer</aggregate>
+				<aggregate>Magnetometer</aggregate>
+				<aggregate>IMU</aggregate>
+				<torque_max>0.087</torque_max>
+				<momentum_storage>0.006</momentum_storage>
+				<nom_mag_moment>0.1</nom_mag_moment>
+				<axis>3</axis>
+				<accuracy>1</accuracy>
+				<max_slew>1.5</max_slew>
+				<power>1.4</power>
+				<mass>0.47</mass>
+				<source>https://hyperiontechnologies.nl/wp-content/uploads/2019/11/HT_iADCS200.pdf</source>
+			</integrated>
+			<integrated>
+				<type>ACS</type>
+				<name>ADCS-R3</name>
+				<aggregate>Reaction Wheel</aggregate>
+				<aggregate>Magnetorquer</aggregate>
+				<aggregate>IMU</aggregate>
+				<torque_max>0.002</torque_max>
+				<momentum_storage>0.060</momentum_storage>
+				<nom_mag_moment>0.2</nom_mag_moment>
+				<axis>4</axis>
+				<accuracy>1</accuracy>
+				<max_slew>1.5</max_slew>
+				<mass>0.6</mass>
+				<source>https://space-inventor.com/wordpress/wp-content/uploads/2020/01/ADCS-R3_facts-sheet_p1.pdf</source>
+			</integrated>
+			<integrated>
+				<type>ACS</type>
+				<name>KU Leuven ADCS</name>
+				<aggregate>Reaction Wheel</aggregate>
+				<aggregate>Magnetorquer</aggregate>
+				<aggregate>Magnetometer</aggregate>
+				<aggregate>IMU</aggregate>
+				<torque_max>0.0005</torque_max>
+				<momentum_storage>0.004</momentum_storage>
+				<nom_mag_moment>0.13</nom_mag_moment>
+				<axis>3</axis>
+				<accuracy>0.11</accuracy>
+				<max_slew>1.5</max_slew>
+				<max_slew>1.5</max_slew>
+				<power>1.4</power>
+				<mass>0.715</mass>
+				<source>https://www.cubesatshop.com/wp-content/uploads/2018/10/KULADCS-Datasheet_v2.pdf</source>
+			</integrated>
+		</Integrated>
+	</attitude_control>
+	<communication>
+		<Laser>
+			<laser>
+				<type>Laser</type>
+				<name>CUBECAT</name> 
+				<downlink>1000000000</downlink> 
+				<uplink>200000</uplink> 
+				<storage>64000000000</storage> 
+				<pointing_deg>0.5</pointing_deg> 
+				<pointing_knowledge_error>0.0172</pointing_knowledge_error> 
+				<power>15</power> 
+				<mass>1.33</mass> 
+				<source>https://hyperiontechnologies.nl/wp-content/uploads/2019/11/HT_CubeCat.pdf</source>
+			</laser>
+		</Laser>
+	</communication>
+</reference_data>
+

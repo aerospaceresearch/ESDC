@@ -352,8 +352,15 @@ function [known unknown]        = system_with_known_totalmass(known, unknown, ma
       endfor
 
       %restablish sum of total power
-      new_power_tot = sum_powers(known.power, unknown.power);
-      
+      if isfield(known,'power')
+        new_power_tot = sum_powers(known.power, unknown.power);
+      else
+        standin.variable.name = 0
+        new_power_tot = sum_powers(standin.variable, unknown.power);
+      endif
+
+    
+    
        %update total power
       if isfield(unknown.power, 'p_total')
         unknown.power.p_total = new_power_tot;
@@ -381,7 +388,8 @@ endfunction
 function [p_new]                = sum_powers(p_known, p_unknown)                                              % updates: the total system power input fields of known and unknown.power
   
   % case handling if known or unknown power total
-  
+    disp(p_known)
+    disp(p_unknown)
   p_new = 0;
     %add derived system powers
     parameters= fieldnames(p_known);
@@ -481,35 +489,3 @@ function [mission_parameters] = orbit_initialize(mission_inputs, sim)
   % if not, do estimate by orbit type bla 
   
 endfunction
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
