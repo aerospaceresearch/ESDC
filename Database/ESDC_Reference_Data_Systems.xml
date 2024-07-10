@@ -13,7 +13,7 @@
 					<efficiency> 0.3178</efficiency>
 					<propellant>NH3</propellant>
 					<structure_mass> 0.94815</structure_mass>
-					<source>IRS arcjet database</source>
+					<source>IRS arcjet database</source> 
 					<TRL>6</TRL>
 			</thruster>
 			<thruster>

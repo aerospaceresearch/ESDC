@@ -12,7 +12,7 @@
 		<fraction_m_payload>.32</fraction_m_payload>
 		<fraction_m_structmech>.27</fraction_m_structmech>  
 		<fraction_m_thermal>.02</fraction_m_thermal>
-		<fraction_m_power>.22</fraction_m_power> 
+		<fraction_m_power>.22</fraction_m_power>   
 		<fraction_m_TTC>.02</fraction_m_TTC> 
 		<fraction_m_OBC>.05</fraction_m_OBC>
 		<fraction_m_ADC>.1</fraction_m_ADC>
@@ -930,7 +930,7 @@
 		<fraction_m_ADC>.01</fraction_m_ADC>
 		<fraction_m_propulsion>.07</fraction_m_propulsion>
 		<fraction_m_other>.03</fraction_m_other>
-		<fraction_p_payload>.35</fraction_p_payload>
+		<fraction_p_payload>.35</fraction_p_payload>  
 		<fraction_p_structmech>0</fraction_p_structmech>  
 		<fraction_p_thermal>.29</fraction_p_thermal>
 		<fraction_p_power>.04</fraction_p_power>
