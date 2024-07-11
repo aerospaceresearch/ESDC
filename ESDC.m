@@ -7,16 +7,19 @@ end
 
 clc
 
-t_0= now;                               % Reference timer for performance evaluation: Start
+startTime = now;                               % Reference timer for performance evaluation: Start
 
 try
+
 % Path adding for relevant folders containing code
-addpath('Code/Analysis');               % Code concerning system analaysis
-addpath('Code/Evolver');                % Code concerning Evolution algorithm definitions
-addpath('Code/Input');                  % Code dealing with input handling
-addpath('Code/Output');                 % Code deadlng with output handling
-addpath('Code/Scaling');                % Code dealing with scaling laws
-addpath('Code/Support');                % Code serving various support functions
+    folders = {'Code/Analysis', 'Code/Evolver', 'Code/Input', 'Code/Output', 'Code/Scaling', 'Code/Support'};
+    for i = 1:length(folders)
+        if exist(folders{i}, 'dir')
+            addpath(folders{i});
+        else
+            warning(['Folder not found: ', folders{i}]);
+        end
+    end
 add_paths_for_visualization();          % additional paths for the visulisation codes like video and animation creation
 % Start
 startup();                              % Display startup messages, licenses etc.
@@ -30,11 +33,11 @@ update_scaling_model(force_db_update);                 % Checks for changes in t
 [input db_data config] = input_processing();   %Reads input files for the specific simulaton at hand
 
 %Evolve
-t_1=now;                              % Reference timer for performance evaluation: After evoluation completion
+evolutionStartTime=now;                              % Reference timer for performance evaluation: After evoluation completion
 
 evolution_data = evolver(input, db_data, config,runID); % Main solver performance here
 
-evolution_time(t_1);                % Calculate the time for the evolution process
+evolution_time(evolutionStartTime);                % Calculate the time for the evolution process
 
 %Output
 output_XML_generation(input, db_data, config, evolution_data,runID);
@@ -47,7 +50,7 @@ output_XML_generation(input, db_data, config, evolution_data,runID);
 
 %End
 disp('ESDC complete')
-eval_total_time(t_0, t_end=now)
+eval_total_time(startTime, t_end=now)
 
 appendToLogFileDCEP('DCEP_STATUS: FINISHED',0,runID)
 
