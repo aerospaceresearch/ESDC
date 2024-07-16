@@ -1,4 +1,4 @@
-function DOF_return = get_random_propulsion_DOF_float(data, propulsion, propellant, DOF)
+function DOF_return = get_randomass_propulsion_DOF_float(data, propulsion, propellant, DOF)
     % get a randomized number of a float degree of freedom from the propulsion system , applicable for c_e and F floats currently
     DOF_list=[];
     n_thruster_entries = size(data.(propulsion).thruster,2);

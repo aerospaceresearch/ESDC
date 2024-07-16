@@ -78,7 +78,7 @@ function [] =  update_generic_spacecraft_scaling_model(data)
           n=numel(all_fields);
     end
     
-    to_correlate = {'m_total','m_payload','p_total','p_payload'}; 
+    to_correlate = {'m_total','mass_payload','power_total','power_payload'}; 
     for i=1: numel(distinct_orbit_cases);
       for j=1:numel(to_correlate)                                                                               
        for k=1:numel(all_fields)

@@ -7,18 +7,18 @@
 		<source>Space Mission Engineering - Authors: The New SMAD, James Wertz, David Everett, Jeffery Puschell; Series: Space Technology Library, Vol. 28; Publisher: Microcosm Press, Year: 2011,  ISBN: 978-1881883159, p950ff </source>
 		<orbit_type>No Propulsion</orbit_type>
 		<m_total>200</m_total>
-		<p_total>216</p_total>
-		<m_payload>64</m_payload>
-		<fraction_m_payload>.32</fraction_m_payload>
-		<fraction_m_structmech>.27</fraction_m_structmech>  
-		<fraction_m_thermal>.02</fraction_m_thermal>
-		<fraction_m_power>.22</fraction_m_power>   
-		<fraction_m_TTC>.02</fraction_m_TTC> 
+		<power_total>216</power_total>
+		<mass_payload>64</mass_payload>
+		<fraction_mass_payload>.32</fraction_mass_payload>
+		<fraction_mass_structmech>.27</fraction_mass_structmech>  
+		<fraction_mass_thermal>.02</fraction_mass_thermal>
+		<fraction_mass_power>.22</fraction_mass_power>   
+		<fraction_mass_TTC>.02</fraction_mass_TTC> 
 		<fraction_m_OBC>.05</fraction_m_OBC>
-		<fraction_m_ADC>.1</fraction_m_ADC>
-		<fraction_m_propulsion>0</fraction_m_propulsion>
-		<fraction_m_other>0</fraction_m_other>
-		<fraction_p_payload>.38</fraction_p_payload>
+		<fraction_mass_ADC>.1</fraction_mass_ADC>
+		<fraction_mass_propulsion>0</fraction_mass_propulsion>
+		<fraction_mass_other>0</fraction_mass_other>
+		<fraction_power_payload>.38</fraction_power_payload>
 		<size_x>1.4</size_x>
 		<size_y>1.4</size_y>
 		<size_h>1.1</size_h>
@@ -31,16 +31,16 @@
 		<source>Space Mission Engineering - Authors: The New SMAD, James Wertz, David Everett, Jeffery Puschell; Series: Space Technology Library, Vol. 28; Publisher: Microcosm Press, Year: 2011,  ISBN: 978-1881883159, p950ff </source>
 		<orbit_type>No Propulsion</orbit_type>
 		<m_total>2245</m_total>
-		<m_payload>1147</m_payload>
-		<fraction_m_payload>.51</fraction_m_payload>
-		<fraction_m_structmech>.15</fraction_m_structmech> 
-		<fraction_m_thermal>.02</fraction_m_thermal>
-		<fraction_m_power>.2</fraction_m_power> 
-		<fraction_m_TTC>.02</fraction_m_TTC> 
+		<mass_payload>1147</mass_payload>
+		<fraction_mass_payload>.51</fraction_mass_payload>
+		<fraction_mass_structmech>.15</fraction_mass_structmech> 
+		<fraction_mass_thermal>.02</fraction_mass_thermal>
+		<fraction_mass_power>.2</fraction_mass_power> 
+		<fraction_mass_TTC>.02</fraction_mass_TTC> 
 		<fraction_m_OBC>.05 </fraction_m_OBC>
-		<fraction_m_ADC>.1 </fraction_m_ADC>
-		<fraction_m_propulsion>0</fraction_m_propulsion>
-		<fraction_m_other>0</fraction_m_other>
+		<fraction_mass_ADC>.1 </fraction_mass_ADC>
+		<fraction_mass_propulsion>0</fraction_mass_propulsion>
+		<fraction_mass_other>0</fraction_mass_other>
 		<size_x>5.49</size_x>
 		<size_y>5.49</size_y>
 		<size_h>2.44</size_h>
@@ -53,25 +53,25 @@
 		<source>Space Mission Engineering - Authors: The New SMAD, James Wertz, David Everett, Jeffery Puschell; Series: Space Technology Library, Vol. 28; Publisher: Microcosm Press, Year: 2011,  ISBN: 978-1881883159, p950ff </source>
 		<orbit_type>No Propulsion</orbit_type>
 		<m_total>191</m_total>
-		<p_total>52</p_total>
-		<m_payload>65</m_payload>
-		<fraction_m_payload>.34</fraction_m_payload>
-		<fraction_m_structmech>.14</fraction_m_structmech> 
-		<fraction_m_thermal>.02</fraction_m_thermal>
-		<fraction_m_power>.31</fraction_m_power> 
-		<fraction_m_TTC>.03</fraction_m_TTC> 
+		<power_total>52</power_total>
+		<mass_payload>65</mass_payload>
+		<fraction_mass_payload>.34</fraction_mass_payload>
+		<fraction_mass_structmech>.14</fraction_mass_structmech> 
+		<fraction_mass_thermal>.02</fraction_mass_thermal>
+		<fraction_mass_power>.31</fraction_mass_power> 
+		<fraction_mass_TTC>.03</fraction_mass_TTC> 
 		<fraction_m_OBC>.08</fraction_m_OBC>
-		<fraction_m_ADC>.05</fraction_m_ADC>
-		<fraction_m_propulsion>0</fraction_m_propulsion>
-		<fraction_m_other>.04</fraction_m_other>
-		<fraction_p_payload>.37</fraction_p_payload>
-		<fraction_p_structmech>.0</fraction_p_structmech>  
-		<fraction_p_thermal>.12</fraction_p_thermal>
-		<fraction_p_power>.11</fraction_p_power>
-		<fraction_p_TTC>.22</fraction_p_TTC>
+		<fraction_mass_ADC>.05</fraction_mass_ADC>
+		<fraction_mass_propulsion>0</fraction_mass_propulsion>
+		<fraction_mass_other>.04</fraction_mass_other>
+		<fraction_power_payload>.37</fraction_power_payload>
+		<fraction_power_structmech>.0</fraction_power_structmech>  
+		<fraction_power_thermal>.12</fraction_power_thermal>
+		<fraction_power_power>.11</fraction_power_power>
+		<fraction_power_TTC>.22</fraction_power_TTC>
 		<fraction_p_OBC>.11</fraction_p_OBC>
-		<fraction_p_ADC>.8</fraction_p_ADC>
-		<fraction_p_propulsion>0</fraction_p_propulsion>
+		<fraction_power_ADC>.8</fraction_power_ADC>
+		<fraction_propulsion_power>0</fraction_propulsion_power>
 		<size_x>0.93</size_x>
 		<size_y>0.93</size_y>
 		<size_h>1.02</size_h>
@@ -84,18 +84,18 @@
 		<source>Space Mission Engineering - Authors: The New SMAD, James Wertz, David Everett, Jeffery Puschell; Series: Space Technology Library, Vol. 28; Publisher: Microcosm Press, Year: 2011,  ISBN: 978-1881883159, p950ff </source>
 		<orbit_type>No Propulsion</orbit_type>
 		<m_total>1332</m_total>
-		<p_total>520</p_total>
-		<m_payload>782</m_payload>
-		<fraction_m_payload>.59</fraction_m_payload>
-		<fraction_m_structmech>.19</fraction_m_structmech> 
-		<fraction_m_thermal>.01</fraction_m_thermal>
-		<fraction_m_power>.13</fraction_m_power> 
-		<fraction_m_TTC>.01</fraction_m_TTC> 
+		<power_total>520</power_total>
+		<mass_payload>782</mass_payload>
+		<fraction_mass_payload>.59</fraction_mass_payload>
+		<fraction_mass_structmech>.19</fraction_mass_structmech> 
+		<fraction_mass_thermal>.01</fraction_mass_thermal>
+		<fraction_mass_power>.13</fraction_mass_power> 
+		<fraction_mass_TTC>.01</fraction_mass_TTC> 
 		<fraction_m_OBC>.04</fraction_m_OBC>
-		<fraction_m_ADC>.04</fraction_m_ADC>
-		<fraction_m_propulsion>0</fraction_m_propulsion>
-		<fraction_m_other>0</fraction_m_other>
-		<fraction_p_payload>.58</fraction_p_payload>
+		<fraction_mass_ADC>.04</fraction_mass_ADC>
+		<fraction_mass_propulsion>0</fraction_mass_propulsion>
+		<fraction_mass_other>0</fraction_mass_other>
+		<fraction_power_payload>.58</fraction_power_payload>
 		<size_x>1.9</size_x>
 		<size_y>1.9</size_y>
 		<size_h>5.3</size_h>
@@ -108,25 +108,25 @@
 		<source>Space Mission Engineering - Authors: The New SMAD, James Wertz, David Everett, Jeffery Puschell; Series: Space Technology Library, Vol. 28; Publisher: Microcosm Press, Year: 2011,  ISBN: 978-1881883159, p950ff </source>
 		<orbit_type>No Propulsion</orbit_type>
 		<m_total>287</m_total>
-		<p_total>362</p_total>
-		<m_payload>133</m_payload>
-		<fraction_m_payload>.46</fraction_m_payload>
-		<fraction_m_structmech>.14</fraction_m_structmech> 
-		<fraction_m_thermal>.01</fraction_m_thermal>
-		<fraction_m_power>.17</fraction_m_power> 
-		<fraction_m_TTC>.02</fraction_m_TTC> 
+		<power_total>362</power_total>
+		<mass_payload>133</mass_payload>
+		<fraction_mass_payload>.46</fraction_mass_payload>
+		<fraction_mass_structmech>.14</fraction_mass_structmech> 
+		<fraction_mass_thermal>.01</fraction_mass_thermal>
+		<fraction_mass_power>.17</fraction_mass_power> 
+		<fraction_mass_TTC>.02</fraction_mass_TTC> 
 		<fraction_m_OBC>.07</fraction_m_OBC>
-		<fraction_m_ADC>.04</fraction_m_ADC>
-		<fraction_m_propulsion>0</fraction_m_propulsion>
-		<fraction_m_other>0</fraction_m_other>
-		<fraction_p_payload>.36</fraction_p_payload>
-		<fraction_p_structmech>0</fraction_p_structmech>  
-		<fraction_p_thermal>.04</fraction_p_thermal>
-		<fraction_p_power>.07</fraction_p_power>
-		<fraction_p_TTC>.21</fraction_p_TTC>
+		<fraction_mass_ADC>.04</fraction_mass_ADC>
+		<fraction_mass_propulsion>0</fraction_mass_propulsion>
+		<fraction_mass_other>0</fraction_mass_other>
+		<fraction_power_payload>.36</fraction_power_payload>
+		<fraction_power_structmech>0</fraction_power_structmech>  
+		<fraction_power_thermal>.04</fraction_power_thermal>
+		<fraction_power_power>.07</fraction_power_power>
+		<fraction_power_TTC>.21</fraction_power_TTC>
 		<fraction_p_OBC>.16</fraction_p_OBC>
-		<fraction_p_ADC>.16</fraction_p_ADC>
-		<fraction_p_propulsion>.0</fraction_p_propulsion>
+		<fraction_power_ADC>.16</fraction_power_ADC>
+		<fraction_propulsion_power>.0</fraction_propulsion_power>
 		<size_x>1.</size_x>
 		<size_y>1.</size_y>
 		<size_h>2.5</size_h>
@@ -139,25 +139,25 @@
 		<source>Space Mission Engineering - Authors: The New SMAD, James Wertz, David Everett, Jeffery Puschell; Series: Space Technology Library, Vol. 28; Publisher: Microcosm Press, Year: 2011,  ISBN: 978-1881883159, p950ff </source>
 		<orbit_type>No Propulsion</orbit_type>
 		<m_total>284</m_total>
-		<p_total>252</p_total>
-		<m_payload>131</m_payload>
-		<fraction_m_payload>.46</fraction_m_payload>
-		<fraction_m_structmech>.24</fraction_m_structmech> 
-		<fraction_m_thermal>.01</fraction_m_thermal>
-		<fraction_m_power>.17</fraction_m_power> 
-		<fraction_m_TTC>.01</fraction_m_TTC> 
+		<power_total>252</power_total>
+		<mass_payload>131</mass_payload>
+		<fraction_mass_payload>.46</fraction_mass_payload>
+		<fraction_mass_structmech>.24</fraction_mass_structmech> 
+		<fraction_mass_thermal>.01</fraction_mass_thermal>
+		<fraction_mass_power>.17</fraction_mass_power> 
+		<fraction_mass_TTC>.01</fraction_mass_TTC> 
 		<fraction_m_OBC>.05</fraction_m_OBC>
-		<fraction_m_ADC>.02</fraction_m_ADC>
-		<fraction_m_propulsion>0</fraction_m_propulsion>
-		<fraction_m_other>0</fraction_m_other>
-		<fraction_p_payload>.69</fraction_p_payload>
-		<fraction_p_structmech>0</fraction_p_structmech>  
-		<fraction_p_thermal>.06</fraction_p_thermal>
-		<fraction_p_power>.1</fraction_p_power>
-		<fraction_p_TTC>.04</fraction_p_TTC>
+		<fraction_mass_ADC>.02</fraction_mass_ADC>
+		<fraction_mass_propulsion>0</fraction_mass_propulsion>
+		<fraction_mass_other>0</fraction_mass_other>
+		<fraction_power_payload>.69</fraction_power_payload>
+		<fraction_power_structmech>0</fraction_power_structmech>  
+		<fraction_power_thermal>.06</fraction_power_thermal>
+		<fraction_power_power>.1</fraction_power_power>
+		<fraction_power_TTC>.04</fraction_power_TTC>
 		<fraction_p_OBC>.1</fraction_p_OBC>
-		<fraction_p_ADC>.02</fraction_p_ADC>
-		<fraction_p_propulsion>0</fraction_p_propulsion>
+		<fraction_power_ADC>.02</fraction_power_ADC>
+		<fraction_propulsion_power>0</fraction_propulsion_power>
 		<size_x>2.16</size_x>
 		<size_y>2.16</size_y>
 		<size_h>5.76</size_h>
@@ -170,16 +170,16 @@
 		<source>Space Mission Engineering - Authors: The New SMAD, James Wertz, David Everett, Jeffery Puschell; Series: Space Technology Library, Vol. 28; Publisher: Microcosm Press, Year: 2011,  ISBN: 978-1881883159, p950ff </source>
 		<orbit_type>No Propulsion</orbit_type>
 		<m_total>11866</m_total>
-		<m_payload>5610</m_payload>
-		<fraction_m_payload>.47</fraction_m_payload>
-		<fraction_m_structmech>.25</fraction_m_structmech> 
-		<fraction_m_thermal>.02</fraction_m_thermal>
-		<fraction_m_power>.09</fraction_m_power> 
-		<fraction_m_TTC>.01</fraction_m_TTC> 
+		<mass_payload>5610</mass_payload>
+		<fraction_mass_payload>.47</fraction_mass_payload>
+		<fraction_mass_structmech>.25</fraction_mass_structmech> 
+		<fraction_mass_thermal>.02</fraction_mass_thermal>
+		<fraction_mass_power>.09</fraction_mass_power> 
+		<fraction_mass_TTC>.01</fraction_mass_TTC> 
 		<fraction_m_OBC>.01</fraction_m_OBC>
-		<fraction_m_ADC>.04</fraction_m_ADC>
-		<fraction_m_propulsion>0</fraction_m_propulsion>
-		<fraction_m_other>.1</fraction_m_other>
+		<fraction_mass_ADC>.04</fraction_mass_ADC>
+		<fraction_mass_propulsion>0</fraction_mass_propulsion>
+		<fraction_mass_other>.1</fraction_mass_other>
 		<size_x>4.2</size_x>
 		<size_y>4.2</size_y>
 		<size_h>13.2</size_h>
@@ -192,25 +192,25 @@
 		<source>Space Mission Engineering - Authors: The New SMAD, James Wertz, David Everett, Jeffery Puschell; Series: Space Technology Library, Vol. 28; Publisher: Microcosm Press, Year: 2011,  ISBN: 978-1881883159, p950ff </source>
 		<orbit_type>No Propulsion</orbit_type>
 		<m_total>492</m_total>
-		<p_total>238</p_total>
-		<m_payload>178</m_payload>
-		<fraction_m_payload>.36</fraction_m_payload>
-		<fraction_m_structmech>.28</fraction_m_structmech> 
-		<fraction_m_thermal>.05</fraction_m_thermal>
-		<fraction_m_power>.17</fraction_m_power> 
-		<fraction_m_TTC>.02</fraction_m_TTC> 
+		<power_total>238</power_total>
+		<mass_payload>178</mass_payload>
+		<fraction_mass_payload>.36</fraction_mass_payload>
+		<fraction_mass_structmech>.28</fraction_mass_structmech> 
+		<fraction_mass_thermal>.05</fraction_mass_thermal>
+		<fraction_mass_power>.17</fraction_mass_power> 
+		<fraction_mass_TTC>.02</fraction_mass_TTC> 
 		<fraction_m_OBC>.02</fraction_m_OBC>
-		<fraction_m_ADC>.05</fraction_m_ADC>
-		<fraction_m_propulsion>0</fraction_m_propulsion>
-		<fraction_m_other>.04</fraction_m_other>
-		<fraction_p_payload>.6</fraction_p_payload>
-		<fraction_p_structmech>0</fraction_p_structmech>  
-		<fraction_p_thermal>.04</fraction_p_thermal>
-		<fraction_p_power>.08</fraction_p_power>
-		<fraction_p_TTC>.16</fraction_p_TTC>
+		<fraction_mass_ADC>.05</fraction_mass_ADC>
+		<fraction_mass_propulsion>0</fraction_mass_propulsion>
+		<fraction_mass_other>.04</fraction_mass_other>
+		<fraction_power_payload>.6</fraction_power_payload>
+		<fraction_power_structmech>0</fraction_power_structmech>  
+		<fraction_power_thermal>.04</fraction_power_thermal>
+		<fraction_power_power>.08</fraction_power_power>
+		<fraction_power_TTC>.16</fraction_power_TTC>
 		<fraction_p_OBC>.05</fraction_p_OBC>
-		<fraction_p_ADC>.06</fraction_p_ADC>
-		<fraction_p_propulsion>0</fraction_p_propulsion>
+		<fraction_power_ADC>.06</fraction_power_ADC>
+		<fraction_propulsion_power>0</fraction_propulsion_power>
 		<size_x>2.25</size_x>
 		<size_y>2.25</size_y>
 		<size_h>1.52</size_h>
@@ -223,16 +223,16 @@
 		<source>Space Mission Engineering - Authors: The New SMAD, James Wertz, David Everett, Jeffery Puschell; Series: Space Technology Library, Vol. 28; Publisher: Microcosm Press, Year: 2011,  ISBN: 978-1881883159, p950ff </source>
 		<orbit_type>No Propulsion</orbit_type>
 		<m_total>3040</m_total>
-		<p_total> </p_total>
-		<m_payload>995</m_payload>
-		<fraction_m_payload>.33</fraction_m_payload>
-		<fraction_m_structmech>.38</fraction_m_structmech> 
-		<fraction_m_thermal>.02</fraction_m_thermal>
-		<fraction_m_power>.2</fraction_m_power> 
-		<fraction_m_TTC>.01</fraction_m_TTC> 
+		<power_total> </power_total>
+		<mass_payload>995</mass_payload>
+		<fraction_mass_payload>.33</fraction_mass_payload>
+		<fraction_mass_structmech>.38</fraction_mass_structmech> 
+		<fraction_mass_thermal>.02</fraction_mass_thermal>
+		<fraction_mass_power>.2</fraction_mass_power> 
+		<fraction_mass_TTC>.01</fraction_mass_TTC> 
 		<fraction_m_OBC>.02</fraction_m_OBC>
-		<fraction_m_ADC>.05</fraction_m_ADC>
-		<fraction_m_propulsion>0</fraction_m_propulsion>
+		<fraction_mass_ADC>.05</fraction_mass_ADC>
+		<fraction_mass_propulsion>0</fraction_mass_propulsion>
 		<size_x>1.8</size_x>
 		<size_y>1.8</size_y>
 		<size_h>5.4</size_h>
@@ -245,25 +245,25 @@
 		<source>Space Mission Engineering - Authors: The New SMAD, James Wertz, David Everett, Jeffery Puschell; Series: Space Technology Library, Vol. 28; Publisher: Microcosm Press, Year: 2011,  ISBN: 978-1881883159, p950ff </source>
 		<orbit_type>No Propulsion</orbit_type>
 		<m_total>162</m_total>
-		<p_total>73</p_total>
-		<m_payload>53</m_payload>
-		<fraction_m_payload>.32</fraction_m_payload>
-		<fraction_m_structmech>.16</fraction_m_structmech> 
-		<fraction_m_thermal>.03</fraction_m_thermal>
-		<fraction_m_power>.25</fraction_m_power> 
-		<fraction_m_TTC>.03</fraction_m_TTC> 
+		<power_total>73</power_total>
+		<mass_payload>53</mass_payload>
+		<fraction_mass_payload>.32</fraction_mass_payload>
+		<fraction_mass_structmech>.16</fraction_mass_structmech> 
+		<fraction_mass_thermal>.03</fraction_mass_thermal>
+		<fraction_mass_power>.25</fraction_mass_power> 
+		<fraction_mass_TTC>.03</fraction_mass_TTC> 
 		<fraction_m_OBC>.08</fraction_m_OBC>
-		<fraction_m_ADC>.06</fraction_m_ADC>
-		<fraction_m_propulsion>0</fraction_m_propulsion>
-		<fraction_m_other>.07</fraction_m_other>
-		<fraction_p_payload>.29</fraction_p_payload>
-		<fraction_p_structmech>0</fraction_p_structmech>  
-		<fraction_p_thermal>.04</fraction_p_thermal>
-		<fraction_p_power>.13</fraction_p_power>
-		<fraction_p_TTC>.1</fraction_p_TTC>
+		<fraction_mass_ADC>.06</fraction_mass_ADC>
+		<fraction_mass_propulsion>0</fraction_mass_propulsion>
+		<fraction_mass_other>.07</fraction_mass_other>
+		<fraction_power_payload>.29</fraction_power_payload>
+		<fraction_power_structmech>0</fraction_power_structmech>  
+		<fraction_power_thermal>.04</fraction_power_thermal>
+		<fraction_power_power>.13</fraction_power_power>
+		<fraction_power_TTC>.1</fraction_power_TTC>
 		<fraction_p_OBC>.28</fraction_p_OBC>
-		<fraction_p_ADC>.15</fraction_p_ADC>
-		<fraction_p_propulsion>0</fraction_p_propulsion>
+		<fraction_power_ADC>.15</fraction_power_ADC>
+		<fraction_propulsion_power>0</fraction_propulsion_power>
 		<size_x>0.9</size_x>
 		<size_y>0.9</size_y>
 		<size_h>1.5</size_h>
@@ -276,25 +276,25 @@
 		<source>Space Mission Engineering - Authors: The New SMAD, James Wertz, David Everett, Jeffery Puschell; Series: Space Technology Library, Vol. 28; Publisher: Microcosm Press, Year: 2011,  ISBN: 978-1881883159, p950ff </source>
 		<orbit_type>No Propulsion</orbit_type>
 		<m_total>293</m_total>
-		<p_total>182</p_total>
-		<m_payload>95</m_payload>
-		<fraction_m_payload>.33</fraction_m_payload>
-		<fraction_m_structmech>.18</fraction_m_structmech> 
-		<fraction_m_thermal>.01</fraction_m_thermal>
-		<fraction_m_power>.25</fraction_m_power> 
-		<fraction_m_TTC>.02</fraction_m_TTC> 
+		<power_total>182</power_total>
+		<mass_payload>95</mass_payload>
+		<fraction_mass_payload>.33</fraction_mass_payload>
+		<fraction_mass_structmech>.18</fraction_mass_structmech> 
+		<fraction_mass_thermal>.01</fraction_mass_thermal>
+		<fraction_mass_power>.25</fraction_mass_power> 
+		<fraction_mass_TTC>.02</fraction_mass_TTC> 
 		<fraction_m_OBC>.06</fraction_m_OBC>
-		<fraction_m_ADC>.12</fraction_m_ADC>
-		<fraction_m_propulsion>0</fraction_m_propulsion>
-		<fraction_m_other>.04</fraction_m_other>
-		<fraction_p_payload>.33</fraction_p_payload>
-		<fraction_p_structmech>0</fraction_p_structmech>  
-		<fraction_p_thermal>.05</fraction_p_thermal>
-		<fraction_p_power>.08</fraction_p_power>
-		<fraction_p_TTC>.06</fraction_p_TTC>
+		<fraction_mass_ADC>.12</fraction_mass_ADC>
+		<fraction_mass_propulsion>0</fraction_mass_propulsion>
+		<fraction_mass_other>.04</fraction_mass_other>
+		<fraction_power_payload>.33</fraction_power_payload>
+		<fraction_power_structmech>0</fraction_power_structmech>  
+		<fraction_power_thermal>.05</fraction_power_thermal>
+		<fraction_power_power>.08</fraction_power_power>
+		<fraction_power_TTC>.06</fraction_power_TTC>
 		<fraction_p_OBC>.14</fraction_p_OBC>
-		<fraction_p_ADC>.34</fraction_p_ADC>
-		<fraction_p_propulsion>0</fraction_p_propulsion>
+		<fraction_power_ADC>.34</fraction_power_ADC>
+		<fraction_propulsion_power>0</fraction_propulsion_power>
 		<size_x>1.02</size_x>
 		<size_y>1.02</size_y>
 		<size_h>1.63</size_h>
@@ -307,25 +307,25 @@
 		<source>Space Mission Engineering - Authors: The New SMAD, James Wertz, David Everett, Jeffery Puschell; Series: Space Technology Library, Vol. 28; Publisher: Microcosm Press, Year: 2011,  ISBN: 978-1881883159, p950ff </source>
 		<orbit_type>No Propulsion</orbit_type>
 		<m_total>1465</m_total>
-		<p_total>966</p_total>
-		<m_payload>854</m_payload>
-		<fraction_m_payload>.58</fraction_m_payload>
-		<fraction_m_structmech>.16</fraction_m_structmech> 
-		<fraction_m_thermal>.01</fraction_m_thermal>
-		<fraction_m_power>.15</fraction_m_power> 
-		<fraction_m_TTC>.01</fraction_m_TTC> 
+		<power_total>966</power_total>
+		<mass_payload>854</mass_payload>
+		<fraction_mass_payload>.58</fraction_mass_payload>
+		<fraction_mass_structmech>.16</fraction_mass_structmech> 
+		<fraction_mass_thermal>.01</fraction_mass_thermal>
+		<fraction_mass_power>.15</fraction_mass_power> 
+		<fraction_mass_TTC>.01</fraction_mass_TTC> 
 		<fraction_m_OBC>.02</fraction_m_OBC>
-		<fraction_m_ADC>.07</fraction_m_ADC>
-		<fraction_m_propulsion>0</fraction_m_propulsion>
-		<fraction_m_other>0</fraction_m_other>
-		<fraction_p_payload>.16</fraction_p_payload>
-		<fraction_p_structmech>0</fraction_p_structmech>  
-		<fraction_p_thermal>.03</fraction_p_thermal>
-		<fraction_p_power>.13</fraction_p_power>
-		<fraction_p_TTC>.02</fraction_p_TTC>
+		<fraction_mass_ADC>.07</fraction_mass_ADC>
+		<fraction_mass_propulsion>0</fraction_mass_propulsion>
+		<fraction_mass_other>0</fraction_mass_other>
+		<fraction_power_payload>.16</fraction_power_payload>
+		<fraction_power_structmech>0</fraction_power_structmech>  
+		<fraction_power_thermal>.03</fraction_power_thermal>
+		<fraction_power_power>.13</fraction_power_power>
+		<fraction_power_TTC>.02</fraction_power_TTC>
 		<fraction_p_OBC>.06</fraction_p_OBC>
-		<fraction_p_ADC>.14</fraction_p_ADC>
-		<fraction_p_propulsion>0</fraction_p_propulsion>
+		<fraction_power_ADC>.14</fraction_power_ADC>
+		<fraction_propulsion_power>0</fraction_propulsion_power>
 		<size_x>5.4</size_x>
 		<size_y>5.4</size_y>
 		<size_h>5.6</size_h>
@@ -338,16 +338,16 @@
 		<source>Space Mission Engineering - Authors: The New SMAD, James Wertz, David Everett, Jeffery Puschell; Series: Space Technology Library, Vol. 28; Publisher: Microcosm Press, Year: 2011,  ISBN: 978-1881883159, p950ff </source>
 		<orbit_type>No Propulsion</orbit_type>
 		<m_total>125</m_total>
-		<m_payload>50</m_payload>
-		<fraction_m_payload>.4</fraction_m_payload>
-		<fraction_m_structmech>.06</fraction_m_structmech> 
-		<fraction_m_thermal>.0</fraction_m_thermal>
-		<fraction_m_power>.12</fraction_m_power> 
-		<fraction_m_TTC>.07</fraction_m_TTC> 
+		<mass_payload>50</mass_payload>
+		<fraction_mass_payload>.4</fraction_mass_payload>
+		<fraction_mass_structmech>.06</fraction_mass_structmech> 
+		<fraction_mass_thermal>.0</fraction_mass_thermal>
+		<fraction_mass_power>.12</fraction_mass_power> 
+		<fraction_mass_TTC>.07</fraction_mass_TTC> 
 		<fraction_m_OBC>.09</fraction_m_OBC>
-		<fraction_m_ADC>.07</fraction_m_ADC>
-		<fraction_m_propulsion>0</fraction_m_propulsion>
-		<fraction_m_other>.2</fraction_m_other>
+		<fraction_mass_ADC>.07</fraction_mass_ADC>
+		<fraction_mass_propulsion>0</fraction_mass_propulsion>
+		<fraction_mass_other>.2</fraction_mass_other>
 		<size_x>.5</size_x>
 		<size_y>.5</size_y>
 		<size_h>1.</size_h>
@@ -361,16 +361,16 @@
 		<source>Space Mission Engineering - Authors: The New SMAD, James Wertz, David Everett, Jeffery Puschell; Series: Space Technology Library, Vol. 28; Publisher: Microcosm Press, Year: 2011,  ISBN: 978-1881883159, p950ff </source>
 		<orbit_type>No Propulsion</orbit_type>
 		<m_total>211</m_total>
-		<m_payload>60</m_payload>
-		<fraction_m_payload>.28</fraction_m_payload>
-		<fraction_m_structmech>.23</fraction_m_structmech> 
-		<fraction_m_thermal>.02</fraction_m_thermal>
-		<fraction_m_power>.22</fraction_m_power> 
-		<fraction_m_TTC>.02</fraction_m_TTC> 
+		<mass_payload>60</mass_payload>
+		<fraction_mass_payload>.28</fraction_mass_payload>
+		<fraction_mass_structmech>.23</fraction_mass_structmech> 
+		<fraction_mass_thermal>.02</fraction_mass_thermal>
+		<fraction_mass_power>.22</fraction_mass_power> 
+		<fraction_mass_TTC>.02</fraction_mass_TTC> 
 		<fraction_m_OBC>.04</fraction_m_OBC>
-		<fraction_m_ADC>.17</fraction_m_ADC>
-		<fraction_m_propulsion>0</fraction_m_propulsion>
-		<fraction_m_other>.02</fraction_m_other>
+		<fraction_mass_ADC>.17</fraction_mass_ADC>
+		<fraction_mass_propulsion>0</fraction_mass_propulsion>
+		<fraction_mass_other>.02</fraction_mass_other>
 		<size_x>1.1</size_x>
 		<size_y>1.1</size_y>
 		<size_h>1.9</size_h>
@@ -383,25 +383,25 @@
 		<source>Space Mission Engineering - Authors: The New SMAD, James Wertz, David Everett, Jeffery Puschell; Series: Space Technology Library, Vol. 28; Publisher: Microcosm Press, Year: 2011,  ISBN: 978-1881883159, p950ff </source>
 		<orbit_type>No Propulsion</orbit_type>
 		<m_total>260</m_total>
-		<p_total>132</p_total>
-		<m_payload>107</m_payload>
-		<fraction_m_payload>.41</fraction_m_payload>
-		<fraction_m_structmech>.12</fraction_m_structmech> 
-		<fraction_m_thermal>.04</fraction_m_thermal>
-		<fraction_m_power>.19</fraction_m_power> 
-		<fraction_m_TTC>.02</fraction_m_TTC> 
+		<power_total>132</power_total>
+		<mass_payload>107</mass_payload>
+		<fraction_mass_payload>.41</fraction_mass_payload>
+		<fraction_mass_structmech>.12</fraction_mass_structmech> 
+		<fraction_mass_thermal>.04</fraction_mass_thermal>
+		<fraction_mass_power>.19</fraction_mass_power> 
+		<fraction_mass_TTC>.02</fraction_mass_TTC> 
 		<fraction_m_OBC>.03</fraction_m_OBC>
-		<fraction_m_ADC>.17</fraction_m_ADC>
-		<fraction_m_propulsion>0</fraction_m_propulsion>
-		<fraction_m_other>.02</fraction_m_other>
-		<fraction_p_payload>.2</fraction_p_payload>
-		<fraction_p_structmech>0</fraction_p_structmech>  
-		<fraction_p_thermal>0</fraction_p_thermal>
-		<fraction_p_power>.11</fraction_p_power>
-		<fraction_p_TTC>.07</fraction_p_TTC>
+		<fraction_mass_ADC>.17</fraction_mass_ADC>
+		<fraction_mass_propulsion>0</fraction_mass_propulsion>
+		<fraction_mass_other>.02</fraction_mass_other>
+		<fraction_power_payload>.2</fraction_power_payload>
+		<fraction_power_structmech>0</fraction_power_structmech>  
+		<fraction_power_thermal>0</fraction_power_thermal>
+		<fraction_power_power>.11</fraction_power_power>
+		<fraction_power_TTC>.07</fraction_power_TTC>
 		<fraction_p_OBC>.15</fraction_p_OBC>
-		<fraction_p_ADC>.47</fraction_p_ADC>
-		<fraction_p_propulsion>0</fraction_p_propulsion>
+		<fraction_power_ADC>.47</fraction_power_ADC>
+		<fraction_propulsion_power>0</fraction_propulsion_power>
 		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
@@ -412,19 +412,19 @@
 		<orbit_type>Low Earth</orbit_type>
 		<m_total>1678</m_total>
 		<m_total_dry>1578</m_total_dry>
-		<p_total>858</p_total>
-		<m_payload>977</m_payload>
-		<fraction_m_payload>.62</fraction_m_payload>
-		<fraction_m_structmech>.11</fraction_m_structmech> 
-		<fraction_m_thermal>.04</fraction_m_thermal>
-		<fraction_m_power>.11</fraction_m_power> 
-		<fraction_m_TTC>.01</fraction_m_TTC> 
+		<power_total>858</power_total>
+		<mass_payload>977</mass_payload>
+		<fraction_mass_payload>.62</fraction_mass_payload>
+		<fraction_mass_structmech>.11</fraction_mass_structmech> 
+		<fraction_mass_thermal>.04</fraction_mass_thermal>
+		<fraction_mass_power>.11</fraction_mass_power> 
+		<fraction_mass_TTC>.01</fraction_mass_TTC> 
 		<fraction_m_OBC>.02</fraction_m_OBC>
-		<fraction_m_ADC>.06</fraction_m_ADC>
-		<fraction_m_propulsion>.03</fraction_m_propulsion>
-		<fraction_m_other>0</fraction_m_other>
-		<fraction_p_payload>.58</fraction_p_payload>
-		<fraction_p_thermal>.14</fraction_p_thermal>
+		<fraction_mass_ADC>.06</fraction_mass_ADC>
+		<fraction_mass_propulsion>.03</fraction_mass_propulsion>
+		<fraction_mass_other>0</fraction_mass_other>
+		<fraction_power_payload>.58</fraction_power_payload>
+		<fraction_power_thermal>.14</fraction_power_thermal>
 		<size_x>2.</size_x>
 		<size_y>2.</size_y>
 		<size_h>5.</size_h>
@@ -438,24 +438,24 @@
 		<orbit_type>Low Earth</orbit_type>
 		<m_total>2941</m_total>
 		<m_total_dry>2799</m_total_dry>
-		<p_total>1609</p_total>
-		<m_payload>1022</m_payload>
-		<fraction_m_payload>.37</fraction_m_payload>
-		<fraction_m_structmech>.26</fraction_m_structmech> 
-		<fraction_m_thermal>.02</fraction_m_thermal>
-		<fraction_m_power>-.27</fraction_m_power> 
-		<fraction_m_TTC>.01</fraction_m_TTC> 
+		<power_total>1609</power_total>
+		<mass_payload>1022</mass_payload>
+		<fraction_mass_payload>.37</fraction_mass_payload>
+		<fraction_mass_structmech>.26</fraction_mass_structmech> 
+		<fraction_mass_thermal>.02</fraction_mass_thermal>
+		<fraction_mass_power>-.27</fraction_mass_power> 
+		<fraction_mass_TTC>.01</fraction_mass_TTC> 
 		<fraction_m_OBC>.02</fraction_m_OBC>
-		<fraction_m_ADC>.04</fraction_m_ADC>
-		<fraction_m_propulsion>.02</fraction_m_propulsion>
-		<fraction_m_other>0</fraction_m_other>
-		<fraction_p_payload>.61</fraction_p_payload>
-		<fraction_p_structmech>0</fraction_p_structmech>  
-		<fraction_p_thermal>.03</fraction_p_thermal>
-		<fraction_p_power>.03</fraction_p_power>
+		<fraction_mass_ADC>.04</fraction_mass_ADC>
+		<fraction_mass_propulsion>.02</fraction_mass_propulsion>
+		<fraction_mass_other>0</fraction_mass_other>
+		<fraction_power_payload>.61</fraction_power_payload>
+		<fraction_power_structmech>0</fraction_power_structmech>  
+		<fraction_power_thermal>.03</fraction_power_thermal>
+		<fraction_power_power>.03</fraction_power_power>
 		<fraction_p_OBC>.2</fraction_p_OBC>
-		<fraction_p_ADC>.1</fraction_p_ADC>
-		<fraction_p_propulsion>.01</fraction_p_propulsion>
+		<fraction_power_ADC>.1</fraction_power_ADC>
+		<fraction_propulsion_power>.01</fraction_propulsion_power>
 		<size_x>4.81</size_x>
 		<size_y>16.7</size_y>
 		<size_h>8.04</size_h>
@@ -469,16 +469,16 @@
 		<orbit_type>Low Earth</orbit_type>
 		<m_total>16221</m_total>
 		<m_total_dry>14279</m_total_dry>
-		<m_payload>5999</m_payload>
-		<fraction_m_payload>.42</fraction_m_payload>
-		<fraction_m_structmech>.35</fraction_m_structmech> 
-		<fraction_m_thermal>.01</fraction_m_thermal>
-		<fraction_m_power>.11</fraction_m_power> 
-		<fraction_m_TTC>.01</fraction_m_TTC> 
+		<mass_payload>5999</mass_payload>
+		<fraction_mass_payload>.42</fraction_mass_payload>
+		<fraction_mass_structmech>.35</fraction_mass_structmech> 
+		<fraction_mass_thermal>.01</fraction_mass_thermal>
+		<fraction_mass_power>.11</fraction_mass_power> 
+		<fraction_mass_TTC>.01</fraction_mass_TTC> 
 		<fraction_m_OBC>.02</fraction_m_OBC>
-		<fraction_m_ADC>.03</fraction_m_ADC>
-		<fraction_m_propulsion>.02</fraction_m_propulsion>
-		<fraction_m_other>.04</fraction_m_other>
+		<fraction_mass_ADC>.03</fraction_mass_ADC>
+		<fraction_mass_propulsion>.02</fraction_mass_propulsion>
+		<fraction_mass_other>.04</fraction_mass_other>
 		<size_x>4.2</size_x>
 		<size_y>4.2</size_y>
 		<size_h>9.1</size_h>
@@ -493,19 +493,19 @@
 		<orbit_type>Low Earth</orbit_type>
 		<m_total>577</m_total>
 		<m_total_dry>548</m_total_dry>
-		<p_total>508</p_total>
-		<m_payload>283</m_payload>
-		<fraction_m_payload>.52</fraction_m_payload>
-		<fraction_m_structmech>.12</fraction_m_structmech> 
-		<fraction_m_thermal>.02</fraction_m_thermal>
-		<fraction_m_power>.19</fraction_m_power> 
-		<fraction_m_TTC>.01</fraction_m_TTC> 
+		<power_total>508</power_total>
+		<mass_payload>283</mass_payload>
+		<fraction_mass_payload>.52</fraction_mass_payload>
+		<fraction_mass_structmech>.12</fraction_mass_structmech> 
+		<fraction_mass_thermal>.02</fraction_mass_thermal>
+		<fraction_mass_power>.19</fraction_mass_power> 
+		<fraction_mass_TTC>.01</fraction_mass_TTC> 
 		<fraction_m_OBC>.05</fraction_m_OBC>
-		<fraction_m_ADC>.08</fraction_m_ADC>
-		<fraction_m_propulsion>.01</fraction_m_propulsion>
-		<fraction_m_other>0</fraction_m_other>
-		<fraction_p_payload>.5</fraction_p_payload>
-		<fraction_p_propulsion>0</fraction_p_propulsion>
+		<fraction_mass_ADC>.08</fraction_mass_ADC>
+		<fraction_mass_propulsion>.01</fraction_mass_propulsion>
+		<fraction_mass_other>0</fraction_mass_other>
+		<fraction_power_payload>.5</fraction_power_payload>
+		<fraction_propulsion_power>0</fraction_propulsion_power>
 		<size_x>1.49</size_x>
 		<size_y>1.84</size_y>
 		<size_h>2.31</size_h>
@@ -518,25 +518,25 @@
 		<orbit_type>Low Earth</orbit_type>
 		<m_total>847</m_total>
 		<m_total_dry>771</m_total_dry>
-		<p_total>598</p_total>
-		<m_payload>255</m_payload>
-		<fraction_m_payload>.33</fraction_m_payload>
-		<fraction_m_structmech>.25</fraction_m_structmech> 
-		<fraction_m_thermal>.03</fraction_m_thermal>
-		<fraction_m_power>.24</fraction_m_power> 
-		<fraction_m_TTC>.02</fraction_m_TTC> 
+		<power_total>598</power_total>
+		<mass_payload>255</mass_payload>
+		<fraction_mass_payload>.33</fraction_mass_payload>
+		<fraction_mass_structmech>.25</fraction_mass_structmech> 
+		<fraction_mass_thermal>.03</fraction_mass_thermal>
+		<fraction_mass_power>.24</fraction_mass_power> 
+		<fraction_mass_TTC>.02</fraction_mass_TTC> 
 		<fraction_m_OBC>.03</fraction_m_OBC>
-		<fraction_m_ADC>.07</fraction_m_ADC>
-		<fraction_m_propulsion>.03</fraction_m_propulsion>
-		<fraction_m_other>0</fraction_m_other>
-		<fraction_p_payload>.58</fraction_p_payload>
-		<fraction_p_structmech>0</fraction_p_structmech>  
-		<fraction_p_thermal>.1</fraction_p_thermal>
-		<fraction_p_power> .11</fraction_p_power>
-		<fraction_p_TTC>.03</fraction_p_TTC>
+		<fraction_mass_ADC>.07</fraction_mass_ADC>
+		<fraction_mass_propulsion>.03</fraction_mass_propulsion>
+		<fraction_mass_other>0</fraction_mass_other>
+		<fraction_power_payload>.58</fraction_power_payload>
+		<fraction_power_structmech>0</fraction_power_structmech>  
+		<fraction_power_thermal>.1</fraction_power_thermal>
+		<fraction_power_power> .11</fraction_power_power>
+		<fraction_power_TTC>.03</fraction_power_TTC>
 		<fraction_p_OBC>.05</fraction_p_OBC>
-		<fraction_p_ADC>.14</fraction_p_ADC>
-		<fraction_p_propulsion>0</fraction_p_propulsion>
+		<fraction_power_ADC>.14</fraction_power_ADC>
+		<fraction_propulsion_power>0</fraction_propulsion_power>
 		<size_x>2.03</size_x>
 		<size_y>2.29</size_y>
 		<size_h>2.54</size_h>
@@ -550,25 +550,25 @@
 		<orbit_type>Low Earth</orbit_type>
 		<m_total>579</m_total>
 		<m_total_dry>556</m_total_dry>
-		<p_total>298</p_total>
-		<m_payload>185</m_payload>
-		<fraction_m_payload>.33</fraction_m_payload>
-		<fraction_m_structmech>.26</fraction_m_structmech> 
-		<fraction_m_thermal>.02</fraction_m_thermal>
-		<fraction_m_power>.28</fraction_m_power> 
-		<fraction_m_TTC>.01</fraction_m_TTC> 
+		<power_total>298</power_total>
+		<mass_payload>185</mass_payload>
+		<fraction_mass_payload>.33</fraction_mass_payload>
+		<fraction_mass_structmech>.26</fraction_mass_structmech> 
+		<fraction_mass_thermal>.02</fraction_mass_thermal>
+		<fraction_mass_power>.28</fraction_mass_power> 
+		<fraction_mass_TTC>.01</fraction_mass_TTC> 
 		<fraction_m_OBC>.03</fraction_m_OBC>
-		<fraction_m_ADC>.06</fraction_m_ADC>
-		<fraction_m_propulsion>.02</fraction_m_propulsion>
-		<fraction_m_other>0</fraction_m_other>
-		<fraction_p_payload>.4</fraction_p_payload>
-		<fraction_p_structmech>.04</fraction_p_structmech>  
-		<fraction_p_thermal>.04</fraction_p_thermal>
-		<fraction_p_power>.09</fraction_p_power>
-		<fraction_p_TTC>.05</fraction_p_TTC>
+		<fraction_mass_ADC>.06</fraction_mass_ADC>
+		<fraction_mass_propulsion>.02</fraction_mass_propulsion>
+		<fraction_mass_other>0</fraction_mass_other>
+		<fraction_power_payload>.4</fraction_power_payload>
+		<fraction_power_structmech>.04</fraction_power_structmech>  
+		<fraction_power_thermal>.04</fraction_power_thermal>
+		<fraction_power_power>.09</fraction_power_power>
+		<fraction_power_TTC>.05</fraction_power_TTC>
 		<fraction_p_OBC>.12</fraction_p_OBC>
-		<fraction_p_ADC>.26</fraction_p_ADC>
-		<fraction_p_propulsion>0</fraction_p_propulsion>
+		<fraction_power_ADC>.26</fraction_power_ADC>
+		<fraction_propulsion_power>0</fraction_propulsion_power>
 		<size_x>1.4</size_x>
 		<size_y>1.4</size_y>
 		<size_h>2.0</size_h>
@@ -581,23 +581,23 @@
 		<orbit_type>Low Earth</orbit_type>
 		<m_total>230</m_total>
 		<m_total_dry>189</m_total_dry>
-		<p_total>89</p_total>
-		<m_payload>46</m_payload>
-		<fraction_m_payload>.25</fraction_m_payload>
-		<fraction_m_structmech>.42</fraction_m_structmech> 
-		<fraction_m_thermal>.01</fraction_m_thermal>
-		<fraction_m_power>.20</fraction_m_power> 
-		<fraction_m_TTC>0</fraction_m_TTC> 
+		<power_total>89</power_total>
+		<mass_payload>46</mass_payload>
+		<fraction_mass_payload>.25</fraction_mass_payload>
+		<fraction_mass_structmech>.42</fraction_mass_structmech> 
+		<fraction_mass_thermal>.01</fraction_mass_thermal>
+		<fraction_mass_power>.20</fraction_mass_power> 
+		<fraction_mass_TTC>0</fraction_mass_TTC> 
 		<fraction_m_OBC>.04</fraction_m_OBC>
-		<fraction_m_ADC>.06</fraction_m_ADC>
-		<fraction_m_propulsion>0</fraction_m_propulsion>
-		<fraction_m_other>.02</fraction_m_other>
-		<fraction_p_payload>.51</fraction_p_payload>
-		<fraction_p_structmech>0</fraction_p_structmech>  
-		<fraction_p_thermal>0</fraction_p_thermal>
-		<fraction_p_power>.16</fraction_p_power>
-		<fraction_p_ADC>.34</fraction_p_ADC>
-		<fraction_p_propulsion>0</fraction_p_propulsion>
+		<fraction_mass_ADC>.06</fraction_mass_ADC>
+		<fraction_mass_propulsion>0</fraction_mass_propulsion>
+		<fraction_mass_other>.02</fraction_mass_other>
+		<fraction_power_payload>.51</fraction_power_payload>
+		<fraction_power_structmech>0</fraction_power_structmech>  
+		<fraction_power_thermal>0</fraction_power_thermal>
+		<fraction_power_power>.16</fraction_power_power>
+		<fraction_power_ADC>.34</fraction_power_ADC>
+		<fraction_propulsion_power>0</fraction_propulsion_power>
 
 
 
@@ -611,25 +611,25 @@
 		<orbit_type>Low Earth</orbit_type>
 		<m_total>4307</m_total>
 		<m_total_dry>3947</m_total_dry>
-		<p_total>1646</p_total>
-		<m_payload>2889</m_payload>
-		<fraction_m_payload>.73</fraction_m_payload>
-		<fraction_m_structmech>.11</fraction_m_structmech> 
-		<fraction_m_thermal>.01</fraction_m_thermal>
-		<fraction_m_power>.11</fraction_m_power> 
-		<fraction_m_TTC>.01</fraction_m_TTC> 
+		<power_total>1646</power_total>
+		<mass_payload>2889</mass_payload>
+		<fraction_mass_payload>.73</fraction_mass_payload>
+		<fraction_mass_structmech>.11</fraction_mass_structmech> 
+		<fraction_mass_thermal>.01</fraction_mass_thermal>
+		<fraction_mass_power>.11</fraction_mass_power> 
+		<fraction_mass_TTC>.01</fraction_mass_TTC> 
 		<fraction_m_OBC>.01</fraction_m_OBC>
-		<fraction_m_ADC>.02</fraction_m_ADC>
-		<fraction_m_propulsion>.01</fraction_m_propulsion>
-		<fraction_m_other>0</fraction_m_other>
-		<fraction_p_payload>.47</fraction_p_payload>
-		<fraction_p_structmech>0</fraction_p_structmech>  
-		<fraction_p_thermal>.14</fraction_p_thermal>
-		<fraction_p_power>.15</fraction_p_power>
-		<fraction_p_TTC>.02</fraction_p_TTC>
+		<fraction_mass_ADC>.02</fraction_mass_ADC>
+		<fraction_mass_propulsion>.01</fraction_mass_propulsion>
+		<fraction_mass_other>0</fraction_mass_other>
+		<fraction_power_payload>.47</fraction_power_payload>
+		<fraction_power_structmech>0</fraction_power_structmech>  
+		<fraction_power_thermal>.14</fraction_power_thermal>
+		<fraction_power_power>.15</fraction_power_power>
+		<fraction_power_TTC>.02</fraction_power_TTC>
 		<fraction_p_OBC>.09</fraction_p_OBC>
-		<fraction_p_ADC>.1</fraction_p_ADC>
-		<fraction_p_propulsion>.02</fraction_p_propulsion>
+		<fraction_power_ADC>.1</fraction_power_ADC>
+		<fraction_propulsion_power>.02</fraction_propulsion_power>
 		<size_x>2.5</size_x>
 		<size_y>2.5</size_y>
 		<size_h>2.8</size_h>
@@ -643,25 +643,25 @@
 		<orbit_type>Low Earth</orbit_type>
 		<m_total>471</m_total>
 		<m_total_dry>458</m_total_dry>
-		<p_total>92</p_total>
-		<m_payload>70</m_payload>
-		<fraction_m_payload>.15</fraction_m_payload>
-		<fraction_m_structmech>.35</fraction_m_structmech> 
-		<fraction_m_thermal>.06</fraction_m_thermal>
-		<fraction_m_power>.15</fraction_m_power> 
-		<fraction_m_TTC>.01</fraction_m_TTC> 
+		<power_total>92</power_total>
+		<mass_payload>70</mass_payload>
+		<fraction_mass_payload>.15</fraction_mass_payload>
+		<fraction_mass_structmech>.35</fraction_mass_structmech> 
+		<fraction_mass_thermal>.06</fraction_mass_thermal>
+		<fraction_mass_power>.15</fraction_mass_power> 
+		<fraction_mass_TTC>.01</fraction_mass_TTC> 
 		<fraction_m_OBC>.03</fraction_m_OBC>
-		<fraction_m_ADC> .17</fraction_m_ADC>
-		<fraction_m_propulsion>.08</fraction_m_propulsion>
-		<fraction_m_other>0</fraction_m_other>
-		<fraction_p_payload>.55</fraction_p_payload>
-		<fraction_p_structmech>.01</fraction_p_structmech>  
-		<fraction_p_thermal>0</fraction_p_thermal>
-		<fraction_p_power>.06</fraction_p_power>
-		<fraction_p_TTC>.6</fraction_p_TTC>
+		<fraction_mass_ADC> .17</fraction_mass_ADC>
+		<fraction_mass_propulsion>.08</fraction_mass_propulsion>
+		<fraction_mass_other>0</fraction_mass_other>
+		<fraction_power_payload>.55</fraction_power_payload>
+		<fraction_power_structmech>.01</fraction_power_structmech>  
+		<fraction_power_thermal>0</fraction_power_thermal>
+		<fraction_power_power>.06</fraction_power_power>
+		<fraction_power_TTC>.6</fraction_power_TTC>
 		<fraction_p_OBC>.32</fraction_p_OBC>
-		<fraction_p_ADC>0</fraction_p_ADC>
-		<fraction_p_propulsion>0</fraction_p_propulsion>
+		<fraction_power_ADC>0</fraction_power_ADC>
+		<fraction_propulsion_power>0</fraction_propulsion_power>
 		<size_x>1.942</size_x>
 		<size_y>0.72</size_y>
 		<size_h>3.123</size_h>
@@ -674,16 +674,16 @@
 		<orbit_type>Low Earth</orbit_type>
 		<m_total>385</m_total>
 		<m_total_dry>342</m_total_dry>
-		<m_payload>97</m_payload>
-		<fraction_m_payload>.28</fraction_m_payload>
-		<fraction_m_structmech>.2</fraction_m_structmech> 
-		<fraction_m_thermal>.01</fraction_m_thermal>
-		<fraction_m_power>.27</fraction_m_power> 
-		<fraction_m_TTC>0</fraction_m_TTC> 
+		<mass_payload>97</mass_payload>
+		<fraction_mass_payload>.28</fraction_mass_payload>
+		<fraction_mass_structmech>.2</fraction_mass_structmech> 
+		<fraction_mass_thermal>.01</fraction_mass_thermal>
+		<fraction_mass_power>.27</fraction_mass_power> 
+		<fraction_mass_TTC>0</fraction_mass_TTC> 
 		<fraction_m_OBC>.07</fraction_m_OBC>
-		<fraction_m_ADC>.1</fraction_m_ADC>
-		<fraction_m_propulsion>.05</fraction_m_propulsion>
-		<fraction_m_other>.01</fraction_m_other>
+		<fraction_mass_ADC>.1</fraction_mass_ADC>
+		<fraction_mass_propulsion>.05</fraction_mass_propulsion>
+		<fraction_mass_other>.01</fraction_mass_other>
 		<size_h>1.77</size_h>
 		<TRL>8</TRL>
 	</spacecraft>
@@ -695,25 +695,25 @@
 		<orbit_type>Low Earth</orbit_type>
 		<m_total>25</m_total>
 		<m_total_dry>24</m_total_dry>
-		<p_total>40</p_total>
-		<m_payload>1</m_payload>
-		<fraction_m_payload>.03</fraction_m_payload>
-		<fraction_m_structmech>.32</fraction_m_structmech> 
-		<fraction_m_thermal>.03</fraction_m_thermal>
-		<fraction_m_power>.31</fraction_m_power> 
-		<fraction_m_TTC>.08</fraction_m_TTC> 
+		<power_total>40</power_total>
+		<mass_payload>1</mass_payload>
+		<fraction_mass_payload>.03</fraction_mass_payload>
+		<fraction_mass_structmech>.32</fraction_mass_structmech> 
+		<fraction_mass_thermal>.03</fraction_mass_thermal>
+		<fraction_mass_power>.31</fraction_mass_power> 
+		<fraction_mass_TTC>.08</fraction_mass_TTC> 
 		<fraction_m_OBC>.09</fraction_m_OBC>
-		<fraction_m_ADC>.05</fraction_m_ADC>
-		<fraction_m_propulsion>.06</fraction_m_propulsion>
-		<fraction_m_other>0</fraction_m_other>
-		<fraction_p_payload>.2</fraction_p_payload>
-		<fraction_p_structmech>0</fraction_p_structmech>  
-		<fraction_p_thermal>0</fraction_p_thermal>
-		<fraction_p_power>.14</fraction_p_power>
-		<fraction_p_TTC>.52</fraction_p_TTC>
+		<fraction_mass_ADC>.05</fraction_mass_ADC>
+		<fraction_mass_propulsion>.06</fraction_mass_propulsion>
+		<fraction_mass_other>0</fraction_mass_other>
+		<fraction_power_payload>.2</fraction_power_payload>
+		<fraction_power_structmech>0</fraction_power_structmech>  
+		<fraction_power_thermal>0</fraction_power_thermal>
+		<fraction_power_power>.14</fraction_power_power>
+		<fraction_power_TTC>.52</fraction_power_TTC>
 		<fraction_p_OBC>.11</fraction_p_OBC>
-		<fraction_p_ADC>.02</fraction_p_ADC>
-		<fraction_p_propulsion>.01</fraction_p_propulsion>
+		<fraction_power_ADC>.02</fraction_power_ADC>
+		<fraction_propulsion_power>.01</fraction_propulsion_power>
 		<size_x>.53</size_x>
 		<size_y>.53</size_y>
 		<size_h>.48</size_h>
@@ -727,24 +727,24 @@
 		<orbit_type>Low Earth</orbit_type>
 		<m_total>4771</m_total>
 		<m_total_dry>4432</m_total_dry>
-		<p_total>2159</p_total>
-		<m_payload>1096</m_payload>
-		<fraction_m_payload>.25</fraction_m_payload>
-		<fraction_m_structmech>.33</fraction_m_structmech> 
-		<fraction_m_thermal>.05</fraction_m_thermal>
-		<fraction_m_power>.21</fraction_m_power> 
-		<fraction_m_TTC>.04</fraction_m_TTC> 
+		<power_total>2159</power_total>
+		<mass_payload>1096</mass_payload>
+		<fraction_mass_payload>.25</fraction_mass_payload>
+		<fraction_mass_structmech>.33</fraction_mass_structmech> 
+		<fraction_mass_thermal>.05</fraction_mass_thermal>
+		<fraction_mass_power>.21</fraction_mass_power> 
+		<fraction_mass_TTC>.04</fraction_mass_TTC> 
 		<fraction_m_OBC>.07</fraction_m_OBC>
-		<fraction_m_ADC>.04</fraction_m_ADC>
-		<fraction_m_propulsion>.01</fraction_m_propulsion>
-		<fraction_m_other>.01</fraction_m_other>
-		<fraction_p_payload>.46</fraction_p_payload>
-		<fraction_p_structmech>0</fraction_p_structmech>  
-		<fraction_p_thermal>.05</fraction_p_thermal>
-		<fraction_p_power>.08</fraction_p_power>
+		<fraction_mass_ADC>.04</fraction_mass_ADC>
+		<fraction_mass_propulsion>.01</fraction_mass_propulsion>
+		<fraction_mass_other>.01</fraction_mass_other>
+		<fraction_power_payload>.46</fraction_power_payload>
+		<fraction_power_structmech>0</fraction_power_structmech>  
+		<fraction_power_thermal>.05</fraction_power_thermal>
+		<fraction_power_power>.08</fraction_power_power>
 		<fraction_p_OBC>.34</fraction_p_OBC>
-		<fraction_p_ADC>.08</fraction_p_ADC>
-		<fraction_p_propulsion>0</fraction_p_propulsion>
+		<fraction_power_ADC>.08</fraction_power_ADC>
+		<fraction_propulsion_power>0</fraction_propulsion_power>
 		<size_x>3.55</size_x>
 		<size_y>3.5</size_y>
 		<size_h>6.8</size_h>
@@ -758,16 +758,16 @@
 		<orbit_type>Low Earth</orbit_type>
 		<m_total>289</m_total>
 		<m_total_dry>215</m_total_dry>
-		<m_payload>34</m_payload>
-		<fraction_m_payload>.16</fraction_m_payload>
-		<fraction_m_structmech>.29</fraction_m_structmech> 
-		<fraction_m_thermal>.02</fraction_m_thermal>
-		<fraction_m_power>.23</fraction_m_power> 
-		<fraction_m_TTC>0</fraction_m_TTC> 
+		<mass_payload>34</mass_payload>
+		<fraction_mass_payload>.16</fraction_mass_payload>
+		<fraction_mass_structmech>.29</fraction_mass_structmech> 
+		<fraction_mass_thermal>.02</fraction_mass_thermal>
+		<fraction_mass_power>.23</fraction_mass_power> 
+		<fraction_mass_TTC>0</fraction_mass_TTC> 
 		<fraction_m_OBC>.08</fraction_m_OBC>
-		<fraction_m_ADC>.12</fraction_m_ADC>
-		<fraction_m_propulsion>.08</fraction_m_propulsion>
-		<fraction_m_other>.03</fraction_m_other>
+		<fraction_mass_ADC>.12</fraction_mass_ADC>
+		<fraction_mass_propulsion>.08</fraction_mass_propulsion>
+		<fraction_mass_other>.03</fraction_mass_other>
 		<size_x>1.16</size_x>
 		<size_y>1.16</size_y>
 		<size_h>1.77</size_h>
@@ -781,25 +781,25 @@
 		<orbit_type>Low Earth</orbit_type>
 		<m_total>3512</m_total>
 		<m_total_dry>2611</m_total_dry>
-		<p_total>1019</p_total>
-		<m_payload>640</m_payload>
-		<fraction_m_payload>.24</fraction_m_payload>
-		<fraction_m_structmech>.38</fraction_m_structmech> 
-		<fraction_m_thermal>.04</fraction_m_thermal>
-		<fraction_m_power>.18</fraction_m_power> 
-		<fraction_m_TTC>.01</fraction_m_TTC> 
+		<power_total>1019</power_total>
+		<mass_payload>640</mass_payload>
+		<fraction_mass_payload>.24</fraction_mass_payload>
+		<fraction_mass_structmech>.38</fraction_mass_structmech> 
+		<fraction_mass_thermal>.04</fraction_mass_thermal>
+		<fraction_mass_power>.18</fraction_mass_power> 
+		<fraction_mass_TTC>.01</fraction_mass_TTC> 
 		<fraction_m_OBC>.03</fraction_m_OBC>
-		<fraction_m_ADC>.06</fraction_m_ADC>
-		<fraction_m_propulsion>.05</fraction_m_propulsion>
-		<fraction_m_other>0</fraction_m_other>
-		<fraction_p_payload>.41</fraction_p_payload>
-		<fraction_p_structmech>.04</fraction_p_structmech>  
-		<fraction_p_thermal>.18</fraction_p_thermal>
-		<fraction_p_power>.11</fraction_p_power>
-		<fraction_p_TTC>.05</fraction_p_TTC>
+		<fraction_mass_ADC>.06</fraction_mass_ADC>
+		<fraction_mass_propulsion>.05</fraction_mass_propulsion>
+		<fraction_mass_other>0</fraction_mass_other>
+		<fraction_power_payload>.41</fraction_power_payload>
+		<fraction_power_structmech>.04</fraction_power_structmech>  
+		<fraction_power_thermal>.18</fraction_power_thermal>
+		<fraction_power_power>.11</fraction_power_power>
+		<fraction_power_TTC>.05</fraction_power_TTC>
 		<fraction_p_OBC>.05</fraction_p_OBC>
-		<fraction_p_ADC>.15</fraction_p_ADC>
-		<fraction_p_propulsion>0</fraction_p_propulsion>
+		<fraction_power_ADC>.15</fraction_power_ADC>
+		<fraction_propulsion_power>0</fraction_propulsion_power>
 		<size_x>3.7</size_x>
 		<size_y>3.7</size_y>
 		<size_h>5.1</size_h>
@@ -813,16 +813,16 @@
 		<orbit_type>Low Earth</orbit_type>
 		<m_total>7483</m_total>
 		<m_total_dry>6607</m_total_dry>
-		<m_payload>2098</m_payload>
-		<fraction_m_payload>.32</fraction_m_payload>
-		<fraction_m_structmech>.28</fraction_m_structmech> 
-		<fraction_m_thermal>.02</fraction_m_thermal>
-		<fraction_m_power>.13</fraction_m_power> 
-		<fraction_m_TTC>0</fraction_m_TTC> 
+		<mass_payload>2098</mass_payload>
+		<fraction_mass_payload>.32</fraction_mass_payload>
+		<fraction_mass_structmech>.28</fraction_mass_structmech> 
+		<fraction_mass_thermal>.02</fraction_mass_thermal>
+		<fraction_mass_power>.13</fraction_mass_power> 
+		<fraction_mass_TTC>0</fraction_mass_TTC> 
 		<fraction_m_OBC>.04</fraction_m_OBC>
-		<fraction_m_ADC>.04</fraction_m_ADC>
-		<fraction_m_propulsion>.02</fraction_m_propulsion>
-		<fraction_m_other>.15</fraction_m_other>
+		<fraction_mass_ADC>.04</fraction_mass_ADC>
+		<fraction_mass_propulsion>.02</fraction_mass_propulsion>
+		<fraction_mass_other>.15</fraction_mass_other>
 		<size_x>4.5</size_x>
 		<size_y>4.5</size_y>
 		<size_h>10.7</size_h>
@@ -835,16 +835,16 @@
 		<orbit_type>Low Earth</orbit_type>
 		<m_total>2105</m_total>
 		<m_total_dry>1983</m_total_dry>
-		<m_payload>404</m_payload>
-		<fraction_m_payload>.2</fraction_m_payload>
-		<fraction_m_structmech>.27</fraction_m_structmech> 
-		<fraction_m_thermal>.01</fraction_m_thermal>
-		<fraction_m_power>.25</fraction_m_power> 
-		<fraction_m_TTC>.03</fraction_m_TTC> 
+		<mass_payload>404</mass_payload>
+		<fraction_mass_payload>.2</fraction_mass_payload>
+		<fraction_mass_structmech>.27</fraction_mass_structmech> 
+		<fraction_mass_thermal>.01</fraction_mass_thermal>
+		<fraction_mass_power>.25</fraction_mass_power> 
+		<fraction_mass_TTC>.03</fraction_mass_TTC> 
 		<fraction_m_OBC>.09</fraction_m_OBC>
-		<fraction_m_ADC>.04</fraction_m_ADC>
-		<fraction_m_propulsion>.01</fraction_m_propulsion>
-		<fraction_m_other>.1</fraction_m_other>
+		<fraction_mass_ADC>.04</fraction_mass_ADC>
+		<fraction_mass_propulsion>.01</fraction_mass_propulsion>
+		<fraction_mass_other>.1</fraction_mass_other>
 		<size_x>2.74</size_x>
 		<size_y>2.74</size_y>
 		<size_h>4.04</size_h>
@@ -858,25 +858,25 @@
 		<orbit_type>Low Earth</orbit_type>
 		<m_total>2246</m_total>
 		<m_total_dry>1595</m_total_dry>
-		<p_total>778</p_total>
-		<m_payload>362</m_payload>
-		<fraction_m_payload>.23</fraction_m_payload>
-		<fraction_m_structmech>.2</fraction_m_structmech> 
-		<fraction_m_thermal>.02</fraction_m_thermal>
-		<fraction_m_power>.24</fraction_m_power> 
-		<fraction_m_TTC>.02</fraction_m_TTC> 
+		<power_total>778</power_total>
+		<mass_payload>362</mass_payload>
+		<fraction_mass_payload>.23</fraction_mass_payload>
+		<fraction_mass_structmech>.2</fraction_mass_structmech> 
+		<fraction_mass_thermal>.02</fraction_mass_thermal>
+		<fraction_mass_power>.24</fraction_mass_power> 
+		<fraction_mass_TTC>.02</fraction_mass_TTC> 
 		<fraction_m_OBC>.06</fraction_m_OBC>
-		<fraction_m_ADC>.03</fraction_m_ADC>
-		<fraction_m_propulsion>.02</fraction_m_propulsion>
-		<fraction_m_other>.07</fraction_m_other>
-		<fraction_p_payload>.51</fraction_p_payload>
-		<fraction_p_structmech>0</fraction_p_structmech>  
-		<fraction_p_thermal>.18</fraction_p_thermal>
-		<fraction_p_power>.03</fraction_p_power>
-		<fraction_p_TTC>.08</fraction_p_TTC>
+		<fraction_mass_ADC>.03</fraction_mass_ADC>
+		<fraction_mass_propulsion>.02</fraction_mass_propulsion>
+		<fraction_mass_other>.07</fraction_mass_other>
+		<fraction_power_payload>.51</fraction_power_payload>
+		<fraction_power_structmech>0</fraction_power_structmech>  
+		<fraction_power_thermal>.18</fraction_power_thermal>
+		<fraction_power_power>.03</fraction_power_power>
+		<fraction_power_TTC>.08</fraction_power_TTC>
 		<fraction_p_OBC>.05</fraction_p_OBC>
-		<fraction_p_ADC>.09</fraction_p_ADC>
-		<fraction_p_propulsion>.0 </fraction_p_propulsion>
+		<fraction_power_ADC>.09</fraction_power_ADC>
+		<fraction_propulsion_power>.0 </fraction_propulsion_power>
 		<TRL>8</TRL>
 	</spacecraft>
 	<spacecraft>
@@ -887,25 +887,25 @@
 		<orbit_type>Low Earth</orbit_type>
 		<m_total>1391</m_total>
 		<m_total_dry>1382</m_total_dry>
-		<p_total>858</p_total>
-		<m_payload>312</m_payload>
-		<fraction_m_payload>.23</fraction_m_payload>
-		<fraction_m_structmech>.34</fraction_m_structmech> 
-		<fraction_m_thermal>.03</fraction_m_thermal>
-		<fraction_m_power>.28</fraction_m_power> 
-		<fraction_m_TTC>.03</fraction_m_TTC> 
+		<power_total>858</power_total>
+		<mass_payload>312</mass_payload>
+		<fraction_mass_payload>.23</fraction_mass_payload>
+		<fraction_mass_structmech>.34</fraction_mass_structmech> 
+		<fraction_mass_thermal>.03</fraction_mass_thermal>
+		<fraction_mass_power>.28</fraction_mass_power> 
+		<fraction_mass_TTC>.03</fraction_mass_TTC> 
 		<fraction_m_OBC>.04</fraction_m_OBC>
-		<fraction_m_ADC>.05</fraction_m_ADC>
-		<fraction_m_propulsion>.01</fraction_m_propulsion>
-		<fraction_m_other>0</fraction_m_other>
-		<fraction_p_payload>.52</fraction_p_payload>
-		<fraction_p_structmech>0</fraction_p_structmech>  
-		<fraction_p_thermal>.23</fraction_p_thermal>
-		<fraction_p_power>.03</fraction_p_power>
-		<fraction_p_TTC>.08</fraction_p_TTC>
+		<fraction_mass_ADC>.05</fraction_mass_ADC>
+		<fraction_mass_propulsion>.01</fraction_mass_propulsion>
+		<fraction_mass_other>0</fraction_mass_other>
+		<fraction_power_payload>.52</fraction_power_payload>
+		<fraction_power_structmech>0</fraction_power_structmech>  
+		<fraction_power_thermal>.23</fraction_power_thermal>
+		<fraction_power_power>.03</fraction_power_power>
+		<fraction_power_TTC>.08</fraction_power_TTC>
 		<fraction_p_OBC>.05</fraction_p_OBC>
-		<fraction_p_ADC>.09</fraction_p_ADC>
-		<fraction_p_propulsion>0</fraction_p_propulsion>
+		<fraction_power_ADC>.09</fraction_power_ADC>
+		<fraction_propulsion_power>0</fraction_propulsion_power>
 		<size_x>1.88</size_x>
 		<size_y>1.88</size_y>
 		<size_h>4.19</size_h>
@@ -919,25 +919,25 @@
 		<orbit_type>High Earth </orbit_type>
 		<m_total>759</m_total>
 		<m_total_dry>561</m_total_dry>
-		<p_total>305</p_total>
-		<m_payload>168</m_payload>
-		<fraction_m_payload>0.3</fraction_m_payload>
-		<fraction_m_structmech>.23</fraction_m_structmech> 
-		<fraction_m_thermal>.07</fraction_m_thermal>
-		<fraction_m_power>.2</fraction_m_power> 
-		<fraction_m_TTC>.04</fraction_m_TTC> 
+		<power_total>305</power_total>
+		<mass_payload>168</mass_payload>
+		<fraction_mass_payload>0.3</fraction_mass_payload>
+		<fraction_mass_structmech>.23</fraction_mass_structmech> 
+		<fraction_mass_thermal>.07</fraction_mass_thermal>
+		<fraction_mass_power>.2</fraction_mass_power> 
+		<fraction_mass_TTC>.04</fraction_mass_TTC> 
 		<fraction_m_OBC>.05</fraction_m_OBC>
-		<fraction_m_ADC>.01</fraction_m_ADC>
-		<fraction_m_propulsion>.07</fraction_m_propulsion>
-		<fraction_m_other>.03</fraction_m_other>
-		<fraction_p_payload>.35</fraction_p_payload>  
-		<fraction_p_structmech>0</fraction_p_structmech>  
-		<fraction_p_thermal>.29</fraction_p_thermal>
-		<fraction_p_power>.04</fraction_p_power>
-		<fraction_p_TTC>.01</fraction_p_TTC>
+		<fraction_mass_ADC>.01</fraction_mass_ADC>
+		<fraction_mass_propulsion>.07</fraction_mass_propulsion>
+		<fraction_mass_other>.03</fraction_mass_other>
+		<fraction_power_payload>.35</fraction_power_payload>  
+		<fraction_power_structmech>0</fraction_power_structmech>  
+		<fraction_power_thermal>.29</fraction_power_thermal>
+		<fraction_power_power>.04</fraction_power_power>
+		<fraction_power_TTC>.01</fraction_power_TTC>
 		<fraction_p_OBC>.27</fraction_p_OBC>
-		<fraction_p_ADC>.04</fraction_p_ADC>
-		<fraction_p_propulsion>0</fraction_p_propulsion>
+		<fraction_power_ADC>.04</fraction_power_ADC>
+		<fraction_propulsion_power>0</fraction_propulsion_power>
 		<size_x>2.0</size_x>
 		<size_y>2.0</size_y>
 		<size_h>1.9</size_h>
@@ -951,16 +951,16 @@
 		<orbit_type>High Earth </orbit_type>
 		<m_total>5698</m_total>
 		<m_total_dry>4699</m_total_dry>
-		<m_payload>2918</m_payload>
-		<fraction_m_payload>.62</fraction_m_payload>
-		<fraction_m_structmech>.15</fraction_m_structmech> 
-		<fraction_m_thermal>.02</fraction_m_thermal>
-		<fraction_m_power>.09</fraction_m_power> 
-		<fraction_m_TTC>0</fraction_m_TTC> 
+		<mass_payload>2918</mass_payload>
+		<fraction_mass_payload>.62</fraction_mass_payload>
+		<fraction_mass_structmech>.15</fraction_mass_structmech> 
+		<fraction_mass_thermal>.02</fraction_mass_thermal>
+		<fraction_mass_power>.09</fraction_mass_power> 
+		<fraction_mass_TTC>0</fraction_mass_TTC> 
 		<fraction_m_OBC>.02</fraction_m_OBC>
-		<fraction_m_ADC>.04</fraction_m_ADC>
-		<fraction_m_propulsion>.04</fraction_m_propulsion>
-		<fraction_m_other>.02</fraction_m_other>
+		<fraction_mass_ADC>.04</fraction_mass_ADC>
+		<fraction_mass_propulsion>.04</fraction_mass_propulsion>
+		<fraction_mass_other>.02</fraction_mass_other>
 		<size_x>4.3</size_x>
 		<size_y>4.3</size_y>
 		<size_h>11.8</size_h>
@@ -974,25 +974,25 @@
 		<orbit_type>High Earth </orbit_type>
 		<m_total>814</m_total>
 		<m_total_dry>741</m_total_dry>
-		<p_total>371</p_total>
-		<m_payload>305</m_payload>
-		<fraction_m_payload>.41</fraction_m_payload>
-		<fraction_m_structmech>.23</fraction_m_structmech> 
-		<fraction_m_thermal>.06</fraction_m_thermal>
-		<fraction_m_power>.13</fraction_m_power> 
-		<fraction_m_TTC>.02</fraction_m_TTC> 
+		<power_total>371</power_total>
+		<mass_payload>305</mass_payload>
+		<fraction_mass_payload>.41</fraction_mass_payload>
+		<fraction_mass_structmech>.23</fraction_mass_structmech> 
+		<fraction_mass_thermal>.06</fraction_mass_thermal>
+		<fraction_mass_power>.13</fraction_mass_power> 
+		<fraction_mass_TTC>.02</fraction_mass_TTC> 
 		<fraction_m_OBC>.03</fraction_m_OBC>
-		<fraction_m_ADC>.08</fraction_m_ADC>
-		<fraction_m_propulsion>.02</fraction_m_propulsion>
-		<fraction_m_other>.02</fraction_m_other>
-		<fraction_p_payload>.37</fraction_p_payload>
-		<fraction_p_structmech>0</fraction_p_structmech>  
-		<fraction_p_thermal>.07</fraction_p_thermal>
-		<fraction_p_power>.06</fraction_p_power>
-		<fraction_p_TTC>.09</fraction_p_TTC>
+		<fraction_mass_ADC>.08</fraction_mass_ADC>
+		<fraction_mass_propulsion>.02</fraction_mass_propulsion>
+		<fraction_mass_other>.02</fraction_mass_other>
+		<fraction_power_payload>.37</fraction_power_payload>
+		<fraction_power_structmech>0</fraction_power_structmech>  
+		<fraction_power_thermal>.07</fraction_power_thermal>
+		<fraction_power_power>.06</fraction_power_power>
+		<fraction_power_TTC>.09</fraction_power_TTC>
 		<fraction_p_OBC>.13</fraction_p_OBC>
-		<fraction_p_ADC>.24</fraction_p_ADC>
-		<fraction_p_propulsion>0</fraction_p_propulsion>
+		<fraction_power_ADC>.24</fraction_power_ADC>
+		<fraction_propulsion_power>0</fraction_propulsion_power>
 		<size_x>1.4</size_x>
 		<size_y>1.4</size_y>
 		<size_h>1.6</size_h>
@@ -1006,25 +1006,25 @@
 		<orbit_type>High Earth </orbit_type>
 		<m_total>1854</m_total>
 		<m_total_dry>1602</m_total_dry>
-		<p_total>1186</p_total>
-		<m_payload>899</m_payload>
-		<fraction_m_payload>.56</fraction_m_payload>
-		<fraction_m_structmech>.12 </fraction_m_structmech> 
-		<fraction_m_thermal>.02</fraction_m_thermal>
-		<fraction_m_power>.13</fraction_m_power> 
-		<fraction_m_TTC>.01</fraction_m_TTC> 
+		<power_total>1186</power_total>
+		<mass_payload>899</mass_payload>
+		<fraction_mass_payload>.56</fraction_mass_payload>
+		<fraction_mass_structmech>.12 </fraction_mass_structmech> 
+		<fraction_mass_thermal>.02</fraction_mass_thermal>
+		<fraction_mass_power>.13</fraction_mass_power> 
+		<fraction_mass_TTC>.01</fraction_mass_TTC> 
 		<fraction_m_OBC>.04</fraction_m_OBC>
-		<fraction_m_ADC>.05</fraction_m_ADC>
-		<fraction_m_propulsion>.03</fraction_m_propulsion>
-		<fraction_m_other>.03</fraction_m_other>
-		<fraction_p_payload>.55</fraction_p_payload>
-		<fraction_p_structmech>0</fraction_p_structmech>  
-		<fraction_p_thermal>.11</fraction_p_thermal>
-		<fraction_p_power>.08</fraction_p_power>
-		<fraction_p_TTC>0</fraction_p_TTC>
+		<fraction_mass_ADC>.05</fraction_mass_ADC>
+		<fraction_mass_propulsion>.03</fraction_mass_propulsion>
+		<fraction_mass_other>.03</fraction_mass_other>
+		<fraction_power_payload>.55</fraction_power_payload>
+		<fraction_power_structmech>0</fraction_power_structmech>  
+		<fraction_power_thermal>.11</fraction_power_thermal>
+		<fraction_power_power>.08</fraction_power_power>
+		<fraction_power_TTC>0</fraction_power_TTC>
 		<fraction_p_OBC>.11</fraction_p_OBC>
-		<fraction_p_ADC>.13</fraction_p_ADC>
-		<fraction_p_propulsion>.02</fraction_p_propulsion>
+		<fraction_power_ADC>.13</fraction_power_ADC>
+		<fraction_propulsion_power>.02</fraction_propulsion_power>
 		<size_x>2.7</size_x>
 		<size_y>3.7</size_y>
 		<size_h>4.3</size_h>
@@ -1038,25 +1038,25 @@
 		<orbit_type>High Earth </orbit_type>
 		<m_total>619</m_total>
 		<m_total_dry>558</m_total_dry>
-		<p_total>514</p_total>
-		<m_payload>138</m_payload>
-		<fraction_m_payload>.25</fraction_m_payload>
-		<fraction_m_structmech>.28</fraction_m_structmech> 
-		<fraction_m_thermal>.04</fraction_m_thermal>
-		<fraction_m_power>.24</fraction_m_power> 
-		<fraction_m_TTC>.06</fraction_m_TTC> 
+		<power_total>514</power_total>
+		<mass_payload>138</mass_payload>
+		<fraction_mass_payload>.25</fraction_mass_payload>
+		<fraction_mass_structmech>.28</fraction_mass_structmech> 
+		<fraction_mass_thermal>.04</fraction_mass_thermal>
+		<fraction_mass_power>.24</fraction_mass_power> 
+		<fraction_mass_TTC>.06</fraction_mass_TTC> 
 		<fraction_m_OBC>.01</fraction_m_OBC>
-		<fraction_m_ADC>.06</fraction_m_ADC>
-		<fraction_m_propulsion>.06</fraction_m_propulsion>
-		<fraction_m_other>.03</fraction_m_other>
-		<fraction_p_payload>.23</fraction_p_payload>
-		<fraction_p_structmech>0</fraction_p_structmech>  
-		<fraction_p_thermal>.1</fraction_p_thermal>
-		<fraction_p_power>.1</fraction_p_power>
-		<fraction_p_TTC>.25</fraction_p_TTC>
+		<fraction_mass_ADC>.06</fraction_mass_ADC>
+		<fraction_mass_propulsion>.06</fraction_mass_propulsion>
+		<fraction_mass_other>.03</fraction_mass_other>
+		<fraction_power_payload>.23</fraction_power_payload>
+		<fraction_power_structmech>0</fraction_power_structmech>  
+		<fraction_power_thermal>.1</fraction_power_thermal>
+		<fraction_power_power>.1</fraction_power_power>
+		<fraction_power_TTC>.25</fraction_power_TTC>
 		<fraction_p_OBC>.08</fraction_p_OBC>
-		<fraction_p_ADC>.16</fraction_p_ADC>
-		<fraction_p_propulsion>0</fraction_p_propulsion>
+		<fraction_power_ADC>.16</fraction_power_ADC>
+		<fraction_propulsion_power>0</fraction_propulsion_power>
 		<size_x>1.14</size_x>
 		<size_y>2.03</size_y>
 		<size_h>6.47</size_h>
@@ -1070,25 +1070,25 @@
 		<orbit_type>High Earth </orbit_type>
 		<m_total>2995</m_total>
 		<m_total_dry>577</m_total_dry>
-		<p_total>394</p_total>
-		<m_payload>104</m_payload>
-		<fraction_m_payload>.18</fraction_m_payload>
-		<fraction_m_structmech>.11</fraction_m_structmech> 
-		<fraction_m_thermal>.02</fraction_m_thermal>
-		<fraction_m_power>.05</fraction_m_power> 
-		<fraction_m_TTC>.02</fraction_m_TTC> 
+		<power_total>394</power_total>
+		<mass_payload>104</mass_payload>
+		<fraction_mass_payload>.18</fraction_mass_payload>
+		<fraction_mass_structmech>.11</fraction_mass_structmech> 
+		<fraction_mass_thermal>.02</fraction_mass_thermal>
+		<fraction_mass_power>.05</fraction_mass_power> 
+		<fraction_mass_TTC>.02</fraction_mass_TTC> 
 		<fraction_m_OBC>.01</fraction_m_OBC>
-		<fraction_m_ADC>.08</fraction_m_ADC>
-		<fraction_m_propulsion>.3</fraction_m_propulsion>
-		<fraction_m_other>.23</fraction_m_other>
-		<fraction_p_payload>.38</fraction_p_payload>
-		<fraction_p_structmech>0</fraction_p_structmech>  
-		<fraction_p_thermal>.16</fraction_p_thermal>
-		<fraction_p_power>.1</fraction_p_power>
-		<fraction_p_TTC>.09</fraction_p_TTC>
+		<fraction_mass_ADC>.08</fraction_mass_ADC>
+		<fraction_mass_propulsion>.3</fraction_mass_propulsion>
+		<fraction_mass_other>.23</fraction_mass_other>
+		<fraction_power_payload>.38</fraction_power_payload>
+		<fraction_power_structmech>0</fraction_power_structmech>  
+		<fraction_power_thermal>.16</fraction_power_thermal>
+		<fraction_power_power>.1</fraction_power_power>
+		<fraction_power_TTC>.09</fraction_power_TTC>
 		<fraction_p_OBC>.04</fraction_p_OBC>
-		<fraction_p_ADC>.23</fraction_p_ADC>
-		<fraction_p_propulsion>0</fraction_p_propulsion>
+		<fraction_power_ADC>.23</fraction_power_ADC>
+		<fraction_propulsion_power>0</fraction_propulsion_power>
 		<size_x>1.4</size_x>
 		<size_y>1.4</size_y>
 		<size_h>1.8</size_h>
@@ -1102,16 +1102,16 @@
 		<orbit_type>High Earth </orbit_type>
 		<m_total>1226</m_total>
 		<m_total_dry>856</m_total_dry>
-		<m_payload>182</m_payload>
-		<fraction_m_payload>.21</fraction_m_payload>
-		<fraction_m_structmech>.23</fraction_m_structmech> 
-		<fraction_m_thermal>.03</fraction_m_thermal>
-		<fraction_m_power>.31</fraction_m_power> 
-		<fraction_m_TTC>.02</fraction_m_TTC> 
+		<mass_payload>182</mass_payload>
+		<fraction_mass_payload>.21</fraction_mass_payload>
+		<fraction_mass_structmech>.23</fraction_mass_structmech> 
+		<fraction_mass_thermal>.03</fraction_mass_thermal>
+		<fraction_mass_power>.31</fraction_mass_power> 
+		<fraction_mass_TTC>.02</fraction_mass_TTC> 
 		<fraction_m_OBC>.07</fraction_m_OBC>
-		<fraction_m_ADC>.02</fraction_m_ADC>
-		<fraction_m_propulsion>.05</fraction_m_propulsion>
-		<fraction_m_other>.05</fraction_m_other>
+		<fraction_mass_ADC>.02</fraction_mass_ADC>
+		<fraction_mass_propulsion>.05</fraction_mass_propulsion>
+		<fraction_mass_other>.05</fraction_mass_other>
 		<size_x>2.4</size_x>
 		<size_y>2.4</size_y>
 		<size_h>1.8</size_h>
@@ -1125,25 +1125,25 @@
 		<orbit_type>High Earth </orbit_type>
 		<m_total>2275</m_total>
 		<m_total_dry>1058</m_total_dry>
-		<p_total>1046</p_total>
-		<m_payload>343</m_payload>
-		<fraction_m_payload>.32</fraction_m_payload>
-		<fraction_m_structmech>.22</fraction_m_structmech> 
-		<fraction_m_thermal>.06</fraction_m_thermal>
-		<fraction_m_power>.16</fraction_m_power> 
-		<fraction_m_TTC>.04</fraction_m_TTC> 
+		<power_total>1046</power_total>
+		<mass_payload>343</mass_payload>
+		<fraction_mass_payload>.32</fraction_mass_payload>
+		<fraction_mass_structmech>.22</fraction_mass_structmech> 
+		<fraction_mass_thermal>.06</fraction_mass_thermal>
+		<fraction_mass_power>.16</fraction_mass_power> 
+		<fraction_mass_TTC>.04</fraction_mass_TTC> 
 		<fraction_m_OBC>.03</fraction_m_OBC>
-		<fraction_m_ADC>.08</fraction_m_ADC>
-		<fraction_m_propulsion>.08</fraction_m_propulsion>
-		<fraction_m_other>0</fraction_m_other>
-		<fraction_p_payload>.44</fraction_p_payload>
-		<fraction_p_structmech>0</fraction_p_structmech>  
-		<fraction_p_thermal>.13</fraction_p_thermal>
-		<fraction_p_power>.02</fraction_p_power>
-		<fraction_p_TTC>.22</fraction_p_TTC>
+		<fraction_mass_ADC>.08</fraction_mass_ADC>
+		<fraction_mass_propulsion>.08</fraction_mass_propulsion>
+		<fraction_mass_other>0</fraction_mass_other>
+		<fraction_power_payload>.44</fraction_power_payload>
+		<fraction_power_structmech>0</fraction_power_structmech>  
+		<fraction_power_thermal>.13</fraction_power_thermal>
+		<fraction_power_power>.02</fraction_power_power>
+		<fraction_power_TTC>.22</fraction_power_TTC>
 		<fraction_p_OBC>.03</fraction_p_OBC>
-		<fraction_p_ADC>.15</fraction_p_ADC>
-		<fraction_p_propulsion>0</fraction_p_propulsion>
+		<fraction_power_ADC>.15</fraction_power_ADC>
+		<fraction_propulsion_power>0</fraction_propulsion_power>
 		<size_x>1.88</size_x>
 		<size_y>1.88</size_y>
 		<size_h>4.2</size_h>
@@ -1157,25 +1157,25 @@
 		<orbit_type>High Earth </orbit_type>
 		<m_total>2201</m_total>
 		<m_total_dry>1649</m_total_dry>
-		<p_total>1621</p_total>
-		<m_payload>311</m_payload>
-		<fraction_m_payload>.19</fraction_m_payload>
-		<fraction_m_structmech>.28</fraction_m_structmech> 
-		<fraction_m_thermal>.03</fraction_m_thermal>
-		<fraction_m_power>.28</fraction_m_power> 
-		<fraction_m_TTC>0</fraction_m_TTC> 
+		<power_total>1621</power_total>
+		<mass_payload>311</mass_payload>
+		<fraction_mass_payload>.19</fraction_mass_payload>
+		<fraction_mass_structmech>.28</fraction_mass_structmech> 
+		<fraction_mass_thermal>.03</fraction_mass_thermal>
+		<fraction_mass_power>.28</fraction_mass_power> 
+		<fraction_mass_TTC>0</fraction_mass_TTC> 
 		<fraction_m_OBC>.03</fraction_m_OBC>
-		<fraction_m_ADC>.06</fraction_m_ADC>
-		<fraction_m_propulsion>.05</fraction_m_propulsion>
-		<fraction_m_other>.07</fraction_m_other>
-		<fraction_p_payload>.54</fraction_p_payload>
-		<fraction_p_structmech>0</fraction_p_structmech>  
-		<fraction_p_thermal>.29</fraction_p_thermal>
-		<fraction_p_power>.01</fraction_p_power>
-		<fraction_p_TTC>0</fraction_p_TTC>
+		<fraction_mass_ADC>.06</fraction_mass_ADC>
+		<fraction_mass_propulsion>.05</fraction_mass_propulsion>
+		<fraction_mass_other>.07</fraction_mass_other>
+		<fraction_power_payload>.54</fraction_power_payload>
+		<fraction_power_structmech>0</fraction_power_structmech>  
+		<fraction_power_thermal>.29</fraction_power_thermal>
+		<fraction_power_power>.01</fraction_power_power>
+		<fraction_power_TTC>0</fraction_power_TTC>
 		<fraction_p_OBC>.04</fraction_p_OBC>
-		<fraction_p_ADC>.12</fraction_p_ADC>
-		<fraction_p_propulsion>.01</fraction_p_propulsion>
+		<fraction_power_ADC>.12</fraction_power_ADC>
+		<fraction_propulsion_power>.01</fraction_propulsion_power>
 		<size_x>14.2</size_x>
 		<size_y>14.2</size_y>
 		<size_h>17.3</size_h>
@@ -1189,18 +1189,18 @@
 		<orbit_type>High Earth </orbit_type>
 		<m_total>849</m_total>
 		<m_total_dry>833</m_total_dry>
-		<p_total>434</p_total>
-		<m_payload>453</m_payload>
-		<fraction_m_payload>.54</fraction_m_payload>
-		<fraction_m_structmech>.17</fraction_m_structmech> 
-		<fraction_m_thermal>.01</fraction_m_thermal>
-		<fraction_m_power>.13</fraction_m_power> 
-		<fraction_m_TTC>.03</fraction_m_TTC> 
+		<power_total>434</power_total>
+		<mass_payload>453</mass_payload>
+		<fraction_mass_payload>.54</fraction_mass_payload>
+		<fraction_mass_structmech>.17</fraction_mass_structmech> 
+		<fraction_mass_thermal>.01</fraction_mass_thermal>
+		<fraction_mass_power>.13</fraction_mass_power> 
+		<fraction_mass_TTC>.03</fraction_mass_TTC> 
 		<fraction_m_OBC>.02</fraction_m_OBC>
-		<fraction_m_ADC>.07</fraction_m_ADC>
-		<fraction_m_propulsion>.03</fraction_m_propulsion>
-		<fraction_m_other>0</fraction_m_other>
-		<fraction_p_payload>.14</fraction_p_payload>
+		<fraction_mass_ADC>.07</fraction_mass_ADC>
+		<fraction_mass_propulsion>.03</fraction_mass_propulsion>
+		<fraction_mass_other>0</fraction_mass_other>
+		<fraction_power_payload>.14</fraction_power_payload>
 		<size_x>2.1</size_x>
 		<size_y>2.1</size_y>
 		<size_h>4.5</size_h>
@@ -1214,25 +1214,25 @@
 		<orbit_type>High Earth </orbit_type>
 		<m_total>458</m_total>
 		<m_total_dry>117</m_total_dry>
-		<p_total>70</p_total>
-		<m_payload>26</m_payload>
-		<fraction_m_payload>.22</fraction_m_payload>
-		<fraction_m_structmech>.44</fraction_m_structmech> 
-		<fraction_m_thermal>.03</fraction_m_thermal>
-		<fraction_m_power>.13</fraction_m_power> 
-		<fraction_m_TTC>.04</fraction_m_TTC> 
+		<power_total>70</power_total>
+		<mass_payload>26</mass_payload>
+		<fraction_mass_payload>.22</fraction_mass_payload>
+		<fraction_mass_structmech>.44</fraction_mass_structmech> 
+		<fraction_mass_thermal>.03</fraction_mass_thermal>
+		<fraction_mass_power>.13</fraction_mass_power> 
+		<fraction_mass_TTC>.04</fraction_mass_TTC> 
 		<fraction_m_OBC>.02</fraction_m_OBC>
-		<fraction_m_ADC>.02</fraction_m_ADC>
-		<fraction_m_propulsion>.06</fraction_m_propulsion>
-		<fraction_m_other>.04</fraction_m_other>
-		<fraction_p_payload>.32</fraction_p_payload>
-		<fraction_p_structmech>0</fraction_p_structmech>  
-		<fraction_p_thermal>.12</fraction_p_thermal>
-		<fraction_p_power>.12</fraction_p_power>
-		<fraction_p_TTC>.22</fraction_p_TTC>
+		<fraction_mass_ADC>.02</fraction_mass_ADC>
+		<fraction_mass_propulsion>.06</fraction_mass_propulsion>
+		<fraction_mass_other>.04</fraction_mass_other>
+		<fraction_power_payload>.32</fraction_power_payload>
+		<fraction_power_structmech>0</fraction_power_structmech>  
+		<fraction_power_thermal>.12</fraction_power_thermal>
+		<fraction_power_power>.12</fraction_power_power>
+		<fraction_power_TTC>.22</fraction_power_TTC>
 		<fraction_p_OBC>.22</fraction_p_OBC>
-		<fraction_p_ADC>.17</fraction_p_ADC>
-		<fraction_p_propulsion>.02</fraction_p_propulsion>
+		<fraction_power_ADC>.17</fraction_power_ADC>
+		<fraction_propulsion_power>.02</fraction_propulsion_power>
 		<size_x>.93</size_x>
 		<size_y>.93</size_y>
 		<size_h>.5</size_h>
@@ -1246,16 +1246,16 @@
 		<orbit_type>High Earth </orbit_type>
 		<m_total>3217</m_total>
 		<m_total_dry>1546</m_total_dry>
-		<m_payload>345</m_payload>
-		<fraction_m_payload>.22</fraction_m_payload>
-		<fraction_m_structmech>.31</fraction_m_structmech> 
-		<fraction_m_thermal>.07</fraction_m_thermal>
-		<fraction_m_power>.14</fraction_m_power> 
-		<fraction_m_TTC>.07</fraction_m_TTC> 
+		<mass_payload>345</mass_payload>
+		<fraction_mass_payload>.22</fraction_mass_payload>
+		<fraction_mass_structmech>.31</fraction_mass_structmech> 
+		<fraction_mass_thermal>.07</fraction_mass_thermal>
+		<fraction_mass_power>.14</fraction_mass_power> 
+		<fraction_mass_TTC>.07</fraction_mass_TTC> 
 		<fraction_m_OBC>.03</fraction_m_OBC>
-		<fraction_m_ADC>.08</fraction_m_ADC>
-		<fraction_m_propulsion>.06</fraction_m_propulsion>
-		<fraction_m_other>0</fraction_m_other>
+		<fraction_mass_ADC>.08</fraction_mass_ADC>
+		<fraction_mass_propulsion>.06</fraction_mass_propulsion>
+		<fraction_mass_other>0</fraction_mass_other>
 		<size_x>1.88</size_x>
 		<size_y>1.88</size_y>
 		<size_h>4.2</size_h>
@@ -1269,25 +1269,25 @@
 		<orbit_type>High Earth </orbit_type>
 		<m_total>2975</m_total>
 		<m_total_dry>1561</m_total_dry>
-		<p_total>969</p_total>
-		<m_payload>298</m_payload>
-		<fraction_m_payload>.19</fraction_m_payload>
-		<fraction_m_structmech>.35</fraction_m_structmech> 
-		<fraction_m_thermal>.02</fraction_m_thermal>
-		<fraction_m_power>.2</fraction_m_power> 
-		<fraction_m_TTC>.04</fraction_m_TTC> 
+		<power_total>969</power_total>
+		<mass_payload>298</mass_payload>
+		<fraction_mass_payload>.19</fraction_mass_payload>
+		<fraction_mass_structmech>.35</fraction_mass_structmech> 
+		<fraction_mass_thermal>.02</fraction_mass_thermal>
+		<fraction_mass_power>.2</fraction_mass_power> 
+		<fraction_mass_TTC>.04</fraction_mass_TTC> 
 		<fraction_m_OBC>.03</fraction_m_OBC>
-		<fraction_m_ADC>.07</fraction_m_ADC>
-		<fraction_m_propulsion>.06</fraction_m_propulsion>
-		<fraction_m_other>.03</fraction_m_other>
-		<fraction_p_payload>.35</fraction_p_payload>
-		<fraction_p_structmech>0</fraction_p_structmech>  
-		<fraction_p_thermal>.11</fraction_p_thermal>
-		<fraction_p_power>.15</fraction_p_power>
-		<fraction_p_TTC>.07</fraction_p_TTC>
+		<fraction_mass_ADC>.07</fraction_mass_ADC>
+		<fraction_mass_propulsion>.06</fraction_mass_propulsion>
+		<fraction_mass_other>.03</fraction_mass_other>
+		<fraction_power_payload>.35</fraction_power_payload>
+		<fraction_power_structmech>0</fraction_power_structmech>  
+		<fraction_power_thermal>.11</fraction_power_thermal>
+		<fraction_power_power>.15</fraction_power_power>
+		<fraction_power_TTC>.07</fraction_power_TTC>
 		<fraction_p_OBC>.07</fraction_p_OBC>
-		<fraction_p_ADC>.18</fraction_p_ADC>
-		<fraction_p_propulsion>.01</fraction_p_propulsion>
+		<fraction_power_ADC>.18</fraction_power_ADC>
+		<fraction_propulsion_power>.01</fraction_propulsion_power>
 		<size_x>2.22</size_x>
 		<size_y>2.22</size_y>
 		<size_h>4.5</size_h>
@@ -1301,25 +1301,25 @@
 		<orbit_type>Planetary </orbit_type>
 		<m_total>5565</m_total>
 		<m_total_dry>2558</m_total_dry>
-		<p_total>1338</p_total>
-		<m_payload>688</m_payload>
-		<fraction_m_payload>.27</fraction_m_payload>
-		<fraction_m_structmech>.14</fraction_m_structmech> 
-		<fraction_m_thermal>.03</fraction_m_thermal>
-		<fraction_m_power>.14</fraction_m_power> 
-		<fraction_m_TTC>.06</fraction_m_TTC> 
+		<power_total>1338</power_total>
+		<mass_payload>688</mass_payload>
+		<fraction_mass_payload>.27</fraction_mass_payload>
+		<fraction_mass_structmech>.14</fraction_mass_structmech> 
+		<fraction_mass_thermal>.03</fraction_mass_thermal>
+		<fraction_mass_power>.14</fraction_mass_power> 
+		<fraction_mass_TTC>.06</fraction_mass_TTC> 
 		<fraction_m_OBC>.05</fraction_m_OBC>
-		<fraction_m_ADC>.06</fraction_m_ADC>
-		<fraction_m_propulsion>.19</fraction_m_propulsion>
-		<fraction_m_other>.05</fraction_m_other>
-		<fraction_p_payload>.56</fraction_p_payload>
-		<fraction_p_structmech>0</fraction_p_structmech>  
-		<fraction_p_thermal>.11</fraction_p_thermal>
-		<fraction_p_power>.04</fraction_p_power>
-		<fraction_p_TTC>0</fraction_p_TTC>
+		<fraction_mass_ADC>.06</fraction_mass_ADC>
+		<fraction_mass_propulsion>.19</fraction_mass_propulsion>
+		<fraction_mass_other>.05</fraction_mass_other>
+		<fraction_power_payload>.56</fraction_power_payload>
+		<fraction_power_structmech>0</fraction_power_structmech>  
+		<fraction_power_thermal>.11</fraction_power_thermal>
+		<fraction_power_power>.04</fraction_power_power>
+		<fraction_power_TTC>0</fraction_power_TTC>
 		<fraction_p_OBC>.11</fraction_p_OBC>
-		<fraction_p_ADC>.11</fraction_p_ADC>
-		<fraction_p_propulsion>.7</fraction_p_propulsion>
+		<fraction_power_ADC>.11</fraction_power_ADC>
+		<fraction_propulsion_power>.7</fraction_propulsion_power>
 		<size_x>4</size_x>
 		<size_y>4</size_y>
 		<size_h>6.8</size_h>
@@ -1333,16 +1333,16 @@
 		<orbit_type>Planetary </orbit_type>
 		<m_total>1646</m_total>
 		<m_total_dry>259</m_total_dry>
-		<m_payload>14</m_payload>
-		<fraction_m_payload>.05</fraction_m_payload>
-		<fraction_m_structmech>.24</fraction_m_structmech> 
-		<fraction_m_thermal>.09</fraction_m_thermal>
-		<fraction_m_power>.14</fraction_m_power> 
-		<fraction_m_TTC>.05</fraction_m_TTC> 
+		<mass_payload>14</mass_payload>
+		<fraction_mass_payload>.05</fraction_mass_payload>
+		<fraction_mass_structmech>.24</fraction_mass_structmech> 
+		<fraction_mass_thermal>.09</fraction_mass_thermal>
+		<fraction_mass_power>.14</fraction_mass_power> 
+		<fraction_mass_TTC>.05</fraction_mass_TTC> 
 		<fraction_m_OBC>.04</fraction_m_OBC>
-		<fraction_m_ADC>.06</fraction_m_ADC>
-		<fraction_m_propulsion>.21</fraction_m_propulsion>
-		<fraction_m_other>.13</fraction_m_other>
+		<fraction_mass_ADC>.06</fraction_mass_ADC>
+		<fraction_mass_propulsion>.21</fraction_mass_propulsion>
+		<fraction_mass_other>.13</fraction_mass_other>
 		<size_x>1.14</size_x>
 		<size_y>1.14</size_y>
 		<size_h>1.88</size_h>
@@ -1356,16 +1356,16 @@
 		<orbit_type>Planetary </orbit_type>
 		<m_total>2560</m_total>
 		<m_total_dry>1880</m_total_dry>
-		<m_payload>148</m_payload>
-		<fraction_m_payload>.3</fraction_m_payload>
-		<fraction_m_structmech>.17</fraction_m_structmech> 
-		<fraction_m_thermal>.04</fraction_m_thermal>
-		<fraction_m_power>.13</fraction_m_power> 
-		<fraction_m_TTC>.04</fraction_m_TTC> 
+		<mass_payload>148</mass_payload>
+		<fraction_mass_payload>.3</fraction_mass_payload>
+		<fraction_mass_structmech>.17</fraction_mass_structmech> 
+		<fraction_mass_thermal>.04</fraction_mass_thermal>
+		<fraction_mass_power>.13</fraction_mass_power> 
+		<fraction_mass_TTC>.04</fraction_mass_TTC> 
 		<fraction_m_OBC>.03</fraction_m_OBC>
-		<fraction_m_ADC>.08</fraction_m_ADC>
-		<fraction_m_propulsion>.1</fraction_m_propulsion>
-		<fraction_m_other>.1</fraction_m_other>
+		<fraction_mass_ADC>.08</fraction_mass_ADC>
+		<fraction_mass_propulsion>.1</fraction_mass_propulsion>
+		<fraction_mass_other>.1</fraction_mass_other>
 		<size_x>4.6</size_x>
 		<size_y>4.6</size_y>
 		<size_h>6.15</size_h>
@@ -1379,25 +1379,25 @@
 		<orbit_type>Planetary </orbit_type>
 		<m_total>1915</m_total>
 		<m_total_dry>1018</m_total_dry>
-		<p_total>620</p_total>
-		<m_payload>96</m_payload>
-		<fraction_m_payload>.09</fraction_m_payload>
-		<fraction_m_structmech>.31</fraction_m_structmech> 
-		<fraction_m_thermal>.08</fraction_m_thermal>
-		<fraction_m_power>.24</fraction_m_power> 
-		<fraction_m_TTC>.07</fraction_m_TTC> 
+		<power_total>620</power_total>
+		<mass_payload>96</mass_payload>
+		<fraction_mass_payload>.09</fraction_mass_payload>
+		<fraction_mass_structmech>.31</fraction_mass_structmech> 
+		<fraction_mass_thermal>.08</fraction_mass_thermal>
+		<fraction_mass_power>.24</fraction_mass_power> 
+		<fraction_mass_TTC>.07</fraction_mass_TTC> 
 		<fraction_m_OBC>.02</fraction_m_OBC>
-		<fraction_m_ADC>.06</fraction_m_ADC>
-		<fraction_m_propulsion>.12</fraction_m_propulsion>
-		<fraction_m_other>0</fraction_m_other>
-		<fraction_p_payload>.18</fraction_p_payload>
-		<fraction_p_structmech>0</fraction_p_structmech>  
-		<fraction_p_thermal>.2</fraction_p_thermal>
-		<fraction_p_power>.1</fraction_p_power>
-		<fraction_p_TTC>.17</fraction_p_TTC>
+		<fraction_mass_ADC>.06</fraction_mass_ADC>
+		<fraction_mass_propulsion>.12</fraction_mass_propulsion>
+		<fraction_mass_other>0</fraction_mass_other>
+		<fraction_power_payload>.18</fraction_power_payload>
+		<fraction_power_structmech>0</fraction_power_structmech>  
+		<fraction_power_thermal>.2</fraction_power_thermal>
+		<fraction_power_power>.1</fraction_power_power>
+		<fraction_power_TTC>.17</fraction_power_TTC>
 		<fraction_p_OBC>.15</fraction_p_OBC>
-		<fraction_p_ADC>.18</fraction_p_ADC>
-		<fraction_p_propulsion>.02</fraction_p_propulsion>
+		<fraction_power_ADC>.18</fraction_power_ADC>
+		<fraction_propulsion_power>.02</fraction_propulsion_power>
 		<size_x>2.74</size_x>
 		<size_y>2.52</size_y>
 		<size_h>3.86</size_h>
@@ -1410,16 +1410,16 @@
 		<orbit_type>Planetary </orbit_type>
 		<m_total>3455</m_total>
 		<m_total_dry>1127</m_total_dry>
-		<m_payload>130</m_payload>
-		<fraction_m_payload>.12</fraction_m_payload>
-		<fraction_m_structmech>.29</fraction_m_structmech> 
-		<fraction_m_thermal>.05</fraction_m_thermal>
-		<fraction_m_power>.18</fraction_m_power> 
-		<fraction_m_TTC>.09</fraction_m_TTC> 
+		<mass_payload>130</mass_payload>
+		<fraction_mass_payload>.12</fraction_mass_payload>
+		<fraction_mass_structmech>.29</fraction_mass_structmech> 
+		<fraction_mass_thermal>.05</fraction_mass_thermal>
+		<fraction_mass_power>.18</fraction_mass_power> 
+		<fraction_mass_TTC>.09</fraction_mass_TTC> 
 		<fraction_m_OBC>.04</fraction_m_OBC>
-		<fraction_m_ADC>.08</fraction_m_ADC>
-		<fraction_m_propulsion>.07</fraction_m_propulsion>
-		<fraction_m_other>.09</fraction_m_other>
+		<fraction_mass_ADC>.08</fraction_mass_ADC>
+		<fraction_mass_propulsion>.07</fraction_mass_propulsion>
+		<fraction_mass_other>.09</fraction_mass_other>
 		<size_x>4.6</size_x>
 		<size_y>4.6</size_y>
 		<size_h>6.4</size_h>
@@ -1433,16 +1433,16 @@
 		<orbit_type>Planetary </orbit_type>
 		<m_total>727</m_total>
 		<m_total_dry>377</m_total_dry>
-		<m_payload>45</m_payload>
-		<fraction_m_payload>.12</fraction_m_payload>
-		<fraction_m_structmech>.28</fraction_m_structmech> 
-		<fraction_m_thermal>.05</fraction_m_thermal>
-		<fraction_m_power>.23</fraction_m_power> 
-		<fraction_m_TTC>.06</fraction_m_TTC> 
+		<mass_payload>45</mass_payload>
+		<fraction_mass_payload>.12</fraction_mass_payload>
+		<fraction_mass_structmech>.28</fraction_mass_structmech> 
+		<fraction_mass_thermal>.05</fraction_mass_thermal>
+		<fraction_mass_power>.23</fraction_mass_power> 
+		<fraction_mass_TTC>.06</fraction_mass_TTC> 
 		<fraction_m_OBC>.03</fraction_m_OBC>
-		<fraction_m_ADC>.06</fraction_m_ADC>
-		<fraction_m_propulsion>.13</fraction_m_propulsion>
-		<fraction_m_other>.03</fraction_m_other>
+		<fraction_mass_ADC>.06</fraction_mass_ADC>
+		<fraction_mass_propulsion>.13</fraction_mass_propulsion>
+		<fraction_mass_other>.03</fraction_mass_other>
 		<size_x>2.2</size_x>
 		<size_y>2.6</size_y>
 		<size_h>1.7</size_h>
@@ -1456,25 +1456,25 @@
 		<orbit_type>Planetary </orbit_type>
 		<m_total>808</m_total>
 		<m_total_dry>482</m_total_dry>
-		<p_total>852</p_total>
-		<m_payload>56</m_payload>
-		<fraction_m_payload>.12</fraction_m_payload>
-		<fraction_m_structmech>.19</fraction_m_structmech> 
-		<fraction_m_thermal>.04</fraction_m_thermal>
-		<fraction_m_power>.23</fraction_m_power> 
-		<fraction_m_TTC>.05</fraction_m_TTC> 
+		<power_total>852</power_total>
+		<mass_payload>56</mass_payload>
+		<fraction_mass_payload>.12</fraction_mass_payload>
+		<fraction_mass_structmech>.19</fraction_mass_structmech> 
+		<fraction_mass_thermal>.04</fraction_mass_thermal>
+		<fraction_mass_power>.23</fraction_mass_power> 
+		<fraction_mass_TTC>.05</fraction_mass_TTC> 
 		<fraction_m_OBC>.06</fraction_m_OBC>
-		<fraction_m_ADC>.06</fraction_m_ADC>
-		<fraction_m_propulsion>.25</fraction_m_propulsion>
-		<fraction_m_other>.01</fraction_m_other>
-		<fraction_p_payload>.11</fraction_p_payload>
-		<fraction_p_structmech>0</fraction_p_structmech>  
-		<fraction_p_thermal>.18</fraction_p_thermal>
-		<fraction_p_power>.01</fraction_p_power>
-		<fraction_p_TTC>.07</fraction_p_TTC>
+		<fraction_mass_ADC>.06</fraction_mass_ADC>
+		<fraction_mass_propulsion>.25</fraction_mass_propulsion>
+		<fraction_mass_other>.01</fraction_mass_other>
+		<fraction_power_payload>.11</fraction_power_payload>
+		<fraction_power_structmech>0</fraction_power_structmech>  
+		<fraction_power_thermal>.18</fraction_power_thermal>
+		<fraction_power_power>.01</fraction_power_power>
+		<fraction_power_TTC>.07</fraction_power_TTC>
 		<fraction_p_OBC>.1</fraction_p_OBC>
-		<fraction_p_ADC>.06</fraction_p_ADC>
-		<fraction_p_propulsion>.47</fraction_p_propulsion>
+		<fraction_power_ADC>.06</fraction_power_ADC>
+		<fraction_propulsion_power>.47</fraction_propulsion_power>
 		<size_x>1.7</size_x>
 		<size_y>1.7</size_y>
 		<size_h>2.75</size_h>
@@ -1488,25 +1488,25 @@
 		<orbit_type>Planetary </orbit_type>
 		<m_total>1102</m_total>
 		<m_total_dry>508</m_total_dry>
-		<p_total>633</p_total>
-		<m_payload>47</m_payload>
-		<fraction_m_payload>.09</fraction_m_payload>
-		<fraction_m_structmech>.25</fraction_m_structmech> 
-		<fraction_m_thermal>.1</fraction_m_thermal>
-		<fraction_m_power>.24</fraction_m_power> 
-		<fraction_m_TTC>.06</fraction_m_TTC> 
+		<power_total>633</power_total>
+		<mass_payload>47</mass_payload>
+		<fraction_mass_payload>.09</fraction_mass_payload>
+		<fraction_mass_structmech>.25</fraction_mass_structmech> 
+		<fraction_mass_thermal>.1</fraction_mass_thermal>
+		<fraction_mass_power>.24</fraction_mass_power> 
+		<fraction_mass_TTC>.06</fraction_mass_TTC> 
 		<fraction_m_OBC>.02</fraction_m_OBC>
-		<fraction_m_ADC>.07</fraction_m_ADC>
-		<fraction_m_propulsion>.16</fraction_m_propulsion>
-		<fraction_m_other>0</fraction_m_other>
-		<fraction_p_payload>.15</fraction_p_payload>
-		<fraction_p_structmech>0</fraction_p_structmech>  
-		<fraction_p_thermal>.05</fraction_p_thermal>
-		<fraction_p_power>.17</fraction_p_power>
-		<fraction_p_TTC>.2</fraction_p_TTC>
+		<fraction_mass_ADC>.07</fraction_mass_ADC>
+		<fraction_mass_propulsion>.16</fraction_mass_propulsion>
+		<fraction_mass_other>0</fraction_mass_other>
+		<fraction_power_payload>.15</fraction_power_payload>
+		<fraction_power_structmech>0</fraction_power_structmech>  
+		<fraction_power_thermal>.05</fraction_power_thermal>
+		<fraction_power_power>.17</fraction_power_power>
+		<fraction_power_TTC>.2</fraction_power_TTC>
 		<fraction_p_OBC>.05</fraction_p_OBC>
-		<fraction_p_ADC>.19</fraction_p_ADC>
-		<fraction_p_propulsion>.19</fraction_p_propulsion>
+		<fraction_power_ADC>.19</fraction_power_ADC>
+		<fraction_propulsion_power>.19</fraction_propulsion_power>
 		<size_x>1.85</size_x>
 		<size_y>1.27</size_y>
 		<size_h>1.42</size_h>
@@ -1520,25 +1520,25 @@
 		<orbit_type>Planetary </orbit_type>
 		<m_total>2114</m_total>
 		<m_total_dry>953</m_total_dry>
-		<p_total>815</p_total>
-		<m_payload>130</m_payload>
-		<fraction_m_payload>.14</fraction_m_payload>
-		<fraction_m_structmech>.33</fraction_m_structmech> 
-		<fraction_m_thermal>.03</fraction_m_thermal>
-		<fraction_m_power>.25</fraction_m_power> 
-		<fraction_m_TTC>.07</fraction_m_TTC> 
+		<power_total>815</power_total>
+		<mass_payload>130</mass_payload>
+		<fraction_mass_payload>.14</fraction_mass_payload>
+		<fraction_mass_structmech>.33</fraction_mass_structmech> 
+		<fraction_mass_thermal>.03</fraction_mass_thermal>
+		<fraction_mass_power>.25</fraction_mass_power> 
+		<fraction_mass_TTC>.07</fraction_mass_TTC> 
 		<fraction_m_OBC>.03</fraction_m_OBC>
-		<fraction_m_ADC>.06</fraction_m_ADC>
-		<fraction_m_propulsion>.1</fraction_m_propulsion>
-		<fraction_m_other>0</fraction_m_other>
-		<fraction_p_payload>.19</fraction_p_payload>
-		<fraction_p_structmech>.05</fraction_p_structmech>  
-		<fraction_p_thermal>.25</fraction_p_thermal>
-		<fraction_p_power>.05</fraction_p_power>
-		<fraction_p_TTC>.26</fraction_p_TTC>
+		<fraction_mass_ADC>.06</fraction_mass_ADC>
+		<fraction_mass_propulsion>.1</fraction_mass_propulsion>
+		<fraction_mass_other>0</fraction_mass_other>
+		<fraction_power_payload>.19</fraction_power_payload>
+		<fraction_power_structmech>.05</fraction_power_structmech>  
+		<fraction_power_thermal>.25</fraction_power_thermal>
+		<fraction_power_power>.05</fraction_power_power>
+		<fraction_power_TTC>.26</fraction_power_TTC>
 		<fraction_p_OBC>.11</fraction_p_OBC>
-		<fraction_p_ADC>.09</fraction_p_ADC>
-		<fraction_p_propulsion>0</fraction_p_propulsion>
+		<fraction_power_ADC>.09</fraction_power_ADC>
+		<fraction_propulsion_power>0</fraction_propulsion_power>
 		<size_x>3.</size_x>
 		<size_y>3.</size_y>
 		<size_h>6.5</size_h>
@@ -1551,16 +1551,16 @@
 		<orbit_type>Planetary </orbit_type>
 		<m_total>478</m_total>
 		<m_total_dry>401</m_total_dry>
-		<m_payload>30</m_payload>
-		<fraction_m_payload>.08</fraction_m_payload>
-		<fraction_m_structmech>.32</fraction_m_structmech> 
-		<fraction_m_thermal>.07</fraction_m_thermal>
-		<fraction_m_power>.27</fraction_m_power> 
-		<fraction_m_TTC>.1</fraction_m_TTC> 
+		<mass_payload>30</mass_payload>
+		<fraction_mass_payload>.08</fraction_mass_payload>
+		<fraction_mass_structmech>.32</fraction_mass_structmech> 
+		<fraction_mass_thermal>.07</fraction_mass_thermal>
+		<fraction_mass_power>.27</fraction_mass_power> 
+		<fraction_mass_TTC>.1</fraction_mass_TTC> 
 		<fraction_m_OBC>.06</fraction_m_OBC>
-		<fraction_m_ADC>.05</fraction_m_ADC>
-		<fraction_m_propulsion>.07</fraction_m_propulsion>
-		<fraction_m_other>0</fraction_m_other>
+		<fraction_mass_ADC>.05</fraction_mass_ADC>
+		<fraction_mass_propulsion>.07</fraction_mass_propulsion>
+		<fraction_mass_other>0</fraction_mass_other>
 		<size_x>2.2</size_x>
 		<size_y>2.1</size_y>
 		<size_h>2.7</size_h>
@@ -1574,25 +1574,25 @@
 		<orbit_type>Planetary </orbit_type>
 		<m_total>385</m_total>
 		<m_total_dry>299</m_total_dry>
-		<p_total>234</p_total>
-		<m_payload>71</m_payload>
-		<fraction_m_payload>.24</fraction_m_payload>
-		<fraction_m_structmech>.2</fraction_m_structmech> 
-		<fraction_m_thermal>.03</fraction_m_thermal>
-		<fraction_m_power>.33</fraction_m_power> 
-		<fraction_m_TTC>.06</fraction_m_TTC> 
+		<power_total>234</power_total>
+		<mass_payload>71</mass_payload>
+		<fraction_mass_payload>.24</fraction_mass_payload>
+		<fraction_mass_structmech>.2</fraction_mass_structmech> 
+		<fraction_mass_thermal>.03</fraction_mass_thermal>
+		<fraction_mass_power>.33</fraction_mass_power> 
+		<fraction_mass_TTC>.06</fraction_mass_TTC> 
 		<fraction_m_OBC>.03</fraction_m_OBC>
-		<fraction_m_ADC>.03</fraction_m_ADC>
-		<fraction_m_propulsion>.06</fraction_m_propulsion>
-		<fraction_m_other>0</fraction_m_other>
-		<fraction_p_payload>.12</fraction_p_payload>
-		<fraction_p_structmech>0</fraction_p_structmech>  
-		<fraction_p_thermal>.15</fraction_p_thermal>
-		<fraction_p_power>.21</fraction_p_power>
-		<fraction_p_TTC>.22</fraction_p_TTC>
+		<fraction_mass_ADC>.03</fraction_mass_ADC>
+		<fraction_mass_propulsion>.06</fraction_mass_propulsion>
+		<fraction_mass_other>0</fraction_mass_other>
+		<fraction_power_payload>.12</fraction_power_payload>
+		<fraction_power_structmech>0</fraction_power_structmech>  
+		<fraction_power_thermal>.15</fraction_power_thermal>
+		<fraction_power_power>.21</fraction_power_power>
+		<fraction_power_TTC>.22</fraction_power_TTC>
 		<fraction_p_OBC>.16</fraction_p_OBC>
-		<fraction_p_ADC>.11</fraction_p_ADC>
-		<fraction_p_propulsion>.03</fraction_p_propulsion>
+		<fraction_power_ADC>.11</fraction_power_ADC>
+		<fraction_propulsion_power>.03</fraction_propulsion_power>
 		<size_x>.66</size_x>
 		<size_y>.66</size_y>
 		<size_h>1.71</size_h>

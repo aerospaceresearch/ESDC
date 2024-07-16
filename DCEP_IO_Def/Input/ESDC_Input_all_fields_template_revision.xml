@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Satellite_parameters dcep_version="20191025" dcep_show="false">
         <input_case dcep_show="false">
-                <totalmass dcep_name="Satellite Mass" dcep_unit="kg" dcep_description="Currently estimated mass of satellite">155</totalmass>
+                <mass_total dcep_name="Satellite Mass" dcep_unit="kg" dcep_description="Currently estimated mass of satellite">155</mass_total>
                 <deltav dcep_name="Required Delta v" dcep_unit="m/s" dcep_description="Minimum Delta v to be delivered by propulsion system">685.97</deltav>
-                <m_propellant>1</m_propellant>
-                <m_payload>1</m_payload>
-                <m_structmech>1</m_structmech>
-                <m_thermal>1</m_thermal>
-                <m_power>1</m_power>
-                <m_TTC>1</m_TTC>
-                <m_ADC>1</m_ADC>
-                <m_propulsion>1</m_propulsion>
-                <m_other>1</m_other>
-                <p_total>1</p_total>
-                <p_propulsion dcep_name="Available Power" dcep_unit="W" dcep_description="Power available for propulsion system">202.9</p_propulsion>
-                <p_payload>1</p_payload>
-                <p_structmech>1</p_structmech>
-                <p_thermal>1</p_thermal>
-                <p_power>1</p_power>
-                <p_TTC>1</p_TTC>
-                <p_ADC>1</p_ADC>
+                <mass_propellant>1</mass_propellant>
+                <mass_payload>1</mass_payload>
+                <mass_structmech>1</mass_structmech>
+                <mass_thermal>1</mass_thermal>
+                <mass_power>1</mass_power>
+                <mass_TTC>1</mass_TTC>
+                <mass_ADC>1</mass_ADC>
+                <mass_propulsion>1</mass_propulsion>
+                <mass_other>1</mass_other>
+                <power_total>1</power_total>
+                <propulsion_power dcep_name="Available Power" dcep_unit="W" dcep_description="Power available for propulsion system">202.9</propulsion_power>
+                <power_payload>1</power_payload>
+                <power_structmech>1</power_structmech>
+                <power_thermal>1</power_thermal>
+                <power_power>1</power_power>
+                <power_TTC>1</power_TTC>
+                <power_ADC>1</power_ADC>
         </input_case>
 </Satellite_parameters>
 

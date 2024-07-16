@@ -14,7 +14,7 @@
 				
 				<input_case_info> Contains subfields that specify options to include input case info/mission requirements in the filename.
 					<active> Must be set to true or false, indicating whether input case info/mission requirements will be included in the filename. </active>
-					<fields> Must be set to a string cell array (ex. {“deltav”}, {“deltav”, “totalmass”}) containing input case info/mission requirements fields that will be included in the filename. </fields>
+					<fields> Must be set to a string cell array (ex. {“deltav”}, {“deltav”, “mass_total”}) containing input case info/mission requirements fields that will be included in the filename. </fields>
 				</input_case_info>
 			</filename>
 			

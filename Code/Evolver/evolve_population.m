@@ -14,7 +14,7 @@ function [generation_new, convergence] = evolve_population(input, db_data, confi
       population(i,j) = mutate_individual(input, db_data, config, generation_data{n_successor}(i,j));       % here all system mutations handled
 
       %refresh other system data
-      [population(i,j).subsystem_masses population(i,j).subsystem_powers]= SMAD_scalings(population(i,j));
+      [population(i,j).subsystem_masses population(i,j).subsystemass_powers]= SMAD_scalings(population(i,j));
       %disp(input.Satellite_parameters.input_case{i});
 
       population(i,j).system.power = analysis_power_system(population(i,j), input.Satellite_parameters.input_case{i}, db_data, config);
@@ -30,12 +30,12 @@ function [generation_new, convergence] = evolve_population(input, db_data, confi
       % add function to overwrite .subsystem_masses.propulsion with new mass()
       % add remaining mass to margin or payload ...or remove from total mass...potential for reiterate
       % change evolutionary fitness condition for minimal mass? or from maximum margin+payload mass?
-      EP_scalings = mass_budget_propulsion(population(i,j), population(i,j).subsystem_masses.m_propellant);
+      EP_scalings = mass_budget_propulsion(population(i,j), population(i,j).subsystem_masses.mass_propellant);
 
       %Calculate diff between smad and tool
-      d_EP =  EP_scalings.total - population(i,j).subsystem_masses.m_propulsion;
+      d_EP =  EP_scalings.total - population(i,j).subsystem_masses.mass_propulsion;
 
-      population(i,j).subsystem_masses.m_propulsion = EP_scalings.total;
+      population(i,j).subsystem_masses.mass_propulsion = EP_scalings.total;
 
       population(i,j).subsystem_masses.propulsion.m_tank      =  EP_scalings.tank;
       population(i,j).subsystem_masses.propulsion.m_thruster  =  EP_scalings.thruster;
@@ -56,30 +56,30 @@ function [generation_new, convergence] = evolve_population(input, db_data, confi
           %TODO better handling here
       end
 
-      d_powersys = population(i,j).subsystem_powers.p_propulsion - population(i,j).p_propulsion;
+      d_powersys = population(i,j).subsystemass_powers.propulsion_power - population(i,j).propulsion_power;
 
-      if population(i,j).subsystem_powers.p_propulsion< population(i,j).p_propulsion
-        population(i,j).subsystem_powers.p_propulsion = population(i,j).p_propulsion;
+      if population(i,j).subsystemass_powers.propulsion_power< population(i,j).propulsion_power
+        population(i,j).subsystemass_powers.propulsion_power = population(i,j).propulsion_power;
       end
 
-      %update p_total
-      power_fields = fieldnames(population(i,j).subsystem_powers);
+      %update power_total
+      power_fields = fieldnames(population(i,j).subsystemass_powers);
       p_new = 0;
-      for k=2:numel(power_fields)    %start with 2 as 1 is p_total itself
-        p_new = p_new+population(i,j).subsystem_powers.(power_fields{k,1});
+      for k=2:numel(power_fields)    %start with 2 as 1 is power_total itself
+        p_new = p_new+population(i,j).subsystemass_powers.(power_fields{k,1});
       end
-%      disp(population(i,j).subsystem_powers.p_total)
+%      disp(population(i,j).subsystemass_powers.power_total)
 %      disp(p_new)
 %
-%      frac_pow12 = p_new/population(i,j).subsystem_powers.p_total;
-      population(i,j).subsystem_powers.p_total= p_new;
+%      frac_pow12 = p_new/population(i,j).subsystemass_powers.power_total;
+      population(i,j).subsystemass_powers.power_total= p_new;
 %
-%      population(i,j).subsystem_masses.m_power= population(i,j).subsystem_masses.m_power*(frac_pow12-1);
-%      disp(population(i,j).subsystem_masses.m_power)
+%      population(i,j).subsystem_masses.mass_power= population(i,j).subsystem_masses.mass_power*(frac_pow12-1);
+%      disp(population(i,j).subsystem_masses.mass_power)
       sc_type = input.Satellite_parameters.input_case{i}.derived.sc_type;
-      m_pow_1 = population(i,j).subsystem_masses.m_power;
-      population(i,j).subsystem_masses.m_power = scale_SMAD_parameter(population(i,j).subsystem_powers.p_total, sc_type, "p_total", "fraction_m_power")*population(i,j).mass;
-      d_m_pow = m_pow_1-  population(i,j).subsystem_masses.m_power;
+      m_pow_1 = population(i,j).subsystem_masses.mass_power;
+      population(i,j).subsystem_masses.mass_power = scale_SMAD_parameter(population(i,j).subsystemass_powers.power_total, sc_type, "power_total", "fraction_mass_power")*population(i,j).mass;
+      d_m_pow = m_pow_1-  population(i,j).subsystem_masses.mass_power;
 
       population(i,j).subsystem_masses.m_margin = population(i,j).subsystem_masses.m_margin-d_m_pow;
       if population(i,j).subsystem_masses.m_margin <0
@@ -96,7 +96,7 @@ function [generation_new, convergence] = evolve_population(input, db_data, confi
       end
       population(i,j).subsystem_masses.m_dry_margin = m_new;
 
-      population(i,j).subsystem_masses.m_dry_nomargin = population(i,j).mass-population(i,j).subsystem_masses.m_propellant;
+      population(i,j).subsystem_masses.m_dry_nomargin = population(i,j).mass-population(i,j).subsystem_masses.mass_propellant;
       population(i,j).subsystem_masses.m_margin = population(i,j).subsystem_masses.m_dry_nomargin-population(i,j).subsystem_masses.m_dry_margin;
       %population(i,j).mass_fractions= mass_fractions(population(i,j));
 

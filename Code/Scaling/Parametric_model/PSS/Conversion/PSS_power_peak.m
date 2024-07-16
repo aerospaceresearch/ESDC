@@ -23,8 +23,8 @@
 ## Author: op <op@op>
 ## Created: 2021-07-05
 
-function PSS_out_peak = PSS_power_peak (PSS_out_nominal, P_propulsion, P_comm)
-  PSS_out_peak = PSS_out_nominal+max(P_propulsion, P_comm); % consider the worse case either propulsion or comm power
+function PSS_out_peak = PSS_power_peak (PSS_out_nominal, propulsion_power, P_comm)
+  PSS_out_peak = PSS_out_nominal+max(propulsion_power, P_comm); % consider the worse case either propulsion or comm power
 endfunction
 
 

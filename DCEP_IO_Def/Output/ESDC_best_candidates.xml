@@ -46,30 +46,30 @@
                 <m_dry_margin
                     dcep_description="total dry mass without margin"
                     dcep_name="total marginless dry mass " dcep_unit="kg">99.419</m_dry_margin>
-                <m_propellant
+                <mass_propellant
                     dcep_description="propellant mass calculated by tsiolkosvky of inputs"
-                    dcep_name="total propellant mass" dcep_unit="kg">12.9729</m_propellant>
-                <m_payload
+                    dcep_name="total propellant mass" dcep_unit="kg">12.9729</mass_propellant>
+                <mass_payload
                     dcep_description="total payload mass. based on statistics."
-                    dcep_name="total payload mass" dcep_unit="kg">30.8199</m_payload>
+                    dcep_name="total payload mass" dcep_unit="kg">30.8199</mass_payload>
                 <m_structure
                     dcep_description="total structural mass. based on statistics."
                     dcep_name="total structural mass" dcep_unit="kg">26.8431</m_structure>
-                <m_thermal
+                <mass_thermal
                     dcep_description="total thermal system mass. based on statistics."
-                    dcep_name="total thermal system mass" dcep_unit="kg">1.9884</m_thermal>
-                <m_power
+                    dcep_name="total thermal system mass" dcep_unit="kg">1.9884</mass_thermal>
+                <mass_power
                     dcep_description="total power system mass. based on statistics."
-                    dcep_name="total power system mass" dcep_unit="kg">20.878</m_power>
+                    dcep_name="total power system mass" dcep_unit="kg">20.878</mass_power>
                 <m_ttc
                     dcep_description="total telemetry, tracking and control system mass. based on statistics."
                     dcep_name="total ttc mass" dcep_unit="kg">1.9884</m_ttc>
                 <m_adc
                     dcep_description="total attitude determination and control system mass. based on statistics."
                     dcep_name="total adc mass" dcep_unit="kg">5.9651</m_adc>
-                <m_propulsion
+                <mass_propulsion
                     dcep_description="total propulsion system mass. based on statistics, refined by additional modelling."
-                    dcep_name="total propulsion system mass" dcep_unit="kg">4.38</m_propulsion>
+                    dcep_name="total propulsion system mass" dcep_unit="kg">4.38</mass_propulsion>
                 <m_misc
                     dcep_description="accounting for other minor masses, could be considered additional margin."
                     dcep_name="total miscellaneous mass" dcep_unit="kg">2.9826</m_misc>
@@ -93,30 +93,30 @@
                 <frac_m_dry_margin
                     dcep_description="total dry mass without margin to total mass fraction"
                     dcep_name="total marginless dry mass fraction" dcep_unit="-">0.64141</frac_m_dry_margin>
-                <frac_m_propellant
+                <frac_mass_propellant
                     dcep_description="propellant mass to total mass fraction"
-                    dcep_name="total propellant mass fraction" dcep_unit="-">0.083696</frac_m_propellant>
-                <frac_m_payload
+                    dcep_name="total propellant mass fraction" dcep_unit="-">0.083696</frac_mass_propellant>
+                <frac_mass_payload
                     dcep_description="total payload mass to total mass fraction"
-                    dcep_name="total payload mass fraction" dcep_unit="-">0.19884</frac_m_payload>
+                    dcep_name="total payload mass fraction" dcep_unit="-">0.19884</frac_mass_payload>
                 <frac_m_structure
                     dcep_description="total structural mass to total mass fraction"
                     dcep_name="total structural mass fraction" dcep_unit="-">0.17318</frac_m_structure>
-                <frac_m_thermal
+                <frac_mass_thermal
                     dcep_description="total thermal system mass to total mass fraction"
-                    dcep_name="total thermal system mass fraction" dcep_unit="-">0.012828</frac_m_thermal>
-                <frac_m_power
+                    dcep_name="total thermal system mass fraction" dcep_unit="-">0.012828</frac_mass_thermal>
+                <frac_mass_power
                     dcep_description="total power system mass to total mass fraction"
-                    dcep_name="total power system mass fraction" dcep_unit="-">0.1347</frac_m_power>
+                    dcep_name="total power system mass fraction" dcep_unit="-">0.1347</frac_mass_power>
                 <frac_m_ttc
                     dcep_description="total telemetry, tracking and control system mass to total mass fraction "
                     dcep_name="total ttc mass fraction" dcep_unit="-">0.012828</frac_m_ttc>
                 <frac_m_adc
                     dcep_description="total attitude determination and control system mass to total mass fraction"
                     dcep_name="total adc mass fraction" dcep_unit="-">0.038485</frac_m_adc>
-                <frac_m_propulsion
+                <frac_mass_propulsion
                     dcep_description="total propulsion system mass to total mass fraction "
-                    dcep_name="total propulsion system mass fraction" dcep_unit="-">0.028258</frac_m_propulsion>
+                    dcep_name="total propulsion system mass fraction" dcep_unit="-">0.028258</frac_mass_propulsion>
                 <frac_m_misc
                     dcep_description="misscellameous to total mass fraction"
                     dcep_name="total miscelleanous mass fraction" dcep_unit="-">0.019242</frac_m_misc>
@@ -176,30 +176,30 @@
                 <m_dry_margin
                     dcep_description="total dry mass without margin"
                     dcep_name="total marginless dry mass " dcep_unit="kg">101.4631</m_dry_margin>
-                <m_propellant
+                <mass_propellant
                     dcep_description="propellant mass calculated by tsiolkosvky of inputs"
-                    dcep_name="total propellant mass" dcep_unit="kg">10.0528</m_propellant>
-                <m_payload
+                    dcep_name="total propellant mass" dcep_unit="kg">10.0528</mass_propellant>
+                <mass_payload
                     dcep_description="total payload mass. based on statistics."
-                    dcep_name="total payload mass" dcep_unit="kg">31.4536</m_payload>
+                    dcep_name="total payload mass" dcep_unit="kg">31.4536</mass_payload>
                 <m_structure
                     dcep_description="total structural mass. based on statistics."
                     dcep_name="total structural mass" dcep_unit="kg">27.395</m_structure>
-                <m_thermal
+                <mass_thermal
                     dcep_description="total thermal system mass. based on statistics."
-                    dcep_name="total thermal system mass" dcep_unit="kg">2.0293</m_thermal>
-                <m_power
+                    dcep_name="total thermal system mass" dcep_unit="kg">2.0293</mass_thermal>
+                <mass_power
                     dcep_description="total power system mass. based on statistics."
-                    dcep_name="total power system mass" dcep_unit="kg">21.3072</m_power>
+                    dcep_name="total power system mass" dcep_unit="kg">21.3072</mass_power>
                 <m_ttc
                     dcep_description="total telemetry, tracking and control system mass. based on statistics."
                     dcep_name="total ttc mass" dcep_unit="kg">2.0293</m_ttc>
                 <m_adc
                     dcep_description="total attitude determination and control system mass. based on statistics."
                     dcep_name="total adc mass" dcep_unit="kg">6.0878</m_adc>
-                <m_propulsion
+                <mass_propulsion
                     dcep_description="total propulsion system mass. based on statistics, refined by additional modelling."
-                    dcep_name="total propulsion system mass" dcep_unit="kg">4.1448</m_propulsion>
+                    dcep_name="total propulsion system mass" dcep_unit="kg">4.1448</mass_propulsion>
                 <m_misc
                     dcep_description="accounting for other minor masses, could be considered additional margin."
                     dcep_name="total miscellaneous mass" dcep_unit="kg">3.0439</m_misc>
@@ -223,30 +223,30 @@
                 <frac_m_dry_margin
                     dcep_description="total dry mass without margin to total mass fraction"
                     dcep_name="total marginless dry mass fraction" dcep_unit="-">0.6546</frac_m_dry_margin>
-                <frac_m_propellant
+                <frac_mass_propellant
                     dcep_description="propellant mass to total mass fraction"
-                    dcep_name="total propellant mass fraction" dcep_unit="-">0.064857</frac_m_propellant>
-                <frac_m_payload
+                    dcep_name="total propellant mass fraction" dcep_unit="-">0.064857</frac_mass_propellant>
+                <frac_mass_payload
                     dcep_description="total payload mass to total mass fraction"
-                    dcep_name="total payload mass fraction" dcep_unit="-">0.20293</frac_m_payload>
+                    dcep_name="total payload mass fraction" dcep_unit="-">0.20293</frac_mass_payload>
                 <frac_m_structure
                     dcep_description="total structural mass to total mass fraction"
                     dcep_name="total structural mass fraction" dcep_unit="-">0.17674</frac_m_structure>
-                <frac_m_thermal
+                <frac_mass_thermal
                     dcep_description="total thermal system mass to total mass fraction"
-                    dcep_name="total thermal system mass fraction" dcep_unit="-">0.013092</frac_m_thermal>
-                <frac_m_power
+                    dcep_name="total thermal system mass fraction" dcep_unit="-">0.013092</frac_mass_thermal>
+                <frac_mass_power
                     dcep_description="total power system mass to total mass fraction"
-                    dcep_name="total power system mass fraction" dcep_unit="-">0.13747</frac_m_power>
+                    dcep_name="total power system mass fraction" dcep_unit="-">0.13747</frac_mass_power>
                 <frac_m_ttc
                     dcep_description="total telemetry, tracking and control system mass to total mass fraction "
                     dcep_name="total ttc mass fraction" dcep_unit="-">0.013092</frac_m_ttc>
                 <frac_m_adc
                     dcep_description="total attitude determination and control system mass to total mass fraction"
                     dcep_name="total adc mass fraction" dcep_unit="-">0.039276</frac_m_adc>
-                <frac_m_propulsion
+                <frac_mass_propulsion
                     dcep_description="total propulsion system mass to total mass fraction "
-                    dcep_name="total propulsion system mass fraction" dcep_unit="-">0.02674</frac_m_propulsion>
+                    dcep_name="total propulsion system mass fraction" dcep_unit="-">0.02674</frac_mass_propulsion>
                 <frac_m_misc
                     dcep_description="misscellameous to total mass fraction"
                     dcep_name="total miscelleanous mass fraction" dcep_unit="-">0.019638</frac_m_misc>

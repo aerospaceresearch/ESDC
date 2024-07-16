@@ -6,6 +6,7 @@ function [mission_parameters] =  mission_parameters(data)            % use data,
 end  
 
 function [time] = maneuver_duration(data)                            % Calculate maneuvre duration time
+  %disp(data)
     massflow=(data.thrust/data.c_e);                                 % mass flow is thrust divided by effective exhaust velocity
-    time = data.subsystem_masses.m_propellant/massflow;              % time is propellant mass divided by mass flow
+    time = data.subsystem_masses.mass_propellant/massflow;              % time is propellant mass divided by mass flow
 end

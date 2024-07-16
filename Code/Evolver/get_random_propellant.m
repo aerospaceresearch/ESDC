@@ -1,4 +1,4 @@
-function [propellant n_propellants] = get_random_propellant(data, propulsion)
+function [propellant n_propellants] = get_randomass_propellant(data, propulsion)
   %returns one propellant from the number of relevant propellants available in the db defined by the propulsion type
   propellant_list={};
   %disp(propulsion)

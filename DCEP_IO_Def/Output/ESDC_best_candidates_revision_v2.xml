@@ -17,12 +17,12 @@
                     <dcep_description>Input: Total velocity increment of the mission</dcep_description>
                 </dcep_info>
             </dv>
-            <p_propulsion>4000<dcep_info>
+            <propulsion_power>4000<dcep_info>
                     <dcep_name>power propulsion</dcep_name>
                     <dcep_unit>W</dcep_unit>
                     <dcep_description>power demand for propulsion systems</dcep_description>
                 </dcep_info>
-            </p_propulsion>
+            </propulsion_power>
             <propulsion_system>FEEP<dcep_info>
                     <dcep_name>Propulsion system type</dcep_name>
                     <dcep_unit>-</dcep_unit>
@@ -95,34 +95,34 @@
                         <dcep_description>total dry mass without margin</dcep_description>
                     </dcep_info>
                 </m_dry_margin>
-                <m_propellant>1.9945<dcep_info>
+                <mass_propellant>1.9945<dcep_info>
                         <dcep_name>total propellant mass</dcep_name>
                         <dcep_unit>kg</dcep_unit>
                         <dcep_description>propellant mass calculated by tsiolkosvky of inputs</dcep_description>
                     </dcep_info>
-                </m_propellant>
-                <m_payload>204.9121<dcep_info>
+                </mass_propellant>
+                <mass_payload>204.9121<dcep_info>
                         <dcep_name>total payload mass</dcep_name>
                         <dcep_unit>kg</dcep_unit>
                         <dcep_description>total payload mass. based on statistics.</dcep_description>
                     </dcep_info>
-                </m_payload>
-                <m_structmech>201.3421<dcep_info>
+                </mass_payload>
+                <mass_structmech>201.3421<dcep_info>
                         <none>no attributes defined</none>
                     </dcep_info>
-                </m_structmech>
-                <m_thermal>19.8573<dcep_info>
+                </mass_structmech>
+                <mass_thermal>19.8573<dcep_info>
                         <dcep_name>total thermal system mass</dcep_name>
                         <dcep_unit>kg</dcep_unit>
                         <dcep_description>total thermal system mass. based on statistics.</dcep_description>
                     </dcep_info>
-                </m_thermal>
-                <m_power>0<dcep_info>
+                </mass_thermal>
+                <mass_power>0<dcep_info>
                         <dcep_name>total power system mass</dcep_name>
                         <dcep_unit>kg</dcep_unit>
                         <dcep_description>total power system mass. based on statistics.</dcep_description>
                     </dcep_info>
-                </m_power>
+                </mass_power>
                 <m_ttc>13.7108<dcep_info>
                         <dcep_name>total ttc mass</dcep_name>
                         <dcep_unit>kg</dcep_unit>
@@ -135,18 +135,18 @@
                         <dcep_description>total attitude determination and control system mass. based on statistics.</dcep_description>
                     </dcep_info>
                 </m_adc>
-                <m_propulsion>5.2632<dcep_info>
+                <mass_propulsion>5.2632<dcep_info>
                         <dcep_name>total propulsion system mass</dcep_name>
                         <dcep_unit>kg</dcep_unit>
                         <dcep_description>total propulsion system mass. based on statistics, refined by additional modelling.</dcep_description>
                     </dcep_info>
-                </m_propulsion>
-                <m_other>11.9444<dcep_info>
+                </mass_propulsion>
+                <mass_other>11.9444<dcep_info>
                         <dcep_name>total other mass</dcep_name>
                         <dcep_unit>kg</dcep_unit>
                         <dcep_description>accounting for other minor masses, could be considered an additional margin.</dcep_description>
                     </dcep_info>
-                </m_other>
+                </mass_other>
                 <propulsion>
                     <dcep_info>
                         <none>no attributes defined</none>
@@ -165,40 +165,40 @@
                     </m_thruster>
                 </propulsion>
             </subsystem_masses>
-            <subsystem_powers>
+            <subsystemass_powers>
                 <dcep_info>
                     <dcep_name>Subsystem powers</dcep_name>
                     <dcep_unit>-</dcep_unit>
                     <dcep_description>Power requirement of all spacecraft subsystems</dcep_description>
                 </dcep_info>
-                <p_total>4468.6749<dcep_info>
+                <power_total>4468.6749<dcep_info>
                         <dcep_name>power total</dcep_name>
                         <dcep_unit>W</dcep_unit>
                         <dcep_description>total power demand spacecraft</dcep_description>
                     </dcep_info>
-                </p_total>
-                <p_payload>216.2388<dcep_info>
+                </power_total>
+                <power_payload>216.2388<dcep_info>
                         <dcep_name>power payload</dcep_name>
                         <dcep_unit>W</dcep_unit>
                         <dcep_description>power demand of the payload</dcep_description>
                     </dcep_info>
-                </p_payload>
-                <p_structmech>4.4047<dcep_info>
+                </power_payload>
+                <power_structmech>4.4047<dcep_info>
                         <none>no attributes defined</none>
                     </dcep_info>
-                </p_structmech>
-                <p_thermal>34.4729<dcep_info>
+                </power_structmech>
+                <power_thermal>34.4729<dcep_info>
                         <dcep_name>power thermal system</dcep_name>
                         <dcep_unit>W</dcep_unit>
                         <dcep_description>power demand for thermal control</dcep_description>
                     </dcep_info>
-                </p_thermal>
-                <p_power>40.1812<dcep_info>
+                </power_thermal>
+                <power_power>40.1812<dcep_info>
                         <dcep_name>power for power system</dcep_name>
                         <dcep_unit>W</dcep_unit>
                         <dcep_description>power demand for power conditioning</dcep_description>
                     </dcep_info>
-                </p_power>
+                </power_power>
                 <p_ttc>111.0209<dcep_info>
                         <dcep_name>power TTC</dcep_name>
                         <dcep_unit>W</dcep_unit>
@@ -211,13 +211,13 @@
                         <dcep_description>power demand for attitude determination and control</dcep_description>
                     </dcep_info>
                 </p_adc>
-                <p_propulsion>4000<dcep_info>
+                <propulsion_power>4000<dcep_info>
                         <dcep_name>power propulsion</dcep_name>
                         <dcep_unit>W</dcep_unit>
                         <dcep_description>power demand for propulsion systems</dcep_description>
                     </dcep_info>
-                </p_propulsion>
-            </subsystem_powers>
+                </propulsion_power>
+            </subsystemass_powers>
             <mission_parameters>
                 <dcep_info>
                     <dcep_name>Mission parameters</dcep_name>
@@ -255,34 +255,34 @@
                         <dcep_description>total dry mass without margin to total mass fraction</dcep_description>
                     </dcep_info>
                 </frac_m_dry_margin>
-                <frac_m_propellant>0.01458<dcep_info>
+                <frac_mass_propellant>0.01458<dcep_info>
                         <dcep_name>total propellant mass fraction</dcep_name>
                         <dcep_unit>-</dcep_unit>
                         <dcep_description>propellant mass to total mass fraction</dcep_description>
                     </dcep_info>
-                </frac_m_propellant>
-                <frac_m_payload>0.20207<dcep_info>
+                </frac_mass_propellant>
+                <frac_mass_payload>0.20207<dcep_info>
                         <dcep_name>total payload mass fraction</dcep_name>
                         <dcep_unit>-</dcep_unit>
                         <dcep_description>total payload mass to total mass fraction</dcep_description>
                     </dcep_info>
-                </frac_m_payload>
-                <frac_m_structmech>0.19886<dcep_info>
+                </frac_mass_payload>
+                <frac_mass_structmech>0.19886<dcep_info>
                         <none>no attributes defined</none>
                     </dcep_info>
-                </frac_m_structmech>
-                <frac_m_thermal>0.019612<dcep_info>
+                </frac_mass_structmech>
+                <frac_mass_thermal>0.019612<dcep_info>
                         <dcep_name>total thermal system mass fraction</dcep_name>
                         <dcep_unit>-</dcep_unit>
                         <dcep_description>total thermal system mass to total mass fraction</dcep_description>
                     </dcep_info>
-                </frac_m_thermal>
-                <frac_m_power>0.1589<dcep_info>
+                </frac_mass_thermal>
+                <frac_mass_power>0.1589<dcep_info>
                         <dcep_name>total power system mass fraction</dcep_name>
                         <dcep_unit>-</dcep_unit>
                         <dcep_description>total power system mass to total mass fraction</dcep_description>
                     </dcep_info>
-                </frac_m_power>
+                </frac_mass_power>
                 <frac_m_ttc>0.013546<dcep_info>
                         <dcep_name>total ttc mass fraction</dcep_name>
                         <dcep_unit>-</dcep_unit>
@@ -295,18 +295,18 @@
                         <dcep_description>total attitude determination and control system mass to total mass fraction</dcep_description>
                     </dcep_info>
                 </frac_m_adc>
-                <frac_m_propulsion>0.026651<dcep_info>
+                <frac_mass_propulsion>0.026651<dcep_info>
                         <dcep_name>total propulsion system mass fraction</dcep_name>
                         <dcep_unit>-</dcep_unit>
                         <dcep_description>total propulsion system mass to total mass fraction </dcep_description>
                     </dcep_info>
-                </frac_m_propulsion>
-                <frac_m_other>0.011767<dcep_info>
+                </frac_mass_propulsion>
+                <frac_mass_other>0.011767<dcep_info>
                         <dcep_name>total other system mass fraction</dcep_name>
                         <dcep_unit>-</dcep_unit>
                         <dcep_description>misscellameous to total mass fraction, can be considered to be a margin</dcep_description>
                     </dcep_info>
-                </frac_m_other>
+                </frac_mass_other>
             </mass_fractions>
             <evolution_success>0<dcep_info>
                     <dcep_name>Flag for Evolution sucess</dcep_name>

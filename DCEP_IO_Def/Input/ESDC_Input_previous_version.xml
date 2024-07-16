@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Satellite_parameters dcep_version="20191025" dcep_show="False">
         <input_case dcep_show="False">
-                <totalmass dcep_name="Satellite Mass" dcep_unit="kg" dcep_description="Currently estimated mass of satellite">155</totalmass>
+                <mass_total dcep_name="Satellite Mass" dcep_unit="kg" dcep_description="Currently estimated mass of satellite">155</mass_total>
                 <deltav dcep_name="Required Delta v" dcep_unit="m/s" dcep_description="Minimum Delta v to be delivered by propulsion system">685.97</deltav>
-                <m_propellant dcep_name = "Propellant mass" dcep_unit = "kg"  dcep_description="Currently estimated mass of to be spent propellant" >1</m_propellant>
-                <m_payload dcep_name = "Payload mass" dcep_unit = "kg"  dcep_description="Currently estimated mass of the payload system" >1</m_payload>
-                <m_structmech dcep_name = "Structure and mechanical mass" dcep_unit = "kg"  dcep_description="Currently estimated mass of structures and mechanics" >1</m_structmech>
-                <m_thermal dcep_name = "Thermal system mass" dcep_unit = "kg"  dcep_description="Currently estimated mass of the thermal system" >1</m_thermal>
-                <m_power dcep_name = "Power system mass" dcep_unit = "kg"  dcep_description="Currently estimated mass of the power system" >1</m_power>
-                <m_TTC dcep_name = "TTC system mass" dcep_unit = "kg"  dcep_description="Currently estimated mass of the telemetry tracking and control system" >1</m_TTC>
-                <m_ADC dcep_name = "ADC system mass" dcep_unit = "kg"  dcep_description="Currently estimated mass of the attitude determination and control system" >1</m_ADC>
-                <m_propulsion dcep_name = "Propulsion system mass" dcep_unit = "kg"  dcep_description="Currently estimated mass of the propulsion system" >1</m_propulsion>
-                <m_other dcep_name = "Other mass" dcep_unit = "kg"  dcep_description="Currently estimated mass of other unaccounted masses" >1</m_other>
-                <p_total dcep_name = "total system power" dcep_unit = "W"  dcep_description="Currently estimated total system power consumption" >1</p_total>
-                <p_payload dcep_name = "payloadsystem power" dcep_unit = "W"  dcep_description="Currently estimated payload power consumption">1</p_payload>
-                <p_structmech dcep_name = "Structure and Mechanical power" dcep_unit = "W"  dcep_description="Currently estimated power consumption of structures and mechanisms">1</p_structmech>
-                <p_thermal dcep_name = "Thermal system power" dcep_unit = "W"  dcep_description="Currently estimated thermal system power consumption">1</p_thermal>
-                <p_power dcep_name = "Power system power" dcep_unit = "W"  dcep_description="Currently estimated power system power consumption">1</p_power>
-                <p_TTC dcep_name = "TTC system power" dcep_unit = "W"  dcep_description="Currently estimated telemetry tracking and control system power consumption">1</p_TTC>
-                <p_ADC dcep_name = "ADC system power" dcep_unit = "W"  dcep_description="Currently estimated attitude determination and control system power consumption" >1</p_ADC>
-                <p_propulsion dcep_name="Available Power" dcep_unit="W" dcep_description="Power available for propulsion system">202.9</p_propulsion>
+                <mass_propellant dcep_name = "Propellant mass" dcep_unit = "kg"  dcep_description="Currently estimated mass of to be spent propellant" >1</mass_propellant>
+                <mass_payload dcep_name = "Payload mass" dcep_unit = "kg"  dcep_description="Currently estimated mass of the payload system" >1</mass_payload>
+                <mass_structmech dcep_name = "Structure and mechanical mass" dcep_unit = "kg"  dcep_description="Currently estimated mass of structures and mechanics" >1</mass_structmech>
+                <mass_thermal dcep_name = "Thermal system mass" dcep_unit = "kg"  dcep_description="Currently estimated mass of the thermal system" >1</mass_thermal>
+                <mass_power dcep_name = "Power system mass" dcep_unit = "kg"  dcep_description="Currently estimated mass of the power system" >1</mass_power>
+                <mass_TTC dcep_name = "TTC system mass" dcep_unit = "kg"  dcep_description="Currently estimated mass of the telemetry tracking and control system" >1</mass_TTC>
+                <mass_ADC dcep_name = "ADC system mass" dcep_unit = "kg"  dcep_description="Currently estimated mass of the attitude determination and control system" >1</mass_ADC>
+                <mass_propulsion dcep_name = "Propulsion system mass" dcep_unit = "kg"  dcep_description="Currently estimated mass of the propulsion system" >1</mass_propulsion>
+                <mass_other dcep_name = "Other mass" dcep_unit = "kg"  dcep_description="Currently estimated mass of other unaccounted masses" >1</mass_other>
+                <power_total dcep_name = "total system power" dcep_unit = "W"  dcep_description="Currently estimated total system power consumption" >1</power_total>
+                <power_payload dcep_name = "payloadsystem power" dcep_unit = "W"  dcep_description="Currently estimated payload power consumption">1</power_payload>
+                <power_structmech dcep_name = "Structure and Mechanical power" dcep_unit = "W"  dcep_description="Currently estimated power consumption of structures and mechanisms">1</power_structmech>
+                <power_thermal dcep_name = "Thermal system power" dcep_unit = "W"  dcep_description="Currently estimated thermal system power consumption">1</power_thermal>
+                <power_power dcep_name = "Power system power" dcep_unit = "W"  dcep_description="Currently estimated power system power consumption">1</power_power>
+                <power_TTC dcep_name = "TTC system power" dcep_unit = "W"  dcep_description="Currently estimated telemetry tracking and control system power consumption">1</power_TTC>
+                <power_ADC dcep_name = "ADC system power" dcep_unit = "W"  dcep_description="Currently estimated attitude determination and control system power consumption" >1</power_ADC>
+                <propulsion_power dcep_name="Available Power" dcep_unit="W" dcep_description="Power available for propulsion system">202.9</propulsion_power>
         </input_case>
 </Satellite_parameters>
 

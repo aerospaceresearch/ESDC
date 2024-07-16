@@ -33,31 +33,31 @@
 		<dcep_unit>kg</dcep_unit>
 		<dcep_description>total dry mass without margin</dcep_description>
 	</m_dry_margin>
-	<m_propellant>
+	<mass_propellant>
 		<dcep_name>total propellant mass</dcep_name>
 		<dcep_unit>kg</dcep_unit>
 		<dcep_description>propellant mass calculated by tsiolkosvky of inputs</dcep_description>
-	</m_propellant>
-	<m_payload>
+	</mass_propellant>
+	<mass_payload>
 		<dcep_name>total payload mass</dcep_name>
 		<dcep_unit>kg</dcep_unit>
 		<dcep_description>total payload mass. based on statistics.</dcep_description>
-	</m_payload>
+	</mass_payload>
 	<m_structure>
 		<dcep_name>total structural mass</dcep_name>
 		<dcep_unit>kg</dcep_unit>
 		<dcep_description>total structural mass. based on statistics.</dcep_description>
 	</m_structure>
-	<m_thermal>
+	<mass_thermal>
 		<dcep_name>total thermal system mass</dcep_name>
 		<dcep_unit>kg</dcep_unit>
 		<dcep_description>total thermal system mass. based on statistics.</dcep_description>
-	</m_thermal>
-	<m_power>
+	</mass_thermal>
+	<mass_power>
 		<dcep_name>total power system mass</dcep_name>
 		<dcep_unit>kg</dcep_unit>
 		<dcep_description>total power system mass. based on statistics.</dcep_description>
-	</m_power>
+	</mass_power>
 	<m_ttc>
 		<dcep_name>total ttc mass</dcep_name>
 		<dcep_unit>kg</dcep_unit>
@@ -68,21 +68,21 @@
 		<dcep_unit>kg</dcep_unit>
 		<dcep_description>total attitude determination and control system mass. based on statistics.</dcep_description>
 	</m_adc>
-	<m_propulsion>
+	<mass_propulsion>
 		<dcep_name>total propulsion system mass</dcep_name>
 		<dcep_unit>kg</dcep_unit>
 		<dcep_description>total propulsion system mass. based on statistics, refined by additional modelling.</dcep_description>
-	</m_propulsion>
+	</mass_propulsion>
 	<m_misc>
 		<dcep_name>total miscellaneous mass</dcep_name>
 		<dcep_unit>kg</dcep_unit>
 		<dcep_description>accounting for other minor masses, could be considered an additional margin.</dcep_description>
 	</m_misc>
-	<m_other>
+	<mass_other>
 		<dcep_name>total other mass</dcep_name>
 		<dcep_unit>kg</dcep_unit>
 		<dcep_description>accounting for other minor masses, could be considered an additional margin.</dcep_description>
-	</m_other>
+	</mass_other>
 	<m_tank>
 		<dcep_name>estimated tank mass</dcep_name>
 		<dcep_unit>kg</dcep_unit>
@@ -118,31 +118,31 @@
 		<dcep_unit>-</dcep_unit>
 		<dcep_description>total dry mass without margin to total mass fraction</dcep_description>
 	</frac_m_dry_margin>
-	<frac_m_propellant>
+	<frac_mass_propellant>
 		<dcep_name>total propellant mass fraction</dcep_name>
 		<dcep_unit>-</dcep_unit>
 		<dcep_description>propellant mass to total mass fraction</dcep_description>
-	</frac_m_propellant>
-	<frac_m_payload>
+	</frac_mass_propellant>
+	<frac_mass_payload>
 		<dcep_name>total payload mass fraction</dcep_name>
 		<dcep_unit>-</dcep_unit>
 		<dcep_description>total payload mass to total mass fraction</dcep_description>
-	</frac_m_payload>
+	</frac_mass_payload>
 	<frac_m_structure>
 		<dcep_name>total structural mass  fraction</dcep_name>
 		<dcep_unit>-</dcep_unit>
 		<dcep_description>total structural mass to total mass fraction</dcep_description>
 	</frac_m_structure>
-	<frac_m_thermal>
+	<frac_mass_thermal>
 		<dcep_name>total thermal system mass fraction</dcep_name>
 		<dcep_unit>-</dcep_unit>
 		<dcep_description>total thermal system mass to total mass fraction</dcep_description>
-	</frac_m_thermal>
-	<frac_m_power>
+	</frac_mass_thermal>
+	<frac_mass_power>
 		<dcep_name>total power system mass fraction</dcep_name>
 		<dcep_unit>-</dcep_unit>
 		<dcep_description>total power system mass to total mass fraction</dcep_description>
-	</frac_m_power>
+	</frac_mass_power>
 	<frac_m_ttc>
 		<dcep_name>total ttc mass fraction</dcep_name>
 		<dcep_unit>-</dcep_unit>
@@ -153,21 +153,21 @@
 		<dcep_unit>-</dcep_unit>
 		<dcep_description>total attitude determination and control system mass to total mass fraction</dcep_description>
 	</frac_m_adc>
-	<frac_m_propulsion>
+	<frac_mass_propulsion>
 		<dcep_name>total propulsion system mass fraction</dcep_name>
 		<dcep_unit>-</dcep_unit>
 		<dcep_description>total propulsion system mass to total mass fraction </dcep_description>
-	</frac_m_propulsion>
+	</frac_mass_propulsion>
 	<frac_m_misc>
 		<dcep_name>total miscelleanous mass  fraction</dcep_name>
 		<dcep_unit>-</dcep_unit>
 		<dcep_description>misscellameous to total mass fraction</dcep_description>
 	</frac_m_misc>
-	<frac_m_other>
+	<frac_mass_other>
 		<dcep_name>total other system mass fraction</dcep_name>
 		<dcep_unit>-</dcep_unit>
 		<dcep_description>misscellameous to total mass fraction, can be considered to be a margin</dcep_description>
-	</frac_m_other>
+	</frac_mass_other>
 	<dv>
 		<dcep_name>delta v</dcep_name>
 		<dcep_unit>m/s</dcep_unit>
@@ -243,36 +243,36 @@
 		<dcep_unit>-</dcep_unit>
 		<dcep_description>Counter for convergence of lineage. Relevant for algorithm analysis and debugging.</dcep_description>
 	</n_success>
-	<subsystem_powers>
+	<subsystemass_powers>
 		<dcep_name>Subsystem powers</dcep_name>
 		<dcep_unit>-</dcep_unit>
 		<dcep_description>Power requirement of all spacecraft subsystems</dcep_description>
-	</subsystem_powers>
-	<p_total>
+	</subsystemass_powers>
+	<power_total>
 		<dcep_name>power total</dcep_name>
 		<dcep_unit>W</dcep_unit>
 		<dcep_description>total power demand spacecraft</dcep_description>
-	</p_total>
-	<p_payload>
+	</power_total>
+	<power_payload>
 		<dcep_name>power payload</dcep_name>
 		<dcep_unit>W</dcep_unit>
 		<dcep_description>power demand of the payload</dcep_description>
-	</p_payload>
+	</power_payload>
 	<p_structure>
 		<dcep_name>power structure and mechanisms</dcep_name>
 		<dcep_unit>W</dcep_unit>
 		<dcep_description>power demand for operation structures and mechanisms</dcep_description>
 	</p_structure>
-	<p_thermal>
+	<power_thermal>
 		<dcep_name>power thermal system</dcep_name>
 		<dcep_unit>W</dcep_unit>
 		<dcep_description>power demand for thermal control</dcep_description>
-	</p_thermal>
-	<p_power>
+	</power_thermal>
+	<power_power>
 		<dcep_name>power for power system</dcep_name>
 		<dcep_unit>W</dcep_unit>
 		<dcep_description>power demand for power conditioning</dcep_description>
-	</p_power>
+	</power_power>
 	<p_ttc>
 		<dcep_name>power TTC</dcep_name>
 		<dcep_unit>W</dcep_unit>
@@ -288,36 +288,36 @@
 		<dcep_unit>W</dcep_unit>
 		<dcep_description>power demand for attitude determination and control</dcep_description>
 	</p_adc>
-	<p_propulsion>
+	<propulsion_power>
 		<dcep_name>power propulsion</dcep_name>
 		<dcep_unit>W</dcep_unit>
 		<dcep_description>power demand for propulsion systems</dcep_description>
-	</p_propulsion>
-	<frac_p_total>
+	</propulsion_power>
+	<frac_power_total>
 		<dcep_name>fraction power total</dcep_name>
 		<dcep_unit>W</dcep_unit>
 		<dcep_description>total power demand fraction spacecraft</dcep_description>
-	</frac_p_total>
-	<frac_p_payload>
+	</frac_power_total>
+	<frac_power_payload>
 		<dcep_name>fraction power payload</dcep_name>
 		<dcep_unit>W</dcep_unit>
 		<dcep_description>power demand fraction of the payload</dcep_description>
-	</frac_p_payload>
+	</frac_power_payload>
 	<frac_p_structure>
 		<dcep_name>fraction power structure and mechanisms</dcep_name>
 		<dcep_unit>W</dcep_unit>
 		<dcep_description>power demand fraction for operation structures and mechanisms</dcep_description>
 	</frac_p_structure>
-	<frac_p_thermal>
+	<frac_power_thermal>
 		<dcep_name>fraction power thermal system</dcep_name>
 		<dcep_unit>W</dcep_unit>
 		<dcep_description>power demand fraction for thermal control</dcep_description>
-	</frac_p_thermal>
-	<frac_p_power>
+	</frac_power_thermal>
+	<frac_power_power>
 		<dcep_name>fraction power for power system</dcep_name>
 		<dcep_unit>W</dcep_unit>
 		<dcep_description>power demand fraction for power conditioning</dcep_description>
-	</frac_p_power>
+	</frac_power_power>
 	<frac_p_ttc>
 		<dcep_name>fraction power TTC</dcep_name>
 		<dcep_unit>W</dcep_unit>
@@ -333,11 +333,11 @@
 		<dcep_unit>W</dcep_unit>
 		<dcep_description>power demand fraction for attitude determination and control</dcep_description>
 	</frac_p_adc>
-	<frac_p_propulsion>
+	<frac_propulsion_power>
 		<dcep_name>fraction power propulsion</dcep_name>
 		<dcep_unit>W</dcep_unit>
 		<dcep_description>power demand fraction for propulsion systems</dcep_description>
-	</frac_p_propulsion>
+	</frac_propulsion_power>
 	<convergence>
 		<dcep_name>Lineage convergence</dcep_name>
 		<dcep_unit>-</dcep_unit>

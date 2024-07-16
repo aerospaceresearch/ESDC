@@ -30,7 +30,7 @@ function [PSS_system] = analysis_power_system(design, input, db_data, config) % 
   fraction_sun_time_orbit = t_sun/t_orbit;
   
   %worst case power consumption full orbit
-  p_consumed_max = design.subsystem_powers.p_total- design.subsystem_powers.p_propulsion+design.p_propulsion;
+  p_consumed_max = design.subsystemass_powers.power_total- design.subsystemass_powers.propulsion_power+design.propulsion_power;
 
   
   eff_battery = 0.95;                                                                                % https://batterytestcentre.com.au/project/lithium-ion/
