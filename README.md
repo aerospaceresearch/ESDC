@@ -63,6 +63,8 @@ Always load the IO package before using the software by running:
 Add the downloaded \`.jar\` files to your Java path in Octave:
 
 #### Add java path from Java Xerces
+Replace /path/to/xerces-2_11_0/ with the actual path to the downloaded .jar files on your system.
+
 On a UNIX System
 ```bash
 javaaddpath("/path/to/xerces-2_11_0/xercesImpl.jar");
@@ -76,7 +78,21 @@ javaaddpath("C:\\path\\to\\xerces-2_11_0\\xml-apis.jar");
 ```
 Use double backslashes (\\) to escape them properly in this syntax.
 
-Replace /path/to/xerces-2_11_0/ with the actual path to the downloaded .jar files on your system.
+If you use UNIX notation you will get the following error
+```bash
+error: javaaddpath: CLSPATH does not exist
+```
+
+If you get the following error
+```bash
+error: unable to find Java Runtime Environment
+```
+install JRE on your system. 
+
+Once you installed JRE on a Windows machine do add it to the environment variables:
+```bash
+C:\Program Files\Java\jre1.8.0_431\bin 
+```
 
 #### (Optional) Automate preparation
 Automate this by adding the respective commands to your `.octave.rc`
