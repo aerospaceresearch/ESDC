@@ -15,6 +15,7 @@ Before you begin, ensure you have met the following requirements:
 - You have a working internet connection.
 - You have installed [GNU Octave](https://www.gnu.org/software/octave/) version 8.2. or above.
 - You have installed the relevant IO package for GNU Octave.
+- You have installed Java Runtime Environment on your system to use .jar files.
 
 ## Install GNU Octave
 
@@ -31,7 +32,7 @@ Open GNU Octave and run the following command to install the IO package [GNU Oct
 To parse an XML file using the xmlread function, you need to add the Xerces Java library to your java_path. Octave does not ship with a Xerces library, so you must download and add the required .jar files.	
 
 ### Download the Xerces Java library
- from [Xerces](https://xerces.apache.org/mirrors.cgi). For example use [Xerces2 Java 2.12.2](https://dlcdn.apache.org//xerces/j/source/Xerces-J-tools.2.12.2.zip). The relevant .jar files are 'xercesImpl.jar' and 'xml-apis.jar'
+ from [Xerces](https://xerces.apache.org/mirrors.cgi). For example use [Xerces2 Java 2.12.2](https://dlcdn.apache.org//xerces/j/binaries/Xerces-J-bin.2.12.2.zip). The relevant .jar files are 'xercesImpl.jar' and 'xml-apis.jar'
 
 
 ## Installation
@@ -62,10 +63,19 @@ Always load the IO package before using the software by running:
 Add the downloaded \`.jar\` files to your Java path in Octave:
 
 #### Add java path from Java Xerces
+On a UNIX System
 ```bash
 javaaddpath("/path/to/xerces-2_11_0/xercesImpl.jar");
 javaaddpath("/path/to/xerces-2_11_0/xml-apis.jar");
 ```
+
+On a Windows System
+```bash
+javaaddpath("C:\\path\\to\\xerces-2_11_0\\xercesImpl.jar");
+javaaddpath("C:\\path\\to\\xerces-2_11_0\\xml-apis.jar");
+```
+Use double backslashes (\\) to escape them properly in this syntax.
+
 Replace /path/to/xerces-2_11_0/ with the actual path to the downloaded .jar files on your system.
 
 #### (Optional) Automate preparation
